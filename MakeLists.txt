@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.6)
-project(RTv1)
+project(RT)
 
 file(GLOB SOURCES ./src/*.c ./src/*/*.c ./src/*/*/*.c ./src/*/*/*/*.c ./src/*/*/*/*/*.c)
 
