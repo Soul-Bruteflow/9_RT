@@ -14,6 +14,23 @@
 # define _VECTORS_H
 
 /*
+** Quaternion definition
+*/
+typedef	struct	s_quat
+{
+	float		x;
+	float		y;
+	float		z;
+	float		w;
+}				t_quat;
+/*
+**
+*/
+typedef struct	s_mat4
+{
+	float 		m[4][4];
+}				t_mat4;
+/*
 ** 3d Vector definition
 */
 typedef struct	s_vec3d
@@ -64,5 +81,12 @@ float			vec3_len(t_vec3d v);
 ** Calculate normal.
 */
 t_vec3d			vec3_norm(t_vec3d v);
+
+t_vec3d		vec3_rotate(float angle, t_vec3d *axis);
+float		ft_to_degree(float radians);
+float		ft_to_radians(float degrees);
+
+void		ft_init_identiny(t_mat4 *m);
+void		ft_mat_set(t_mat4 *m, uint x, uint y, float value);
 
 #endif

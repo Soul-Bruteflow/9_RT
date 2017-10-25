@@ -48,11 +48,15 @@ typedef struct	s_cam
 	float		fov;
 	t_vec3d		eye;
 	t_vec3d		vp_right;
+	t_vec3d		vp_left;
 	t_vec3d		vp_up;
 	float		pixel_width;
 	float		pixel_height;
 	float		half_width;
 	float		half_height;
+	float 		roll;
+	float 		mov_amt;
+	float 		rot_amt;
 }				t_cam;
 
 /*
@@ -93,6 +97,8 @@ t_vec3d			ft_set_vector(float x, float y, float z);
 t_cam			*create_perspective_cam(t_vec3d origin, t_vec3d target,
 				t_vec3d upguide, float fov_asp[]);
 void			make_ray(t_cam *cam, t_vec2d point, t_ray *r);
+void			cam_move(t_vec3d *cam_pos, t_vec3d *dir, float amt);
+void			cam_update(t_cam *c, t_vec3d *ray_start);
 /*
 ** Material
 */

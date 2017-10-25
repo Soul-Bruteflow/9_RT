@@ -17,6 +17,7 @@
 # include "rtv_error.h"
 # include "objects.h"
 # include "bool.h"
+# include "libft.h"
 
 /*
 ** Basic SDL2 variables
@@ -28,6 +29,7 @@ typedef struct		s_sdl
 	SDL_Renderer	*renderer;
 	SDL_Event		event;
 	const Uint8		*key_state;
+	SDL_bool		is_mouse_cap;
 }					t_sdl;
 
 /*
@@ -96,6 +98,16 @@ typedef	struct		s_pars
 	char			*line;
 }					t_pars;
 
+
+typedef struct		s_time
+{
+	float			time;
+	float			old_time;
+	float			frame_time;
+	char			fps[4];
+	int				fps_counter;
+}					t_time;
+
 /*
 ** Main struct.
 ** av - ./RTv1 arguments
@@ -108,6 +120,7 @@ typedef struct		s_rtv
 	t_scene			*scene;
 	t_calc			*calc;
 	t_pars			*pars;
+	t_time			delta;
 }					t_rtv;
 
 /*
