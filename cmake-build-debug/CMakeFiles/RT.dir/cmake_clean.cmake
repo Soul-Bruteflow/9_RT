@@ -20,6 +20,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/RT.dir/src/window/update_window.c.o"
   "CMakeFiles/RT.dir/src/functions/matrices/ft_init_identity.c.o"
   "CMakeFiles/RT.dir/src/functions/matrices/ft_mat_mul.c.o"
+  "CMakeFiles/RT.dir/src/functions/matrices/ft_mat_set.c.o"
   "CMakeFiles/RT.dir/src/functions/vector/vector_operations_1.c.o"
   "CMakeFiles/RT.dir/src/functions/vector/vector_operations_2.c.o"
   "CMakeFiles/RT.dir/src/parser/objects/parse_cone.c.o"

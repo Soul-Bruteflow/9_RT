@@ -12,25 +12,64 @@
 
 #include "rtv.h"
 
+int	sort_distance(t_intersect *ts, int objs_n)
+{
+	unsigned int	j;
+	float 			value;
+	unsigned int	ret;
+
+	j = 0;
+	value = ts[0].t;
+	ret = 0;
+	while (j < objs_n - 1)
+	{
+		if (value > ts[j].t)
+		{
+			value = ts[j].t;
+			ret = j;
+		}
+		j++;
+	}
+	return (ret);
+}
+
 /*
 ** Find closest intersection
 */
 
 t_bool	object_intersect(t_rtv *rtv, t_ray *r, int *cur_obj, t_vec3d *new_start)
 {
-	float		t;
-	int			i;
-	t_vec3d		scaled;
+	float			t;
+	int				i;
+	t_vec3d			scaled;
+	int				j;
 
-	t = 2000;
+	t_intersect	ts[rtv->scene->objs_n];
+
+	t = 30000;
+	i = -1;
+	j = 0;
+	while (i++ < rtv->scene->objs_n - 1)
+	{
+		ts->t = 0;
+		ts->i = 0;
+	}
 	i = -1;
 	while (i++ < rtv->scene->objs_n - 1)
 	{
 		if (rtv->scene->objects[i]->intersect(r, rtv->scene->objects[i], &t))
+		{
+			ts[j].t = t;
+			ts[j].i = i;
 			*cur_obj = i;
+			j++;
+		}
 	}
 	if (*cur_obj == -1)
 		return (false);
+	j = sort_distance(ts, rtv->scene->objs_n);
+	*cur_obj = ts[j].i;
+	t = ts[j].t;
 	scaled = vec3_scale(t, &r->dir);
 	*new_start = vec3_add(&r->start, &scaled);
 	return (true);

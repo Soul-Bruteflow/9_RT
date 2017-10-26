@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/bruteflow/c_projects/9_RT/src/functions/ft_to_radians.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/functions/ft_to_radians.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/functions/matrices/ft_init_identity.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/functions/matrices/ft_init_identity.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/functions/matrices/ft_mat_mul.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/functions/matrices/ft_mat_mul.c.o"
+  "/Users/bruteflow/c_projects/9_RT/src/functions/matrices/ft_mat_set.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/functions/matrices/ft_mat_set.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/functions/vector/vector_operations_1.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/functions/vector/vector_operations_1.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/functions/vector/vector_operations_2.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/functions/vector/vector_operations_2.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/get_next_line.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/get_next_line.c.o"

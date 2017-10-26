@@ -41,6 +41,8 @@ libft.h
 .././inc/rtv_error.h
 
 .././inc/vectors.h
+ntsid.h
+-
 
 .././libft/libft.h
 string.h
@@ -75,6 +77,24 @@ rtv.h
 /Users/bruteflow/c_projects/9_RT/src/functions/ft_set_vector.c
 rtv.h
 /Users/bruteflow/c_projects/9_RT/src/functions/rtv.h
+
+/Users/bruteflow/c_projects/9_RT/src/functions/ft_to_radians.c
+vectors.h
+/Users/bruteflow/c_projects/9_RT/src/functions/vectors.h
+math.h
+/Users/bruteflow/c_projects/9_RT/src/functions/math.h
+
+/Users/bruteflow/c_projects/9_RT/src/functions/matrices/ft_init_identity.c
+vectors.h
+/Users/bruteflow/c_projects/9_RT/src/functions/matrices/vectors.h
+
+/Users/bruteflow/c_projects/9_RT/src/functions/matrices/ft_mat_mul.c
+vectors.h
+/Users/bruteflow/c_projects/9_RT/src/functions/matrices/vectors.h
+
+/Users/bruteflow/c_projects/9_RT/src/functions/matrices/ft_mat_set.c
+vectors.h
+/Users/bruteflow/c_projects/9_RT/src/functions/matrices/vectors.h
 
 /Users/bruteflow/c_projects/9_RT/src/functions/vector/vector_operations_1.c
 vectors.h

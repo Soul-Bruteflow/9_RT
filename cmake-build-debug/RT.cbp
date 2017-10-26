@@ -350,6 +350,9 @@
 		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/functions/matrices/ft_mat_mul.c">
 			<Option target="RT"/>
 		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/functions/matrices/ft_mat_set.c">
+			<Option target="RT"/>
+		</Unit>
 		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/functions/vector/vector_operations_1.c">
 			<Option target="RT"/>
 		</Unit>

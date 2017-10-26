@@ -15,6 +15,12 @@
 
 # include "vectors.h"
 
+typedef	struct	s_intersect
+{
+	float 			t;
+	int	i;
+}				t_intersect;
+
 /*
 ** RGBA color 0-255 definition
 */

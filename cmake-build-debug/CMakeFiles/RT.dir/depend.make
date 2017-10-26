@@ -50,6 +50,18 @@ CMakeFiles/RT.dir/src/functions/ft_set_vector.c.o: .././inc/vectors.h
 CMakeFiles/RT.dir/src/functions/ft_set_vector.c.o: .././libft/libft.h
 CMakeFiles/RT.dir/src/functions/ft_set_vector.c.o: ../src/functions/ft_set_vector.c
 
+CMakeFiles/RT.dir/src/functions/ft_to_radians.c.o: .././inc/vectors.h
+CMakeFiles/RT.dir/src/functions/ft_to_radians.c.o: ../src/functions/ft_to_radians.c
+
+CMakeFiles/RT.dir/src/functions/matrices/ft_init_identity.c.o: .././inc/vectors.h
+CMakeFiles/RT.dir/src/functions/matrices/ft_init_identity.c.o: ../src/functions/matrices/ft_init_identity.c
+
+CMakeFiles/RT.dir/src/functions/matrices/ft_mat_mul.c.o: .././inc/vectors.h
+CMakeFiles/RT.dir/src/functions/matrices/ft_mat_mul.c.o: ../src/functions/matrices/ft_mat_mul.c
+
+CMakeFiles/RT.dir/src/functions/matrices/ft_mat_set.c.o: .././inc/vectors.h
+CMakeFiles/RT.dir/src/functions/matrices/ft_mat_set.c.o: ../src/functions/matrices/ft_mat_set.c
+
 CMakeFiles/RT.dir/src/functions/vector/vector_operations_1.c.o: .././inc/vectors.h
 CMakeFiles/RT.dir/src/functions/vector/vector_operations_1.c.o: ../src/functions/vector/vector_operations_1.c
 

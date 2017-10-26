@@ -13,6 +13,8 @@
 #ifndef _VECTORS_H
 # define _VECTORS_H
 
+#include <ntsid.h>
+
 /*
 ** Quaternion definition
 */

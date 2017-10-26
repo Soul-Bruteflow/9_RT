@@ -2053,6 +2053,33 @@ src/functions/matrices/ft_mat_mul.c.s:
 	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/matrices/ft_mat_mul.c.s
 .PHONY : src/functions/matrices/ft_mat_mul.c.s
 
+src/functions/matrices/ft_mat_set.o: src/functions/matrices/ft_mat_set.c.o
+
+.PHONY : src/functions/matrices/ft_mat_set.o
+
+# target to build an object file
+src/functions/matrices/ft_mat_set.c.o:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/matrices/ft_mat_set.c.o
+.PHONY : src/functions/matrices/ft_mat_set.c.o
+
+src/functions/matrices/ft_mat_set.i: src/functions/matrices/ft_mat_set.c.i
+
+.PHONY : src/functions/matrices/ft_mat_set.i
+
+# target to preprocess a source file
+src/functions/matrices/ft_mat_set.c.i:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/matrices/ft_mat_set.c.i
+.PHONY : src/functions/matrices/ft_mat_set.c.i
+
+src/functions/matrices/ft_mat_set.s: src/functions/matrices/ft_mat_set.c.s
+
+.PHONY : src/functions/matrices/ft_mat_set.s
+
+# target to generate assembly for a file
+src/functions/matrices/ft_mat_set.c.s:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/matrices/ft_mat_set.c.s
+.PHONY : src/functions/matrices/ft_mat_set.c.s
+
 src/functions/vector/vector_operations_1.o: src/functions/vector/vector_operations_1.c.o
 
 .PHONY : src/functions/vector/vector_operations_1.o
@@ -3302,6 +3329,9 @@ help:
 	@echo "... src/functions/matrices/ft_mat_mul.o"
 	@echo "... src/functions/matrices/ft_mat_mul.i"
 	@echo "... src/functions/matrices/ft_mat_mul.s"
+	@echo "... src/functions/matrices/ft_mat_set.o"
+	@echo "... src/functions/matrices/ft_mat_set.i"
+	@echo "... src/functions/matrices/ft_mat_set.s"
 	@echo "... src/functions/vector/vector_operations_1.o"
 	@echo "... src/functions/vector/vector_operations_1.i"
 	@echo "... src/functions/vector/vector_operations_1.s"

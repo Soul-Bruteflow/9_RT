@@ -1,6 +1,6 @@
 #include "vectors.h"
 
-void	ft_mat_mult(t_mat4 *m, )
+void	ft_mat_mult(t_mat4 *m)
 {
 	int i;
 	int j;
@@ -11,7 +11,7 @@ void	ft_mat_mult(t_mat4 *m, )
 		j = -1;
 		while(j++ < 4)
 		{
-			m->m[i][j] = m->m[i][0] * m->m[0][j] + ;
+			m->m[i][j] = m->m[i][0] * m->m[0][j] + 1;
 		}
 	}
 }

@@ -57,7 +57,7 @@ void	keyboard_core(t_rtv *rtv)
 
 //		rtv->scene->cam.d.z += rtv->scene->cam.mov_amt;
 //		init_camera(rtv);
-//		printf("%f\n", rtv->scene->cam.o.z);
+		printf("%f\n", rtv->scene->cam.o.z);
 
 		clear_window(rtv);
 		raytrace(rtv);
