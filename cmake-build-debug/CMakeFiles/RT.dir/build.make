@@ -513,76 +513,76 @@ CMakeFiles/RT.dir/src/window/update_window.c.o.provides: CMakeFiles/RT.dir/src/w
 CMakeFiles/RT.dir/src/window/update_window.c.o.provides.build: CMakeFiles/RT.dir/src/window/update_window.c.o
 
 
-CMakeFiles/RT.dir/src/functions/matrices/ft_init_identity.c.o: CMakeFiles/RT.dir/flags.make
-CMakeFiles/RT.dir/src/functions/matrices/ft_init_identity.c.o: ../src/functions/matrices/ft_init_identity.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/RT.dir/src/functions/matrices/ft_init_identity.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/functions/matrices/ft_init_identity.c.o   -c /Users/bruteflow/c_projects/9_RT/src/functions/matrices/ft_init_identity.c
+CMakeFiles/RT.dir/src/functions/matrices/inits.c.o: CMakeFiles/RT.dir/flags.make
+CMakeFiles/RT.dir/src/functions/matrices/inits.c.o: ../src/functions/matrices/inits.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/RT.dir/src/functions/matrices/inits.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/functions/matrices/inits.c.o   -c /Users/bruteflow/c_projects/9_RT/src/functions/matrices/inits.c
 
-CMakeFiles/RT.dir/src/functions/matrices/ft_init_identity.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RT.dir/src/functions/matrices/ft_init_identity.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bruteflow/c_projects/9_RT/src/functions/matrices/ft_init_identity.c > CMakeFiles/RT.dir/src/functions/matrices/ft_init_identity.c.i
+CMakeFiles/RT.dir/src/functions/matrices/inits.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RT.dir/src/functions/matrices/inits.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bruteflow/c_projects/9_RT/src/functions/matrices/inits.c > CMakeFiles/RT.dir/src/functions/matrices/inits.c.i
 
-CMakeFiles/RT.dir/src/functions/matrices/ft_init_identity.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RT.dir/src/functions/matrices/ft_init_identity.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bruteflow/c_projects/9_RT/src/functions/matrices/ft_init_identity.c -o CMakeFiles/RT.dir/src/functions/matrices/ft_init_identity.c.s
+CMakeFiles/RT.dir/src/functions/matrices/inits.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RT.dir/src/functions/matrices/inits.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bruteflow/c_projects/9_RT/src/functions/matrices/inits.c -o CMakeFiles/RT.dir/src/functions/matrices/inits.c.s
 
-CMakeFiles/RT.dir/src/functions/matrices/ft_init_identity.c.o.requires:
+CMakeFiles/RT.dir/src/functions/matrices/inits.c.o.requires:
 
-.PHONY : CMakeFiles/RT.dir/src/functions/matrices/ft_init_identity.c.o.requires
+.PHONY : CMakeFiles/RT.dir/src/functions/matrices/inits.c.o.requires
 
-CMakeFiles/RT.dir/src/functions/matrices/ft_init_identity.c.o.provides: CMakeFiles/RT.dir/src/functions/matrices/ft_init_identity.c.o.requires
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/matrices/ft_init_identity.c.o.provides.build
-.PHONY : CMakeFiles/RT.dir/src/functions/matrices/ft_init_identity.c.o.provides
+CMakeFiles/RT.dir/src/functions/matrices/inits.c.o.provides: CMakeFiles/RT.dir/src/functions/matrices/inits.c.o.requires
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/matrices/inits.c.o.provides.build
+.PHONY : CMakeFiles/RT.dir/src/functions/matrices/inits.c.o.provides
 
-CMakeFiles/RT.dir/src/functions/matrices/ft_init_identity.c.o.provides.build: CMakeFiles/RT.dir/src/functions/matrices/ft_init_identity.c.o
-
-
-CMakeFiles/RT.dir/src/functions/matrices/ft_mat_mul.c.o: CMakeFiles/RT.dir/flags.make
-CMakeFiles/RT.dir/src/functions/matrices/ft_mat_mul.c.o: ../src/functions/matrices/ft_mat_mul.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/RT.dir/src/functions/matrices/ft_mat_mul.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/functions/matrices/ft_mat_mul.c.o   -c /Users/bruteflow/c_projects/9_RT/src/functions/matrices/ft_mat_mul.c
-
-CMakeFiles/RT.dir/src/functions/matrices/ft_mat_mul.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RT.dir/src/functions/matrices/ft_mat_mul.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bruteflow/c_projects/9_RT/src/functions/matrices/ft_mat_mul.c > CMakeFiles/RT.dir/src/functions/matrices/ft_mat_mul.c.i
-
-CMakeFiles/RT.dir/src/functions/matrices/ft_mat_mul.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RT.dir/src/functions/matrices/ft_mat_mul.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bruteflow/c_projects/9_RT/src/functions/matrices/ft_mat_mul.c -o CMakeFiles/RT.dir/src/functions/matrices/ft_mat_mul.c.s
-
-CMakeFiles/RT.dir/src/functions/matrices/ft_mat_mul.c.o.requires:
-
-.PHONY : CMakeFiles/RT.dir/src/functions/matrices/ft_mat_mul.c.o.requires
-
-CMakeFiles/RT.dir/src/functions/matrices/ft_mat_mul.c.o.provides: CMakeFiles/RT.dir/src/functions/matrices/ft_mat_mul.c.o.requires
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/matrices/ft_mat_mul.c.o.provides.build
-.PHONY : CMakeFiles/RT.dir/src/functions/matrices/ft_mat_mul.c.o.provides
-
-CMakeFiles/RT.dir/src/functions/matrices/ft_mat_mul.c.o.provides.build: CMakeFiles/RT.dir/src/functions/matrices/ft_mat_mul.c.o
+CMakeFiles/RT.dir/src/functions/matrices/inits.c.o.provides.build: CMakeFiles/RT.dir/src/functions/matrices/inits.c.o
 
 
-CMakeFiles/RT.dir/src/functions/matrices/ft_mat_set.c.o: CMakeFiles/RT.dir/flags.make
-CMakeFiles/RT.dir/src/functions/matrices/ft_mat_set.c.o: ../src/functions/matrices/ft_mat_set.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/RT.dir/src/functions/matrices/ft_mat_set.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/functions/matrices/ft_mat_set.c.o   -c /Users/bruteflow/c_projects/9_RT/src/functions/matrices/ft_mat_set.c
+CMakeFiles/RT.dir/src/functions/matrices/mat_operations_1.c.o: CMakeFiles/RT.dir/flags.make
+CMakeFiles/RT.dir/src/functions/matrices/mat_operations_1.c.o: ../src/functions/matrices/mat_operations_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/RT.dir/src/functions/matrices/mat_operations_1.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/functions/matrices/mat_operations_1.c.o   -c /Users/bruteflow/c_projects/9_RT/src/functions/matrices/mat_operations_1.c
 
-CMakeFiles/RT.dir/src/functions/matrices/ft_mat_set.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RT.dir/src/functions/matrices/ft_mat_set.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bruteflow/c_projects/9_RT/src/functions/matrices/ft_mat_set.c > CMakeFiles/RT.dir/src/functions/matrices/ft_mat_set.c.i
+CMakeFiles/RT.dir/src/functions/matrices/mat_operations_1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RT.dir/src/functions/matrices/mat_operations_1.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bruteflow/c_projects/9_RT/src/functions/matrices/mat_operations_1.c > CMakeFiles/RT.dir/src/functions/matrices/mat_operations_1.c.i
 
-CMakeFiles/RT.dir/src/functions/matrices/ft_mat_set.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RT.dir/src/functions/matrices/ft_mat_set.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bruteflow/c_projects/9_RT/src/functions/matrices/ft_mat_set.c -o CMakeFiles/RT.dir/src/functions/matrices/ft_mat_set.c.s
+CMakeFiles/RT.dir/src/functions/matrices/mat_operations_1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RT.dir/src/functions/matrices/mat_operations_1.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bruteflow/c_projects/9_RT/src/functions/matrices/mat_operations_1.c -o CMakeFiles/RT.dir/src/functions/matrices/mat_operations_1.c.s
 
-CMakeFiles/RT.dir/src/functions/matrices/ft_mat_set.c.o.requires:
+CMakeFiles/RT.dir/src/functions/matrices/mat_operations_1.c.o.requires:
 
-.PHONY : CMakeFiles/RT.dir/src/functions/matrices/ft_mat_set.c.o.requires
+.PHONY : CMakeFiles/RT.dir/src/functions/matrices/mat_operations_1.c.o.requires
 
-CMakeFiles/RT.dir/src/functions/matrices/ft_mat_set.c.o.provides: CMakeFiles/RT.dir/src/functions/matrices/ft_mat_set.c.o.requires
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/matrices/ft_mat_set.c.o.provides.build
-.PHONY : CMakeFiles/RT.dir/src/functions/matrices/ft_mat_set.c.o.provides
+CMakeFiles/RT.dir/src/functions/matrices/mat_operations_1.c.o.provides: CMakeFiles/RT.dir/src/functions/matrices/mat_operations_1.c.o.requires
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/matrices/mat_operations_1.c.o.provides.build
+.PHONY : CMakeFiles/RT.dir/src/functions/matrices/mat_operations_1.c.o.provides
 
-CMakeFiles/RT.dir/src/functions/matrices/ft_mat_set.c.o.provides.build: CMakeFiles/RT.dir/src/functions/matrices/ft_mat_set.c.o
+CMakeFiles/RT.dir/src/functions/matrices/mat_operations_1.c.o.provides.build: CMakeFiles/RT.dir/src/functions/matrices/mat_operations_1.c.o
+
+
+CMakeFiles/RT.dir/src/functions/quaternions/quat_operations_1.c.o: CMakeFiles/RT.dir/flags.make
+CMakeFiles/RT.dir/src/functions/quaternions/quat_operations_1.c.o: ../src/functions/quaternions/quat_operations_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/RT.dir/src/functions/quaternions/quat_operations_1.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/functions/quaternions/quat_operations_1.c.o   -c /Users/bruteflow/c_projects/9_RT/src/functions/quaternions/quat_operations_1.c
+
+CMakeFiles/RT.dir/src/functions/quaternions/quat_operations_1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RT.dir/src/functions/quaternions/quat_operations_1.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bruteflow/c_projects/9_RT/src/functions/quaternions/quat_operations_1.c > CMakeFiles/RT.dir/src/functions/quaternions/quat_operations_1.c.i
+
+CMakeFiles/RT.dir/src/functions/quaternions/quat_operations_1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RT.dir/src/functions/quaternions/quat_operations_1.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bruteflow/c_projects/9_RT/src/functions/quaternions/quat_operations_1.c -o CMakeFiles/RT.dir/src/functions/quaternions/quat_operations_1.c.s
+
+CMakeFiles/RT.dir/src/functions/quaternions/quat_operations_1.c.o.requires:
+
+.PHONY : CMakeFiles/RT.dir/src/functions/quaternions/quat_operations_1.c.o.requires
+
+CMakeFiles/RT.dir/src/functions/quaternions/quat_operations_1.c.o.provides: CMakeFiles/RT.dir/src/functions/quaternions/quat_operations_1.c.o.requires
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/quaternions/quat_operations_1.c.o.provides.build
+.PHONY : CMakeFiles/RT.dir/src/functions/quaternions/quat_operations_1.c.o.provides
+
+CMakeFiles/RT.dir/src/functions/quaternions/quat_operations_1.c.o.provides.build: CMakeFiles/RT.dir/src/functions/quaternions/quat_operations_1.c.o
 
 
 CMakeFiles/RT.dir/src/functions/vector/vector_operations_1.c.o: CMakeFiles/RT.dir/flags.make
@@ -1230,9 +1230,9 @@ RT_OBJECTS = \
 "CMakeFiles/RT.dir/src/raytrace/raytrace.c.o" \
 "CMakeFiles/RT.dir/src/window/create_window.c.o" \
 "CMakeFiles/RT.dir/src/window/update_window.c.o" \
-"CMakeFiles/RT.dir/src/functions/matrices/ft_init_identity.c.o" \
-"CMakeFiles/RT.dir/src/functions/matrices/ft_mat_mul.c.o" \
-"CMakeFiles/RT.dir/src/functions/matrices/ft_mat_set.c.o" \
+"CMakeFiles/RT.dir/src/functions/matrices/inits.c.o" \
+"CMakeFiles/RT.dir/src/functions/matrices/mat_operations_1.c.o" \
+"CMakeFiles/RT.dir/src/functions/quaternions/quat_operations_1.c.o" \
 "CMakeFiles/RT.dir/src/functions/vector/vector_operations_1.c.o" \
 "CMakeFiles/RT.dir/src/functions/vector/vector_operations_2.c.o" \
 "CMakeFiles/RT.dir/src/parser/objects/parse_cone.c.o" \
@@ -1282,9 +1282,9 @@ RT: CMakeFiles/RT.dir/src/raytrace/intersect.c.o
 RT: CMakeFiles/RT.dir/src/raytrace/raytrace.c.o
 RT: CMakeFiles/RT.dir/src/window/create_window.c.o
 RT: CMakeFiles/RT.dir/src/window/update_window.c.o
-RT: CMakeFiles/RT.dir/src/functions/matrices/ft_init_identity.c.o
-RT: CMakeFiles/RT.dir/src/functions/matrices/ft_mat_mul.c.o
-RT: CMakeFiles/RT.dir/src/functions/matrices/ft_mat_set.c.o
+RT: CMakeFiles/RT.dir/src/functions/matrices/inits.c.o
+RT: CMakeFiles/RT.dir/src/functions/matrices/mat_operations_1.c.o
+RT: CMakeFiles/RT.dir/src/functions/quaternions/quat_operations_1.c.o
 RT: CMakeFiles/RT.dir/src/functions/vector/vector_operations_1.c.o
 RT: CMakeFiles/RT.dir/src/functions/vector/vector_operations_2.c.o
 RT: CMakeFiles/RT.dir/src/parser/objects/parse_cone.c.o
@@ -1341,9 +1341,9 @@ CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/raytrace/intersect.c.o.require
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/raytrace/raytrace.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/window/create_window.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/window/update_window.c.o.requires
-CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/functions/matrices/ft_init_identity.c.o.requires
-CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/functions/matrices/ft_mat_mul.c.o.requires
-CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/functions/matrices/ft_mat_set.c.o.requires
+CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/functions/matrices/inits.c.o.requires
+CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/functions/matrices/mat_operations_1.c.o.requires
+CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/functions/quaternions/quat_operations_1.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/functions/vector/vector_operations_1.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/functions/vector/vector_operations_2.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/parser/objects/parse_cone.c.o.requires

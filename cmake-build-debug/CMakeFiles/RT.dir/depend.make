@@ -5,6 +5,7 @@ CMakeFiles/RT.dir/src/events/keyboard_core.c.o: .././inc/bool.h
 CMakeFiles/RT.dir/src/events/keyboard_core.c.o: .././inc/objects.h
 CMakeFiles/RT.dir/src/events/keyboard_core.c.o: .././inc/raytrace.h
 CMakeFiles/RT.dir/src/events/keyboard_core.c.o: .././inc/rtv.h
+CMakeFiles/RT.dir/src/events/keyboard_core.c.o: .././inc/rtv_defines.h
 CMakeFiles/RT.dir/src/events/keyboard_core.c.o: .././inc/rtv_error.h
 CMakeFiles/RT.dir/src/events/keyboard_core.c.o: .././inc/vectors.h
 CMakeFiles/RT.dir/src/events/keyboard_core.c.o: .././libft/libft.h
@@ -27,6 +28,7 @@ CMakeFiles/RT.dir/src/functions/ft_noise.c.o: .././inc/bool.h
 CMakeFiles/RT.dir/src/functions/ft_noise.c.o: .././inc/objects.h
 CMakeFiles/RT.dir/src/functions/ft_noise.c.o: .././inc/raytrace.h
 CMakeFiles/RT.dir/src/functions/ft_noise.c.o: .././inc/rtv.h
+CMakeFiles/RT.dir/src/functions/ft_noise.c.o: .././inc/rtv_defines.h
 CMakeFiles/RT.dir/src/functions/ft_noise.c.o: .././inc/rtv_error.h
 CMakeFiles/RT.dir/src/functions/ft_noise.c.o: .././inc/vectors.h
 CMakeFiles/RT.dir/src/functions/ft_noise.c.o: .././libft/libft.h
@@ -36,6 +38,7 @@ CMakeFiles/RT.dir/src/functions/ft_set_color.c.o: .././inc/bool.h
 CMakeFiles/RT.dir/src/functions/ft_set_color.c.o: .././inc/objects.h
 CMakeFiles/RT.dir/src/functions/ft_set_color.c.o: .././inc/raytrace.h
 CMakeFiles/RT.dir/src/functions/ft_set_color.c.o: .././inc/rtv.h
+CMakeFiles/RT.dir/src/functions/ft_set_color.c.o: .././inc/rtv_defines.h
 CMakeFiles/RT.dir/src/functions/ft_set_color.c.o: .././inc/rtv_error.h
 CMakeFiles/RT.dir/src/functions/ft_set_color.c.o: .././inc/vectors.h
 CMakeFiles/RT.dir/src/functions/ft_set_color.c.o: .././libft/libft.h
@@ -45,6 +48,7 @@ CMakeFiles/RT.dir/src/functions/ft_set_vector.c.o: .././inc/bool.h
 CMakeFiles/RT.dir/src/functions/ft_set_vector.c.o: .././inc/objects.h
 CMakeFiles/RT.dir/src/functions/ft_set_vector.c.o: .././inc/raytrace.h
 CMakeFiles/RT.dir/src/functions/ft_set_vector.c.o: .././inc/rtv.h
+CMakeFiles/RT.dir/src/functions/ft_set_vector.c.o: .././inc/rtv_defines.h
 CMakeFiles/RT.dir/src/functions/ft_set_vector.c.o: .././inc/rtv_error.h
 CMakeFiles/RT.dir/src/functions/ft_set_vector.c.o: .././inc/vectors.h
 CMakeFiles/RT.dir/src/functions/ft_set_vector.c.o: .././libft/libft.h
@@ -53,14 +57,14 @@ CMakeFiles/RT.dir/src/functions/ft_set_vector.c.o: ../src/functions/ft_set_vecto
 CMakeFiles/RT.dir/src/functions/ft_to_radians.c.o: .././inc/vectors.h
 CMakeFiles/RT.dir/src/functions/ft_to_radians.c.o: ../src/functions/ft_to_radians.c
 
-CMakeFiles/RT.dir/src/functions/matrices/ft_init_identity.c.o: .././inc/vectors.h
-CMakeFiles/RT.dir/src/functions/matrices/ft_init_identity.c.o: ../src/functions/matrices/ft_init_identity.c
+CMakeFiles/RT.dir/src/functions/matrices/inits.c.o: .././inc/vectors.h
+CMakeFiles/RT.dir/src/functions/matrices/inits.c.o: ../src/functions/matrices/inits.c
 
-CMakeFiles/RT.dir/src/functions/matrices/ft_mat_mul.c.o: .././inc/vectors.h
-CMakeFiles/RT.dir/src/functions/matrices/ft_mat_mul.c.o: ../src/functions/matrices/ft_mat_mul.c
+CMakeFiles/RT.dir/src/functions/matrices/mat_operations_1.c.o: .././inc/vectors.h
+CMakeFiles/RT.dir/src/functions/matrices/mat_operations_1.c.o: ../src/functions/matrices/mat_operations_1.c
 
-CMakeFiles/RT.dir/src/functions/matrices/ft_mat_set.c.o: .././inc/vectors.h
-CMakeFiles/RT.dir/src/functions/matrices/ft_mat_set.c.o: ../src/functions/matrices/ft_mat_set.c
+CMakeFiles/RT.dir/src/functions/quaternions/quat_operations_1.c.o: .././inc/vectors.h
+CMakeFiles/RT.dir/src/functions/quaternions/quat_operations_1.c.o: ../src/functions/quaternions/quat_operations_1.c
 
 CMakeFiles/RT.dir/src/functions/vector/vector_operations_1.c.o: .././inc/vectors.h
 CMakeFiles/RT.dir/src/functions/vector/vector_operations_1.c.o: ../src/functions/vector/vector_operations_1.c
@@ -76,6 +80,7 @@ CMakeFiles/RT.dir/src/main.c.o: .././inc/bool.h
 CMakeFiles/RT.dir/src/main.c.o: .././inc/objects.h
 CMakeFiles/RT.dir/src/main.c.o: .././inc/raytrace.h
 CMakeFiles/RT.dir/src/main.c.o: .././inc/rtv.h
+CMakeFiles/RT.dir/src/main.c.o: .././inc/rtv_defines.h
 CMakeFiles/RT.dir/src/main.c.o: .././inc/rtv_error.h
 CMakeFiles/RT.dir/src/main.c.o: .././inc/vectors.h
 CMakeFiles/RT.dir/src/main.c.o: .././libft/libft.h
@@ -115,6 +120,7 @@ CMakeFiles/RT.dir/src/parser/objects/parse_objects.c.o: .././inc/bool.h
 CMakeFiles/RT.dir/src/parser/objects/parse_objects.c.o: .././inc/objects.h
 CMakeFiles/RT.dir/src/parser/objects/parse_objects.c.o: .././inc/raytrace.h
 CMakeFiles/RT.dir/src/parser/objects/parse_objects.c.o: .././inc/rtv.h
+CMakeFiles/RT.dir/src/parser/objects/parse_objects.c.o: .././inc/rtv_defines.h
 CMakeFiles/RT.dir/src/parser/objects/parse_objects.c.o: .././inc/rtv_error.h
 CMakeFiles/RT.dir/src/parser/objects/parse_objects.c.o: .././inc/vectors.h
 CMakeFiles/RT.dir/src/parser/objects/parse_objects.c.o: .././libft/libft.h
@@ -144,6 +150,7 @@ CMakeFiles/RT.dir/src/parser/parser_core.c.o: .././inc/bool.h
 CMakeFiles/RT.dir/src/parser/parser_core.c.o: .././inc/objects.h
 CMakeFiles/RT.dir/src/parser/parser_core.c.o: .././inc/raytrace.h
 CMakeFiles/RT.dir/src/parser/parser_core.c.o: .././inc/rtv.h
+CMakeFiles/RT.dir/src/parser/parser_core.c.o: .././inc/rtv_defines.h
 CMakeFiles/RT.dir/src/parser/parser_core.c.o: .././inc/rtv_error.h
 CMakeFiles/RT.dir/src/parser/parser_core.c.o: .././inc/vectors.h
 CMakeFiles/RT.dir/src/parser/parser_core.c.o: .././libft/libft.h
@@ -184,6 +191,7 @@ CMakeFiles/RT.dir/src/parser/support/parser_support_one.c.o: .././inc/get_next_l
 CMakeFiles/RT.dir/src/parser/support/parser_support_one.c.o: .././inc/objects.h
 CMakeFiles/RT.dir/src/parser/support/parser_support_one.c.o: .././inc/raytrace.h
 CMakeFiles/RT.dir/src/parser/support/parser_support_one.c.o: .././inc/rtv.h
+CMakeFiles/RT.dir/src/parser/support/parser_support_one.c.o: .././inc/rtv_defines.h
 CMakeFiles/RT.dir/src/parser/support/parser_support_one.c.o: .././inc/rtv_error.h
 CMakeFiles/RT.dir/src/parser/support/parser_support_one.c.o: .././inc/vectors.h
 CMakeFiles/RT.dir/src/parser/support/parser_support_one.c.o: .././libft/libft.h
@@ -193,6 +201,7 @@ CMakeFiles/RT.dir/src/parser/support/parser_support_two.c.o: .././inc/bool.h
 CMakeFiles/RT.dir/src/parser/support/parser_support_two.c.o: .././inc/objects.h
 CMakeFiles/RT.dir/src/parser/support/parser_support_two.c.o: .././inc/raytrace.h
 CMakeFiles/RT.dir/src/parser/support/parser_support_two.c.o: .././inc/rtv.h
+CMakeFiles/RT.dir/src/parser/support/parser_support_two.c.o: .././inc/rtv_defines.h
 CMakeFiles/RT.dir/src/parser/support/parser_support_two.c.o: .././inc/rtv_error.h
 CMakeFiles/RT.dir/src/parser/support/parser_support_two.c.o: .././inc/vectors.h
 CMakeFiles/RT.dir/src/parser/support/parser_support_two.c.o: .././libft/libft.h
@@ -202,6 +211,7 @@ CMakeFiles/RT.dir/src/raytrace/calculate_light.c.o: .././inc/bool.h
 CMakeFiles/RT.dir/src/raytrace/calculate_light.c.o: .././inc/objects.h
 CMakeFiles/RT.dir/src/raytrace/calculate_light.c.o: .././inc/raytrace.h
 CMakeFiles/RT.dir/src/raytrace/calculate_light.c.o: .././inc/rtv.h
+CMakeFiles/RT.dir/src/raytrace/calculate_light.c.o: .././inc/rtv_defines.h
 CMakeFiles/RT.dir/src/raytrace/calculate_light.c.o: .././inc/rtv_error.h
 CMakeFiles/RT.dir/src/raytrace/calculate_light.c.o: .././inc/vectors.h
 CMakeFiles/RT.dir/src/raytrace/calculate_light.c.o: .././libft/libft.h
@@ -211,6 +221,7 @@ CMakeFiles/RT.dir/src/raytrace/intersect.c.o: .././inc/bool.h
 CMakeFiles/RT.dir/src/raytrace/intersect.c.o: .././inc/objects.h
 CMakeFiles/RT.dir/src/raytrace/intersect.c.o: .././inc/raytrace.h
 CMakeFiles/RT.dir/src/raytrace/intersect.c.o: .././inc/rtv.h
+CMakeFiles/RT.dir/src/raytrace/intersect.c.o: .././inc/rtv_defines.h
 CMakeFiles/RT.dir/src/raytrace/intersect.c.o: .././inc/rtv_error.h
 CMakeFiles/RT.dir/src/raytrace/intersect.c.o: .././inc/vectors.h
 CMakeFiles/RT.dir/src/raytrace/intersect.c.o: .././libft/libft.h
@@ -220,6 +231,7 @@ CMakeFiles/RT.dir/src/raytrace/lights/light.c.o: .././inc/bool.h
 CMakeFiles/RT.dir/src/raytrace/lights/light.c.o: .././inc/objects.h
 CMakeFiles/RT.dir/src/raytrace/lights/light.c.o: .././inc/raytrace.h
 CMakeFiles/RT.dir/src/raytrace/lights/light.c.o: .././inc/rtv.h
+CMakeFiles/RT.dir/src/raytrace/lights/light.c.o: .././inc/rtv_defines.h
 CMakeFiles/RT.dir/src/raytrace/lights/light.c.o: .././inc/rtv_error.h
 CMakeFiles/RT.dir/src/raytrace/lights/light.c.o: .././inc/vectors.h
 CMakeFiles/RT.dir/src/raytrace/lights/light.c.o: .././libft/libft.h
@@ -229,6 +241,7 @@ CMakeFiles/RT.dir/src/raytrace/materials/material.c.o: .././inc/bool.h
 CMakeFiles/RT.dir/src/raytrace/materials/material.c.o: .././inc/objects.h
 CMakeFiles/RT.dir/src/raytrace/materials/material.c.o: .././inc/raytrace.h
 CMakeFiles/RT.dir/src/raytrace/materials/material.c.o: .././inc/rtv.h
+CMakeFiles/RT.dir/src/raytrace/materials/material.c.o: .././inc/rtv_defines.h
 CMakeFiles/RT.dir/src/raytrace/materials/material.c.o: .././inc/rtv_error.h
 CMakeFiles/RT.dir/src/raytrace/materials/material.c.o: .././inc/vectors.h
 CMakeFiles/RT.dir/src/raytrace/materials/material.c.o: .././libft/libft.h
@@ -238,6 +251,7 @@ CMakeFiles/RT.dir/src/raytrace/objects/cone/cone_create.c.o: .././inc/bool.h
 CMakeFiles/RT.dir/src/raytrace/objects/cone/cone_create.c.o: .././inc/objects.h
 CMakeFiles/RT.dir/src/raytrace/objects/cone/cone_create.c.o: .././inc/raytrace.h
 CMakeFiles/RT.dir/src/raytrace/objects/cone/cone_create.c.o: .././inc/rtv.h
+CMakeFiles/RT.dir/src/raytrace/objects/cone/cone_create.c.o: .././inc/rtv_defines.h
 CMakeFiles/RT.dir/src/raytrace/objects/cone/cone_create.c.o: .././inc/rtv_error.h
 CMakeFiles/RT.dir/src/raytrace/objects/cone/cone_create.c.o: .././inc/vectors.h
 CMakeFiles/RT.dir/src/raytrace/objects/cone/cone_create.c.o: .././libft/libft.h
@@ -247,6 +261,7 @@ CMakeFiles/RT.dir/src/raytrace/objects/cone/cone_ray_intersect.c.o: .././inc/boo
 CMakeFiles/RT.dir/src/raytrace/objects/cone/cone_ray_intersect.c.o: .././inc/objects.h
 CMakeFiles/RT.dir/src/raytrace/objects/cone/cone_ray_intersect.c.o: .././inc/raytrace.h
 CMakeFiles/RT.dir/src/raytrace/objects/cone/cone_ray_intersect.c.o: .././inc/rtv.h
+CMakeFiles/RT.dir/src/raytrace/objects/cone/cone_ray_intersect.c.o: .././inc/rtv_defines.h
 CMakeFiles/RT.dir/src/raytrace/objects/cone/cone_ray_intersect.c.o: .././inc/rtv_error.h
 CMakeFiles/RT.dir/src/raytrace/objects/cone/cone_ray_intersect.c.o: .././inc/vectors.h
 CMakeFiles/RT.dir/src/raytrace/objects/cone/cone_ray_intersect.c.o: .././libft/libft.h
@@ -256,6 +271,7 @@ CMakeFiles/RT.dir/src/raytrace/objects/cylinder/cylinder_create.c.o: .././inc/bo
 CMakeFiles/RT.dir/src/raytrace/objects/cylinder/cylinder_create.c.o: .././inc/objects.h
 CMakeFiles/RT.dir/src/raytrace/objects/cylinder/cylinder_create.c.o: .././inc/raytrace.h
 CMakeFiles/RT.dir/src/raytrace/objects/cylinder/cylinder_create.c.o: .././inc/rtv.h
+CMakeFiles/RT.dir/src/raytrace/objects/cylinder/cylinder_create.c.o: .././inc/rtv_defines.h
 CMakeFiles/RT.dir/src/raytrace/objects/cylinder/cylinder_create.c.o: .././inc/rtv_error.h
 CMakeFiles/RT.dir/src/raytrace/objects/cylinder/cylinder_create.c.o: .././inc/vectors.h
 CMakeFiles/RT.dir/src/raytrace/objects/cylinder/cylinder_create.c.o: .././libft/libft.h
@@ -265,6 +281,7 @@ CMakeFiles/RT.dir/src/raytrace/objects/cylinder/cylinder_ray_intersect.c.o: ../.
 CMakeFiles/RT.dir/src/raytrace/objects/cylinder/cylinder_ray_intersect.c.o: .././inc/objects.h
 CMakeFiles/RT.dir/src/raytrace/objects/cylinder/cylinder_ray_intersect.c.o: .././inc/raytrace.h
 CMakeFiles/RT.dir/src/raytrace/objects/cylinder/cylinder_ray_intersect.c.o: .././inc/rtv.h
+CMakeFiles/RT.dir/src/raytrace/objects/cylinder/cylinder_ray_intersect.c.o: .././inc/rtv_defines.h
 CMakeFiles/RT.dir/src/raytrace/objects/cylinder/cylinder_ray_intersect.c.o: .././inc/rtv_error.h
 CMakeFiles/RT.dir/src/raytrace/objects/cylinder/cylinder_ray_intersect.c.o: .././inc/vectors.h
 CMakeFiles/RT.dir/src/raytrace/objects/cylinder/cylinder_ray_intersect.c.o: .././libft/libft.h
@@ -274,6 +291,7 @@ CMakeFiles/RT.dir/src/raytrace/objects/object.c.o: .././inc/bool.h
 CMakeFiles/RT.dir/src/raytrace/objects/object.c.o: .././inc/objects.h
 CMakeFiles/RT.dir/src/raytrace/objects/object.c.o: .././inc/raytrace.h
 CMakeFiles/RT.dir/src/raytrace/objects/object.c.o: .././inc/rtv.h
+CMakeFiles/RT.dir/src/raytrace/objects/object.c.o: .././inc/rtv_defines.h
 CMakeFiles/RT.dir/src/raytrace/objects/object.c.o: .././inc/rtv_error.h
 CMakeFiles/RT.dir/src/raytrace/objects/object.c.o: .././inc/vectors.h
 CMakeFiles/RT.dir/src/raytrace/objects/object.c.o: .././libft/libft.h
@@ -283,6 +301,7 @@ CMakeFiles/RT.dir/src/raytrace/objects/plane/plane_create.c.o: .././inc/bool.h
 CMakeFiles/RT.dir/src/raytrace/objects/plane/plane_create.c.o: .././inc/objects.h
 CMakeFiles/RT.dir/src/raytrace/objects/plane/plane_create.c.o: .././inc/raytrace.h
 CMakeFiles/RT.dir/src/raytrace/objects/plane/plane_create.c.o: .././inc/rtv.h
+CMakeFiles/RT.dir/src/raytrace/objects/plane/plane_create.c.o: .././inc/rtv_defines.h
 CMakeFiles/RT.dir/src/raytrace/objects/plane/plane_create.c.o: .././inc/rtv_error.h
 CMakeFiles/RT.dir/src/raytrace/objects/plane/plane_create.c.o: .././inc/vectors.h
 CMakeFiles/RT.dir/src/raytrace/objects/plane/plane_create.c.o: .././libft/libft.h
@@ -292,6 +311,7 @@ CMakeFiles/RT.dir/src/raytrace/objects/plane/plane_ray_intersect.c.o: .././inc/b
 CMakeFiles/RT.dir/src/raytrace/objects/plane/plane_ray_intersect.c.o: .././inc/objects.h
 CMakeFiles/RT.dir/src/raytrace/objects/plane/plane_ray_intersect.c.o: .././inc/raytrace.h
 CMakeFiles/RT.dir/src/raytrace/objects/plane/plane_ray_intersect.c.o: .././inc/rtv.h
+CMakeFiles/RT.dir/src/raytrace/objects/plane/plane_ray_intersect.c.o: .././inc/rtv_defines.h
 CMakeFiles/RT.dir/src/raytrace/objects/plane/plane_ray_intersect.c.o: .././inc/rtv_error.h
 CMakeFiles/RT.dir/src/raytrace/objects/plane/plane_ray_intersect.c.o: .././inc/vectors.h
 CMakeFiles/RT.dir/src/raytrace/objects/plane/plane_ray_intersect.c.o: .././libft/libft.h
@@ -301,6 +321,7 @@ CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_create.c.o: .././inc/bool.h
 CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_create.c.o: .././inc/objects.h
 CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_create.c.o: .././inc/raytrace.h
 CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_create.c.o: .././inc/rtv.h
+CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_create.c.o: .././inc/rtv_defines.h
 CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_create.c.o: .././inc/rtv_error.h
 CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_create.c.o: .././inc/vectors.h
 CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_create.c.o: .././libft/libft.h
@@ -310,6 +331,7 @@ CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_ray_intersect.c.o: .././inc
 CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_ray_intersect.c.o: .././inc/objects.h
 CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_ray_intersect.c.o: .././inc/raytrace.h
 CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_ray_intersect.c.o: .././inc/rtv.h
+CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_ray_intersect.c.o: .././inc/rtv_defines.h
 CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_ray_intersect.c.o: .././inc/rtv_error.h
 CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_ray_intersect.c.o: .././inc/vectors.h
 CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_ray_intersect.c.o: .././libft/libft.h
@@ -339,6 +361,7 @@ CMakeFiles/RT.dir/src/raytrace/scene/scene_create.c.o: .././inc/bool.h
 CMakeFiles/RT.dir/src/raytrace/scene/scene_create.c.o: .././inc/objects.h
 CMakeFiles/RT.dir/src/raytrace/scene/scene_create.c.o: .././inc/raytrace.h
 CMakeFiles/RT.dir/src/raytrace/scene/scene_create.c.o: .././inc/rtv.h
+CMakeFiles/RT.dir/src/raytrace/scene/scene_create.c.o: .././inc/rtv_defines.h
 CMakeFiles/RT.dir/src/raytrace/scene/scene_create.c.o: .././inc/rtv_error.h
 CMakeFiles/RT.dir/src/raytrace/scene/scene_create.c.o: .././inc/vectors.h
 CMakeFiles/RT.dir/src/raytrace/scene/scene_create.c.o: .././libft/libft.h
@@ -362,6 +385,7 @@ CMakeFiles/RT.dir/src/rtv_loop.c.o: .././inc/bool.h
 CMakeFiles/RT.dir/src/rtv_loop.c.o: .././inc/objects.h
 CMakeFiles/RT.dir/src/rtv_loop.c.o: .././inc/raytrace.h
 CMakeFiles/RT.dir/src/rtv_loop.c.o: .././inc/rtv.h
+CMakeFiles/RT.dir/src/rtv_loop.c.o: .././inc/rtv_defines.h
 CMakeFiles/RT.dir/src/rtv_loop.c.o: .././inc/rtv_error.h
 CMakeFiles/RT.dir/src/rtv_loop.c.o: .././inc/vectors.h
 CMakeFiles/RT.dir/src/rtv_loop.c.o: .././libft/libft.h
@@ -371,6 +395,7 @@ CMakeFiles/RT.dir/src/rtv_quit.c.o: .././inc/bool.h
 CMakeFiles/RT.dir/src/rtv_quit.c.o: .././inc/objects.h
 CMakeFiles/RT.dir/src/rtv_quit.c.o: .././inc/raytrace.h
 CMakeFiles/RT.dir/src/rtv_quit.c.o: .././inc/rtv.h
+CMakeFiles/RT.dir/src/rtv_quit.c.o: .././inc/rtv_defines.h
 CMakeFiles/RT.dir/src/rtv_quit.c.o: .././inc/rtv_error.h
 CMakeFiles/RT.dir/src/rtv_quit.c.o: .././inc/vectors.h
 CMakeFiles/RT.dir/src/rtv_quit.c.o: .././libft/libft.h
@@ -380,6 +405,7 @@ CMakeFiles/RT.dir/src/window/create_window.c.o: .././inc/bool.h
 CMakeFiles/RT.dir/src/window/create_window.c.o: .././inc/objects.h
 CMakeFiles/RT.dir/src/window/create_window.c.o: .././inc/raytrace.h
 CMakeFiles/RT.dir/src/window/create_window.c.o: .././inc/rtv.h
+CMakeFiles/RT.dir/src/window/create_window.c.o: .././inc/rtv_defines.h
 CMakeFiles/RT.dir/src/window/create_window.c.o: .././inc/rtv_error.h
 CMakeFiles/RT.dir/src/window/create_window.c.o: .././inc/vectors.h
 CMakeFiles/RT.dir/src/window/create_window.c.o: .././libft/libft.h
@@ -389,6 +415,7 @@ CMakeFiles/RT.dir/src/window/update_window.c.o: .././inc/bool.h
 CMakeFiles/RT.dir/src/window/update_window.c.o: .././inc/objects.h
 CMakeFiles/RT.dir/src/window/update_window.c.o: .././inc/raytrace.h
 CMakeFiles/RT.dir/src/window/update_window.c.o: .././inc/rtv.h
+CMakeFiles/RT.dir/src/window/update_window.c.o: .././inc/rtv_defines.h
 CMakeFiles/RT.dir/src/window/update_window.c.o: .././inc/rtv_error.h
 CMakeFiles/RT.dir/src/window/update_window.c.o: .././inc/vectors.h
 CMakeFiles/RT.dir/src/window/update_window.c.o: .././libft/libft.h

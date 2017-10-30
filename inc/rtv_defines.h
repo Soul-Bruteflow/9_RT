@@ -16,10 +16,8 @@
 /*
 ** Window size, and bits per pixel
 */
-# define WIDTH 800
-# define HEIGHT 600
-# define FWIDTH 800.0f
-# define FHEIGHT 600.0f
+# define WIDTH 1024
+# define HEIGHT 768
 # define BITS 4
 
 /*

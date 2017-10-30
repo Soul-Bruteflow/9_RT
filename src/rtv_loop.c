@@ -30,7 +30,7 @@ static void	update_time(t_rtv *rtv)
 	rtv->delta.time = SDL_GetTicks();
 	rtv->delta.frame_time = (rtv->delta.time - rtv->delta.old_time) / 1000.0f;
 	rtv->scene->cam.mov_amt = rtv->delta.frame_time * 300.0f;
-	rtv->scene->cam.rot_amt = rtv->delta.frame_time * 3.0f;
+	rtv->scene->cam.rot_amt = 0.000001f;
 	if (rtv->delta.fps_counter % 10 == 0)
 	{
 		tmp = ft_itoa((int)(1.0 / rtv->delta.frame_time));

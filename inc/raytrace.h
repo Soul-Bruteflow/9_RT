@@ -105,6 +105,8 @@ t_cam			*create_perspective_cam(t_vec3d origin, t_vec3d target,
 void			make_ray(t_cam *cam, t_vec2d point, t_ray *r);
 void			cam_move(t_vec3d *cam_pos, t_vec3d *dir, float amt);
 void			cam_update(t_cam *c, t_vec3d *ray_start);
+void			cam_rot_x(t_cam *c, float angle);
+void			cam_rot_y(t_cam *c, float angle);
 /*
 ** Material
 */

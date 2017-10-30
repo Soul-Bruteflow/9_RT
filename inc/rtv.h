@@ -18,6 +18,7 @@
 # include "objects.h"
 # include "bool.h"
 # include "libft.h"
+# include "rtv_defines.h"
 
 /*
 ** Basic SDL2 variables

@@ -14,6 +14,7 @@
 # define _VECTORS_H
 
 #include <ntsid.h>
+#include <math.h>
 
 /*
 ** Quaternion definition
@@ -88,7 +89,16 @@ t_vec3d		vec3_rotate(float angle, t_vec3d *axis);
 float		ft_to_degree(float radians);
 float		ft_to_radians(float degrees);
 
-void		ft_init_identiny(t_mat4 *m);
-void		ft_mat_set(t_mat4 *m, uint x, uint y, float value);
+t_mat4		init_identiny(void);
+t_mat4		init_translation(float x, float y, float z);
+t_mat4		mat_mult(t_mat4 *m1, t_mat4 *m2);
+
+float		quat_len(t_quat q);
+t_quat		quat_norm(t_quat q);
+t_quat		quat_conjugate(t_quat q);
+t_quat		quat_mul(t_quat q1, t_quat q2);
+t_quat		quat_mul_vec3d(t_quat q, t_vec3d v);
+
+t_vec3d		mat_mult_vec3d(t_mat4 m, t_vec3d v);
 
 #endif

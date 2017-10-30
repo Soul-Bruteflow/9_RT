@@ -29,8 +29,8 @@ void	clear_window(t_rtv *rtv)
 
 void	render_present(t_rtv *rtv)
 {
-	SDL_UpdateTexture(rtv->win->screen, NULL, &rtv->win->draw_buf[0], 800 * 4);
+	SDL_UpdateTexture(rtv->win->screen, NULL, &rtv->win->draw_buf[0], WIDTH * 4);
 	SDL_RenderCopy(rtv->sdl->renderer, rtv->win->screen, NULL, NULL);
 	SDL_RenderPresent(rtv->sdl->renderer);
-	bzero(rtv->win->draw_buf, 800 * 600 * 4);
+	bzero(rtv->win->draw_buf, WIDTH * HEIGHT * 4);
 }

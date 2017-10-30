@@ -344,13 +344,13 @@
 		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/functions/ft_to_radians.c">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/functions/matrices/ft_init_identity.c">
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/functions/matrices/inits.c">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/functions/matrices/ft_mat_mul.c">
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/functions/matrices/mat_operations_1.c">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/functions/matrices/ft_mat_set.c">
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/functions/quaternions/quat_operations_1.c">
 			<Option target="RT"/>
 		</Unit>
 		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/functions/vector/vector_operations_1.c">

@@ -22,7 +22,7 @@ int		main(int ac, char **av)
 		if (!(parser_core(rtv)))
 			rtv_error(parse_error);
 		init_camera(rtv);
-		create_window(rtv, 800, 600, "RTv1, 800x600\0");
+		create_window(rtv, WIDTH, HEIGHT, "RT\0");
 		clear_window(rtv);
 		raytrace(rtv);
 		render_present(rtv);

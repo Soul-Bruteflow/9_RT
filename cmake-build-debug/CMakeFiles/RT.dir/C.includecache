@@ -35,6 +35,8 @@ bool.h
 .././inc/bool.h
 libft.h
 .././inc/libft.h
+rtv_defines.h
+.././inc/rtv_defines.h
 
 .././inc/rtv_defines.h
 
@@ -42,6 +44,8 @@ libft.h
 
 .././inc/vectors.h
 ntsid.h
+-
+math.h
 -
 
 .././libft/libft.h
@@ -84,17 +88,17 @@ vectors.h
 math.h
 /Users/bruteflow/c_projects/9_RT/src/functions/math.h
 
-/Users/bruteflow/c_projects/9_RT/src/functions/matrices/ft_init_identity.c
+/Users/bruteflow/c_projects/9_RT/src/functions/matrices/inits.c
 vectors.h
 /Users/bruteflow/c_projects/9_RT/src/functions/matrices/vectors.h
 
-/Users/bruteflow/c_projects/9_RT/src/functions/matrices/ft_mat_mul.c
+/Users/bruteflow/c_projects/9_RT/src/functions/matrices/mat_operations_1.c
 vectors.h
 /Users/bruteflow/c_projects/9_RT/src/functions/matrices/vectors.h
 
-/Users/bruteflow/c_projects/9_RT/src/functions/matrices/ft_mat_set.c
+/Users/bruteflow/c_projects/9_RT/src/functions/quaternions/quat_operations_1.c
 vectors.h
-/Users/bruteflow/c_projects/9_RT/src/functions/matrices/vectors.h
+/Users/bruteflow/c_projects/9_RT/src/functions/quaternions/vectors.h
 
 /Users/bruteflow/c_projects/9_RT/src/functions/vector/vector_operations_1.c
 vectors.h
