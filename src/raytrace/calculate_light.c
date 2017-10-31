@@ -79,12 +79,14 @@ void	calculate_light(t_rtv *rtv)
 		if (t2 <= 0.0f)
 			continue;
 		light_ray.start = rtv->calc->new_start;
-		light_ray.dir = vec3_scale(1 / t2, &dist);
-//		if (!(calculate_shadows(rtv, rtv->scene->objects, &light_ray, &t2)))
-//		{
+		light_ray.dir = vec3_scale(1.0f / t2, &dist);
+		if ((calculate_shadows(rtv, rtv->scene->objects, &light_ray, &t2)))
+			continue;
+		else
+		{
 			lamb = lambert(&light_ray,
-					&rtv->calc->intersect_normal, &rtv->calc->coef);
+			&rtv->calc->intersect_normal, &rtv->calc->coef);
 			lamb_dif(lamb, &rtv->calc->color, cur_light, rtv->calc->cur_mat);
-//		}
+		}
 	}
 }

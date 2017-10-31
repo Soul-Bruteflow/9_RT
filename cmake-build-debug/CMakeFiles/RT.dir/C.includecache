@@ -56,233 +56,233 @@ unistd.h
 stdlib.h
 -
 
-/Users/bruteflow/c_projects/9_RT/src/events/keyboard_core.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/events/keyboard_core.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/events/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/events/rtv.h
 
-/Users/bruteflow/c_projects/9_RT/src/functions/ft_atof.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/functions/ft_atof.c
 libft.h
-/Users/bruteflow/c_projects/9_RT/src/functions/libft.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/functions/libft.h
 
-/Users/bruteflow/c_projects/9_RT/src/functions/ft_draw_pixel.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/functions/ft_draw_pixel.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/functions/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/functions/rtv.h
 rtv_defines.h
-/Users/bruteflow/c_projects/9_RT/src/functions/rtv_defines.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/functions/rtv_defines.h
 
-/Users/bruteflow/c_projects/9_RT/src/functions/ft_noise.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/functions/ft_noise.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/functions/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/functions/rtv.h
 
-/Users/bruteflow/c_projects/9_RT/src/functions/ft_set_color.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/functions/ft_set_color.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/functions/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/functions/rtv.h
 
-/Users/bruteflow/c_projects/9_RT/src/functions/ft_set_vector.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/functions/ft_set_vector.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/functions/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/functions/rtv.h
 
-/Users/bruteflow/c_projects/9_RT/src/functions/ft_to_radians.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/functions/ft_to_radians.c
 vectors.h
-/Users/bruteflow/c_projects/9_RT/src/functions/vectors.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/functions/vectors.h
 math.h
-/Users/bruteflow/c_projects/9_RT/src/functions/math.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/functions/math.h
 
-/Users/bruteflow/c_projects/9_RT/src/functions/matrices/inits.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/functions/matrices/inits.c
 vectors.h
-/Users/bruteflow/c_projects/9_RT/src/functions/matrices/vectors.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/functions/matrices/vectors.h
 
-/Users/bruteflow/c_projects/9_RT/src/functions/matrices/mat_operations_1.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/functions/matrices/mat_operations_1.c
 vectors.h
-/Users/bruteflow/c_projects/9_RT/src/functions/matrices/vectors.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/functions/matrices/vectors.h
 
-/Users/bruteflow/c_projects/9_RT/src/functions/quaternions/quat_operations_1.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/functions/quaternions/quat_operations_1.c
 vectors.h
-/Users/bruteflow/c_projects/9_RT/src/functions/quaternions/vectors.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/functions/quaternions/vectors.h
 
-/Users/bruteflow/c_projects/9_RT/src/functions/vector/vector_operations_1.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/functions/vector/vector_operations_1.c
 vectors.h
-/Users/bruteflow/c_projects/9_RT/src/functions/vector/vectors.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/functions/vector/vectors.h
 
-/Users/bruteflow/c_projects/9_RT/src/functions/vector/vector_operations_2.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/functions/vector/vector_operations_2.c
 vectors.h
-/Users/bruteflow/c_projects/9_RT/src/functions/vector/vectors.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/functions/vector/vectors.h
 math.h
 -
 
-/Users/bruteflow/c_projects/9_RT/src/get_next_line.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/get_next_line.c
 get_next_line.h
-/Users/bruteflow/c_projects/9_RT/src/get_next_line.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/get_next_line.h
 
-/Users/bruteflow/c_projects/9_RT/src/main.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/main.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/rtv.h
 
-/Users/bruteflow/c_projects/9_RT/src/parser/objects/parse_cone.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/objects/parse_cone.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/parser/objects/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/objects/rtv.h
 rtv_defines.h
-/Users/bruteflow/c_projects/9_RT/src/parser/objects/rtv_defines.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/objects/rtv_defines.h
 
-/Users/bruteflow/c_projects/9_RT/src/parser/objects/parse_cylinder.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/objects/parse_cylinder.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/parser/objects/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/objects/rtv.h
 rtv_defines.h
-/Users/bruteflow/c_projects/9_RT/src/parser/objects/rtv_defines.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/objects/rtv_defines.h
 
-/Users/bruteflow/c_projects/9_RT/src/parser/objects/parse_materials.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/objects/parse_materials.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/parser/objects/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/objects/rtv.h
 rtv_defines.h
-/Users/bruteflow/c_projects/9_RT/src/parser/objects/rtv_defines.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/objects/rtv_defines.h
 
-/Users/bruteflow/c_projects/9_RT/src/parser/objects/parse_objects.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/objects/parse_objects.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/parser/objects/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/objects/rtv.h
 libft.h
-/Users/bruteflow/c_projects/9_RT/src/parser/objects/libft.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/objects/libft.h
 
-/Users/bruteflow/c_projects/9_RT/src/parser/objects/parse_plane.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/objects/parse_plane.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/parser/objects/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/objects/rtv.h
 rtv_defines.h
-/Users/bruteflow/c_projects/9_RT/src/parser/objects/rtv_defines.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/objects/rtv_defines.h
 
-/Users/bruteflow/c_projects/9_RT/src/parser/objects/parse_sphere.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/objects/parse_sphere.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/parser/objects/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/objects/rtv.h
 rtv_defines.h
-/Users/bruteflow/c_projects/9_RT/src/parser/objects/rtv_defines.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/objects/rtv_defines.h
 
-/Users/bruteflow/c_projects/9_RT/src/parser/parser_core.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/parser_core.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/parser/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/rtv.h
 
-/Users/bruteflow/c_projects/9_RT/src/parser/scene/parse_camera.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/scene/parse_camera.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/parser/scene/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/scene/rtv.h
 rtv_defines.h
-/Users/bruteflow/c_projects/9_RT/src/parser/scene/rtv_defines.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/scene/rtv_defines.h
 
-/Users/bruteflow/c_projects/9_RT/src/parser/scene/parse_lights.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/scene/parse_lights.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/parser/scene/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/scene/rtv.h
 rtv_defines.h
-/Users/bruteflow/c_projects/9_RT/src/parser/scene/rtv_defines.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/scene/rtv_defines.h
 
-/Users/bruteflow/c_projects/9_RT/src/parser/scene/parse_scene.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/scene/parse_scene.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/parser/scene/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/scene/rtv.h
 rtv_defines.h
-/Users/bruteflow/c_projects/9_RT/src/parser/scene/rtv_defines.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/scene/rtv_defines.h
 
-/Users/bruteflow/c_projects/9_RT/src/parser/support/parser_support_one.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/support/parser_support_one.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/parser/support/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/support/rtv.h
 get_next_line.h
-/Users/bruteflow/c_projects/9_RT/src/parser/support/get_next_line.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/support/get_next_line.h
 
-/Users/bruteflow/c_projects/9_RT/src/parser/support/parser_support_two.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/support/parser_support_two.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/parser/support/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/support/rtv.h
 libft.h
-/Users/bruteflow/c_projects/9_RT/src/parser/support/libft.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/parser/support/libft.h
 
-/Users/bruteflow/c_projects/9_RT/src/raytrace/calculate_light.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/raytrace/calculate_light.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/raytrace/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/raytrace/rtv.h
 
-/Users/bruteflow/c_projects/9_RT/src/raytrace/intersect.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/raytrace/intersect.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/raytrace/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/raytrace/rtv.h
 
-/Users/bruteflow/c_projects/9_RT/src/raytrace/lights/light.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/raytrace/lights/light.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/raytrace/lights/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/raytrace/lights/rtv.h
 
-/Users/bruteflow/c_projects/9_RT/src/raytrace/materials/material.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/raytrace/materials/material.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/raytrace/materials/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/raytrace/materials/rtv.h
 
-/Users/bruteflow/c_projects/9_RT/src/raytrace/objects/cone/cone_create.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/raytrace/objects/cone/cone_create.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/raytrace/objects/cone/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/raytrace/objects/cone/rtv.h
 
-/Users/bruteflow/c_projects/9_RT/src/raytrace/objects/cone/cone_ray_intersect.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/raytrace/objects/cone/cone_ray_intersect.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/raytrace/objects/cone/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/raytrace/objects/cone/rtv.h
 
-/Users/bruteflow/c_projects/9_RT/src/raytrace/objects/cylinder/cylinder_create.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/raytrace/objects/cylinder/cylinder_create.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/raytrace/objects/cylinder/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/raytrace/objects/cylinder/rtv.h
 
-/Users/bruteflow/c_projects/9_RT/src/raytrace/objects/cylinder/cylinder_ray_intersect.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/raytrace/objects/cylinder/cylinder_ray_intersect.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/raytrace/objects/cylinder/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/raytrace/objects/cylinder/rtv.h
 
-/Users/bruteflow/c_projects/9_RT/src/raytrace/objects/object.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/raytrace/objects/object.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/raytrace/objects/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/raytrace/objects/rtv.h
 
-/Users/bruteflow/c_projects/9_RT/src/raytrace/objects/plane/plane_create.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/raytrace/objects/plane/plane_create.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/raytrace/objects/plane/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/raytrace/objects/plane/rtv.h
 
-/Users/bruteflow/c_projects/9_RT/src/raytrace/objects/plane/plane_ray_intersect.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/raytrace/objects/plane/plane_ray_intersect.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/raytrace/objects/plane/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/raytrace/objects/plane/rtv.h
 
-/Users/bruteflow/c_projects/9_RT/src/raytrace/objects/sphere/sphere_create.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/raytrace/objects/sphere/sphere_create.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/raytrace/objects/sphere/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/raytrace/objects/sphere/rtv.h
 
-/Users/bruteflow/c_projects/9_RT/src/raytrace/objects/sphere/sphere_ray_intersect.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/raytrace/objects/sphere/sphere_ray_intersect.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/raytrace/objects/sphere/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/raytrace/objects/sphere/rtv.h
 
-/Users/bruteflow/c_projects/9_RT/src/raytrace/raytrace.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/raytrace/raytrace.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/raytrace/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/raytrace/rtv.h
 rtv_defines.h
-/Users/bruteflow/c_projects/9_RT/src/raytrace/rtv_defines.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/raytrace/rtv_defines.h
 
-/Users/bruteflow/c_projects/9_RT/src/raytrace/scene/camera/camera.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/raytrace/scene/camera/camera.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/raytrace/scene/camera/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/raytrace/scene/camera/rtv.h
 rtv_defines.h
-/Users/bruteflow/c_projects/9_RT/src/raytrace/scene/camera/rtv_defines.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/raytrace/scene/camera/rtv_defines.h
 
-/Users/bruteflow/c_projects/9_RT/src/raytrace/scene/scene_create.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/raytrace/scene/scene_create.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/raytrace/scene/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/raytrace/scene/rtv.h
 
-/Users/bruteflow/c_projects/9_RT/src/rtv_error.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/rtv_error.c
 libft.h
-/Users/bruteflow/c_projects/9_RT/src/libft.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/libft.h
 SDL.h
 -
 rtv_error.h
-/Users/bruteflow/c_projects/9_RT/src/rtv_error.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/rtv_error.h
 
-/Users/bruteflow/c_projects/9_RT/src/rtv_init.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/rtv_init.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/rtv.h
 rtv_defines.h
-/Users/bruteflow/c_projects/9_RT/src/rtv_defines.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/rtv_defines.h
 
-/Users/bruteflow/c_projects/9_RT/src/rtv_loop.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/rtv_loop.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/rtv.h
 
-/Users/bruteflow/c_projects/9_RT/src/rtv_quit.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/rtv_quit.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/rtv.h
 
-/Users/bruteflow/c_projects/9_RT/src/window/create_window.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/window/create_window.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/window/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/window/rtv.h
 
-/Users/bruteflow/c_projects/9_RT/src/window/update_window.c
+/nfs/2016/m/mvlad/c_projects/9_RT/src/window/update_window.c
 rtv.h
-/Users/bruteflow/c_projects/9_RT/src/window/rtv.h
+/nfs/2016/m/mvlad/c_projects/9_RT/src/window/rtv.h
 
