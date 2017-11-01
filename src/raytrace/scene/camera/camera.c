@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "rtv.h"
-#include "rtv_defines.h"
+#include "rt/defines.h"
 
 void	init_camera(t_rtv *r)
 {
@@ -27,18 +27,18 @@ void	init_camera(t_rtv *r)
 //	if ()/
 
 
-	tm_cam->up.x = 0;
-	tm_cam->up.y = 1;
-	tm_cam->up.z = 0;
+	tm_cam->world_up.x = 0;
+	tm_cam->world_up.y = 1;
+	tm_cam->world_up.z = 0;
 
-//	tm_cam->up.x = sinf(tm_cam->roll);
-//	tm_cam->up.y = -cosf(tm_cam->roll);
-//	tm_cam->up.z = 0;
-//	tm_cam->up = vec3_norm(tm_cam->up);
-	tm_cam->eye = vec3_norm(vec3_sub(&tm_cam->d, &tm_cam->o));
-	tm_cam->vp_right = vec3_norm(vec3_cross(&tm_cam->eye, &tm_cam->up));
-	tm_cam->vp_left = vec3_norm(vec3_cross(&tm_cam->up, &tm_cam->eye));
-	tm_cam->vp_up = vec3_norm(vec3_cross(&tm_cam->vp_right, &tm_cam->eye));
+//	tm_cam->world_up.x = sinf(tm_cam->roll);
+//	tm_cam->world_up.y = -cosf(tm_cam->roll);
+//	tm_cam->world_up.z = 0;
+//	tm_cam->world_up = vec3_norm(tm_cam->world_up);
+	tm_cam->dir = vec3_norm(vec3_sub(&tm_cam->dir, &tm_cam->pos));
+	tm_cam->right = vec3_norm(vec3_cross(&tm_cam->dir, &tm_cam->world_up));
+	tm_cam->left = vec3_norm(vec3_cross(&tm_cam->world_up, &tm_cam->dir));
+	tm_cam->up = vec3_norm(vec3_cross(&tm_cam->right, &tm_cam->dir));
 
 	fov_radians = PI * (tm_cam->fov / 2) / 180;
 	height_width_ratio = (float)HEIGHT / (float)WIDTH;
@@ -48,38 +48,38 @@ void	init_camera(t_rtv *r)
 	cameraheight = tm_cam->half_height * 2;
 	tm_cam->pixel_width = camerawidth / ((float)WIDTH - 1);
 	tm_cam->pixel_height = cameraheight / ((float)HEIGHT - 1);
-	r->scene->ray.start = tm_cam->o;
-//	tm_cam->up = vec3_cross(&tm_cam->d, &tm_cam->vp_right);
+	r->scene->ray.start = tm_cam->pos;
+//	tm_cam->world_up = vec3_cross(&tm_cam->dir, &tm_cam->right);
 }
 
 void	cam_update(t_cam *c, t_vec3d *ray_start)
 {
-//	c->up.x = 0;
-//	c->up.y = 1;
-//	c->up.z = 0;
-//	c->eye = vec3_norm(vec3_sub(&c->d, &c->o));
-	c->vp_right = vec3_norm(vec3_cross(&c->eye, &c->up));
-	c->vp_left = vec3_norm(vec3_cross(&c->up, &c->eye));
-	c->vp_up = vec3_norm(vec3_cross(&c->vp_right, &c->eye));
-	*ray_start = c->o;
+//	c->world_up.x = 0;
+//	c->world_up.y = 1;
+//	c->world_up.z = 0;
+//	c->dir = vec3_norm(vec3_sub(&c->dir, &c->pos));
+	c->right = vec3_norm(vec3_cross(&c->dir, &c->world_up));
+	c->left = vec3_norm(vec3_cross(&c->world_up, &c->dir));
+	c->up = vec3_norm(vec3_cross(&c->right, &c->dir));
+	*ray_start = c->pos;
 }
 
 void	cam_rot_x(t_cam *c, float angle)
 {
 	t_vec3d h_axis;
 
-	h_axis = vec3_norm(vec3_cross(&c->up, &c->eye));
-	h_axis = vec3_norm(vec3_rotate(angle, &h_axis));
-	c->vp_up = vec3_norm(vec3_cross(&c->eye, &h_axis));
+	h_axis = vec3_norm(vec3_cross(&c->world_up, &c->dir));
+	c->dir = vec3_norm(vec3_rotate(angle, &h_axis));
+	c->up = vec3_norm(vec3_cross(&c->dir, &h_axis));
 }
 
 void	cam_rot_y(t_cam *c, float angle)
 {
 	t_vec3d h_axis;
 
-	h_axis = vec3_norm(vec3_cross(&c->up, &c->eye));
-	c->eye = vec3_norm(vec3_rotate(angle, &c->up));
-	c->vp_up = vec3_norm(vec3_cross(&c->eye, &h_axis));
+	h_axis = vec3_norm(vec3_cross(&c->world_up, &c->dir));
+	c->dir = vec3_norm(vec3_rotate(angle, &c->world_up));
+	c->up = vec3_norm(vec3_cross(&c->dir, &h_axis));
 }
 
 void	cam_move(t_vec3d *cam_pos, t_vec3d *dir, float amt)

@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "rtv.h"
-#include "rtv_defines.h"
+#include "rt/defines.h"
 
 /*
 ** type *pointer = malloc(num_elems * sizeof(*pointer));

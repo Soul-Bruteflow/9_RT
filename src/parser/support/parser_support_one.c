@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "rtv.h"
-#include "get_next_line.h"
+#include "utility/get_next_line.h"
 
 /*
 ** Closes the file, and checks for the errors.

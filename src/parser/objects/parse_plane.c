@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "rtv.h"
-#include "rtv_defines.h"
+#include "rt/defines.h"
 
 void	alloc_new_plane(t_rtv *r, int i)
 {

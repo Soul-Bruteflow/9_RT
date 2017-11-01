@@ -13,26 +13,6 @@
 #ifndef _VECTORS_H
 # define _VECTORS_H
 
-#include <ntsid.h>
-#include <math.h>
-
-/*
-** Quaternion definition
-*/
-typedef	struct	s_quat
-{
-	float		x;
-	float		y;
-	float		z;
-	float		w;
-}				t_quat;
-/*
-**
-*/
-typedef struct	s_mat4
-{
-	float 		m[4][4];
-}				t_mat4;
 /*
 ** 3d Vector definition
 */
@@ -84,21 +64,9 @@ float			vec3_len(t_vec3d v);
 ** Calculate normal.
 */
 t_vec3d			vec3_norm(t_vec3d v);
-
-t_vec3d		vec3_rotate(float angle, t_vec3d *axis);
-float		ft_to_degree(float radians);
-float		ft_to_radians(float degrees);
-
-t_mat4		init_identiny(void);
-t_mat4		init_translation(float x, float y, float z);
-t_mat4		mat_mult(t_mat4 *m1, t_mat4 *m2);
-
-float		quat_len(t_quat q);
-t_quat		quat_norm(t_quat q);
-t_quat		quat_conjugate(t_quat q);
-t_quat		quat_mul(t_quat q1, t_quat q2);
-t_quat		quat_mul_vec3d(t_quat q, t_vec3d v);
-
-t_vec3d		mat_mult_vec3d(t_mat4 m, t_vec3d v);
+/*
+** Set vector
+*/
+t_vec3d			set_vector(float x, float y, float z);
 
 #endif

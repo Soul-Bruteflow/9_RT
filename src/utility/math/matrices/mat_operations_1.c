@@ -1,4 +1,4 @@
-#include "vectors.h"
+#include "math/math.h"
 
 t_mat4	mat_mult(t_mat4 *m1, t_mat4 *m2)
 {

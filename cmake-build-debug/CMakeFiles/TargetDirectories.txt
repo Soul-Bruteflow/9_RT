@@ -1,4 +1,4 @@
-/nfs/2016/m/mvlad/c_projects/9_RT/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/nfs/2016/m/mvlad/c_projects/9_RT/cmake-build-debug/CMakeFiles/edit_cache.dir
-/nfs/2016/m/mvlad/c_projects/9_RT/cmake-build-debug/CMakeFiles/ft.dir
-/nfs/2016/m/mvlad/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir
+/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/ft.dir
+/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir

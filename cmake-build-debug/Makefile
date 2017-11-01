@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /nfs/2016/m/mvlad/c_projects/9_RT
+CMAKE_SOURCE_DIR = /Users/bruteflow/c_projects/9_RT
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /nfs/2016/m/mvlad/c_projects/9_RT/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/bruteflow/c_projects/9_RT/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/2016/m/mvlad/c_projects/9_RT/cmake-build-debug/CMakeFiles /nfs/2016/m/mvlad/c_projects/9_RT/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles /Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/2016/m/mvlad/c_projects/9_RT/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -1810,6 +1810,33 @@ libft/ft_tolower.c.s:
 	$(MAKE) -f CMakeFiles/ft.dir/build.make CMakeFiles/ft.dir/libft/ft_tolower.c.s
 .PHONY : libft/ft_tolower.c.s
 
+src/errors.o: src/errors.c.o
+
+.PHONY : src/errors.o
+
+# target to build an object file
+src/errors.c.o:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/errors.c.o
+.PHONY : src/errors.c.o
+
+src/errors.i: src/errors.c.i
+
+.PHONY : src/errors.i
+
+# target to preprocess a source file
+src/errors.c.i:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/errors.c.i
+.PHONY : src/errors.c.i
+
+src/errors.s: src/errors.c.s
+
+.PHONY : src/errors.s
+
+# target to generate assembly for a file
+src/errors.c.s:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/errors.c.s
+.PHONY : src/errors.c.s
+
 src/events/keyboard_core.o: src/events/keyboard_core.c.o
 
 .PHONY : src/events/keyboard_core.o
@@ -1836,303 +1863,6 @@ src/events/keyboard_core.s: src/events/keyboard_core.c.s
 src/events/keyboard_core.c.s:
 	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/events/keyboard_core.c.s
 .PHONY : src/events/keyboard_core.c.s
-
-src/functions/ft_atof.o: src/functions/ft_atof.c.o
-
-.PHONY : src/functions/ft_atof.o
-
-# target to build an object file
-src/functions/ft_atof.c.o:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/ft_atof.c.o
-.PHONY : src/functions/ft_atof.c.o
-
-src/functions/ft_atof.i: src/functions/ft_atof.c.i
-
-.PHONY : src/functions/ft_atof.i
-
-# target to preprocess a source file
-src/functions/ft_atof.c.i:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/ft_atof.c.i
-.PHONY : src/functions/ft_atof.c.i
-
-src/functions/ft_atof.s: src/functions/ft_atof.c.s
-
-.PHONY : src/functions/ft_atof.s
-
-# target to generate assembly for a file
-src/functions/ft_atof.c.s:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/ft_atof.c.s
-.PHONY : src/functions/ft_atof.c.s
-
-src/functions/ft_draw_pixel.o: src/functions/ft_draw_pixel.c.o
-
-.PHONY : src/functions/ft_draw_pixel.o
-
-# target to build an object file
-src/functions/ft_draw_pixel.c.o:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/ft_draw_pixel.c.o
-.PHONY : src/functions/ft_draw_pixel.c.o
-
-src/functions/ft_draw_pixel.i: src/functions/ft_draw_pixel.c.i
-
-.PHONY : src/functions/ft_draw_pixel.i
-
-# target to preprocess a source file
-src/functions/ft_draw_pixel.c.i:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/ft_draw_pixel.c.i
-.PHONY : src/functions/ft_draw_pixel.c.i
-
-src/functions/ft_draw_pixel.s: src/functions/ft_draw_pixel.c.s
-
-.PHONY : src/functions/ft_draw_pixel.s
-
-# target to generate assembly for a file
-src/functions/ft_draw_pixel.c.s:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/ft_draw_pixel.c.s
-.PHONY : src/functions/ft_draw_pixel.c.s
-
-src/functions/ft_noise.o: src/functions/ft_noise.c.o
-
-.PHONY : src/functions/ft_noise.o
-
-# target to build an object file
-src/functions/ft_noise.c.o:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/ft_noise.c.o
-.PHONY : src/functions/ft_noise.c.o
-
-src/functions/ft_noise.i: src/functions/ft_noise.c.i
-
-.PHONY : src/functions/ft_noise.i
-
-# target to preprocess a source file
-src/functions/ft_noise.c.i:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/ft_noise.c.i
-.PHONY : src/functions/ft_noise.c.i
-
-src/functions/ft_noise.s: src/functions/ft_noise.c.s
-
-.PHONY : src/functions/ft_noise.s
-
-# target to generate assembly for a file
-src/functions/ft_noise.c.s:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/ft_noise.c.s
-.PHONY : src/functions/ft_noise.c.s
-
-src/functions/ft_set_color.o: src/functions/ft_set_color.c.o
-
-.PHONY : src/functions/ft_set_color.o
-
-# target to build an object file
-src/functions/ft_set_color.c.o:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/ft_set_color.c.o
-.PHONY : src/functions/ft_set_color.c.o
-
-src/functions/ft_set_color.i: src/functions/ft_set_color.c.i
-
-.PHONY : src/functions/ft_set_color.i
-
-# target to preprocess a source file
-src/functions/ft_set_color.c.i:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/ft_set_color.c.i
-.PHONY : src/functions/ft_set_color.c.i
-
-src/functions/ft_set_color.s: src/functions/ft_set_color.c.s
-
-.PHONY : src/functions/ft_set_color.s
-
-# target to generate assembly for a file
-src/functions/ft_set_color.c.s:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/ft_set_color.c.s
-.PHONY : src/functions/ft_set_color.c.s
-
-src/functions/ft_set_vector.o: src/functions/ft_set_vector.c.o
-
-.PHONY : src/functions/ft_set_vector.o
-
-# target to build an object file
-src/functions/ft_set_vector.c.o:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/ft_set_vector.c.o
-.PHONY : src/functions/ft_set_vector.c.o
-
-src/functions/ft_set_vector.i: src/functions/ft_set_vector.c.i
-
-.PHONY : src/functions/ft_set_vector.i
-
-# target to preprocess a source file
-src/functions/ft_set_vector.c.i:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/ft_set_vector.c.i
-.PHONY : src/functions/ft_set_vector.c.i
-
-src/functions/ft_set_vector.s: src/functions/ft_set_vector.c.s
-
-.PHONY : src/functions/ft_set_vector.s
-
-# target to generate assembly for a file
-src/functions/ft_set_vector.c.s:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/ft_set_vector.c.s
-.PHONY : src/functions/ft_set_vector.c.s
-
-src/functions/ft_to_radians.o: src/functions/ft_to_radians.c.o
-
-.PHONY : src/functions/ft_to_radians.o
-
-# target to build an object file
-src/functions/ft_to_radians.c.o:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/ft_to_radians.c.o
-.PHONY : src/functions/ft_to_radians.c.o
-
-src/functions/ft_to_radians.i: src/functions/ft_to_radians.c.i
-
-.PHONY : src/functions/ft_to_radians.i
-
-# target to preprocess a source file
-src/functions/ft_to_radians.c.i:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/ft_to_radians.c.i
-.PHONY : src/functions/ft_to_radians.c.i
-
-src/functions/ft_to_radians.s: src/functions/ft_to_radians.c.s
-
-.PHONY : src/functions/ft_to_radians.s
-
-# target to generate assembly for a file
-src/functions/ft_to_radians.c.s:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/ft_to_radians.c.s
-.PHONY : src/functions/ft_to_radians.c.s
-
-src/functions/matrices/inits.o: src/functions/matrices/inits.c.o
-
-.PHONY : src/functions/matrices/inits.o
-
-# target to build an object file
-src/functions/matrices/inits.c.o:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/matrices/inits.c.o
-.PHONY : src/functions/matrices/inits.c.o
-
-src/functions/matrices/inits.i: src/functions/matrices/inits.c.i
-
-.PHONY : src/functions/matrices/inits.i
-
-# target to preprocess a source file
-src/functions/matrices/inits.c.i:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/matrices/inits.c.i
-.PHONY : src/functions/matrices/inits.c.i
-
-src/functions/matrices/inits.s: src/functions/matrices/inits.c.s
-
-.PHONY : src/functions/matrices/inits.s
-
-# target to generate assembly for a file
-src/functions/matrices/inits.c.s:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/matrices/inits.c.s
-.PHONY : src/functions/matrices/inits.c.s
-
-src/functions/matrices/mat_operations_1.o: src/functions/matrices/mat_operations_1.c.o
-
-.PHONY : src/functions/matrices/mat_operations_1.o
-
-# target to build an object file
-src/functions/matrices/mat_operations_1.c.o:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/matrices/mat_operations_1.c.o
-.PHONY : src/functions/matrices/mat_operations_1.c.o
-
-src/functions/matrices/mat_operations_1.i: src/functions/matrices/mat_operations_1.c.i
-
-.PHONY : src/functions/matrices/mat_operations_1.i
-
-# target to preprocess a source file
-src/functions/matrices/mat_operations_1.c.i:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/matrices/mat_operations_1.c.i
-.PHONY : src/functions/matrices/mat_operations_1.c.i
-
-src/functions/matrices/mat_operations_1.s: src/functions/matrices/mat_operations_1.c.s
-
-.PHONY : src/functions/matrices/mat_operations_1.s
-
-# target to generate assembly for a file
-src/functions/matrices/mat_operations_1.c.s:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/matrices/mat_operations_1.c.s
-.PHONY : src/functions/matrices/mat_operations_1.c.s
-
-src/functions/quaternions/quat_operations_1.o: src/functions/quaternions/quat_operations_1.c.o
-
-.PHONY : src/functions/quaternions/quat_operations_1.o
-
-# target to build an object file
-src/functions/quaternions/quat_operations_1.c.o:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/quaternions/quat_operations_1.c.o
-.PHONY : src/functions/quaternions/quat_operations_1.c.o
-
-src/functions/quaternions/quat_operations_1.i: src/functions/quaternions/quat_operations_1.c.i
-
-.PHONY : src/functions/quaternions/quat_operations_1.i
-
-# target to preprocess a source file
-src/functions/quaternions/quat_operations_1.c.i:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/quaternions/quat_operations_1.c.i
-.PHONY : src/functions/quaternions/quat_operations_1.c.i
-
-src/functions/quaternions/quat_operations_1.s: src/functions/quaternions/quat_operations_1.c.s
-
-.PHONY : src/functions/quaternions/quat_operations_1.s
-
-# target to generate assembly for a file
-src/functions/quaternions/quat_operations_1.c.s:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/quaternions/quat_operations_1.c.s
-.PHONY : src/functions/quaternions/quat_operations_1.c.s
-
-src/functions/vector/vector_operations_1.o: src/functions/vector/vector_operations_1.c.o
-
-.PHONY : src/functions/vector/vector_operations_1.o
-
-# target to build an object file
-src/functions/vector/vector_operations_1.c.o:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/vector/vector_operations_1.c.o
-.PHONY : src/functions/vector/vector_operations_1.c.o
-
-src/functions/vector/vector_operations_1.i: src/functions/vector/vector_operations_1.c.i
-
-.PHONY : src/functions/vector/vector_operations_1.i
-
-# target to preprocess a source file
-src/functions/vector/vector_operations_1.c.i:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/vector/vector_operations_1.c.i
-.PHONY : src/functions/vector/vector_operations_1.c.i
-
-src/functions/vector/vector_operations_1.s: src/functions/vector/vector_operations_1.c.s
-
-.PHONY : src/functions/vector/vector_operations_1.s
-
-# target to generate assembly for a file
-src/functions/vector/vector_operations_1.c.s:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/vector/vector_operations_1.c.s
-.PHONY : src/functions/vector/vector_operations_1.c.s
-
-src/functions/vector/vector_operations_2.o: src/functions/vector/vector_operations_2.c.o
-
-.PHONY : src/functions/vector/vector_operations_2.o
-
-# target to build an object file
-src/functions/vector/vector_operations_2.c.o:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/vector/vector_operations_2.c.o
-.PHONY : src/functions/vector/vector_operations_2.c.o
-
-src/functions/vector/vector_operations_2.i: src/functions/vector/vector_operations_2.c.i
-
-.PHONY : src/functions/vector/vector_operations_2.i
-
-# target to preprocess a source file
-src/functions/vector/vector_operations_2.c.i:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/vector/vector_operations_2.c.i
-.PHONY : src/functions/vector/vector_operations_2.c.i
-
-src/functions/vector/vector_operations_2.s: src/functions/vector/vector_operations_2.c.s
-
-.PHONY : src/functions/vector/vector_operations_2.s
-
-# target to generate assembly for a file
-src/functions/vector/vector_operations_2.c.s:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/functions/vector/vector_operations_2.c.s
-.PHONY : src/functions/vector/vector_operations_2.c.s
 
 src/get_next_line.o: src/get_next_line.c.o
 
@@ -2944,33 +2674,6 @@ src/raytrace/scene/scene_create.c.s:
 	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/raytrace/scene/scene_create.c.s
 .PHONY : src/raytrace/scene/scene_create.c.s
 
-src/rtv_error.o: src/rtv_error.c.o
-
-.PHONY : src/rtv_error.o
-
-# target to build an object file
-src/rtv_error.c.o:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/rtv_error.c.o
-.PHONY : src/rtv_error.c.o
-
-src/rtv_error.i: src/rtv_error.c.i
-
-.PHONY : src/rtv_error.i
-
-# target to preprocess a source file
-src/rtv_error.c.i:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/rtv_error.c.i
-.PHONY : src/rtv_error.c.i
-
-src/rtv_error.s: src/rtv_error.c.s
-
-.PHONY : src/rtv_error.s
-
-# target to generate assembly for a file
-src/rtv_error.c.s:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/rtv_error.c.s
-.PHONY : src/rtv_error.c.s
-
 src/rtv_init.o: src/rtv_init.c.o
 
 .PHONY : src/rtv_init.o
@@ -3051,6 +2754,357 @@ src/rtv_quit.s: src/rtv_quit.c.s
 src/rtv_quit.c.s:
 	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/rtv_quit.c.s
 .PHONY : src/rtv_quit.c.s
+
+src/transform/transform.o: src/transform/transform.c.o
+
+.PHONY : src/transform/transform.o
+
+# target to build an object file
+src/transform/transform.c.o:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/transform/transform.c.o
+.PHONY : src/transform/transform.c.o
+
+src/transform/transform.i: src/transform/transform.c.i
+
+.PHONY : src/transform/transform.i
+
+# target to preprocess a source file
+src/transform/transform.c.i:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/transform/transform.c.i
+.PHONY : src/transform/transform.c.i
+
+src/transform/transform.s: src/transform/transform.c.s
+
+.PHONY : src/transform/transform.s
+
+# target to generate assembly for a file
+src/transform/transform.c.s:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/transform/transform.c.s
+.PHONY : src/transform/transform.c.s
+
+src/utility/ft_atof.o: src/utility/ft_atof.c.o
+
+.PHONY : src/utility/ft_atof.o
+
+# target to build an object file
+src/utility/ft_atof.c.o:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/ft_atof.c.o
+.PHONY : src/utility/ft_atof.c.o
+
+src/utility/ft_atof.i: src/utility/ft_atof.c.i
+
+.PHONY : src/utility/ft_atof.i
+
+# target to preprocess a source file
+src/utility/ft_atof.c.i:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/ft_atof.c.i
+.PHONY : src/utility/ft_atof.c.i
+
+src/utility/ft_atof.s: src/utility/ft_atof.c.s
+
+.PHONY : src/utility/ft_atof.s
+
+# target to generate assembly for a file
+src/utility/ft_atof.c.s:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/ft_atof.c.s
+.PHONY : src/utility/ft_atof.c.s
+
+src/utility/ft_draw_pixel.o: src/utility/ft_draw_pixel.c.o
+
+.PHONY : src/utility/ft_draw_pixel.o
+
+# target to build an object file
+src/utility/ft_draw_pixel.c.o:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/ft_draw_pixel.c.o
+.PHONY : src/utility/ft_draw_pixel.c.o
+
+src/utility/ft_draw_pixel.i: src/utility/ft_draw_pixel.c.i
+
+.PHONY : src/utility/ft_draw_pixel.i
+
+# target to preprocess a source file
+src/utility/ft_draw_pixel.c.i:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/ft_draw_pixel.c.i
+.PHONY : src/utility/ft_draw_pixel.c.i
+
+src/utility/ft_draw_pixel.s: src/utility/ft_draw_pixel.c.s
+
+.PHONY : src/utility/ft_draw_pixel.s
+
+# target to generate assembly for a file
+src/utility/ft_draw_pixel.c.s:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/ft_draw_pixel.c.s
+.PHONY : src/utility/ft_draw_pixel.c.s
+
+src/utility/ft_noise.o: src/utility/ft_noise.c.o
+
+.PHONY : src/utility/ft_noise.o
+
+# target to build an object file
+src/utility/ft_noise.c.o:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/ft_noise.c.o
+.PHONY : src/utility/ft_noise.c.o
+
+src/utility/ft_noise.i: src/utility/ft_noise.c.i
+
+.PHONY : src/utility/ft_noise.i
+
+# target to preprocess a source file
+src/utility/ft_noise.c.i:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/ft_noise.c.i
+.PHONY : src/utility/ft_noise.c.i
+
+src/utility/ft_noise.s: src/utility/ft_noise.c.s
+
+.PHONY : src/utility/ft_noise.s
+
+# target to generate assembly for a file
+src/utility/ft_noise.c.s:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/ft_noise.c.s
+.PHONY : src/utility/ft_noise.c.s
+
+src/utility/ft_set_color.o: src/utility/ft_set_color.c.o
+
+.PHONY : src/utility/ft_set_color.o
+
+# target to build an object file
+src/utility/ft_set_color.c.o:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/ft_set_color.c.o
+.PHONY : src/utility/ft_set_color.c.o
+
+src/utility/ft_set_color.i: src/utility/ft_set_color.c.i
+
+.PHONY : src/utility/ft_set_color.i
+
+# target to preprocess a source file
+src/utility/ft_set_color.c.i:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/ft_set_color.c.i
+.PHONY : src/utility/ft_set_color.c.i
+
+src/utility/ft_set_color.s: src/utility/ft_set_color.c.s
+
+.PHONY : src/utility/ft_set_color.s
+
+# target to generate assembly for a file
+src/utility/ft_set_color.c.s:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/ft_set_color.c.s
+.PHONY : src/utility/ft_set_color.c.s
+
+src/utility/math/ft_to_radians.o: src/utility/math/ft_to_radians.c.o
+
+.PHONY : src/utility/math/ft_to_radians.o
+
+# target to build an object file
+src/utility/math/ft_to_radians.c.o:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/math/ft_to_radians.c.o
+.PHONY : src/utility/math/ft_to_radians.c.o
+
+src/utility/math/ft_to_radians.i: src/utility/math/ft_to_radians.c.i
+
+.PHONY : src/utility/math/ft_to_radians.i
+
+# target to preprocess a source file
+src/utility/math/ft_to_radians.c.i:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/math/ft_to_radians.c.i
+.PHONY : src/utility/math/ft_to_radians.c.i
+
+src/utility/math/ft_to_radians.s: src/utility/math/ft_to_radians.c.s
+
+.PHONY : src/utility/math/ft_to_radians.s
+
+# target to generate assembly for a file
+src/utility/math/ft_to_radians.c.s:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/math/ft_to_radians.c.s
+.PHONY : src/utility/math/ft_to_radians.c.s
+
+src/utility/math/matrices/inits_1.o: src/utility/math/matrices/inits_1.c.o
+
+.PHONY : src/utility/math/matrices/inits_1.o
+
+# target to build an object file
+src/utility/math/matrices/inits_1.c.o:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/math/matrices/inits_1.c.o
+.PHONY : src/utility/math/matrices/inits_1.c.o
+
+src/utility/math/matrices/inits_1.i: src/utility/math/matrices/inits_1.c.i
+
+.PHONY : src/utility/math/matrices/inits_1.i
+
+# target to preprocess a source file
+src/utility/math/matrices/inits_1.c.i:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/math/matrices/inits_1.c.i
+.PHONY : src/utility/math/matrices/inits_1.c.i
+
+src/utility/math/matrices/inits_1.s: src/utility/math/matrices/inits_1.c.s
+
+.PHONY : src/utility/math/matrices/inits_1.s
+
+# target to generate assembly for a file
+src/utility/math/matrices/inits_1.c.s:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/math/matrices/inits_1.c.s
+.PHONY : src/utility/math/matrices/inits_1.c.s
+
+src/utility/math/matrices/inits_2.o: src/utility/math/matrices/inits_2.c.o
+
+.PHONY : src/utility/math/matrices/inits_2.o
+
+# target to build an object file
+src/utility/math/matrices/inits_2.c.o:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/math/matrices/inits_2.c.o
+.PHONY : src/utility/math/matrices/inits_2.c.o
+
+src/utility/math/matrices/inits_2.i: src/utility/math/matrices/inits_2.c.i
+
+.PHONY : src/utility/math/matrices/inits_2.i
+
+# target to preprocess a source file
+src/utility/math/matrices/inits_2.c.i:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/math/matrices/inits_2.c.i
+.PHONY : src/utility/math/matrices/inits_2.c.i
+
+src/utility/math/matrices/inits_2.s: src/utility/math/matrices/inits_2.c.s
+
+.PHONY : src/utility/math/matrices/inits_2.s
+
+# target to generate assembly for a file
+src/utility/math/matrices/inits_2.c.s:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/math/matrices/inits_2.c.s
+.PHONY : src/utility/math/matrices/inits_2.c.s
+
+src/utility/math/matrices/mat_operations_1.o: src/utility/math/matrices/mat_operations_1.c.o
+
+.PHONY : src/utility/math/matrices/mat_operations_1.o
+
+# target to build an object file
+src/utility/math/matrices/mat_operations_1.c.o:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/math/matrices/mat_operations_1.c.o
+.PHONY : src/utility/math/matrices/mat_operations_1.c.o
+
+src/utility/math/matrices/mat_operations_1.i: src/utility/math/matrices/mat_operations_1.c.i
+
+.PHONY : src/utility/math/matrices/mat_operations_1.i
+
+# target to preprocess a source file
+src/utility/math/matrices/mat_operations_1.c.i:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/math/matrices/mat_operations_1.c.i
+.PHONY : src/utility/math/matrices/mat_operations_1.c.i
+
+src/utility/math/matrices/mat_operations_1.s: src/utility/math/matrices/mat_operations_1.c.s
+
+.PHONY : src/utility/math/matrices/mat_operations_1.s
+
+# target to generate assembly for a file
+src/utility/math/matrices/mat_operations_1.c.s:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/math/matrices/mat_operations_1.c.s
+.PHONY : src/utility/math/matrices/mat_operations_1.c.s
+
+src/utility/math/quaternions/quat_operations_1.o: src/utility/math/quaternions/quat_operations_1.c.o
+
+.PHONY : src/utility/math/quaternions/quat_operations_1.o
+
+# target to build an object file
+src/utility/math/quaternions/quat_operations_1.c.o:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_1.c.o
+.PHONY : src/utility/math/quaternions/quat_operations_1.c.o
+
+src/utility/math/quaternions/quat_operations_1.i: src/utility/math/quaternions/quat_operations_1.c.i
+
+.PHONY : src/utility/math/quaternions/quat_operations_1.i
+
+# target to preprocess a source file
+src/utility/math/quaternions/quat_operations_1.c.i:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_1.c.i
+.PHONY : src/utility/math/quaternions/quat_operations_1.c.i
+
+src/utility/math/quaternions/quat_operations_1.s: src/utility/math/quaternions/quat_operations_1.c.s
+
+.PHONY : src/utility/math/quaternions/quat_operations_1.s
+
+# target to generate assembly for a file
+src/utility/math/quaternions/quat_operations_1.c.s:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_1.c.s
+.PHONY : src/utility/math/quaternions/quat_operations_1.c.s
+
+src/utility/math/vector/set_vector.o: src/utility/math/vector/set_vector.c.o
+
+.PHONY : src/utility/math/vector/set_vector.o
+
+# target to build an object file
+src/utility/math/vector/set_vector.c.o:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/math/vector/set_vector.c.o
+.PHONY : src/utility/math/vector/set_vector.c.o
+
+src/utility/math/vector/set_vector.i: src/utility/math/vector/set_vector.c.i
+
+.PHONY : src/utility/math/vector/set_vector.i
+
+# target to preprocess a source file
+src/utility/math/vector/set_vector.c.i:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/math/vector/set_vector.c.i
+.PHONY : src/utility/math/vector/set_vector.c.i
+
+src/utility/math/vector/set_vector.s: src/utility/math/vector/set_vector.c.s
+
+.PHONY : src/utility/math/vector/set_vector.s
+
+# target to generate assembly for a file
+src/utility/math/vector/set_vector.c.s:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/math/vector/set_vector.c.s
+.PHONY : src/utility/math/vector/set_vector.c.s
+
+src/utility/math/vector/vector_operations_1.o: src/utility/math/vector/vector_operations_1.c.o
+
+.PHONY : src/utility/math/vector/vector_operations_1.o
+
+# target to build an object file
+src/utility/math/vector/vector_operations_1.c.o:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_1.c.o
+.PHONY : src/utility/math/vector/vector_operations_1.c.o
+
+src/utility/math/vector/vector_operations_1.i: src/utility/math/vector/vector_operations_1.c.i
+
+.PHONY : src/utility/math/vector/vector_operations_1.i
+
+# target to preprocess a source file
+src/utility/math/vector/vector_operations_1.c.i:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_1.c.i
+.PHONY : src/utility/math/vector/vector_operations_1.c.i
+
+src/utility/math/vector/vector_operations_1.s: src/utility/math/vector/vector_operations_1.c.s
+
+.PHONY : src/utility/math/vector/vector_operations_1.s
+
+# target to generate assembly for a file
+src/utility/math/vector/vector_operations_1.c.s:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_1.c.s
+.PHONY : src/utility/math/vector/vector_operations_1.c.s
+
+src/utility/math/vector/vector_operations_2.o: src/utility/math/vector/vector_operations_2.c.o
+
+.PHONY : src/utility/math/vector/vector_operations_2.o
+
+# target to build an object file
+src/utility/math/vector/vector_operations_2.c.o:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_2.c.o
+.PHONY : src/utility/math/vector/vector_operations_2.c.o
+
+src/utility/math/vector/vector_operations_2.i: src/utility/math/vector/vector_operations_2.c.i
+
+.PHONY : src/utility/math/vector/vector_operations_2.i
+
+# target to preprocess a source file
+src/utility/math/vector/vector_operations_2.c.i:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_2.c.i
+.PHONY : src/utility/math/vector/vector_operations_2.c.i
+
+src/utility/math/vector/vector_operations_2.s: src/utility/math/vector/vector_operations_2.c.s
+
+.PHONY : src/utility/math/vector/vector_operations_2.s
+
+# target to generate assembly for a file
+src/utility/math/vector/vector_operations_2.c.s:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_2.c.s
+.PHONY : src/utility/math/vector/vector_operations_2.c.s
 
 src/window/create_window.o: src/window/create_window.c.o
 
@@ -3302,42 +3356,12 @@ help:
 	@echo "... libft/ft_tolower.o"
 	@echo "... libft/ft_tolower.i"
 	@echo "... libft/ft_tolower.s"
+	@echo "... src/errors.o"
+	@echo "... src/errors.i"
+	@echo "... src/errors.s"
 	@echo "... src/events/keyboard_core.o"
 	@echo "... src/events/keyboard_core.i"
 	@echo "... src/events/keyboard_core.s"
-	@echo "... src/functions/ft_atof.o"
-	@echo "... src/functions/ft_atof.i"
-	@echo "... src/functions/ft_atof.s"
-	@echo "... src/functions/ft_draw_pixel.o"
-	@echo "... src/functions/ft_draw_pixel.i"
-	@echo "... src/functions/ft_draw_pixel.s"
-	@echo "... src/functions/ft_noise.o"
-	@echo "... src/functions/ft_noise.i"
-	@echo "... src/functions/ft_noise.s"
-	@echo "... src/functions/ft_set_color.o"
-	@echo "... src/functions/ft_set_color.i"
-	@echo "... src/functions/ft_set_color.s"
-	@echo "... src/functions/ft_set_vector.o"
-	@echo "... src/functions/ft_set_vector.i"
-	@echo "... src/functions/ft_set_vector.s"
-	@echo "... src/functions/ft_to_radians.o"
-	@echo "... src/functions/ft_to_radians.i"
-	@echo "... src/functions/ft_to_radians.s"
-	@echo "... src/functions/matrices/inits.o"
-	@echo "... src/functions/matrices/inits.i"
-	@echo "... src/functions/matrices/inits.s"
-	@echo "... src/functions/matrices/mat_operations_1.o"
-	@echo "... src/functions/matrices/mat_operations_1.i"
-	@echo "... src/functions/matrices/mat_operations_1.s"
-	@echo "... src/functions/quaternions/quat_operations_1.o"
-	@echo "... src/functions/quaternions/quat_operations_1.i"
-	@echo "... src/functions/quaternions/quat_operations_1.s"
-	@echo "... src/functions/vector/vector_operations_1.o"
-	@echo "... src/functions/vector/vector_operations_1.i"
-	@echo "... src/functions/vector/vector_operations_1.s"
-	@echo "... src/functions/vector/vector_operations_2.o"
-	@echo "... src/functions/vector/vector_operations_2.i"
-	@echo "... src/functions/vector/vector_operations_2.s"
 	@echo "... src/get_next_line.o"
 	@echo "... src/get_next_line.i"
 	@echo "... src/get_next_line.s"
@@ -3428,9 +3452,6 @@ help:
 	@echo "... src/raytrace/scene/scene_create.o"
 	@echo "... src/raytrace/scene/scene_create.i"
 	@echo "... src/raytrace/scene/scene_create.s"
-	@echo "... src/rtv_error.o"
-	@echo "... src/rtv_error.i"
-	@echo "... src/rtv_error.s"
 	@echo "... src/rtv_init.o"
 	@echo "... src/rtv_init.i"
 	@echo "... src/rtv_init.s"
@@ -3440,6 +3461,45 @@ help:
 	@echo "... src/rtv_quit.o"
 	@echo "... src/rtv_quit.i"
 	@echo "... src/rtv_quit.s"
+	@echo "... src/transform/transform.o"
+	@echo "... src/transform/transform.i"
+	@echo "... src/transform/transform.s"
+	@echo "... src/utility/ft_atof.o"
+	@echo "... src/utility/ft_atof.i"
+	@echo "... src/utility/ft_atof.s"
+	@echo "... src/utility/ft_draw_pixel.o"
+	@echo "... src/utility/ft_draw_pixel.i"
+	@echo "... src/utility/ft_draw_pixel.s"
+	@echo "... src/utility/ft_noise.o"
+	@echo "... src/utility/ft_noise.i"
+	@echo "... src/utility/ft_noise.s"
+	@echo "... src/utility/ft_set_color.o"
+	@echo "... src/utility/ft_set_color.i"
+	@echo "... src/utility/ft_set_color.s"
+	@echo "... src/utility/math/ft_to_radians.o"
+	@echo "... src/utility/math/ft_to_radians.i"
+	@echo "... src/utility/math/ft_to_radians.s"
+	@echo "... src/utility/math/matrices/inits_1.o"
+	@echo "... src/utility/math/matrices/inits_1.i"
+	@echo "... src/utility/math/matrices/inits_1.s"
+	@echo "... src/utility/math/matrices/inits_2.o"
+	@echo "... src/utility/math/matrices/inits_2.i"
+	@echo "... src/utility/math/matrices/inits_2.s"
+	@echo "... src/utility/math/matrices/mat_operations_1.o"
+	@echo "... src/utility/math/matrices/mat_operations_1.i"
+	@echo "... src/utility/math/matrices/mat_operations_1.s"
+	@echo "... src/utility/math/quaternions/quat_operations_1.o"
+	@echo "... src/utility/math/quaternions/quat_operations_1.i"
+	@echo "... src/utility/math/quaternions/quat_operations_1.s"
+	@echo "... src/utility/math/vector/set_vector.o"
+	@echo "... src/utility/math/vector/set_vector.i"
+	@echo "... src/utility/math/vector/set_vector.s"
+	@echo "... src/utility/math/vector/vector_operations_1.o"
+	@echo "... src/utility/math/vector/vector_operations_1.i"
+	@echo "... src/utility/math/vector/vector_operations_1.s"
+	@echo "... src/utility/math/vector/vector_operations_2.o"
+	@echo "... src/utility/math/vector/vector_operations_2.i"
+	@echo "... src/utility/math/vector/vector_operations_2.s"
 	@echo "... src/window/create_window.o"
 	@echo "... src/window/create_window.i"
 	@echo "... src/window/create_window.s"

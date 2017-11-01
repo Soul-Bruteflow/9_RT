@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "utility/get_next_line.h"
 
 static t_list	*file_manage(t_list **head, const int fd)
 {

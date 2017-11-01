@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "rtv.h"
-#include "rtv_defines.h"
+#include "rt/defines.h"
 
 static t_bool	parse_lights_position(t_rtv *r)
 {

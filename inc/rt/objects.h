@@ -14,7 +14,7 @@
 # define _OBJECTS_H
 
 # include "raytrace.h"
-# include "bool.h"
+# include "utility/bool.h"
 
 typedef enum	e_obj_type
 {

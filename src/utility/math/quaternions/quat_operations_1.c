@@ -1,4 +1,4 @@
-#include "vectors.h"
+#include "math/math.h"
 
 float	quat_len(t_quat q)
 {

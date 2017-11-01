@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "rtv.h"
-#include "rtv_defines.h"
+#include "rt/defines.h"
 
 static t_rgba	set_pixel_color(t_rtv *rtv)
 {
@@ -36,9 +36,9 @@ static void		set_raytrace(t_rtv *r, Uint16 x, Uint16 y)
 	r->calc->color.red = 0;
 	r->calc->color.green = 0;
 	r->calc->color.blue = 0;
-	xcomp = vec3_scale(((x * c->pixel_width) - c->half_width), &c->vp_right);
-	ycomp = vec3_scale(((y * c->pixel_height) - c->half_height), &c->vp_up);
-	r->scene->ray.dir = vec3_norm(vec3_add3(c->eye, xcomp, ycomp));
+	xcomp = vec3_scale(((x * c->pixel_width) - c->half_width), &c->right);
+	ycomp = vec3_scale(((y * c->pixel_height) - c->half_height), &c->up);
+	r->scene->ray.dir = vec3_norm(vec3_add3(c->dir, xcomp, ycomp));
 }
 
 static void		calculate_ray(t_rtv *rtv)

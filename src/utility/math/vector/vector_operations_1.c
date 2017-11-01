@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "vectors.h"
+#include "math/vectors.h"
 
 t_vec3d		vec3_add(t_vec3d *v1, t_vec3d *v2)
 {

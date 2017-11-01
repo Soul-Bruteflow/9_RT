@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "rtv.h"
-#include "rtv_defines.h"
+#include "rt/defines.h"
 
 t_bool	parse_camera(t_rtv *r)
 {
@@ -19,11 +19,11 @@ t_bool	parse_camera(t_rtv *r)
 
 	if (!(check_line(r, "camera position:")))
 		return (false);
-	if (!(parse_vector(r, &r->scene->cam.o, V_MIN, V_MAX)))
+	if (!(parse_vector(r, &r->scene->cam.pos, V_MIN, V_MAX)))
 		return (false);
 	if (!(check_line(r, "camera direction:")))
 		return (false);
-	if (!(parse_vector(r, &r->scene->cam.d, V_MIN, V_MAX)))
+	if (!(parse_vector(r, &r->scene->cam.dir, V_MIN, V_MAX)))
 		return (false);
 	if (!(check_line(r, "fov:")))
 		return (false);

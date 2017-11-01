@@ -10,8 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "vectors.h"
-#include <math.h>
+#include "math/math.h"
 
 t_vec3d		vec3_norm(t_vec3d v)
 {

@@ -13,7 +13,8 @@
 #ifndef _RAYTRACE_H
 # define _RAYTRACE_H
 
-# include "vectors.h"
+# include "math/math.h"
+# include "transform.h"
 
 typedef	struct	s_intersect
 {
@@ -44,25 +45,33 @@ typedef struct	s_rgbap
 }				t_rgbap;
 
 /*
-** Perspective cmera definition
+** Perspective camera definition
 */
 typedef struct	s_cam
 {
-	t_vec3d		o;
-	t_vec3d		d;
+	t_vec3d		pos;
+	t_vec3d		dir;
 	t_vec3d		up;
+	t_vec3d		right;
+	t_vec3d		left;
+	t_vec3d		world_up;
+	float 		mov_amt;
+	float 		rot_amt;
 	float		fov;
-	t_vec3d		eye;
-	t_vec3d		vp_right;
-	t_vec3d		vp_left;
-	t_vec3d		vp_up;
+	t_transform	t;
+
+//	t_vec3d		o;
+//	t_vec3d		d;
+//	t_vec3d		up;
+//	t_vec3d		eye;
+//	t_vec3d		vp_right;
+//	t_vec3d		vp_left;
+//	t_vec3d		vp_up;
+
 	float		pixel_width;
 	float		pixel_height;
 	float		half_width;
 	float		half_height;
-	float 		roll;
-	float 		mov_amt;
-	float 		rot_amt;
 }				t_cam;
 
 /*
@@ -96,7 +105,6 @@ typedef struct	s_light
 ** Common
 */
 t_rgbap			ft_set_color(float r, float g, float b, float a);
-t_vec3d			ft_set_vector(float x, float y, float z);
 /*
 ** Camera
 */

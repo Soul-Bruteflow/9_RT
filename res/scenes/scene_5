@@ -54,8 +54,8 @@ objects:
 sphere:
 position:
 					0
+					400
 					0
-					-20
 radius:
 					250
 material:
@@ -63,8 +63,8 @@ material:
 sphere:
 position:
 					0
-					0
-					-1200
+					-300
+					-2500
 radius:
 					100
 material:

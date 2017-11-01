@@ -14,11 +14,13 @@
 # define __RTV_H
 
 # include <SDL.h>
-# include "rtv_error.h"
-# include "objects.h"
-# include "bool.h"
 # include "libft.h"
-# include "rtv_defines.h"
+# include "rt/errors.h"
+# include "rt/objects.h"
+# include "rt/defines.h"
+# include "utility/bool.h"
+# include "math/math.h"
+# include "rt/transform.h"
 
 /*
 ** Basic SDL2 variables
