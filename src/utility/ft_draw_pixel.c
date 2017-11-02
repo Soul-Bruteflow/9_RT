@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "rtv.h"
-#include "rt/defines.h"
+#include "utility/defines.h"
 
 /*
 ** 0 - blue, 1 - green, 2 - red, 3 - alpha;

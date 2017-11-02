@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "rtv.h"
-#include "rt/defines.h"
+#include "utility/defines.h"
 
 void	alloc_new_cone(t_rtv *r, int i)
 {

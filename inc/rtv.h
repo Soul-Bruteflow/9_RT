@@ -14,13 +14,15 @@
 # define __RTV_H
 
 # include <SDL.h>
+# include "math/vectors.h"
+# include "rt/camera.h"
+# include "rt/transform.h"
 # include "libft.h"
-# include "rt/errors.h"
+# include "utility/errors.h"
 # include "rt/objects.h"
-# include "rt/defines.h"
+# include "utility/defines.h"
 # include "utility/bool.h"
 # include "math/math.h"
-# include "rt/transform.h"
 
 /*
 ** Basic SDL2 variables

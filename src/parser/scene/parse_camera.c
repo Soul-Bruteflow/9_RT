@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "rtv.h"
-#include "rt/defines.h"
+#include "utility/defines.h"
 
 t_bool	parse_camera(t_rtv *r)
 {
@@ -29,6 +29,6 @@ t_bool	parse_camera(t_rtv *r)
 		return (false);
 	if (!(parse_number(r, &n, F_MIN, F_MAX)))
 		return (false);
-	r->scene->cam.fov = n;
+	r->scene->cam.p.fov = n;
 	return (true);
 }

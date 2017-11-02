@@ -13,14 +13,7 @@
 #ifndef _RAYTRACE_H
 # define _RAYTRACE_H
 
-# include "math/math.h"
-# include "transform.h"
-
-typedef	struct	s_intersect
-{
-	float 			t;
-	int	i;
-}				t_intersect;
+# include "rtv.h"
 
 /*
 ** RGBA color 0-255 definition
@@ -43,36 +36,6 @@ typedef struct	s_rgbap
 	float		blue;
 	float		alpha;
 }				t_rgbap;
-
-/*
-** Perspective camera definition
-*/
-typedef struct	s_cam
-{
-	t_vec3d		pos;
-	t_vec3d		dir;
-	t_vec3d		up;
-	t_vec3d		right;
-	t_vec3d		left;
-	t_vec3d		world_up;
-	float 		mov_amt;
-	float 		rot_amt;
-	float		fov;
-	t_transform	t;
-
-//	t_vec3d		o;
-//	t_vec3d		d;
-//	t_vec3d		up;
-//	t_vec3d		eye;
-//	t_vec3d		vp_right;
-//	t_vec3d		vp_left;
-//	t_vec3d		vp_up;
-
-	float		pixel_width;
-	float		pixel_height;
-	float		half_width;
-	float		half_height;
-}				t_cam;
 
 /*
 ** Ray definition

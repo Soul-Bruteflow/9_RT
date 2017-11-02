@@ -22,7 +22,7 @@ t_bool	object_intersect(t_rtv *rtv, t_ray *r, int *cur_obj, t_vec3d *new_start)
 	int				i;
 	t_vec3d			scaled;
 
-	t = 30000;
+	t = rtv->scene->cam.p.far;
 	i = -1;
 	while (i++ < rtv->scene->objs_n - 1)
 	{

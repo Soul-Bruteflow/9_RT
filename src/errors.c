@@ -12,7 +12,7 @@
 
 #include "libft.h"
 #include <SDL.h>
-#include "rt/errors.h"
+#include "utility/errors.h"
 
 void	print_error_and_exit(const char *error_text, Uint8 sdl)
 {

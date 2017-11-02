@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "rtv.h"
-#include "rt/defines.h"
+#include "utility/defines.h"
 
 void	init_camera(t_rtv *r)
 {
@@ -31,6 +31,11 @@ void	init_camera(t_rtv *r)
 	tm_cam->world_up.y = 1;
 	tm_cam->world_up.z = 0;
 
+	tm_cam->p.near = 0.00001f;
+	tm_cam->p.far = 30000;
+	tm_cam->p.width = WIDTH;
+	tm_cam->p.height = HEIGHT;
+
 //	tm_cam->world_up.x = sinf(tm_cam->roll);
 //	tm_cam->world_up.y = -cosf(tm_cam->roll);
 //	tm_cam->world_up.z = 0;
@@ -40,14 +45,14 @@ void	init_camera(t_rtv *r)
 	tm_cam->left = vec3_norm(vec3_cross(&tm_cam->world_up, &tm_cam->dir));
 	tm_cam->up = vec3_norm(vec3_cross(&tm_cam->right, &tm_cam->dir));
 
-	fov_radians = PI * (tm_cam->fov / 2) / 180;
+	fov_radians = PI * (tm_cam->p.fov / 2) / 180;
 	height_width_ratio = (float)HEIGHT / (float)WIDTH;
-	tm_cam->half_width = tanf(fov_radians);
-	tm_cam->half_height = height_width_ratio * tm_cam->half_width;
-	camerawidth = tm_cam->half_width * 2;
-	cameraheight = tm_cam->half_height * 2;
-	tm_cam->pixel_width = camerawidth / ((float)WIDTH - 1);
-	tm_cam->pixel_height = cameraheight / ((float)HEIGHT - 1);
+	tm_cam->s.half_width = tanf(fov_radians);
+	tm_cam->s.half_height = height_width_ratio * tm_cam->s.half_width;
+	camerawidth = tm_cam->s.half_width * 2;
+	cameraheight = tm_cam->s.half_height * 2;
+	tm_cam->s.pixel_width = camerawidth / ((float)WIDTH - 1);
+	tm_cam->s.pixel_height = cameraheight / ((float)HEIGHT - 1);
 	r->scene->ray.start = tm_cam->pos;
 //	tm_cam->world_up = vec3_cross(&tm_cam->dir, &tm_cam->right);
 }
