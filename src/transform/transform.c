@@ -20,8 +20,8 @@ t_mat4		get_transformation(t_transform *t)
 	translation = init_translation(t->translation);
 	rotation = init_rotation(t->rotation);
 	scale = init_scale(t->scale);
-	m = mat_mult(&translation, &rotation);
-	m = mat_mult(&m, &scale);
+	m = mat_mult(&scale, &rotation);
+	m = mat_mult(&m, &translation);
 	return (m);
 }
 
