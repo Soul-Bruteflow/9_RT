@@ -10,8 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rtv.h"
-#include "utility/defines.h"
+#include "rt.h"
 
 static t_rgba	set_pixel_color(t_rtv *rtv)
 {

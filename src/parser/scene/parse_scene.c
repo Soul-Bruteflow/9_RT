@@ -10,8 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rtv.h"
-#include "utility/defines.h"
+#include "rt.h"
 
 t_bool	parse_scene(t_rtv *r)
 {

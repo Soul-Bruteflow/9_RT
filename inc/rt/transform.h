@@ -1,7 +1,6 @@
-#ifndef TRANSFORM_H
-# define TRANSFORM_H
+#ifndef RT_TEST_H
+#define RT_TEST_H
 
-#include "math/math.h"
 /*
 ** Transform struct definition.
 */
@@ -15,6 +14,5 @@ typedef struct	s_transform
 
 t_transform		init_transform(void);
 t_mat4			get_transformation(t_transform *t);
-t_mat4			get_proj_transformation(t_transform *t);
 
 #endif

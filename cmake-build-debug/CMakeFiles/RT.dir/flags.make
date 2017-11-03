@@ -6,5 +6,5 @@ C_FLAGS = -I ./inc -I /Users/bruteflow/Library/Frameworks/SDL2.framework/Version
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/bruteflow/c_projects/9_RT/./libft -I/Users/bruteflow/c_projects/9_RT/./inc 
+C_INCLUDES = -I/Users/bruteflow/c_projects/9_RT/./inc -I/Users/bruteflow/c_projects/9_RT/./libft 
 

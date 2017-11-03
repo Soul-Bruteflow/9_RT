@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "rt.h"
 
 void	skip_whitespaces(const char *s, int *i, float *fact)
 {

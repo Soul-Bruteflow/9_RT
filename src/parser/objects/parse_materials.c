@@ -10,8 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rtv.h"
-#include "utility/defines.h"
+#include "rt.h"
 
 static t_bool	parse_mats_color(t_rtv *r)
 {

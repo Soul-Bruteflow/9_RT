@@ -21,6 +21,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/bruteflow/c_projects/9_RT/src/parser/support/parser_support_one.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/parser/support/parser_support_one.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/parser/support/parser_support_two.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/parser/support/parser_support_two.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/raytrace/calculate_light.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/raytrace/calculate_light.c.o"
+  "/Users/bruteflow/c_projects/9_RT/src/raytrace/camera/camera.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/raytrace/camera/camera.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/raytrace/intersect.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/raytrace/intersect.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/raytrace/lights/light.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/raytrace/lights/light.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/raytrace/materials/material.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/raytrace/materials/material.c.o"
@@ -34,7 +35,6 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/bruteflow/c_projects/9_RT/src/raytrace/objects/sphere/sphere_create.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_create.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/raytrace/objects/sphere/sphere_ray_intersect.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_ray_intersect.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/raytrace/raytrace.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/raytrace/raytrace.c.o"
-  "/Users/bruteflow/c_projects/9_RT/src/raytrace/scene/camera/camera.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/raytrace/scene/camera/camera.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/raytrace/scene/scene_create.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/raytrace/scene/scene_create.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/rtv_init.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/rtv_init.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/rtv_loop.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/rtv_loop.c.o"
@@ -49,6 +49,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/bruteflow/c_projects/9_RT/src/utility/math/matrices/inits_2.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/utility/math/matrices/inits_2.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/utility/math/matrices/mat_operations_1.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/utility/math/matrices/mat_operations_1.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/utility/math/quaternions/quat_operations_1.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_1.c.o"
+  "/Users/bruteflow/c_projects/9_RT/src/utility/math/quaternions/quat_operations_2.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_2.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/utility/math/vector/set_vector.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/utility/math/vector/set_vector.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/utility/math/vector/vector_operations_1.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_1.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/utility/math/vector/vector_operations_2.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_2.c.o"
@@ -59,8 +60,8 @@ set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
-  ".././libft"
   ".././inc"
+  ".././libft"
   )
 
 # Targets to which this target links.

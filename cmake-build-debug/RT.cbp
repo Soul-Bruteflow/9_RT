@@ -44,8 +44,8 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/bruteflow/c_projects/9_RT/./libft"/>
 					<Add directory="/Users/bruteflow/c_projects/9_RT/./inc"/>
+					<Add directory="/Users/bruteflow/c_projects/9_RT/./libft"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
@@ -68,8 +68,8 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/bruteflow/c_projects/9_RT/./libft"/>
 					<Add directory="/Users/bruteflow/c_projects/9_RT/./inc"/>
+					<Add directory="/Users/bruteflow/c_projects/9_RT/./libft"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
@@ -92,8 +92,8 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/bruteflow/c_projects/9_RT/./libft"/>
 					<Add directory="/Users/bruteflow/c_projects/9_RT/./inc"/>
+					<Add directory="/Users/bruteflow/c_projects/9_RT/./libft"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
@@ -116,8 +116,8 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/bruteflow/c_projects/9_RT/./libft"/>
 					<Add directory="/Users/bruteflow/c_projects/9_RT/./inc"/>
+					<Add directory="/Users/bruteflow/c_projects/9_RT/./libft"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
@@ -134,6 +134,45 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/inc/math/math.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/inc/math/matrices.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/inc/math/quaternions.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/inc/math/vectors.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/inc/rt.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/inc/rt/camera.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/inc/rt/objects.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/inc/rt/raytrace.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/inc/rt/transform.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/inc/utility/bool.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/inc/utility/defines.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/inc/utility/errors.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/inc/utility/get_next_line.h">
+			<Option target="RT"/>
+		</Unit>
 		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft">
 			<Option target="ft"/>
 		</Unit>
@@ -374,6 +413,9 @@
 		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/raytrace/calculate_light.c">
 			<Option target="RT"/>
 		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/raytrace/camera/camera.c">
+			<Option target="RT"/>
+		</Unit>
 		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/raytrace/intersect.c">
 			<Option target="RT"/>
 		</Unit>
@@ -411,9 +453,6 @@
 			<Option target="RT"/>
 		</Unit>
 		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/raytrace/raytrace.c">
-			<Option target="RT"/>
-		</Unit>
-		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/raytrace/scene/camera/camera.c">
 			<Option target="RT"/>
 		</Unit>
 		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/raytrace/scene/scene_create.c">
@@ -456,6 +495,9 @@
 			<Option target="RT"/>
 		</Unit>
 		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/utility/math/quaternions/quat_operations_1.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/utility/math/quaternions/quat_operations_2.c">
 			<Option target="RT"/>
 		</Unit>
 		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/utility/math/vector/set_vector.c">

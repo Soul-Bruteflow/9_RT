@@ -10,8 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rtv.h"
-#include "utility/get_next_line.h"
+#include "rt.h"
 
 /*
 ** Closes the file, and checks for the errors.

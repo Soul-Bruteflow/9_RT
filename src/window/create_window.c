@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rtv.h"
+#include "rt.h"
 
 static void	create_buffer(Uint8 **draw_buffer, Uint16 width, Uint16 height)
 {

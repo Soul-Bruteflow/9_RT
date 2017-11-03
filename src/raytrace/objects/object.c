@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rtv.h"
+#include "rt.h"
 
 void	set_object_position(t_obj3d *obj, t_vec3d new_position)
 {

@@ -10,9 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include <SDL.h>
-#include "utility/errors.h"
+#include "rt.h"
 
 void	print_error_and_exit(const char *error_text, Uint8 sdl)
 {

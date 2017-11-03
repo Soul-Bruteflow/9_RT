@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "math/math.h"
+#include "rt.h"
 
 t_vec3d		set_vector(float x, float y, float z)
 {

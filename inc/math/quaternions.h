@@ -1,5 +1,5 @@
-#ifndef QUATERNIONS_H
-# define QUATERNIONS_H
+#ifndef _QUATERNIONS_H
+# define _QUATERNIONS_H
 
 /*
 ** Quaternion definition

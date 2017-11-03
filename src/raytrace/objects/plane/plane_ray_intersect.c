@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rtv.h"
+#include "rt.h"
 
 t_bool	intersect_plane_ray(t_ray *r, t_obj3d *obj, float *t)
 {

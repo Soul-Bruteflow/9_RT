@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rtv.h"
+#include "rt.h"
 
 t_bool	running(SDL_Event *event, const Uint8 **key_state)
 {
@@ -29,8 +29,8 @@ static void	update_time(t_rtv *rtv)
 	rtv->delta.old_time = rtv->delta.time;
 	rtv->delta.time = SDL_GetTicks();
 	rtv->delta.frame_time = (rtv->delta.time - rtv->delta.old_time) / 1000.0f;
-	rtv->scene->cam.mov_amt = rtv->delta.frame_time * 300.0f;
-	rtv->scene->cam.rot_amt = rtv->delta.frame_time * 0.3f;
+	rtv->scene->cam.mov_amt = rtv->delta.frame_time * 350.0f;
+	rtv->scene->cam.rot_amt = rtv->delta.frame_time * 0.03f;
 	if (rtv->delta.fps_counter % 10 == 0)
 	{
 		tmp = ft_itoa((int)(1.0 / rtv->delta.frame_time));

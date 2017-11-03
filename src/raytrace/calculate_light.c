@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rtv.h"
+#include "rt.h"
 
 t_bool	calculate_shadows(t_rtv *r, t_obj3d **objs, t_ray *light_ray, float *t2)
 {

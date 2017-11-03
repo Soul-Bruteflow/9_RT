@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rtv.h"
+#include "rt.h"
 
 void	keyboard_core(t_rtv *rtv)
   {
@@ -53,12 +53,14 @@ void	keyboard_core(t_rtv *rtv)
 
 //		rtv->scene->cam.pos.z += rtv->scene->cam.mov_amt;
 
-		cam_move(&rtv->scene->cam.pos, &rtv->scene->cam.dir, rtv->scene->cam.mov_amt);
+		cam_move(&rtv->scene->cam, &rtv->scene->cam.pos, &rtv->scene->cam.dir, rtv->scene->cam.mov_amt);
 		cam_update(&rtv->scene->cam, &rtv->scene->ray.start);
 
 //		rtv->scene->cam.d.z += rtv->scene->cam.mov_amt;
 //		init_camera(rtv);
-		printf("%f\n", rtv->scene->cam.pos.z);
+//		printf("%f\n", rtv->scene->cam.pos.x);
+//		printf("%f\n", rtv->scene->cam.pos.y);
+//		printf("%f\n", rtv->scene->cam.pos.z);
 
 		clear_window(rtv);
 		raytrace(rtv);
@@ -70,7 +72,7 @@ void	keyboard_core(t_rtv *rtv)
 //		c = rtv->scene->objects[0]->type;
 //		c->a.x -= 50;
 //		c->b.x -= 50;
-		cam_move(&rtv->scene->cam.pos, &rtv->scene->cam.dir, -rtv->scene->cam.mov_amt);
+		cam_move(&rtv->scene->cam, &rtv->scene->cam.pos, &rtv->scene->cam.dir, -rtv->scene->cam.mov_amt);
 		cam_update(&rtv->scene->cam, &rtv->scene->ray.start);
 //		rtv->scene->cam.d = vec3_norm(rtv->scene->cam.dir);
 //		rtv->scene->cam.dir.z -= 0.04;
@@ -107,7 +109,7 @@ void	keyboard_core(t_rtv *rtv)
 	if (SDL_KEYDOWN && rtv->sdl->key_state[SDL_SCANCODE_UP])
 	{
 		printf("%f, %f, %f\n", rtv->scene->cam.dir.x, rtv->scene->cam.dir.y, rtv->scene->cam.dir.z);
-		cam_rot_y(&rtv->scene->cam, 10);
+		cam_rot_y(&rtv->scene->cam, rtv->scene->cam.rot_amt);
 		printf("%f, %f, %f\n", rtv->scene->cam.dir.x, rtv->scene->cam.dir.y, rtv->scene->cam.dir.z);
 
 //		rtv->scene->cam.dir = vec3_rotate(rtv->scene->cam.rot_amt, &rtv->scene->cam.dir);
@@ -122,7 +124,7 @@ void	keyboard_core(t_rtv *rtv)
 	}
 	  if (SDL_KEYDOWN && rtv->sdl->key_state[SDL_SCANCODE_DOWN])
 	  {
-		  cam_rot_y(&rtv->scene->cam, -10);
+		  cam_rot_y(&rtv->scene->cam, -rtv->scene->cam.rot_amt);
 //		rtv->scene->cam.dir = vec3_rotate(rtv->scene->cam.rot_amt, &rtv->scene->cam.dir);
 //		rtv->scene->cam.dir.x += rtv->scene->cam.rot_amt;
 //		vec3_norm(rtv->scene->cam.dir);

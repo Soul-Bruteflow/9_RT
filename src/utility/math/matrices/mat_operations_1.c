@@ -1,4 +1,4 @@
-#include "math/math.h"
+#include "rt.h"
 
 t_mat4	mat_mult(t_mat4 *m1, t_mat4 *m2)
 {
@@ -6,18 +6,30 @@ t_mat4	mat_mult(t_mat4 *m1, t_mat4 *m2)
 	int		j;
 	t_mat4	res;
 
-	i = -1;
-	while (i++ < 4)
-	{
-		j = -1;
-		while(j++ < 4)
-		{
-			res.m[i][j] =	m1->m[i][0] * m2->m[0][j] +
-							m1->m[i][1] * m2->m[1][j] +
-							m1->m[i][2] * m2->m[2][j] +
-							m1->m[i][3] * m2->m[3][j];
+
+	for (int x = 0; x < 4; x++)
+	{ // row number of output
+		for (int y = 0; y < 4; y++)
+		{ // column number of output
+			res.m[x][y] = 0;
+			for (int z = 0; z < 4; z++)
+			{ // four elements are added for this output
+				res.m[x][y] += m1->m[x][z] * m2->m[z][y];
+			}
 		}
 	}
+//	i = -1;
+//	while (i++ < 4)
+//	{
+//		j = -1;
+//		while(j++ < 4)
+//		{
+//			res.m[i][j] =	m1->m[i][0] * m2->m[0][j] +
+//							m1->m[i][1] * m2->m[1][j] +
+//							m1->m[i][2] * m2->m[2][j] +
+//							m1->m[i][3] * m2->m[3][j];
+//		}
+//	}
 	return (res);
 }
 

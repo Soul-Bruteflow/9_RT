@@ -1,28 +1,38 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   rtv.h                                              :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: mvlad <mvlad@student.42.fr>                +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/10/09 15:03:42 by mvlad             #+#    #+#             */
-/*   Updated: 2017/10/09 16:01:41 by mvlad            ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-#ifndef __RTV_H
-# define __RTV_H
+#ifndef _RT_H
+# define _RT_H
 
 # include <SDL.h>
-# include "math/vectors.h"
-# include "rt/camera.h"
-# include "rt/transform.h"
-# include "libft.h"
-# include "utility/errors.h"
-# include "rt/objects.h"
-# include "utility/defines.h"
-# include "utility/bool.h"
 # include "math/math.h"
+# include "math/vectors.h"
+# include "math/quaternions.h"
+# include "math/matrices.h"
+
+# include "utility/bool.h"
+# include "utility/defines.h"
+# include "utility/get_next_line.h"
+# include "utility/errors.h"
+
+# include "rt/transform.h"
+# include "rt/raytrace.h"
+# include "rt/objects.h"
+# include "rt/camera.h"
+
+
+
+//#include "utility/bool.h"
+//#include "math/vectors.h"
+//#include "math/matrices.h"
+//#include "math/math.h"
+//#include "math/quaternions.h"
+//#include "rt/camera.h"
+//#include "rt/objects.h"
+//#include "rt/raytrace.h"
+//#include "rt/transform.h"
+//#include "utility/bool.h"
+//#include "utility/defines.h"
+//#include "utility/errors.h"
+//#include "libft.h"
+//#include "utility/get_next_line.h"
 
 /*
 ** Basic SDL2 variables

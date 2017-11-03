@@ -2269,6 +2269,33 @@ src/raytrace/calculate_light.c.s:
 	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/raytrace/calculate_light.c.s
 .PHONY : src/raytrace/calculate_light.c.s
 
+src/raytrace/camera/camera.o: src/raytrace/camera/camera.c.o
+
+.PHONY : src/raytrace/camera/camera.o
+
+# target to build an object file
+src/raytrace/camera/camera.c.o:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/raytrace/camera/camera.c.o
+.PHONY : src/raytrace/camera/camera.c.o
+
+src/raytrace/camera/camera.i: src/raytrace/camera/camera.c.i
+
+.PHONY : src/raytrace/camera/camera.i
+
+# target to preprocess a source file
+src/raytrace/camera/camera.c.i:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/raytrace/camera/camera.c.i
+.PHONY : src/raytrace/camera/camera.c.i
+
+src/raytrace/camera/camera.s: src/raytrace/camera/camera.c.s
+
+.PHONY : src/raytrace/camera/camera.s
+
+# target to generate assembly for a file
+src/raytrace/camera/camera.c.s:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/raytrace/camera/camera.c.s
+.PHONY : src/raytrace/camera/camera.c.s
+
 src/raytrace/intersect.o: src/raytrace/intersect.c.o
 
 .PHONY : src/raytrace/intersect.o
@@ -2619,33 +2646,6 @@ src/raytrace/raytrace.s: src/raytrace/raytrace.c.s
 src/raytrace/raytrace.c.s:
 	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/raytrace/raytrace.c.s
 .PHONY : src/raytrace/raytrace.c.s
-
-src/raytrace/scene/camera/camera.o: src/raytrace/scene/camera/camera.c.o
-
-.PHONY : src/raytrace/scene/camera/camera.o
-
-# target to build an object file
-src/raytrace/scene/camera/camera.c.o:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/raytrace/scene/camera/camera.c.o
-.PHONY : src/raytrace/scene/camera/camera.c.o
-
-src/raytrace/scene/camera/camera.i: src/raytrace/scene/camera/camera.c.i
-
-.PHONY : src/raytrace/scene/camera/camera.i
-
-# target to preprocess a source file
-src/raytrace/scene/camera/camera.c.i:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/raytrace/scene/camera/camera.c.i
-.PHONY : src/raytrace/scene/camera/camera.c.i
-
-src/raytrace/scene/camera/camera.s: src/raytrace/scene/camera/camera.c.s
-
-.PHONY : src/raytrace/scene/camera/camera.s
-
-# target to generate assembly for a file
-src/raytrace/scene/camera/camera.c.s:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/raytrace/scene/camera/camera.c.s
-.PHONY : src/raytrace/scene/camera/camera.c.s
 
 src/raytrace/scene/scene_create.o: src/raytrace/scene/scene_create.c.o
 
@@ -3024,6 +3024,33 @@ src/utility/math/quaternions/quat_operations_1.s: src/utility/math/quaternions/q
 src/utility/math/quaternions/quat_operations_1.c.s:
 	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_1.c.s
 .PHONY : src/utility/math/quaternions/quat_operations_1.c.s
+
+src/utility/math/quaternions/quat_operations_2.o: src/utility/math/quaternions/quat_operations_2.c.o
+
+.PHONY : src/utility/math/quaternions/quat_operations_2.o
+
+# target to build an object file
+src/utility/math/quaternions/quat_operations_2.c.o:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_2.c.o
+.PHONY : src/utility/math/quaternions/quat_operations_2.c.o
+
+src/utility/math/quaternions/quat_operations_2.i: src/utility/math/quaternions/quat_operations_2.c.i
+
+.PHONY : src/utility/math/quaternions/quat_operations_2.i
+
+# target to preprocess a source file
+src/utility/math/quaternions/quat_operations_2.c.i:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_2.c.i
+.PHONY : src/utility/math/quaternions/quat_operations_2.c.i
+
+src/utility/math/quaternions/quat_operations_2.s: src/utility/math/quaternions/quat_operations_2.c.s
+
+.PHONY : src/utility/math/quaternions/quat_operations_2.s
+
+# target to generate assembly for a file
+src/utility/math/quaternions/quat_operations_2.c.s:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_2.c.s
+.PHONY : src/utility/math/quaternions/quat_operations_2.c.s
 
 src/utility/math/vector/set_vector.o: src/utility/math/vector/set_vector.c.o
 
@@ -3407,6 +3434,9 @@ help:
 	@echo "... src/raytrace/calculate_light.o"
 	@echo "... src/raytrace/calculate_light.i"
 	@echo "... src/raytrace/calculate_light.s"
+	@echo "... src/raytrace/camera/camera.o"
+	@echo "... src/raytrace/camera/camera.i"
+	@echo "... src/raytrace/camera/camera.s"
 	@echo "... src/raytrace/intersect.o"
 	@echo "... src/raytrace/intersect.i"
 	@echo "... src/raytrace/intersect.s"
@@ -3446,9 +3476,6 @@ help:
 	@echo "... src/raytrace/raytrace.o"
 	@echo "... src/raytrace/raytrace.i"
 	@echo "... src/raytrace/raytrace.s"
-	@echo "... src/raytrace/scene/camera/camera.o"
-	@echo "... src/raytrace/scene/camera/camera.i"
-	@echo "... src/raytrace/scene/camera/camera.s"
 	@echo "... src/raytrace/scene/scene_create.o"
 	@echo "... src/raytrace/scene/scene_create.i"
 	@echo "... src/raytrace/scene/scene_create.s"
@@ -3491,6 +3518,9 @@ help:
 	@echo "... src/utility/math/quaternions/quat_operations_1.o"
 	@echo "... src/utility/math/quaternions/quat_operations_1.i"
 	@echo "... src/utility/math/quaternions/quat_operations_1.s"
+	@echo "... src/utility/math/quaternions/quat_operations_2.o"
+	@echo "... src/utility/math/quaternions/quat_operations_2.i"
+	@echo "... src/utility/math/quaternions/quat_operations_2.s"
 	@echo "... src/utility/math/vector/set_vector.o"
 	@echo "... src/utility/math/vector/set_vector.i"
 	@echo "... src/utility/math/vector/set_vector.s"
