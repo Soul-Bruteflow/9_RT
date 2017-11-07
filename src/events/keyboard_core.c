@@ -18,18 +18,19 @@ void	keyboard_core(t_rtv *rtv)
   		exit(0);
 	if (rtv->sdl->event.type == SDL_MOUSEBUTTONDOWN)
 	{
-		if (rtv->sdl->is_mouse_cap)
+//		if (rtv->sdl->is_mouse_cap)
+		if (rtv->sdl->event.button.button == SDL_BUTTON_LEFT)
 		{
 //			SDL_ShowSimpleMessageBox(0, "Mouse", "Left button was pressed!", rtv->sdl->window);
-			printf("123\n");
-			rtv->sdl->is_mouse_cap = (SDL_bool)0;
-			SDL_CaptureMouse(rtv->sdl->is_mouse_cap);
+			printf("%f, %f\n", rtv->sdl->mouse_pos.x, rtv->sdl->mouse_pos.y);
+//			rtv->sdl->is_mouse_cap = (SDL_bool)0;
+//			SDL_CaptureMouse(rtv->sdl->is_mouse_cap);
 		}
-		else
-		{
-			rtv->sdl->is_mouse_cap = (SDL_bool)1;
-			SDL_CaptureMouse(rtv->sdl->is_mouse_cap);
-		}
+//		else
+//		{
+//			rtv->sdl->is_mouse_cap = (SDL_bool)1;
+//			SDL_CaptureMouse(rtv->sdl->is_mouse_cap);
+//		}
 	}
  	if (SDL_KEYDOWN && rtv->sdl->key_state[SDL_SCANCODE_W])
  	{
@@ -58,7 +59,7 @@ void	keyboard_core(t_rtv *rtv)
 
 //		rtv->scene->cam.d.z += rtv->scene->cam.mov_amt;
 //		init_camera(rtv);
-//		printf("%f\n", rtv->scene->cam.pos.x);
+		printf("%f\n", rtv->scene->cam.mov_amt);
 //		printf("%f\n", rtv->scene->cam.pos.y);
 //		printf("%f\n", rtv->scene->cam.pos.z);
 
@@ -86,9 +87,12 @@ void	keyboard_core(t_rtv *rtv)
 //		t_plane *p = rtv->scene->objects[0]->type;
 //		p->normal.x += 50;
 
-		rtv->scene->cam.dir.x -= rtv->scene->cam.rot_amt;
-		vec3_norm(rtv->scene->cam.dir);
+		cam_move(&rtv->scene->cam, &rtv->scene->cam.pos, &rtv->scene->cam.right, rtv->scene->cam.mov_amt);
 		cam_update(&rtv->scene->cam, &rtv->scene->ray.start);
+
+//		rtv->scene->cam.dir.x -= rtv->scene->cam.rot_amt;
+//		vec3_norm(rtv->scene->cam.dir);
+//		cam_update(&rtv->scene->cam, &rtv->scene->ray.start);
 
 		clear_window(rtv);
 		raytrace(rtv);
@@ -96,9 +100,12 @@ void	keyboard_core(t_rtv *rtv)
 	}
 	if (SDL_KEYDOWN && rtv->sdl->key_state[SDL_SCANCODE_A])
 	{
-		rtv->scene->cam.dir.x += rtv->scene->cam.rot_amt;
-		vec3_norm(rtv->scene->cam.dir);
+		cam_move(&rtv->scene->cam, &rtv->scene->cam.pos, &rtv->scene->cam.right, -rtv->scene->cam.mov_amt);
 		cam_update(&rtv->scene->cam, &rtv->scene->ray.start);
+
+//		rtv->scene->cam.dir.x += rtv->scene->cam.rot_amt;
+//		vec3_norm(rtv->scene->cam.dir);
+//		cam_update(&rtv->scene->cam, &rtv->scene->ray.start);
 //		t_plane *p = rtv->scene->objects[0]->type;
 //		p->normal.x -= 50;
 
@@ -108,15 +115,15 @@ void	keyboard_core(t_rtv *rtv)
 	}
 	if (SDL_KEYDOWN && rtv->sdl->key_state[SDL_SCANCODE_UP])
 	{
-		printf("%f, %f, %f\n", rtv->scene->cam.dir.x, rtv->scene->cam.dir.y, rtv->scene->cam.dir.z);
+//		printf("%f, %f, %f\n", rtv->scene->cam.dir.x, rtv->scene->cam.dir.y, rtv->scene->cam.dir.z);
 		cam_rot_y(&rtv->scene->cam, rtv->scene->cam.rot_amt);
-		printf("%f, %f, %f\n", rtv->scene->cam.dir.x, rtv->scene->cam.dir.y, rtv->scene->cam.dir.z);
+//		printf("%f, %f, %f\n", rtv->scene->cam.dir.x, rtv->scene->cam.dir.y, rtv->scene->cam.dir.z);
 
 //		rtv->scene->cam.dir = vec3_rotate(rtv->scene->cam.rot_amt, &rtv->scene->cam.dir);
 //		rtv->scene->cam.dir.x += rtv->scene->cam.rot_amt;
 //		vec3_norm(rtv->scene->cam.dir);
 		cam_update(&rtv->scene->cam, &rtv->scene->ray.start);
-		printf("%f, %f, %f\n", rtv->scene->cam.dir.x, rtv->scene->cam.dir.y, rtv->scene->cam.dir.z);
+//		printf("%f, %f, %f\n", rtv->scene->cam.dir.x, rtv->scene->cam.dir.y, rtv->scene->cam.dir.z);
 
 		clear_window(rtv);
 		raytrace(rtv);

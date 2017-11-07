@@ -1137,9 +1137,33 @@ CMakeFiles/RT.dir/src/utility/math/matrices/inits_2.c.o.provides: CMakeFiles/RT.
 CMakeFiles/RT.dir/src/utility/math/matrices/inits_2.c.o.provides.build: CMakeFiles/RT.dir/src/utility/math/matrices/inits_2.c.o
 
 
+CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o: CMakeFiles/RT.dir/flags.make
+CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o: ../src/utility/math/matrices/inits_3.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o   -c /Users/bruteflow/c_projects/9_RT/src/utility/math/matrices/inits_3.c
+
+CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bruteflow/c_projects/9_RT/src/utility/math/matrices/inits_3.c > CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.i
+
+CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bruteflow/c_projects/9_RT/src/utility/math/matrices/inits_3.c -o CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.s
+
+CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o.requires:
+
+.PHONY : CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o.requires
+
+CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o.provides: CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o.requires
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o.provides.build
+.PHONY : CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o.provides
+
+CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o.provides.build: CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o
+
+
 CMakeFiles/RT.dir/src/utility/math/matrices/mat_operations_1.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/utility/math/matrices/mat_operations_1.c.o: ../src/utility/math/matrices/mat_operations_1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/RT.dir/src/utility/math/matrices/mat_operations_1.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/RT.dir/src/utility/math/matrices/mat_operations_1.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/utility/math/matrices/mat_operations_1.c.o   -c /Users/bruteflow/c_projects/9_RT/src/utility/math/matrices/mat_operations_1.c
 
 CMakeFiles/RT.dir/src/utility/math/matrices/mat_operations_1.c.i: cmake_force
@@ -1163,7 +1187,7 @@ CMakeFiles/RT.dir/src/utility/math/matrices/mat_operations_1.c.o.provides.build:
 
 CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_1.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_1.c.o: ../src/utility/math/quaternions/quat_operations_1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_1.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_1.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_1.c.o   -c /Users/bruteflow/c_projects/9_RT/src/utility/math/quaternions/quat_operations_1.c
 
 CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_1.c.i: cmake_force
@@ -1187,7 +1211,7 @@ CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_1.c.o.provides.bu
 
 CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_2.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_2.c.o: ../src/utility/math/quaternions/quat_operations_2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_2.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_2.c.o   -c /Users/bruteflow/c_projects/9_RT/src/utility/math/quaternions/quat_operations_2.c
 
 CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_2.c.i: cmake_force
@@ -1211,7 +1235,7 @@ CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_2.c.o.provides.bu
 
 CMakeFiles/RT.dir/src/utility/math/vector/set_vector.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/utility/math/vector/set_vector.c.o: ../src/utility/math/vector/set_vector.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/RT.dir/src/utility/math/vector/set_vector.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/RT.dir/src/utility/math/vector/set_vector.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/utility/math/vector/set_vector.c.o   -c /Users/bruteflow/c_projects/9_RT/src/utility/math/vector/set_vector.c
 
 CMakeFiles/RT.dir/src/utility/math/vector/set_vector.c.i: cmake_force
@@ -1235,7 +1259,7 @@ CMakeFiles/RT.dir/src/utility/math/vector/set_vector.c.o.provides.build: CMakeFi
 
 CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_1.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_1.c.o: ../src/utility/math/vector/vector_operations_1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_1.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_1.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_1.c.o   -c /Users/bruteflow/c_projects/9_RT/src/utility/math/vector/vector_operations_1.c
 
 CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_1.c.i: cmake_force
@@ -1259,7 +1283,7 @@ CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_1.c.o.provides.build
 
 CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_2.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_2.c.o: ../src/utility/math/vector/vector_operations_2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_2.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_2.c.o   -c /Users/bruteflow/c_projects/9_RT/src/utility/math/vector/vector_operations_2.c
 
 CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_2.c.i: cmake_force
@@ -1328,6 +1352,7 @@ RT_OBJECTS = \
 "CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_ray_intersect.c.o" \
 "CMakeFiles/RT.dir/src/utility/math/matrices/inits_1.c.o" \
 "CMakeFiles/RT.dir/src/utility/math/matrices/inits_2.c.o" \
+"CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o" \
 "CMakeFiles/RT.dir/src/utility/math/matrices/mat_operations_1.c.o" \
 "CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_1.c.o" \
 "CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_2.c.o" \
@@ -1383,6 +1408,7 @@ RT: CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_create.c.o
 RT: CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_ray_intersect.c.o
 RT: CMakeFiles/RT.dir/src/utility/math/matrices/inits_1.c.o
 RT: CMakeFiles/RT.dir/src/utility/math/matrices/inits_2.c.o
+RT: CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o
 RT: CMakeFiles/RT.dir/src/utility/math/matrices/mat_operations_1.c.o
 RT: CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_1.c.o
 RT: CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_2.c.o
@@ -1392,7 +1418,7 @@ RT: CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_2.c.o
 RT: CMakeFiles/RT.dir/build.make
 RT: libft.a
 RT: CMakeFiles/RT.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Linking C executable RT"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Linking C executable RT"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RT.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1445,6 +1471,7 @@ CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_ray_intersect.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/utility/math/matrices/inits_1.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/utility/math/matrices/inits_2.c.o.requires
+CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/utility/math/matrices/mat_operations_1.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_1.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_2.c.o.requires

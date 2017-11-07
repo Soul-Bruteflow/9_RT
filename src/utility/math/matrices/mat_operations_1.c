@@ -18,18 +18,6 @@ t_mat4	mat_mult(t_mat4 *m1, t_mat4 *m2)
 			}
 		}
 	}
-//	i = -1;
-//	while (i++ < 4)
-//	{
-//		j = -1;
-//		while(j++ < 4)
-//		{
-//			res.m[i][j] =	m1->m[i][0] * m2->m[0][j] +
-//							m1->m[i][1] * m2->m[1][j] +
-//							m1->m[i][2] * m2->m[2][j] +
-//							m1->m[i][3] * m2->m[3][j];
-//		}
-//	}
 	return (res);
 }
 
@@ -41,6 +29,19 @@ t_vec3d	mat_mult_vec3d(t_mat4 m, t_vec3d v)
 	res.y = m.m[1][0] * v.y + m.m[1][1] * v.y + m.m[1][2] * v.y + m.m[1][3] * 1;
 	res.z = m.m[2][0] * v.z + m.m[2][1] * v.z + m.m[2][2] * v.z + m.m[2][3] * 1;
 
+	return (res);
+}
+
+t_mat4	quat_to_mat(t_quat q)
+{
+	t_mat4	res;
+	t_mat4	m1;
+	t_mat4	m2;
+
+	q = quat_normalize(q);
+	m1 = init_quat_m1(q);
+	m2 = init_quat_m2(q);
+	res = mat_mult(&m1, &m2);
 	return (res);
 }
 

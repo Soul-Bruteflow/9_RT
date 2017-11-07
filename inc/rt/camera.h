@@ -36,6 +36,9 @@ typedef struct	s_cam
 	t_vec3d		world_up;
 	float 		mov_amt;
 	float 		rot_amt;
+	float		horiz_angle;
+	float		verti_angle;
+	float		mouse_speed;
 	t_persp		p;
 	t_transform	t;
 	t_sup		s;

@@ -44,6 +44,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_ray_intersect.c.o"
   "CMakeFiles/RT.dir/src/utility/math/matrices/inits_1.c.o"
   "CMakeFiles/RT.dir/src/utility/math/matrices/inits_2.c.o"
+  "CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o"
   "CMakeFiles/RT.dir/src/utility/math/matrices/mat_operations_1.c.o"
   "CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_1.c.o"
   "CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_2.c.o"

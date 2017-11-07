@@ -5,15 +5,30 @@ float	quat_len(t_quat q)
 	return (sqrtf(q.x * q.x + q.y * q.y + q.z * q.z + q.w * q.w));
 }
 
-t_quat	quat_norm(t_quat q)
+t_quat	quat_normalize(t_quat q)
 {
-	float	len;
 
-	len = quat_len(q);
-	q.x /= len;
-	q.y /= len;
-	q.z /= len;
-	q.w /= len;
+	float length;
+	float scale;
+
+	length = q.x * q.x + q.y * q.y + q.z * q.z + q.w * q.w;
+//	if (length == 0.0 )
+//		return (void);
+	if (length != 1.0)
+	{
+		scale = ( 1.0f / sqrtf(length));
+		q.x *= scale;
+		q.y *= scale;
+		q.z *= scale;
+		q.w *= scale;
+		return (q);
+	}
+//	float	len;
+//	len = quat_len(q);
+//	q.x /= len;
+//	q.y /= len;
+//	q.z /= len;
+//	q.w /= len;
 	return (q);
 }
 

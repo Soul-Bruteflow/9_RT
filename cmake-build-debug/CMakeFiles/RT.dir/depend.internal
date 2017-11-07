@@ -689,6 +689,22 @@ CMakeFiles/RT.dir/src/utility/math/matrices/inits_2.c.o
  .././inc/utility/get_next_line.h
  .././libft/libft.h
  /Users/bruteflow/c_projects/9_RT/src/utility/math/matrices/inits_2.c
+CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o
+ .././inc/math/math.h
+ .././inc/math/matrices.h
+ .././inc/math/quaternions.h
+ .././inc/math/vectors.h
+ .././inc/rt.h
+ .././inc/rt/camera.h
+ .././inc/rt/objects.h
+ .././inc/rt/raytrace.h
+ .././inc/rt/transform.h
+ .././inc/utility/bool.h
+ .././inc/utility/defines.h
+ .././inc/utility/errors.h
+ .././inc/utility/get_next_line.h
+ .././libft/libft.h
+ /Users/bruteflow/c_projects/9_RT/src/utility/math/matrices/inits_3.c
 CMakeFiles/RT.dir/src/utility/math/matrices/mat_operations_1.c.o
  .././inc/math/math.h
  .././inc/math/matrices.h

@@ -689,6 +689,22 @@ CMakeFiles/RT.dir/src/utility/math/matrices/inits_2.c.o: .././inc/utility/get_ne
 CMakeFiles/RT.dir/src/utility/math/matrices/inits_2.c.o: .././libft/libft.h
 CMakeFiles/RT.dir/src/utility/math/matrices/inits_2.c.o: ../src/utility/math/matrices/inits_2.c
 
+CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o: .././inc/math/math.h
+CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o: .././inc/math/matrices.h
+CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o: .././inc/math/quaternions.h
+CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o: .././inc/math/vectors.h
+CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o: .././inc/rt.h
+CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o: .././inc/rt/camera.h
+CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o: .././inc/rt/objects.h
+CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o: .././inc/rt/raytrace.h
+CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o: .././inc/rt/transform.h
+CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o: .././inc/utility/bool.h
+CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o: .././inc/utility/defines.h
+CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o: .././inc/utility/errors.h
+CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o: .././inc/utility/get_next_line.h
+CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o: .././libft/libft.h
+CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o: ../src/utility/math/matrices/inits_3.c
+
 CMakeFiles/RT.dir/src/utility/math/matrices/mat_operations_1.c.o: .././inc/math/math.h
 CMakeFiles/RT.dir/src/utility/math/matrices/mat_operations_1.c.o: .././inc/math/matrices.h
 CMakeFiles/RT.dir/src/utility/math/matrices/mat_operations_1.c.o: .././inc/math/quaternions.h

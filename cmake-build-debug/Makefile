@@ -2971,6 +2971,33 @@ src/utility/math/matrices/inits_2.c.s:
 	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/math/matrices/inits_2.c.s
 .PHONY : src/utility/math/matrices/inits_2.c.s
 
+src/utility/math/matrices/inits_3.o: src/utility/math/matrices/inits_3.c.o
+
+.PHONY : src/utility/math/matrices/inits_3.o
+
+# target to build an object file
+src/utility/math/matrices/inits_3.c.o:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o
+.PHONY : src/utility/math/matrices/inits_3.c.o
+
+src/utility/math/matrices/inits_3.i: src/utility/math/matrices/inits_3.c.i
+
+.PHONY : src/utility/math/matrices/inits_3.i
+
+# target to preprocess a source file
+src/utility/math/matrices/inits_3.c.i:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.i
+.PHONY : src/utility/math/matrices/inits_3.c.i
+
+src/utility/math/matrices/inits_3.s: src/utility/math/matrices/inits_3.c.s
+
+.PHONY : src/utility/math/matrices/inits_3.s
+
+# target to generate assembly for a file
+src/utility/math/matrices/inits_3.c.s:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.s
+.PHONY : src/utility/math/matrices/inits_3.c.s
+
 src/utility/math/matrices/mat_operations_1.o: src/utility/math/matrices/mat_operations_1.c.o
 
 .PHONY : src/utility/math/matrices/mat_operations_1.o
@@ -3512,6 +3539,9 @@ help:
 	@echo "... src/utility/math/matrices/inits_2.o"
 	@echo "... src/utility/math/matrices/inits_2.i"
 	@echo "... src/utility/math/matrices/inits_2.s"
+	@echo "... src/utility/math/matrices/inits_3.o"
+	@echo "... src/utility/math/matrices/inits_3.i"
+	@echo "... src/utility/math/matrices/inits_3.s"
 	@echo "... src/utility/math/matrices/mat_operations_1.o"
 	@echo "... src/utility/math/matrices/mat_operations_1.i"
 	@echo "... src/utility/math/matrices/mat_operations_1.s"

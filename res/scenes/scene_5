@@ -1,34 +1,61 @@
 scene:
 lights:
-			2
+			5
 materials:
-			2
+			5
 objects:
-			2
+			5
 camera:
 camera position:
 					0
-					0
+					-100
 					-2500
 camera direction:
 					0
-					0
-					1
+					-100
+					25
 fov:
 					25
 lights:
 position:
 					0
-					0
-					2000
+					-1000
+					-1000
 position:
 					0
+					-1000
+					1000
+position:
+					1000
+					-1000
 					0
-					-2000
+position:
+					-1000
+					-1000
+					0
+position:
+					0
+					-1000
+					0
+color:
+					0.8
+					1.0
+					1.0
+					1.0
+color:
+					1.0
+					0.8
+					1.0
+					1.0
 color:
 					1.0
 					1.0
+					0.8
 					1.0
+color:
+					1.0
+					0.8
+					0.8
 					1.0
 color:
 					1.0
@@ -46,6 +73,27 @@ color:
 					0.0
 					1.0
 					1.0
+color:
+					1.0
+					1.0
+					0.1
+					1.0
+color:
+					1.0
+					0.0
+					0.3
+					1.0
+color:
+					0.4
+					0.2
+					1.0
+					1.0
+reflection:
+					0.01
+reflection:
+					0.01
+reflection:
+					0.01
 reflection:
 					0.01
 reflection:
@@ -53,20 +101,47 @@ reflection:
 objects:
 sphere:
 position:
+					1000
 					0
-					400
 					0
 radius:
-					250
+					50
+material:
+					0
+sphere:
+position:
+					-1000
+					0
+					0
+radius:
+					50
 material:
 					1
 sphere:
 position:
 					0
-					-300
-					-2500
-radius:
-					100
-material:
 					0
+					-1000
+radius:
+					50
+material:
+					2
+sphere:
+position:
+					0
+					0
+					1000
+radius:
+					50
+material:
+					3
+sphere:
+position:
+					0
+					0
+					0
+radius:
+					50
+material:
+					4
 end

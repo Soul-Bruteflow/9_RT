@@ -45,6 +45,7 @@ typedef struct		s_sdl
 	SDL_Event		event;
 	const Uint8		*key_state;
 	SDL_bool		is_mouse_cap;
+	t_vec2d			mouse_pos;
 }					t_sdl;
 
 /*
@@ -114,14 +115,14 @@ typedef	struct		s_pars
 }					t_pars;
 
 
-typedef struct		s_time
+typedef struct		s_delta
 {
-	float			time;
-	float			old_time;
-	float			frame_time;
+	uint32_t		oldtime;
+	uint32_t		curtime;
+	double			ftime;
 	char			fps[4];
 	int				fps_counter;
-}					t_time;
+}					t_delta;
 
 /*
 ** Main struct.
@@ -135,7 +136,7 @@ typedef struct		s_rtv
 	t_scene			*scene;
 	t_calc			*calc;
 	t_pars			*pars;
-	t_time			delta;
+	t_delta			delta;
 }					t_rtv;
 
 /*
