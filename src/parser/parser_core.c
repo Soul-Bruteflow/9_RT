@@ -12,7 +12,7 @@
 
 #include "rt.h"
 
-t_bool	parser_core(t_rtv *r)
+t_bool	parser_core(t_rt *r)
 {
 	open_file(r);
 	if (!(check_line(r, "scene:")))

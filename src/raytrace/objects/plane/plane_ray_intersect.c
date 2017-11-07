@@ -17,7 +17,7 @@ t_bool	intersect_plane_ray(t_ray *r, t_obj3d *obj, float *t)
 	t_plane		*p;
 	float		denom;
 	float		t0;
-	t_vec3d		tmp;
+	t_vec3		tmp;
 
 	p = obj->type;
 	denom = vec3_dot(&r->dir, &p->normal);

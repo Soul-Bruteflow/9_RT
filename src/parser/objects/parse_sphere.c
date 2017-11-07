@@ -12,16 +12,16 @@
 
 #include "rt.h"
 
-void	alloc_new_sphere(t_rtv *r, int i)
+void	alloc_new_sphere(t_rt *r, int i)
 {
 	r->scene->objects[i] = new_object(sphere);
 	r->scene->objects[i]->type = new_sphere();
 	r->scene->objects[i]->intersect = intersect_sphere_ray;
 }
 
-t_bool	parse_sphere(t_rtv *r, int i)
+t_bool	parse_sphere(t_rt *r, int i)
 {
-	t_vec3d		position;
+	t_vec3		position;
 	float		radius;
 	Uint16		material;
 

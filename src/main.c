@@ -14,11 +14,11 @@
 
 int		main(int ac, char **av)
 {
-	t_rtv	*rtv;
+	t_rt	*rtv;
 
 	if (ac == 2)
 	{
-		rtv = rtv_init(av);
+		rtv = rt_init(av);
 		if (!(parser_core(rtv)))
 			rtv_error(parse_error);
 		init_camera(rtv);
@@ -26,7 +26,7 @@ int		main(int ac, char **av)
 		clear_window(rtv);
 		raytrace(rtv);
 		render_present(rtv);
-		rtv_loop(rtv);
+		rt_loop(rtv);
 	}
 	else
 		rtv_error(usage_error);

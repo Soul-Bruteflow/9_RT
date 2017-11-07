@@ -12,15 +12,15 @@
 
 #include "rt.h"
 
-t_vec3d		vec3_norm(t_vec3d v)
+t_vec3		vec3_norm(t_vec3 v)
 {
-	t_vec3d	unit_vector;
+	t_vec3	unit_vector;
 
 	unit_vector = vec3_scale((1 / vec3_len(v)), &v);
 	return (unit_vector);
 }
 
-float		vec3_len(t_vec3d v)
+float		vec3_len(t_vec3 v)
 {
 	float len;
 
@@ -28,9 +28,9 @@ float		vec3_len(t_vec3d v)
 	return (len);
 }
 
-t_vec3d		vec3_add3(t_vec3d a, t_vec3d b, t_vec3d c)
+t_vec3		vec3_add3(t_vec3 a, t_vec3 b, t_vec3 c)
 {
-	t_vec3d tmp;
+	t_vec3 tmp;
 
 	tmp.x = a.x + b.x + c.x;
 	tmp.y = a.y + b.y + c.y;
@@ -38,7 +38,7 @@ t_vec3d		vec3_add3(t_vec3d a, t_vec3d b, t_vec3d c)
 	return (tmp);
 }
 
-t_quat		vec3_rotate(float angle, t_vec3d *axis)
+t_quat		vec3_rotate(float angle, t_vec3 *axis)
 {
 	float	sin_half_angle;
 	float	cos_half_angle;

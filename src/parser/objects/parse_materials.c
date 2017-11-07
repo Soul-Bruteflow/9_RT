@@ -12,7 +12,7 @@
 
 #include "rt.h"
 
-static t_bool	parse_mats_color(t_rtv *r)
+static t_bool	parse_mats_color(t_rt *r)
 {
 	int i;
 
@@ -33,7 +33,7 @@ static t_bool	parse_mats_color(t_rtv *r)
 	return (true);
 }
 
-static t_bool	parse_mats_reflection(t_rtv *r)
+static t_bool	parse_mats_reflection(t_rt *r)
 {
 	int i;
 
@@ -54,7 +54,7 @@ static t_bool	parse_mats_reflection(t_rtv *r)
 	return (true);
 }
 
-t_bool			parse_materials(t_rtv *r)
+t_bool			parse_materials(t_rt *r)
 {
 	if (!(parse_mats_color(r)))
 		return (false);

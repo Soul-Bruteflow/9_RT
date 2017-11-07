@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rtv_init.c                                         :+:      :+:    :+:   */
+/*   rt_init.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mvlad <mvlad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -16,9 +16,9 @@
 ** type *pointer = malloc(num_elems * sizeof(*pointer));
 */
 
-t_rtv	*rtv_init(char **av)
+t_rt	*rt_init(char **av)
 {
-	t_rtv *rtv_tmp;
+	t_rt *rtv_tmp;
 
 	rtv_tmp = malloc(sizeof(*(rtv_tmp)));
 	if (rtv_tmp == NULL)

@@ -1837,32 +1837,59 @@ src/errors.c.s:
 	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/errors.c.s
 .PHONY : src/errors.c.s
 
-src/events/keyboard_core.o: src/events/keyboard_core.c.o
+src/events/keyboard/keyboard_core.o: src/events/keyboard/keyboard_core.c.o
 
-.PHONY : src/events/keyboard_core.o
+.PHONY : src/events/keyboard/keyboard_core.o
 
 # target to build an object file
-src/events/keyboard_core.c.o:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/events/keyboard_core.c.o
-.PHONY : src/events/keyboard_core.c.o
+src/events/keyboard/keyboard_core.c.o:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/events/keyboard/keyboard_core.c.o
+.PHONY : src/events/keyboard/keyboard_core.c.o
 
-src/events/keyboard_core.i: src/events/keyboard_core.c.i
+src/events/keyboard/keyboard_core.i: src/events/keyboard/keyboard_core.c.i
 
-.PHONY : src/events/keyboard_core.i
+.PHONY : src/events/keyboard/keyboard_core.i
 
 # target to preprocess a source file
-src/events/keyboard_core.c.i:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/events/keyboard_core.c.i
-.PHONY : src/events/keyboard_core.c.i
+src/events/keyboard/keyboard_core.c.i:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/events/keyboard/keyboard_core.c.i
+.PHONY : src/events/keyboard/keyboard_core.c.i
 
-src/events/keyboard_core.s: src/events/keyboard_core.c.s
+src/events/keyboard/keyboard_core.s: src/events/keyboard/keyboard_core.c.s
 
-.PHONY : src/events/keyboard_core.s
+.PHONY : src/events/keyboard/keyboard_core.s
 
 # target to generate assembly for a file
-src/events/keyboard_core.c.s:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/events/keyboard_core.c.s
-.PHONY : src/events/keyboard_core.c.s
+src/events/keyboard/keyboard_core.c.s:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/events/keyboard/keyboard_core.c.s
+.PHONY : src/events/keyboard/keyboard_core.c.s
+
+src/events/mouse/mouse_core.o: src/events/mouse/mouse_core.c.o
+
+.PHONY : src/events/mouse/mouse_core.o
+
+# target to build an object file
+src/events/mouse/mouse_core.c.o:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/events/mouse/mouse_core.c.o
+.PHONY : src/events/mouse/mouse_core.c.o
+
+src/events/mouse/mouse_core.i: src/events/mouse/mouse_core.c.i
+
+.PHONY : src/events/mouse/mouse_core.i
+
+# target to preprocess a source file
+src/events/mouse/mouse_core.c.i:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/events/mouse/mouse_core.c.i
+.PHONY : src/events/mouse/mouse_core.c.i
+
+src/events/mouse/mouse_core.s: src/events/mouse/mouse_core.c.s
+
+.PHONY : src/events/mouse/mouse_core.s
+
+# target to generate assembly for a file
+src/events/mouse/mouse_core.c.s:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/events/mouse/mouse_core.c.s
+.PHONY : src/events/mouse/mouse_core.c.s
 
 src/get_next_line.o: src/get_next_line.c.o
 
@@ -2674,59 +2701,59 @@ src/raytrace/scene/scene_create.c.s:
 	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/raytrace/scene/scene_create.c.s
 .PHONY : src/raytrace/scene/scene_create.c.s
 
-src/rtv_init.o: src/rtv_init.c.o
+src/rt_init.o: src/rt_init.c.o
 
-.PHONY : src/rtv_init.o
-
-# target to build an object file
-src/rtv_init.c.o:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/rtv_init.c.o
-.PHONY : src/rtv_init.c.o
-
-src/rtv_init.i: src/rtv_init.c.i
-
-.PHONY : src/rtv_init.i
-
-# target to preprocess a source file
-src/rtv_init.c.i:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/rtv_init.c.i
-.PHONY : src/rtv_init.c.i
-
-src/rtv_init.s: src/rtv_init.c.s
-
-.PHONY : src/rtv_init.s
-
-# target to generate assembly for a file
-src/rtv_init.c.s:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/rtv_init.c.s
-.PHONY : src/rtv_init.c.s
-
-src/rtv_loop.o: src/rtv_loop.c.o
-
-.PHONY : src/rtv_loop.o
+.PHONY : src/rt_init.o
 
 # target to build an object file
-src/rtv_loop.c.o:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/rtv_loop.c.o
-.PHONY : src/rtv_loop.c.o
+src/rt_init.c.o:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/rt_init.c.o
+.PHONY : src/rt_init.c.o
 
-src/rtv_loop.i: src/rtv_loop.c.i
+src/rt_init.i: src/rt_init.c.i
 
-.PHONY : src/rtv_loop.i
+.PHONY : src/rt_init.i
 
 # target to preprocess a source file
-src/rtv_loop.c.i:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/rtv_loop.c.i
-.PHONY : src/rtv_loop.c.i
+src/rt_init.c.i:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/rt_init.c.i
+.PHONY : src/rt_init.c.i
 
-src/rtv_loop.s: src/rtv_loop.c.s
+src/rt_init.s: src/rt_init.c.s
 
-.PHONY : src/rtv_loop.s
+.PHONY : src/rt_init.s
 
 # target to generate assembly for a file
-src/rtv_loop.c.s:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/rtv_loop.c.s
-.PHONY : src/rtv_loop.c.s
+src/rt_init.c.s:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/rt_init.c.s
+.PHONY : src/rt_init.c.s
+
+src/rt_loop.o: src/rt_loop.c.o
+
+.PHONY : src/rt_loop.o
+
+# target to build an object file
+src/rt_loop.c.o:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/rt_loop.c.o
+.PHONY : src/rt_loop.c.o
+
+src/rt_loop.i: src/rt_loop.c.i
+
+.PHONY : src/rt_loop.i
+
+# target to preprocess a source file
+src/rt_loop.c.i:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/rt_loop.c.i
+.PHONY : src/rt_loop.c.i
+
+src/rt_loop.s: src/rt_loop.c.s
+
+.PHONY : src/rt_loop.s
+
+# target to generate assembly for a file
+src/rt_loop.c.s:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/rt_loop.c.s
+.PHONY : src/rt_loop.c.s
 
 src/rtv_quit.o: src/rtv_quit.c.o
 
@@ -3413,9 +3440,12 @@ help:
 	@echo "... src/errors.o"
 	@echo "... src/errors.i"
 	@echo "... src/errors.s"
-	@echo "... src/events/keyboard_core.o"
-	@echo "... src/events/keyboard_core.i"
-	@echo "... src/events/keyboard_core.s"
+	@echo "... src/events/keyboard/keyboard_core.o"
+	@echo "... src/events/keyboard/keyboard_core.i"
+	@echo "... src/events/keyboard/keyboard_core.s"
+	@echo "... src/events/mouse/mouse_core.o"
+	@echo "... src/events/mouse/mouse_core.i"
+	@echo "... src/events/mouse/mouse_core.s"
 	@echo "... src/get_next_line.o"
 	@echo "... src/get_next_line.i"
 	@echo "... src/get_next_line.s"
@@ -3506,12 +3536,12 @@ help:
 	@echo "... src/raytrace/scene/scene_create.o"
 	@echo "... src/raytrace/scene/scene_create.i"
 	@echo "... src/raytrace/scene/scene_create.s"
-	@echo "... src/rtv_init.o"
-	@echo "... src/rtv_init.i"
-	@echo "... src/rtv_init.s"
-	@echo "... src/rtv_loop.o"
-	@echo "... src/rtv_loop.i"
-	@echo "... src/rtv_loop.s"
+	@echo "... src/rt_init.o"
+	@echo "... src/rt_init.i"
+	@echo "... src/rt_init.s"
+	@echo "... src/rt_loop.o"
+	@echo "... src/rt_loop.i"
+	@echo "... src/rt_loop.s"
 	@echo "... src/rtv_quit.o"
 	@echo "... src/rtv_quit.i"
 	@echo "... src/rtv_quit.s"

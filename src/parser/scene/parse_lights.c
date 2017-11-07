@@ -12,7 +12,7 @@
 
 #include "rt.h"
 
-static t_bool	parse_lights_position(t_rtv *r)
+static t_bool	parse_lights_position(t_rt *r)
 {
 	int i;
 
@@ -32,7 +32,7 @@ static t_bool	parse_lights_position(t_rtv *r)
 	return (true);
 }
 
-static t_bool	parse_lights_color(t_rtv *r)
+static t_bool	parse_lights_color(t_rt *r)
 {
 	int i;
 
@@ -52,7 +52,7 @@ static t_bool	parse_lights_color(t_rtv *r)
 	return (true);
 }
 
-t_bool			parse_lights(t_rtv *r)
+t_bool			parse_lights(t_rt *r)
 {
 	if (!(parse_lights_position(r)))
 		return (false);

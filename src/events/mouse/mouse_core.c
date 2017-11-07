@@ -1,0 +1,36 @@
+#include "rt.h"
+
+void	mouse_core(t_rt *rt)
+{
+	int x;
+	int y;
+
+	if (rt->sdl->event.type == SDL_MOUSEMOTION)
+	{
+//		SDL_WarpMouseInWindow(rt->sdl->window, WIDTH / 2, HEIGHT / 2);
+//		SDL_GetMouseState(&x, &y);
+		rt->sdl->mouse_angle.x = 0;
+		rt->sdl->mouse_angle.y = 0;
+		SDL_GetRelativeMouseState(&x,&y);
+		rt->sdl->mouse_rel_pos.x = x;
+		rt->sdl->mouse_rel_pos.y = y;
+
+	}
+//	printf("%f, %f\n", rt->sdl->mouse_rel_pos.x, rt->sdl->mouse_rel_pos.y);
+	if (rt->sdl->event.type == SDL_MOUSEBUTTONDOWN)
+	{
+//		if (rt->sdl->is_mouse_cap)
+		if (rt->sdl->event.button.button == SDL_BUTTON_LEFT)
+		{
+//			SDL_ShowSimpleMessageBox(0, "Mouse", "Left button was pressed!", rt->sdl->window);
+//			printf("%f, %f\n", rt->sdl->mouse_rel_pos.x, rt->sdl->mouse_rel_pos.y);
+//			rt->sdl->is_mouse_cap = (SDL_bool)0;
+//			SDL_CaptureMouse(rt->sdl->is_mouse_cap);
+		}
+//		else
+//		{
+//			rt->sdl->is_mouse_cap = (SDL_bool)1;
+//			SDL_CaptureMouse(rt->sdl->is_mouse_cap);
+//		}
+	}
+}

@@ -52,7 +52,7 @@ t_quat	quat_mul(t_quat q1, t_quat q2)
 	return (res);
 }
 
-t_quat	quat_mul_vec3d(t_quat q, t_vec3d v)
+t_quat	quat_mul_vec3d(t_quat q, t_vec3 v)
 {
 	t_quat	res;
 

@@ -12,16 +12,16 @@
 
 #include "rt.h"
 
-void	alloc_new_cylinder(t_rtv *r, int i)
+void	alloc_new_cylinder(t_rt *r, int i)
 {
 	r->scene->objects[i] = new_object(cylinder);
 	r->scene->objects[i]->type = new_cylinder();
 	r->scene->objects[i]->intersect = intersect_cylinder_ray;
 }
 
-t_bool	parse_cylinder(t_rtv *r, int i)
+t_bool	parse_cylinder(t_rt *r, int i)
 {
-	t_vec3d		ab[2];
+	t_vec3		ab[2];
 	float		radius;
 	Uint16		material;
 

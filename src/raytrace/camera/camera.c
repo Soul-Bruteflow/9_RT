@@ -12,7 +12,7 @@
 
 #include "rt.h"
 
-void	init_camera(t_rtv *r)
+void	init_camera(t_rt *r)
 {
 	float	fov_radians;
 	float	height_width_ratio;
@@ -55,7 +55,7 @@ void	init_camera(t_rtv *r)
 //	c->world_up = vec3_cross(&c->dir, &c->right);
 }
 
-void	cam_update(t_cam *c, t_vec3d *ray_start)
+void	cam_update(t_cam *c, t_vec3 *ray_start)
 {
 //	c->world_up.x = 0;
 //	c->world_up.y = 1;
@@ -68,7 +68,7 @@ void	cam_update(t_cam *c, t_vec3d *ray_start)
 
 void	cam_rot_x(t_cam *c, float angle)
 {
-//	t_vec3d h_axis;
+//	t_vec3 h_axis;
 //
 //	h_axis = vec3_norm(vec3_cross(&c->world_up, &c->dir));
 //	c->dir = vec3_norm(vec3_rotate(angle, &h_axis));
@@ -77,7 +77,7 @@ void	cam_rot_x(t_cam *c, float angle)
 
 void	cam_rot_y(t_cam *c, float angle)
 {
-//	t_vec3d h_axis;
+//	t_vec3 h_axis;
 //	t_quat	q;
 //	t_mat4	rotation;
 //	t_mat4	translation;
@@ -85,7 +85,7 @@ void	cam_rot_y(t_cam *c, float angle)
 //	t_mat4	m;
 //	t_mat4	transformation;
 //	t_mat4	projection;
-//	t_vec3d	tmp;
+//	t_vec3	tmp;
 
 	t_quat	pure;
 	t_quat	real;
@@ -172,10 +172,10 @@ void	cam_rot_y(t_cam *c, float angle)
 //	c->up = vec3_norm(vec3_cross(&c->dir, &h_axis));
 }
 
-void	cam_move(t_cam *c, t_vec3d *cam_pos, t_vec3d *dir, float amt)
+void	cam_move(t_cam *c, t_vec3 *cam_pos, t_vec3 *dir, float amt)
 {
 	t_mat4	m;
-	t_vec3d	move_to;
+	t_vec3	move_to;
 
 	c->t.translation = vec3_scale(amt, dir);
 //	move_to = vec3_scale(amt, dir);

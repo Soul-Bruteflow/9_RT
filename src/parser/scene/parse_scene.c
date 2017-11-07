@@ -12,7 +12,7 @@
 
 #include "rt.h"
 
-t_bool	parse_scene(t_rtv *r)
+t_bool	parse_scene(t_rt *r)
 {
 	float n;
 

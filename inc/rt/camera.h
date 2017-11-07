@@ -29,11 +29,11 @@ typedef struct	s_persp
 */
 typedef struct	s_cam
 {
-	t_vec3d		pos;
-	t_vec3d		dir;
-	t_vec3d		up;
-	t_vec3d		right;
-	t_vec3d		world_up;
+	t_vec3		pos;
+	t_vec3		dir;
+	t_vec3		up;
+	t_vec3		right;
+	t_vec3		world_up;
 	float 		mov_amt;
 	float 		rot_amt;
 	float		horiz_angle;
@@ -47,11 +47,11 @@ typedef struct	s_cam
 /*
 ** Camera
 */
-t_cam			*create_perspective_cam(t_vec3d origin, t_vec3d target,
-										 t_vec3d upguide, float fov_asp[]);
-void			make_ray(t_cam *cam, t_vec2d point, t_ray *r);
-void			cam_move(t_cam *c, t_vec3d *cam_pos, t_vec3d *dir, float amt);
-void			cam_update(t_cam *c, t_vec3d *ray_start);
+t_cam			*create_perspective_cam(t_vec3 origin, t_vec3 target,
+										 t_vec3 upguide, float fov_asp[]);
+void			make_ray(t_cam *cam, t_vec2 point, t_ray *r);
+void			cam_move(t_cam *c, t_vec3 *cam_pos, t_vec3 *dir, float amt);
+void			cam_update(t_cam *c, t_vec3 *ray_start);
 void			cam_rot_x(t_cam *c, float angle);
 void			cam_rot_y(t_cam *c, float angle);
 

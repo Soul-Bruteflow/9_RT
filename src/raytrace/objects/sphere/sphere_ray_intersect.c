@@ -20,7 +20,7 @@ static float	calculate_discriminant(t_ray *r, t_obj3d *object, float *b)
 {
 	float		a;
 	float		c;
-	t_vec3d		dist;
+	t_vec3		dist;
 	t_sphere	*s;
 
 	s = object->type;

@@ -40,8 +40,8 @@ typedef struct	s_rgbap
 */
 typedef struct	s_ray
 {
-	t_vec3d		start;
-	t_vec3d		dir;
+	t_vec3		start;
+	t_vec3		dir;
 }				t_ray;
 
 /*
@@ -58,7 +58,7 @@ typedef struct	s_material
 */
 typedef struct	s_light
 {
-	t_vec3d		pos;
+	t_vec3		pos;
 	t_rgbap		color;
 }				t_light;
 
@@ -75,6 +75,6 @@ void			set_material(t_material *material, t_rgbap diffuse, float r);
 ** Light
 */
 t_light			*new_light();
-void			set_light(t_light *light, t_vec3d pos, t_rgbap intensity);
+void			set_light(t_light *light, t_vec3 pos, t_rgbap intensity);
 
 #endif

@@ -6,9 +6,9 @@
 */
 typedef struct	s_transform
 {
-	t_vec3d		translation;
-	t_vec3d		rotation;
-	t_vec3d		scale;
+	t_vec3		translation;
+	t_vec3		rotation;
+	t_vec3		scale;
 
 }				t_transform;
 

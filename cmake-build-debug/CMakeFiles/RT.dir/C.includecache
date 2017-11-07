@@ -74,9 +74,13 @@ stdlib.h
 rt.h
 /Users/bruteflow/c_projects/9_RT/src/rt.h
 
-/Users/bruteflow/c_projects/9_RT/src/events/keyboard_core.c
+/Users/bruteflow/c_projects/9_RT/src/events/keyboard/keyboard_core.c
 rt.h
-/Users/bruteflow/c_projects/9_RT/src/events/rt.h
+/Users/bruteflow/c_projects/9_RT/src/events/keyboard/rt.h
+
+/Users/bruteflow/c_projects/9_RT/src/events/mouse/mouse_core.c
+rt.h
+/Users/bruteflow/c_projects/9_RT/src/events/mouse/rt.h
 
 /Users/bruteflow/c_projects/9_RT/src/get_next_line.c
 rt.h
@@ -198,11 +202,11 @@ rt.h
 rt.h
 /Users/bruteflow/c_projects/9_RT/src/raytrace/scene/rt.h
 
-/Users/bruteflow/c_projects/9_RT/src/rtv_init.c
+/Users/bruteflow/c_projects/9_RT/src/rt_init.c
 rt.h
 /Users/bruteflow/c_projects/9_RT/src/rt.h
 
-/Users/bruteflow/c_projects/9_RT/src/rtv_loop.c
+/Users/bruteflow/c_projects/9_RT/src/rt_loop.c
 rt.h
 /Users/bruteflow/c_projects/9_RT/src/rt.h
 

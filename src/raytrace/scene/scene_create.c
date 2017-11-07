@@ -17,7 +17,7 @@
 ** lights and materials defined bu arguments.
 */
 
-t_bool	new_lights(t_rtv *r)
+t_bool	new_lights(t_rt *r)
 {
 	int		i;
 
@@ -30,7 +30,7 @@ t_bool	new_lights(t_rtv *r)
 	return (true);
 }
 
-t_bool	new_materials(t_rtv *r)
+t_bool	new_materials(t_rt *r)
 {
 	int		i;
 
@@ -43,7 +43,7 @@ t_bool	new_materials(t_rtv *r)
 	return (true);
 }
 
-void	new_scene(t_rtv *r, int n_of_lights, int n_of_mats, int n_of_objs)
+void	new_scene(t_rt *r, int n_of_lights, int n_of_mats, int n_of_objs)
 {
 	r->scene->objects = malloc(n_of_objs * sizeof(r->scene->objects));
 	if (r->scene->objects == NULL)
@@ -56,7 +56,7 @@ void	new_scene(t_rtv *r, int n_of_lights, int n_of_mats, int n_of_objs)
 		rtv_error(malloc_error);
 }
 
-t_bool	create_scene(t_rtv *r)
+t_bool	create_scene(t_rt *r)
 {
 	new_scene(r, r->scene->lits_n, r->scene->mats_n, r->scene->objs_n);
 	if (!(new_lights(r)))

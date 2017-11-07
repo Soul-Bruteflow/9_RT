@@ -4,7 +4,7 @@
 t_quat	quat_normalize_s(t_quat q)
 {
 	float	angle;
-	t_vec3d	v;
+	t_vec3	v;
 
 	angle = ft_to_radians(q.w) * 0.5f;
 	v.x = q.x;
@@ -30,7 +30,7 @@ t_quat	set_quat_f(float x, float y, float z, float w)
 	return (q);
 }
 
-t_quat	set_quat_v(t_vec3d v, float w)
+t_quat	set_quat_v(t_vec3 v, float w)
 {
 	t_quat q;
 

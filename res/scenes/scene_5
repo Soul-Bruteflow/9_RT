@@ -138,7 +138,7 @@ material:
 sphere:
 position:
 					0
-					0
+					200
 					0
 radius:
 					50

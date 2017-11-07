@@ -16,11 +16,11 @@
 ** Find closest intersection
 */
 
-t_bool	object_intersect(t_rtv *rtv, t_ray *r, int *cur_obj, t_vec3d *new_start)
+t_bool	object_intersect(t_rt *rtv, t_ray *r, int *cur_obj, t_vec3 *new_start)
 {
 	float			t;
 	int				i;
-	t_vec3d			scaled;
+	t_vec3			scaled;
 
 	t = rtv->scene->cam.p.far;
 	i = -1;
@@ -41,7 +41,7 @@ t_bool	object_intersect(t_rtv *rtv, t_ray *r, int *cur_obj, t_vec3d *new_start)
 ** n - normal; s - new_start;
 */
 
-t_bool	normal_of_intersect(t_vec3d *n, t_vec3d *s, t_obj3d **objs, int cur_obj)
+t_bool	normal_of_intersect(t_vec3 *n, t_vec3 *s, t_obj3d **objs, int cur_obj)
 {
 	float		temp;
 

@@ -12,7 +12,7 @@
 
 #include "rt.h"
 
-t_bool	choose(t_rtv *r, int i)
+t_bool	choose(t_rt *r, int i)
 {
 	if ((ft_strcmp(r->pars->line, "plane:") == 0))
 	{
@@ -39,7 +39,7 @@ t_bool	choose(t_rtv *r, int i)
 	return (true);
 }
 
-t_bool	parse_objects(t_rtv *r)
+t_bool	parse_objects(t_rt *r)
 {
 	int i;
 

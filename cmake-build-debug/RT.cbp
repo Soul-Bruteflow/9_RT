@@ -365,7 +365,10 @@
 		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/errors.c">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/events/keyboard_core.c">
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/events/keyboard/keyboard_core.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/events/mouse/mouse_core.c">
 			<Option target="RT"/>
 		</Unit>
 		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/get_next_line.c">
@@ -458,10 +461,10 @@
 		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/raytrace/scene/scene_create.c">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/rtv_init.c">
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/rt_init.c">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/rtv_loop.c">
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/rt_loop.c">
 			<Option target="RT"/>
 		</Unit>
 		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/rtv_quit.c">

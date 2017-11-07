@@ -22,7 +22,7 @@ t_plane	*new_plane(void)
 	return (plane);
 }
 
-void	set_plane_normal(t_obj3d *obj, t_vec3d new_normal)
+void	set_plane_normal(t_obj3d *obj, t_vec3 new_normal)
 {
 	t_plane *tmp_plane;
 
@@ -32,7 +32,7 @@ void	set_plane_normal(t_obj3d *obj, t_vec3d new_normal)
 	tmp_plane->normal.z = new_normal.z;
 }
 
-void	set_plane_point(t_obj3d *obj, t_vec3d new_point)
+void	set_plane_point(t_obj3d *obj, t_vec3 new_point)
 {
 	t_plane *tmp_plane;
 
@@ -42,7 +42,7 @@ void	set_plane_point(t_obj3d *obj, t_vec3d new_point)
 	tmp_plane->point.z = new_point.z;
 }
 
-void	set_plane(t_obj3d *obj, t_vec3d normal, t_vec3d point, Uint16 material)
+void	set_plane(t_obj3d *obj, t_vec3 normal, t_vec3 point, Uint16 material)
 {
 	set_plane_normal(obj, normal);
 	set_plane_point(obj, point);

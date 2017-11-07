@@ -16,7 +16,7 @@
 ** Closes the file, and checks for the errors.
 */
 
-void	close_file(t_rtv *r)
+void	close_file(t_rt *r)
 {
 	if ((close(r->pars->fd)) < 0)
 		rtv_error(file_close_error);
@@ -26,7 +26,7 @@ void	close_file(t_rtv *r)
 ** Opens the file, and checks for the errors.
 */
 
-void	open_file(t_rtv *r)
+void	open_file(t_rt *r)
 {
 	r->pars->fd = open(r->pars->av[1], O_RDONLY);
 	if (r->pars->fd < 0)
@@ -37,7 +37,7 @@ void	open_file(t_rtv *r)
 ** Checks for the GNL errors.
 */
 
-void	gnl_error(t_rtv *r, int i)
+void	gnl_error(t_rt *r, int i)
 {
 	if (i < 0)
 	{
@@ -50,7 +50,7 @@ void	gnl_error(t_rtv *r, int i)
 ** Parses int values in to the float.
 */
 
-t_bool	parse_number(t_rtv *r, float *n, int min, int max)
+t_bool	parse_number(t_rt *r, float *n, int min, int max)
 {
 	float tmp;
 
@@ -71,7 +71,7 @@ t_bool	parse_number(t_rtv *r, float *n, int min, int max)
 ** Parses line by line vector values.
 */
 
-t_bool	parse_vector(t_rtv *r, t_vec3d *v, int min, int max)
+t_bool	parse_vector(t_rt *r, t_vec3 *v, int min, int max)
 {
 	if (!(parse_number(r, &v->x, min, max)))
 		return (false);

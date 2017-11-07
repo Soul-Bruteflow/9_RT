@@ -30,7 +30,7 @@ void		set_sphere_radius(t_obj3d *obj, float new_radius)
 	tmp_sphere->radius = new_radius;
 }
 
-void		set_sphere(t_obj3d *obj, t_vec3d new_pos, float rad, Uint16 mat)
+void		set_sphere(t_obj3d *obj, t_vec3 new_pos, float rad, Uint16 mat)
 {
 	set_object_position(obj, new_pos);
 	set_object_material(obj, mat);

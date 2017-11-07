@@ -20,7 +20,7 @@ static float	calculate_discriminant(t_ray *r, t_obj3d *o, float *b, float *a)
 {
 	float		c;
 	t_cylinder	*cy;
-	t_vec3d		tmp[4];
+	t_vec3		tmp[4];
 
 	cy = o->type;
 	tmp[0] = vec3_sub(&cy->b, &cy->a);

@@ -1,11 +1,11 @@
 #include "rt.h"
 
-t_mat4	init_cam_mat(t_vec3d dir, t_vec3d up)
+t_mat4	init_cam_mat(t_vec3 dir, t_vec3 up)
 {
 	t_mat4	m;
-	t_vec3d	d;
-	t_vec3d	u;
-	t_vec3d	r;
+	t_vec3	d;
+	t_vec3	u;
+	t_vec3	r;
 
 	d = vec3_norm(dir);
 	r = vec3_norm(vec3_cross(&dir, &up));
@@ -32,7 +32,7 @@ t_mat4	init_cam_mat(t_vec3d dir, t_vec3d up)
 	return (m);
 }
 
-t_mat4	init_translation(t_vec3d v)
+t_mat4	init_translation(t_vec3 v)
 {
 	t_mat4	m;
 
@@ -58,7 +58,7 @@ t_mat4	init_translation(t_vec3d v)
 	return (m);
 }
 
-t_mat4	init_rotation(t_vec3d v)
+t_mat4	init_rotation(t_vec3 v)
 {
 	t_mat4		rx;
 	t_mat4		ry;
@@ -76,7 +76,7 @@ t_mat4	init_rotation(t_vec3d v)
 	return (m);
 }
 
-t_mat4	init_scale(t_vec3d v)
+t_mat4	init_scale(t_vec3 v)
 {
 	t_mat4	m;
 

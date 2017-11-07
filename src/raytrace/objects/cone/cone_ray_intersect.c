@@ -22,7 +22,7 @@ static float	calculate_discriminant(t_ray *r, t_obj3d *o, float *b, float *a)
 	float	c_cov[2];
 	float	cov;
 	float	tmp[3];
-	t_vec3d	co;
+	t_vec3	co;
 
 	s = o->type;
 	c_cov[1] = vec3_dot(&r->dir, &s->axis);

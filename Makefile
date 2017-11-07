@@ -85,9 +85,9 @@ OBJ	=	events/keyboard_core.o \
 		get_next_line.o \
 		main.o \
 		rtv_error.o \
-		rtv_init.o \
-		rtv_loop.o \
-		rtv_quit.o
+		rt_init.o \
+		rt_loop.o \
+		rt_quit.o
 
 LIB = $(LIB_DIR)libft.a
 

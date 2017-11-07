@@ -12,9 +12,9 @@
 
 #include "rt.h"
 
-t_vec3d		set_vector(float x, float y, float z)
+t_vec3		set_vector(float x, float y, float z)
 {
-	t_vec3d tmp;
+	t_vec3 tmp;
 
 	tmp.x = x;
 	tmp.y = y;

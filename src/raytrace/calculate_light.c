@@ -12,7 +12,7 @@
 
 #include "rt.h"
 
-t_bool	calculate_shadows(t_rtv *r, t_obj3d **objs, t_ray *light_ray, float *t2)
+t_bool	calculate_shadows(t_rt *r, t_obj3d **objs, t_ray *light_ray, float *t2)
 {
 	int k;
 
@@ -25,7 +25,7 @@ t_bool	calculate_shadows(t_rtv *r, t_obj3d **objs, t_ray *light_ray, float *t2)
 	return (false);
 }
 
-float	lambert(t_ray *light_ray, t_vec3d *normal, float *coef)
+float	lambert(t_ray *light_ray, t_vec3 *normal, float *coef)
 {
 	return (vec3_dot(&light_ray->dir, normal) * *coef);
 }
@@ -46,7 +46,7 @@ void	lamb_dif(float lamb, t_rgbap *c, t_light cur_light, t_material cur_mat)
 ** The reflected ray start and direction
 */
 
-void	calculate_reflection(t_rtv *rtv)
+void	calculate_reflection(t_rt *rtv)
 {
 	rtv->calc->coef *= rtv->calc->cur_mat.reflection;
 	rtv->calc->reflect = 2.0f *
@@ -60,10 +60,10 @@ void	calculate_reflection(t_rtv *rtv)
 ** Find the value of the light at this point
 */
 
-void	calculate_light(t_rtv *rtv)
+void	calculate_light(t_rt *rtv)
 {
 	t_light		cur_light;
-	t_vec3d		dist;
+	t_vec3		dist;
 	float		t2;
 	t_ray		light_ray;
 	float		lamb;

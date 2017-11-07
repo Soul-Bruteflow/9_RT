@@ -21,9 +21,9 @@ t_mat4	mat_mult(t_mat4 *m1, t_mat4 *m2)
 	return (res);
 }
 
-t_vec3d	mat_mult_vec3d(t_mat4 m, t_vec3d v)
+t_vec3	mat_mult_vec3d(t_mat4 m, t_vec3 v)
 {
-	t_vec3d	res;
+	t_vec3	res;
 
 	res.x = m.m[0][0] * v.x + m.m[0][1] * v.x + m.m[0][2] * v.x + m.m[0][3] * 1;
 	res.y = m.m[1][0] * v.y + m.m[1][1] * v.y + m.m[1][2] * v.y + m.m[1][3] * 1;

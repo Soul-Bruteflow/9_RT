@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rtv_quit.c                                         :+:      :+:    :+:   */
+/*   rt_quit.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mvlad <mvlad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -16,10 +16,10 @@
 ** Release resources and quit.
 */
 
-void	rtv_quit(t_rtv *rtv)
+void	rt_quit(t_rt *rt)
 {
-	SDL_DestroyTexture(rtv->win->screen);
-	SDL_DestroyRenderer(rtv->sdl->renderer);
-	SDL_DestroyWindow(rtv->sdl->window);
+	SDL_DestroyTexture(rt->win->screen);
+	SDL_DestroyRenderer(rt->sdl->renderer);
+	SDL_DestroyWindow(rt->sdl->window);
 	SDL_Quit();
 }
