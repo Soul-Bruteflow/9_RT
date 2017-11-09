@@ -4,7 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/RT.dir/src/main.c.o"
   "CMakeFiles/RT.dir/src/rt_init.c.o"
   "CMakeFiles/RT.dir/src/rt_loop.c.o"
-  "CMakeFiles/RT.dir/src/rtv_quit.c.o"
+  "CMakeFiles/RT.dir/src/rt_quit.c.o"
   "CMakeFiles/RT.dir/src/parser/parser_core.c.o"
   "CMakeFiles/RT.dir/src/raytrace/calculate_light.c.o"
   "CMakeFiles/RT.dir/src/raytrace/intersect.c.o"

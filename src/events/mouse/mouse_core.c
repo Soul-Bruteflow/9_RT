@@ -9,8 +9,6 @@ void	mouse_core(t_rt *rt)
 	{
 //		SDL_WarpMouseInWindow(rt->sdl->window, WIDTH / 2, HEIGHT / 2);
 //		SDL_GetMouseState(&x, &y);
-		rt->sdl->mouse_angle.x = 0;
-		rt->sdl->mouse_angle.y = 0;
 		SDL_GetRelativeMouseState(&x,&y);
 		rt->sdl->mouse_rel_pos.x = x;
 		rt->sdl->mouse_rel_pos.y = y;

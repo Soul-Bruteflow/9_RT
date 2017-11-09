@@ -177,28 +177,28 @@ CMakeFiles/RT.dir/src/rt_loop.c.o.provides: CMakeFiles/RT.dir/src/rt_loop.c.o.re
 CMakeFiles/RT.dir/src/rt_loop.c.o.provides.build: CMakeFiles/RT.dir/src/rt_loop.c.o
 
 
-CMakeFiles/RT.dir/src/rtv_quit.c.o: CMakeFiles/RT.dir/flags.make
-CMakeFiles/RT.dir/src/rtv_quit.c.o: ../src/rtv_quit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/RT.dir/src/rtv_quit.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/rtv_quit.c.o   -c /Users/bruteflow/c_projects/9_RT/src/rtv_quit.c
+CMakeFiles/RT.dir/src/rt_quit.c.o: CMakeFiles/RT.dir/flags.make
+CMakeFiles/RT.dir/src/rt_quit.c.o: ../src/rt_quit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/RT.dir/src/rt_quit.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/rt_quit.c.o   -c /Users/bruteflow/c_projects/9_RT/src/rt_quit.c
 
-CMakeFiles/RT.dir/src/rtv_quit.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RT.dir/src/rtv_quit.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bruteflow/c_projects/9_RT/src/rtv_quit.c > CMakeFiles/RT.dir/src/rtv_quit.c.i
+CMakeFiles/RT.dir/src/rt_quit.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RT.dir/src/rt_quit.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bruteflow/c_projects/9_RT/src/rt_quit.c > CMakeFiles/RT.dir/src/rt_quit.c.i
 
-CMakeFiles/RT.dir/src/rtv_quit.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RT.dir/src/rtv_quit.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bruteflow/c_projects/9_RT/src/rtv_quit.c -o CMakeFiles/RT.dir/src/rtv_quit.c.s
+CMakeFiles/RT.dir/src/rt_quit.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RT.dir/src/rt_quit.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bruteflow/c_projects/9_RT/src/rt_quit.c -o CMakeFiles/RT.dir/src/rt_quit.c.s
 
-CMakeFiles/RT.dir/src/rtv_quit.c.o.requires:
+CMakeFiles/RT.dir/src/rt_quit.c.o.requires:
 
-.PHONY : CMakeFiles/RT.dir/src/rtv_quit.c.o.requires
+.PHONY : CMakeFiles/RT.dir/src/rt_quit.c.o.requires
 
-CMakeFiles/RT.dir/src/rtv_quit.c.o.provides: CMakeFiles/RT.dir/src/rtv_quit.c.o.requires
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/rtv_quit.c.o.provides.build
-.PHONY : CMakeFiles/RT.dir/src/rtv_quit.c.o.provides
+CMakeFiles/RT.dir/src/rt_quit.c.o.provides: CMakeFiles/RT.dir/src/rt_quit.c.o.requires
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/rt_quit.c.o.provides.build
+.PHONY : CMakeFiles/RT.dir/src/rt_quit.c.o.provides
 
-CMakeFiles/RT.dir/src/rtv_quit.c.o.provides.build: CMakeFiles/RT.dir/src/rtv_quit.c.o
+CMakeFiles/RT.dir/src/rt_quit.c.o.provides.build: CMakeFiles/RT.dir/src/rt_quit.c.o
 
 
 CMakeFiles/RT.dir/src/parser/parser_core.c.o: CMakeFiles/RT.dir/flags.make
@@ -1336,7 +1336,7 @@ RT_OBJECTS = \
 "CMakeFiles/RT.dir/src/main.c.o" \
 "CMakeFiles/RT.dir/src/rt_init.c.o" \
 "CMakeFiles/RT.dir/src/rt_loop.c.o" \
-"CMakeFiles/RT.dir/src/rtv_quit.c.o" \
+"CMakeFiles/RT.dir/src/rt_quit.c.o" \
 "CMakeFiles/RT.dir/src/parser/parser_core.c.o" \
 "CMakeFiles/RT.dir/src/raytrace/calculate_light.c.o" \
 "CMakeFiles/RT.dir/src/raytrace/intersect.c.o" \
@@ -1393,7 +1393,7 @@ RT: CMakeFiles/RT.dir/src/get_next_line.c.o
 RT: CMakeFiles/RT.dir/src/main.c.o
 RT: CMakeFiles/RT.dir/src/rt_init.c.o
 RT: CMakeFiles/RT.dir/src/rt_loop.c.o
-RT: CMakeFiles/RT.dir/src/rtv_quit.c.o
+RT: CMakeFiles/RT.dir/src/rt_quit.c.o
 RT: CMakeFiles/RT.dir/src/parser/parser_core.c.o
 RT: CMakeFiles/RT.dir/src/raytrace/calculate_light.c.o
 RT: CMakeFiles/RT.dir/src/raytrace/intersect.c.o
@@ -1457,7 +1457,7 @@ CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/get_next_line.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/main.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/rt_init.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/rt_loop.c.o.requires
-CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/rtv_quit.c.o.requires
+CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/rt_quit.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/parser/parser_core.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/raytrace/calculate_light.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/raytrace/intersect.c.o.requires

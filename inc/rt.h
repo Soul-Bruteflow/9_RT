@@ -46,7 +46,6 @@ typedef struct		s_sdl
 	const Uint8		*key_state;
 	SDL_bool		is_mouse_cap;
 	t_vec2			mouse_rel_pos;
-	t_vec2			mouse_angle;
 }					t_sdl;
 
 /*
@@ -208,9 +207,10 @@ void				mouse_core(t_rt *rt);
 */
 void				create_window(t_rt *rtv, Uint16 wdth, Uint16 hght,
 					const char *title);
-void				clear_window(t_rt *rtv);
-void				render_present(t_rt *rtv);
+void				clear_window(t_rt *r);
+void				render_present(t_rt *r);
 void				ft_draw_pixel(Uint16 x, Uint16 y, t_rgba *color,
 					Uint8 *draw_buffer);
+void				rerender(t_rt *r);
 
 #endif

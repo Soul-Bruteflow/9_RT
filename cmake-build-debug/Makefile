@@ -2755,32 +2755,32 @@ src/rt_loop.c.s:
 	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/rt_loop.c.s
 .PHONY : src/rt_loop.c.s
 
-src/rtv_quit.o: src/rtv_quit.c.o
+src/rt_quit.o: src/rt_quit.c.o
 
-.PHONY : src/rtv_quit.o
+.PHONY : src/rt_quit.o
 
 # target to build an object file
-src/rtv_quit.c.o:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/rtv_quit.c.o
-.PHONY : src/rtv_quit.c.o
+src/rt_quit.c.o:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/rt_quit.c.o
+.PHONY : src/rt_quit.c.o
 
-src/rtv_quit.i: src/rtv_quit.c.i
+src/rt_quit.i: src/rt_quit.c.i
 
-.PHONY : src/rtv_quit.i
+.PHONY : src/rt_quit.i
 
 # target to preprocess a source file
-src/rtv_quit.c.i:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/rtv_quit.c.i
-.PHONY : src/rtv_quit.c.i
+src/rt_quit.c.i:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/rt_quit.c.i
+.PHONY : src/rt_quit.c.i
 
-src/rtv_quit.s: src/rtv_quit.c.s
+src/rt_quit.s: src/rt_quit.c.s
 
-.PHONY : src/rtv_quit.s
+.PHONY : src/rt_quit.s
 
 # target to generate assembly for a file
-src/rtv_quit.c.s:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/rtv_quit.c.s
-.PHONY : src/rtv_quit.c.s
+src/rt_quit.c.s:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/rt_quit.c.s
+.PHONY : src/rt_quit.c.s
 
 src/transform/transform.o: src/transform/transform.c.o
 
@@ -3542,9 +3542,9 @@ help:
 	@echo "... src/rt_loop.o"
 	@echo "... src/rt_loop.i"
 	@echo "... src/rt_loop.s"
-	@echo "... src/rtv_quit.o"
-	@echo "... src/rtv_quit.i"
-	@echo "... src/rtv_quit.s"
+	@echo "... src/rt_quit.o"
+	@echo "... src/rt_quit.i"
+	@echo "... src/rt_quit.s"
 	@echo "... src/transform/transform.o"
 	@echo "... src/transform/transform.i"
 	@echo "... src/transform/transform.s"

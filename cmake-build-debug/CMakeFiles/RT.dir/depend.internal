@@ -561,7 +561,7 @@ CMakeFiles/RT.dir/src/rt_loop.c.o
  .././inc/utility/get_next_line.h
  .././libft/libft.h
  /Users/bruteflow/c_projects/9_RT/src/rt_loop.c
-CMakeFiles/RT.dir/src/rtv_quit.c.o
+CMakeFiles/RT.dir/src/rt_quit.c.o
  .././inc/math/math.h
  .././inc/math/matrices.h
  .././inc/math/quaternions.h
@@ -576,7 +576,7 @@ CMakeFiles/RT.dir/src/rtv_quit.c.o
  .././inc/utility/errors.h
  .././inc/utility/get_next_line.h
  .././libft/libft.h
- /Users/bruteflow/c_projects/9_RT/src/rtv_quit.c
+ /Users/bruteflow/c_projects/9_RT/src/rt_quit.c
 CMakeFiles/RT.dir/src/transform/transform.c.o
  .././inc/math/math.h
  .././inc/math/matrices.h

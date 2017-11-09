@@ -39,7 +39,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/bruteflow/c_projects/9_RT/src/raytrace/scene/scene_create.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/raytrace/scene/scene_create.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/rt_init.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/rt_init.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/rt_loop.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/rt_loop.c.o"
-  "/Users/bruteflow/c_projects/9_RT/src/rtv_quit.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/rtv_quit.c.o"
+  "/Users/bruteflow/c_projects/9_RT/src/rt_quit.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/rt_quit.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/transform/transform.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/transform/transform.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/utility/ft_atof.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/utility/ft_atof.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/utility/ft_draw_pixel.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/utility/ft_draw_pixel.c.o"

@@ -561,21 +561,21 @@ CMakeFiles/RT.dir/src/rt_loop.c.o: .././inc/utility/get_next_line.h
 CMakeFiles/RT.dir/src/rt_loop.c.o: .././libft/libft.h
 CMakeFiles/RT.dir/src/rt_loop.c.o: ../src/rt_loop.c
 
-CMakeFiles/RT.dir/src/rtv_quit.c.o: .././inc/math/math.h
-CMakeFiles/RT.dir/src/rtv_quit.c.o: .././inc/math/matrices.h
-CMakeFiles/RT.dir/src/rtv_quit.c.o: .././inc/math/quaternions.h
-CMakeFiles/RT.dir/src/rtv_quit.c.o: .././inc/math/vectors.h
-CMakeFiles/RT.dir/src/rtv_quit.c.o: .././inc/rt.h
-CMakeFiles/RT.dir/src/rtv_quit.c.o: .././inc/rt/camera.h
-CMakeFiles/RT.dir/src/rtv_quit.c.o: .././inc/rt/objects.h
-CMakeFiles/RT.dir/src/rtv_quit.c.o: .././inc/rt/raytrace.h
-CMakeFiles/RT.dir/src/rtv_quit.c.o: .././inc/rt/transform.h
-CMakeFiles/RT.dir/src/rtv_quit.c.o: .././inc/utility/bool.h
-CMakeFiles/RT.dir/src/rtv_quit.c.o: .././inc/utility/defines.h
-CMakeFiles/RT.dir/src/rtv_quit.c.o: .././inc/utility/errors.h
-CMakeFiles/RT.dir/src/rtv_quit.c.o: .././inc/utility/get_next_line.h
-CMakeFiles/RT.dir/src/rtv_quit.c.o: .././libft/libft.h
-CMakeFiles/RT.dir/src/rtv_quit.c.o: ../src/rtv_quit.c
+CMakeFiles/RT.dir/src/rt_quit.c.o: .././inc/math/math.h
+CMakeFiles/RT.dir/src/rt_quit.c.o: .././inc/math/matrices.h
+CMakeFiles/RT.dir/src/rt_quit.c.o: .././inc/math/quaternions.h
+CMakeFiles/RT.dir/src/rt_quit.c.o: .././inc/math/vectors.h
+CMakeFiles/RT.dir/src/rt_quit.c.o: .././inc/rt.h
+CMakeFiles/RT.dir/src/rt_quit.c.o: .././inc/rt/camera.h
+CMakeFiles/RT.dir/src/rt_quit.c.o: .././inc/rt/objects.h
+CMakeFiles/RT.dir/src/rt_quit.c.o: .././inc/rt/raytrace.h
+CMakeFiles/RT.dir/src/rt_quit.c.o: .././inc/rt/transform.h
+CMakeFiles/RT.dir/src/rt_quit.c.o: .././inc/utility/bool.h
+CMakeFiles/RT.dir/src/rt_quit.c.o: .././inc/utility/defines.h
+CMakeFiles/RT.dir/src/rt_quit.c.o: .././inc/utility/errors.h
+CMakeFiles/RT.dir/src/rt_quit.c.o: .././inc/utility/get_next_line.h
+CMakeFiles/RT.dir/src/rt_quit.c.o: .././libft/libft.h
+CMakeFiles/RT.dir/src/rt_quit.c.o: ../src/rt_quit.c
 
 CMakeFiles/RT.dir/src/transform/transform.c.o: .././inc/math/math.h
 CMakeFiles/RT.dir/src/transform/transform.c.o: .././inc/math/matrices.h

@@ -46,8 +46,5 @@ void		create_window(t_rt *r, Uint16 wdth, Uint16 hght, const char *title)
 	r->win->screen = SDL_CreateTexture(r->sdl->renderer,
 			SDL_PIXELFORMAT_ARGB8888, SDL_TEXTUREACCESS_STREAMING,
 			r->win->width, r->win->height);
-
 	SDL_SetRelativeMouseMode(SDL_TRUE);
-//	SDL_ShowCursor(0);
-//	SDL_SetWindowGrab(r->sdl->window, SDL_TRUE);
 }

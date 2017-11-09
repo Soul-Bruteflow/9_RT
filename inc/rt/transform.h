@@ -7,12 +7,12 @@
 typedef struct	s_transform
 {
 	t_vec3		translation;
-	t_vec3		rotation;
+	t_quat		rotation;
 	t_vec3		scale;
 
 }				t_transform;
 
 t_transform		init_transform(void);
-t_mat4			get_transformation(t_transform *t);
+t_mat4			get_model(t_transform *t);
 
 #endif
