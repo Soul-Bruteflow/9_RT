@@ -30,13 +30,13 @@ static void	update_time(t_rt *rt)
 
 	rt->delta.oldtime = rt->delta.curtime;
 	rt->delta.curtime = SDL_GetTicks();
-	rt->delta.ftime = (rt->delta.curtime - rt->delta.oldtime) / 10.0f;
+	rt->delta.ftime = (rt->delta.curtime - rt->delta.oldtime) / 1.0f;
 //	printf("%d, %d, %f\n", rt->delta.oldtime, rt->delta.curtime, rt->delta.ftime);
 //	if (rt->delta.curtime - rt->delta.oldtime < 0)
 //	{
-		rt->delta.fps_rate = rt->delta.fps_counter;
-		rt->delta.fps_counter = 0;
-//		printf("%f\n", rt->delta.ftime);
+//		rt->delta.fps_rate = rt->delta.fps_counter;
+//		rt->delta.fps_counter = 0;
+		printf("%f\n", rt->delta.ftime);
 //		tmp = ft_itoa((int)(1.0 / rt->delta.ftime));
 //		rt->delta.fps[0] = tmp[0];
 //		rt->delta.fps[1] = tmp[1];
@@ -44,9 +44,9 @@ static void	update_time(t_rt *rt)
 //		rt->delta.fps[3] = '\0';
 //		free(tmp);
 //	}
-	rt->delta.fps_counter++;
-	rt->scene->cam.mov_amt = (float)rt->delta.ftime * 10.0f;
-	rt->scene->cam.rot_amt = (float)rt->delta.ftime * 0.1f;
+//	rt->delta.fps_counter++;
+	rt->scene->cam.mov_amt = (float)rt->delta.ftime * 1.0f;
+	rt->scene->cam.rot_amt = (float)rt->delta.ftime * 0.01f;
 }
 
 void	rt_loop(t_rt *rt)
