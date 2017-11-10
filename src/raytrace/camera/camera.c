@@ -75,48 +75,73 @@ void	cam_rot_x(t_cam *c, float angle)
 //	c->up = vec3_norm(vec3_cross(&c->dir, &h_axis));
 }
 
-void	cam_rot_y(t_cam *c, float angle)
+void	cam_rot_y(t_cam *c, t_vec3 *axis, float angle)
 {
 	t_quat	tmp;
 	t_quat	old_dir;
 	t_quat	old_right;
+	t_quat	old_up;
 	t_quat	real;
 	t_quat	inverse;
 	t_quat	new_dir;
 	t_quat	new_right;
+	t_quat	new_up;
 
-	old_dir.x = c->dir.x;
-	old_dir.y = c->dir.y;
-	old_dir.z = c->dir.z;
-	old_dir.w = 0;
 
-	old_right.x = c->right.x;
-	old_right.y = c->right.y;
-	old_right.z = c->right.z;
-	old_right.w = 0;
+//	old_dir.x = c->dir.x;
+//	old_dir.y = c->dir.y;
+//	old_dir.z = c->dir.z;
+//	old_dir.w = 0;
+//
+//	old_right.x = c->right.x;
+//	old_right.y = c->right.y;
+//	old_right.z = c->right.z;
+//	old_right.w = 0;
+//
+//	old_up.x = c->up.x;
+//	old_up.y = c->up.y;
+//	old_up.z = c->up.z;
+//	old_up.w = 0;
 
-	c->right = vec3_norm(c->right);
-	real = set_quat_v(c->right, angle);
-	inverse = quat_conjugate(real);
-	tmp = quat_mul(old_dir, real);
-	new_dir = quat_mul(tmp, inverse);
+	*axis = vec3_norm(*axis);
+	c->t.rotation = vec3_rotate(axis, angle);
+	inverse = quat_conjugate(c->t.rotation);
 
-	tmp = quat_mul(old_right, real);
-	new_right = quat_mul(tmp, inverse);
+	new_dir = quat_mul(set_quat_v(c->dir, 0), c->t.rotation);
+	new_dir = quat_mul(new_dir, inverse);
+	new_right = quat_mul(set_quat_v(c->right, 0), c->t.rotation);
+	new_right = quat_mul(new_right, inverse);
+	new_up = quat_mul(set_quat_v(c->up, 0), c->t.rotation);
+	new_up = quat_mul(new_up, inverse);
+	c->dir = set_vec3_q(new_dir);
+	c->right = set_vec3_q(new_right);
+	c->up = set_vec3_q(new_up);
 
-	c->dir.x = new_dir.x;
-	c->dir.y = new_dir.y;
-	c->dir.z = new_dir.z;
-
-	c->right.x = new_right.x;
-	c->right.y = new_right.y;
-	c->right.z = new_right.z;
-
-//	c->up = vec3_norm(vec3_cross(&c->right, &c->dir));
+//	tmp = quat_mul(old_dir, c->t.rotation);
+//	new_dir = quat_mul(tmp, inverse);
+//
+//	tmp = quat_mul(old_right, c->t.rotation);
+//	new_right = quat_mul(tmp, inverse);
+//
+//	tmp = quat_mul(old_up, c->t.rotation);
+//	new_up = quat_mul(tmp, inverse);
+//
+//	c->dir.x = new_dir.x;
+//	c->dir.y = new_dir.y;
+//	c->dir.z = new_dir.z;
+//
+//	c->right.x = new_right.x;
+//	c->right.y = new_right.y;
+//	c->right.z = new_right.z;
+//
+//	c->up.x = new_up.x;
+//	c->up.y = new_up.y;
+//	c->up.z = new_up.z;
 
 	c->dir = vec3_norm(c->dir);
 	c->up = vec3_norm(c->up);
 	c->right = vec3_norm(c->right);
+	c->t.rotation = set_quat_f(0, 0, 0, 1);
 }
 
 void	cam_move(t_cam *c, t_vec3 *axis, float amt)
@@ -144,11 +169,29 @@ void	cam_move(t_cam *c, t_vec3 *axis, float amt)
 
 void	cam_rot(t_cam *c, t_vec3 *axis, float angle)
 {
-	t_mat4	mvp;
-	c->t.rotation = quat_rotate_cam(c, axis, angle);
+//	t_mat4	mvp;
+
+	*axis = vec3_norm(*axis);
+	c->t.rotation = vec3_rotate(axis, angle);
+	update_cam_from_quat(c);
 }
 
-t_quat	quat_rotate_cam(t_cam *c, t_vec3 *axis, float angle)
+void	update_cam_from_quat(t_cam *c)
 {
+	t_quat	inverse;
+	t_quat	new_dir;
+	t_quat	new_right;
+	t_quat	new_up;
 
+	inverse = quat_conjugate(c->t.rotation);
+	new_dir = quat_mul(set_quat_v(c->dir, 0), c->t.rotation);
+	new_dir = quat_mul(new_dir, inverse);
+	new_right = quat_mul(set_quat_v(c->right, 0), c->t.rotation);
+	new_right = quat_mul(new_right, inverse);
+	new_up = quat_mul(set_quat_v(c->up, 0), c->t.rotation);
+	new_up = quat_mul(new_up, inverse);
+	c->dir = vec3_norm(set_vec3_q(new_dir));
+	c->right = vec3_norm(set_vec3_q(new_right));
+	c->up = vec3_norm(set_vec3_q(new_up));
+	c->t.rotation = set_quat_f(0, 0, 0, 1);
 }

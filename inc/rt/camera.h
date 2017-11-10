@@ -53,9 +53,9 @@ void			make_ray(t_cam *cam, t_vec2 point, t_ray *r);
 void			cam_move(t_cam *c, t_vec3 *axis, float amt);
 void			cam_update(t_cam *c, t_vec3 *ray_start);
 void			cam_rot(t_cam *c, t_vec3 *axis, float angle);
-t_quat	quat_rotate_cam(t_cam *c, t_vec3 *axis, float angle);
+void	update_cam_from_quat(t_cam *c);
 void			cam_rot_x(t_cam *c, float angle);
-void			cam_rot_y(t_cam *c, float angle);
+void			cam_rot_y(t_cam *c, t_vec3 *axis, float angle);
 
 t_mat4			get_mvp(t_cam *c);
 t_mat4			init_cam_projection(t_persp p);

@@ -54,9 +54,8 @@ void	keyboard_core(t_rt *rt)
 	}
 	if (SDL_KEYDOWN && rt->sdl->key_state[SDL_SCANCODE_UP])
 	{
-		cam_rot(&rt->scene->cam, &rt->scene->cam.right, -rt->scene->cam.mov_amt);
-
-		cam_rot_y(&rt->scene->cam, rt->scene->cam.rot_amt);
+		cam_rot(&rt->scene->cam, &rt->scene->cam.right, rt->scene->cam.rot_amt);
+//		cam_rot_y(&rt->scene->cam, &rt->scene->cam.right, rt->scene->cam.rot_amt);
 		cam_update(&rt->scene->cam, &rt->scene->ray.start);
 
 		printf("%f\n",  rt->scene->cam.rot_amt);
@@ -67,7 +66,8 @@ void	keyboard_core(t_rt *rt)
 	}
 	  if (SDL_KEYDOWN && rt->sdl->key_state[SDL_SCANCODE_DOWN])
 	  {
-		  cam_rot_y(&rt->scene->cam, -rt->scene->cam.rot_amt);
+		  cam_rot(&rt->scene->cam, &rt->scene->cam.right, -rt->scene->cam.rot_amt);
+//		  cam_rot_y(&rt->scene->cam,  &rt->scene->cam.right, -rt->scene->cam.rot_amt);
 		  cam_update(&rt->scene->cam, &rt->scene->ray.start);
 
 		  clear_window(rt);
