@@ -23,9 +23,9 @@ int		main(int ac, char **av)
 			rtv_error(parse_error);
 		init_camera(rtv);
 		create_window(rtv, WIDTH, HEIGHT, "RT\0");
-		clear_window(rtv);
-		raytrace(rtv);
-		render_present(rtv);
+//		clear_window(rtv);
+//		raytrace(rtv);
+//		render_present(rtv);
 		rt_loop(rtv);
 	}
 	else

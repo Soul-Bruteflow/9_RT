@@ -122,6 +122,8 @@ typedef struct		s_time
 	double			ftime;
 	char			fps[4];
 	int				fps_counter;
+	float 			fps_rate;
+	float 			delta_time;
 }					t_time;
 
 /*

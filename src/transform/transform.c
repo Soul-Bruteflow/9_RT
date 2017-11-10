@@ -36,6 +36,6 @@ t_mat4		get_mvp(t_cam *c)
 	view = init_cam_mat(c->dir, c->up);
 	projection = init_cam_projection(c->p);
 	mvp = mat_mult(&model, &view);
-	mvp = mat_mult(&projection, &mvp);
+	mvp = mat_mult(&mvp, &projection);
 	return (model);
 }

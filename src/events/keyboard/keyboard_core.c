@@ -21,75 +21,73 @@ void	keyboard_core(t_rt *rt)
 		cam_move(&rt->scene->cam, &rt->scene->cam.dir, rt->scene->cam.mov_amt);
 		cam_update(&rt->scene->cam, &rt->scene->ray.start);
 
-		clear_window(rt);
-		raytrace(rt);
-		render_present(rt);
+//		clear_window(rt);
+//		raytrace(rt);
+//		render_present(rt);
 	}
 	if (SDL_KEYDOWN && rt->sdl->key_state[SDL_SCANCODE_S])
 	{
 		cam_move(&rt->scene->cam, &rt->scene->cam.dir, -rt->scene->cam.mov_amt);
 		cam_update(&rt->scene->cam, &rt->scene->ray.start);
 
-		clear_window(rt);
-		raytrace(rt);
-		render_present(rt);
+//		clear_window(rt);
+//		raytrace(rt);
+//		render_present(rt);
 	}
 	if (SDL_KEYDOWN && rt->sdl->key_state[SDL_SCANCODE_D])
 	{
 		cam_move(&rt->scene->cam, &rt->scene->cam.right, rt->scene->cam.mov_amt);
 		cam_update(&rt->scene->cam, &rt->scene->ray.start);
 
-		clear_window(rt);
-		raytrace(rt);
-		render_present(rt);
+//		clear_window(rt);
+//		raytrace(rt);
+//		render_present(rt);
 	}
 	if (SDL_KEYDOWN && rt->sdl->key_state[SDL_SCANCODE_A])
 	{
 		cam_move(&rt->scene->cam, &rt->scene->cam.right, -rt->scene->cam.mov_amt);
 		cam_update(&rt->scene->cam, &rt->scene->ray.start);
 
-		clear_window(rt);
-		raytrace(rt);
-		render_present(rt);
+//		clear_window(rt);
+//		raytrace(rt);
+//		render_present(rt);
 	}
 	if (SDL_KEYDOWN && rt->sdl->key_state[SDL_SCANCODE_UP])
 	{
 		cam_rot(&rt->scene->cam, &rt->scene->cam.right, rt->scene->cam.rot_amt);
-//		cam_rot_y(&rt->scene->cam, &rt->scene->cam.right, rt->scene->cam.rot_amt);
 		cam_update(&rt->scene->cam, &rt->scene->ray.start);
 
 		printf("%f\n",  rt->scene->cam.rot_amt);
 
-		clear_window(rt);
-		raytrace(rt);
-		render_present(rt);
+//		clear_window(rt);
+//		raytrace(rt);
+//		render_present(rt);
 	}
 	  if (SDL_KEYDOWN && rt->sdl->key_state[SDL_SCANCODE_DOWN])
 	  {
 		  cam_rot(&rt->scene->cam, &rt->scene->cam.right, -rt->scene->cam.rot_amt);
-//		  cam_rot_y(&rt->scene->cam,  &rt->scene->cam.right, -rt->scene->cam.rot_amt);
 		  cam_update(&rt->scene->cam, &rt->scene->ray.start);
 
-		  clear_window(rt);
-		  raytrace(rt);
-		  render_present(rt);
+//		  clear_window(rt);
+//		  raytrace(rt);
+//		  render_present(rt);
 	  }
 	  if (SDL_KEYDOWN && rt->sdl->key_state[SDL_SCANCODE_LEFT])
 	  {
-		  cam_rot_x(&rt->scene->cam, -10);
+		  cam_rot(&rt->scene->cam, &rt->scene->cam.up, -rt->scene->cam.rot_amt);
 		  cam_update(&rt->scene->cam, &rt->scene->ray.start);
 
-		  clear_window(rt);
-		  raytrace(rt);
-		  render_present(rt);
+//		  clear_window(rt);
+//		  raytrace(rt);
+//		  render_present(rt);
 	  }
 	  if (SDL_KEYDOWN && rt->sdl->key_state[SDL_SCANCODE_RIGHT])
 	  {
-		  cam_rot_x(&rt->scene->cam, -10);
+		  cam_rot(&rt->scene->cam, &rt->scene->cam.up, rt->scene->cam.rot_amt);
 		  cam_update(&rt->scene->cam, &rt->scene->ray.start);
 
-		  clear_window(rt);
-		  raytrace(rt);
-		  render_present(rt);
+//		  clear_window(rt);
+//		  raytrace(rt);
+//		  render_present(rt);
 	  }
 }
