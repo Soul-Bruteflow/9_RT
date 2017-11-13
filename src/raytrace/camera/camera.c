@@ -38,9 +38,10 @@ void	init_camera(t_rt *r)
 	c->t = init_transform();
 
 	c->t.rotation = set_quat_f(0, 0, 0, 1);
-	c->rotx = set_quat_f(0, 0, 0, 1);
-	c->roty = set_quat_f(0, 0, 0, 1);
-	c->rotz = set_quat_f(0, 0, 0, 1);
+	c->t.rotx = set_quat_f(0, 0, 0, 1);
+	c->t.roty = set_quat_f(0, 0, 0, 1);
+
+	c->t.rotation = quat_mul(c->t.rotx, c->t.roty);
 
 	c->dir = vec3_norm(vec3_sub(&c->dir, &c->pos));
 	c->right = vec3_norm(vec3_cross(&c->dir, &c->world_up));
@@ -74,15 +75,27 @@ void	cam_update(t_cam *c, t_vec3 *ray_start)
 //	c->t.rotation = quat_mul(c->rotx, c->roty);
 //	c->t.rotation = quat_mul(c->t.rotation, c->rotz);
 
-	cam_rot(c, 0, 0);
+//	cam_rot(c, 0, 0);
+//	c->t.rotation = quat_mul(c->rotx, c->roty);
+
+	c->t.rotation = quat_mul(c->t.rotx, c->t.roty);
+
+//	printf("1 | %f, %f, %f, %f\n", c->t.rotation.x, c->t.rotation.y,
+//	c->t.rotation.z, c->t.rotation.w);
 
 	update_cam_from_quat(c);
 
-	*ray_start = c->pos;
+//	printf("2 | %f, %f, %f, %f\n", c->t.rotation.x, c->t.rotation.y,
+//	c->t.rotation.z, c->t.rotation.w);
+
+//	update_cam_from_quat(c);
+
+//	printf("3 | %f, %f, %f, %f\n", c->t.rotation.x, c->t.rotation.y,
+//	c->t.rotation.z, c->t.rotation.w);
+
 	c->t.rotation = set_quat_f(0, 0, 0, 1);
-	c->rotx = set_quat_f(0, 0, 0, 1);
-	c->roty = set_quat_f(0, 0, 0, 1);
-	c->rotz = set_quat_f(0, 0, 0, 1);
+	c->t.rotx = set_quat_f(0, 0, 0, 1);
+	c->t.roty = set_quat_f(0, 0, 0, 1);
 }
 
 void	cam_move(t_cam *c, t_vec3 *axis, float amt)
@@ -112,28 +125,20 @@ void	cam_rot(t_cam *c, t_vec3 *axis, float angle)
 {
 //	c->t.rotation = vec3_rotate(axis, angle);
 
-	c->t.rotation = quat_mul(c->rotx, c->roty);
-	c->t.rotation = quat_mul(c->t.rotation, c->rotz);
-
+	c->t.rotation = quat_mul(c->t.rotx, c->t.roty);
 	update_cam_from_quat(c);
 }
 
 void	cam_rot_x(t_cam *c, float angle)
 {
 	c->up = vec3_norm(c->world_up);
-	c->rotx = vec3_rotate(&c->world_up, angle);
+	c->t.rotx = vec3_rotate(&c->world_up, angle);
 }
 
 void	cam_rot_y(t_cam *c, float angle)
 {
 	c->right = vec3_norm(c->right);
-	c->roty = vec3_rotate(&c->right, angle);
-}
-
-void	cam_rot_z(t_cam *c, float angle)
-{
-	c->dir = vec3_norm(c->dir);
-	c->rotz = vec3_rotate(&c->dir, angle);
+	c->t.roty = vec3_rotate(&c->right, angle);
 }
 
 void	update_cam_from_quat(t_cam *c)

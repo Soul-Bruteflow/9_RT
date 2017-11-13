@@ -38,7 +38,7 @@ t_mat4	quat_to_mat(t_quat q)
 	t_mat4	m1;
 	t_mat4	m2;
 
-	q = quat_normalize(q);
+//	q = quat_normalize(q);
 	m1 = init_quat_m1(q);
 	m2 = init_quat_m2(q);
 	res = mat_mult(&m1, &m2);

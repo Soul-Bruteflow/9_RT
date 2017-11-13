@@ -14,14 +14,14 @@ t_mat4		get_model(t_transform *t)
 {
 	t_mat4	translation;
 	t_mat4	rotation;
-	t_mat4	scale;
+//	t_mat4	scale;
 	t_mat4	model;
 
 	translation = init_translation(t->translation);
-	rotation = quat_to_mat(t->rotation);
-	scale = init_scale(t->scale);
-	model = mat_mult(&scale, &rotation);
-	model = mat_mult(&model, &translation);
+	rotation = quat_to_mat(quat_conjugate(quat_mul(t->rotx, t->roty)));
+//	scale = init_scale(t->scale);
+	model = mat_mult(&translation, &rotation);
+//	model = mat_mult(&model, &translation);
 	return (model);
 }
 

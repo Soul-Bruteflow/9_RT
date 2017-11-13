@@ -19,7 +19,7 @@ void	keyboard_core(t_rt *rt)
  	if (SDL_KEYDOWN && rt->sdl->key_state[SDL_SCANCODE_W])
  	{
 		cam_move(&rt->scene->cam, &rt->scene->cam.dir, rt->scene->cam.mov_amt);
-		cam_update(&rt->scene->cam, &rt->scene->ray.start);
+//		rt->scene->ray.start = rt->scene->cam.pos;
 
 //		clear_window(rt);
 //		raytrace(rt);
@@ -28,7 +28,7 @@ void	keyboard_core(t_rt *rt)
 	if (SDL_KEYDOWN && rt->sdl->key_state[SDL_SCANCODE_S])
 	{
 		cam_move(&rt->scene->cam, &rt->scene->cam.dir, -rt->scene->cam.mov_amt);
-		cam_update(&rt->scene->cam, &rt->scene->ray.start);
+//		rt->scene->ray.start = rt->scene->cam.pos;
 
 //		clear_window(rt);
 //		raytrace(rt);
@@ -37,7 +37,7 @@ void	keyboard_core(t_rt *rt)
 	if (SDL_KEYDOWN && rt->sdl->key_state[SDL_SCANCODE_D])
 	{
 		cam_move(&rt->scene->cam, &rt->scene->cam.right, rt->scene->cam.mov_amt);
-		cam_update(&rt->scene->cam, &rt->scene->ray.start);
+//		rt->scene->ray.start = rt->scene->cam.pos;
 
 //		clear_window(rt);
 //		raytrace(rt);
@@ -46,7 +46,7 @@ void	keyboard_core(t_rt *rt)
 	if (SDL_KEYDOWN && rt->sdl->key_state[SDL_SCANCODE_A])
 	{
 		cam_move(&rt->scene->cam, &rt->scene->cam.right, -rt->scene->cam.mov_amt);
-		cam_update(&rt->scene->cam, &rt->scene->ray.start);
+//		rt->scene->ray.start = rt->scene->cam.pos;
 
 //		clear_window(rt);
 //		raytrace(rt);
@@ -100,28 +100,29 @@ void	keyboard_core(t_rt *rt)
 //		  raytrace(rt);
 //		  render_present(rt);
 	  }
-	  if (SDL_KEYDOWN && rt->sdl->key_state[SDL_SCANCODE_Q])
+	  if (SDL_KEYDOWN && rt->sdl->key_state[SDL_SCANCODE_SPACE])
 	  {
-//		  t_vec3 tmp;
-//
-//		  tmp = set_vector(0, 0, 1);
-		  cam_rot_z(&rt->scene->cam, -rt->scene->cam.rot_amt);
-		  cam_update(&rt->scene->cam, &rt->scene->ray.start);
+		  int x;
+		  int y;
 
-//		  clear_window(rt);
-//		  raytrace(rt);
-//		  render_present(rt);
-	  }
-	  if (SDL_KEYDOWN && rt->sdl->key_state[SDL_SCANCODE_E])
-	  {
-//		  t_vec3 tmp;
-//
-//		  tmp = set_vector(0, 0, 1);
-		  cam_rot_z(&rt->scene->cam, rt->scene->cam.rot_amt);
-		  cam_update(&rt->scene->cam, &rt->scene->ray.start);
-
-//		  clear_window(rt);
-//		  raytrace(rt);
-//		  render_present(rt);
+		  x = y = 0;
+//		  if (rt->sdl->event.type == SDL_MOUSEMOTION)
+//		  {
+			  SDL_GetRelativeMouseState(&x,&y);
+			  rt->sdl->mouse_rel_pos.x = x;
+			  rt->sdl->mouse_rel_pos.y = y;
+			  if (rt->sdl->mouse_rel_pos.x > 0)
+			  {
+				  cam_rot_x(&rt->scene->cam, rt->scene->cam.rot_amt * rt->sdl->mouse_rel_pos.x * rt->scene->cam.mouse_speed);
+				  cam_update(&rt->scene->cam, &rt->scene->ray.start);
+			  }
+			  else if (rt->sdl->mouse_rel_pos.x < 0)
+			  {
+				  cam_rot_x(&rt->scene->cam, -rt->scene->cam.rot_amt * rt->sdl->mouse_rel_pos.x * rt->scene->cam.mouse_speed);
+				  cam_update(&rt->scene->cam, &rt->scene->ray.start);
+			  }
+//		  }
+//		  printf("%f\n", rt->sdl->mouse_rel_pos.x);
+//		  printf("%f\n", rt->sdl->mouse_rel_pos.y);
 	  }
 }

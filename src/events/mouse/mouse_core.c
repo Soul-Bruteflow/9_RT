@@ -7,11 +7,11 @@ void	mouse_core(t_rt *rt)
 
 	if (rt->sdl->event.type == SDL_MOUSEMOTION)
 	{
-//		SDL_WarpMouseInWindow(rt->sdl->window, WIDTH / 2, HEIGHT / 2);
-//		SDL_GetMouseState(&x, &y);
 		SDL_GetRelativeMouseState(&x,&y);
 		rt->sdl->mouse_rel_pos.x = x;
 		rt->sdl->mouse_rel_pos.y = y;
+//		printf("%f, %f\n", rt->sdl->mouse_rel_pos.x, rt->sdl->mouse_rel_pos.y);
+
 
 	}
 //	printf("%f, %f\n", rt->sdl->mouse_rel_pos.x, rt->sdl->mouse_rel_pos.y);

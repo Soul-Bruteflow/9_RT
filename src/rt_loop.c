@@ -46,7 +46,7 @@ static void	update_time(t_rt *rt)
 //	}
 //	rt->delta.fps_counter++;
 	rt->scene->cam.mov_amt = (float)rt->delta.ftime * 1.0f;
-	rt->scene->cam.rot_amt = (float)rt->delta.ftime * 0.01f;
+	rt->scene->cam.rot_amt = (float)rt->delta.ftime * 0.03f;
 }
 
 void	rt_loop(t_rt *rt)

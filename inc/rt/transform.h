@@ -8,6 +8,8 @@ typedef struct	s_transform
 {
 	t_vec3		translation;
 	t_quat		rotation;
+	t_quat		rotx;
+	t_quat		roty;
 	t_vec3		scale;
 
 }				t_transform;

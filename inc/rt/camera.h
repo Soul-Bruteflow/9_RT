@@ -39,9 +39,6 @@ typedef struct	s_cam
 	float		horiz_angle;
 	float		verti_angle;
 	float		mouse_speed;
-	t_quat		rotx;
-	t_quat		roty;
-	t_quat		rotz;
 	t_persp		p;
 	t_transform	t;
 	t_sup		s;
@@ -66,5 +63,4 @@ t_mat4			init_cam_projection(t_persp p);
 
 void	cam_rot_x(t_cam *c, float angle);
 void	cam_rot_y(t_cam *c, float angle);
-void	cam_rot_z(t_cam *c, float angle);
 #endif
