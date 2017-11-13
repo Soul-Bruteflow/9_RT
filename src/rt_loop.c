@@ -36,7 +36,7 @@ static void	update_time(t_rt *rt)
 //	{
 //		rt->delta.fps_rate = rt->delta.fps_counter;
 //		rt->delta.fps_counter = 0;
-		printf("%f\n", rt->delta.ftime);
+//		printf("%f\n", rt->delta.ftime);
 //		tmp = ft_itoa((int)(1.0 / rt->delta.ftime));
 //		rt->delta.fps[0] = tmp[0];
 //		rt->delta.fps[1] = tmp[1];

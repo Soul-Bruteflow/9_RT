@@ -54,10 +54,11 @@ void	keyboard_core(t_rt *rt)
 	}
 	if (SDL_KEYDOWN && rt->sdl->key_state[SDL_SCANCODE_UP])
 	{
-		cam_rot(&rt->scene->cam, &rt->scene->cam.right, rt->scene->cam.rot_amt);
+//		t_vec3 tmp;
+//
+//		tmp = set_vector(1, 0, 0);
+		cam_rot_y(&rt->scene->cam, rt->scene->cam.rot_amt);
 		cam_update(&rt->scene->cam, &rt->scene->ray.start);
-
-		printf("%f\n",  rt->scene->cam.rot_amt);
 
 //		clear_window(rt);
 //		raytrace(rt);
@@ -65,7 +66,10 @@ void	keyboard_core(t_rt *rt)
 	}
 	  if (SDL_KEYDOWN && rt->sdl->key_state[SDL_SCANCODE_DOWN])
 	  {
-		  cam_rot(&rt->scene->cam, &rt->scene->cam.right, -rt->scene->cam.rot_amt);
+//		  t_vec3 tmp;
+//
+//		  tmp = set_vector(1, 0, 0);
+		  cam_rot_y(&rt->scene->cam, -rt->scene->cam.rot_amt);
 		  cam_update(&rt->scene->cam, &rt->scene->ray.start);
 
 //		  clear_window(rt);
@@ -74,7 +78,10 @@ void	keyboard_core(t_rt *rt)
 	  }
 	  if (SDL_KEYDOWN && rt->sdl->key_state[SDL_SCANCODE_LEFT])
 	  {
-		  cam_rot(&rt->scene->cam, &rt->scene->cam.up, -rt->scene->cam.rot_amt);
+//		  t_vec3 tmp;
+//
+//		  tmp = set_vector(0, 1, 0);
+		  cam_rot_x(&rt->scene->cam, -rt->scene->cam.rot_amt);
 		  cam_update(&rt->scene->cam, &rt->scene->ray.start);
 
 //		  clear_window(rt);
@@ -83,7 +90,34 @@ void	keyboard_core(t_rt *rt)
 	  }
 	  if (SDL_KEYDOWN && rt->sdl->key_state[SDL_SCANCODE_RIGHT])
 	  {
-		  cam_rot(&rt->scene->cam, &rt->scene->cam.up, rt->scene->cam.rot_amt);
+//		  t_vec3 tmp;
+//
+//		  tmp = set_vector(0, 1, 0);
+		  cam_rot_x(&rt->scene->cam, rt->scene->cam.rot_amt);
+		  cam_update(&rt->scene->cam, &rt->scene->ray.start);
+
+//		  clear_window(rt);
+//		  raytrace(rt);
+//		  render_present(rt);
+	  }
+	  if (SDL_KEYDOWN && rt->sdl->key_state[SDL_SCANCODE_Q])
+	  {
+//		  t_vec3 tmp;
+//
+//		  tmp = set_vector(0, 0, 1);
+		  cam_rot_z(&rt->scene->cam, -rt->scene->cam.rot_amt);
+		  cam_update(&rt->scene->cam, &rt->scene->ray.start);
+
+//		  clear_window(rt);
+//		  raytrace(rt);
+//		  render_present(rt);
+	  }
+	  if (SDL_KEYDOWN && rt->sdl->key_state[SDL_SCANCODE_E])
+	  {
+//		  t_vec3 tmp;
+//
+//		  tmp = set_vector(0, 0, 1);
+		  cam_rot_z(&rt->scene->cam, rt->scene->cam.rot_amt);
 		  cam_update(&rt->scene->cam, &rt->scene->ray.start);
 
 //		  clear_window(rt);
