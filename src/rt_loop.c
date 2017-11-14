@@ -12,55 +12,37 @@
 
 #include "rt.h"
 
-t_bool	running(SDL_Event *event, const Uint8 **key_state)
+t_bool	running(SDL_Event *event, const Uint8 **key_state, t_sdl *s)
 {
 	SDL_Delay(1);
 	SDL_PollEvent(event);
-
 	if (event->type == SDL_QUIT)
 		return (false);
 	*key_state = SDL_GetKeyboardState(NULL);
-
 	return (true);
 }
 
-static void	update_time(t_rt *rt)
+static void	update_time(t_rt *r)
 {
-	char	*tmp;
-
-	rt->delta.oldtime = rt->delta.curtime;
-	rt->delta.curtime = SDL_GetTicks();
-	rt->delta.ftime = (rt->delta.curtime - rt->delta.oldtime) / 1.0f;
-//	printf("%d, %d, %f\n", rt->delta.oldtime, rt->delta.curtime, rt->delta.ftime);
-//	if (rt->delta.curtime - rt->delta.oldtime < 0)
-//	{
-//		rt->delta.fps_rate = rt->delta.fps_counter;
-//		rt->delta.fps_counter = 0;
-//		printf("%f\n", rt->delta.ftime);
-//		tmp = ft_itoa((int)(1.0 / rt->delta.ftime));
-//		rt->delta.fps[0] = tmp[0];
-//		rt->delta.fps[1] = tmp[1];
-//		rt->delta.fps[2] = tmp[2];
-//		rt->delta.fps[3] = '\0';
-//		free(tmp);
-//	}
-//	rt->delta.fps_counter++;
-	rt->scene->cam.mov_amt = (float)rt->delta.ftime * 1.0f;
-	rt->scene->cam.rot_amt = (float)rt->delta.ftime * 0.03f;
+	r->delta.oldtime = r->delta.curtime;
+	r->delta.curtime = SDL_GetTicks();
+	r->delta.ftime = (r->delta.curtime - r->delta.oldtime) / 1.0f;
+	r->scene->cam.mov_amt = (float)r->delta.ftime * 1.0f;
+	r->scene->cam.rot_amt = (float)r->delta.ftime * 0.03f;
 }
 
-void	rt_loop(t_rt *rt)
+void	rt_loop(t_rt *r)
 {
-	rt->delta.curtime = SDL_GetTicks();
-	rt->delta.fps_counter = 0;
-	while ((running(&rt->sdl->event, &rt->sdl->key_state)))
+	r->delta.curtime = SDL_GetTicks();
+	r->delta.fps_counter = 0;
+	while ((running(&r->sdl->event, &r->sdl->key_state, r->sdl)))
 	{
-		update_time(rt);
-		keyboard_core(rt);
-		mouse_core(rt);
+		update_time(r);
+		keyboard_core(r);
+		mouse_core(r);
 
-		clear_window(rt);
-		raytrace(rt);
-		render_present(rt);
+		clear_window(r);
+		raytrace(r);
+		render_present(r);
 	}
 }

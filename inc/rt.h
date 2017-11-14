@@ -1,38 +1,29 @@
 #ifndef _RT_H
 # define _RT_H
 
+/*
+** I Order
+*/
 # include <SDL.h>
 # include "math/math.h"
 # include "math/vectors.h"
 # include "math/quaternions.h"
 # include "math/matrices.h"
-
+/*
+** II Order
+*/
 # include "utility/bool.h"
 # include "utility/defines.h"
 # include "utility/get_next_line.h"
 # include "utility/errors.h"
-
+/*
+** III Order
+*/
 # include "rt/transform.h"
 # include "rt/raytrace.h"
 # include "rt/objects.h"
 # include "rt/camera.h"
 
-
-
-//#include "utility/bool.h"
-//#include "math/vectors.h"
-//#include "math/matrices.h"
-//#include "math/math.h"
-//#include "math/quaternions.h"
-//#include "rt/camera.h"
-//#include "rt/objects.h"
-//#include "rt/raytrace.h"
-//#include "rt/transform.h"
-//#include "utility/bool.h"
-//#include "utility/defines.h"
-//#include "utility/errors.h"
-//#include "libft.h"
-//#include "utility/get_next_line.h"
 
 /*
 ** Basic SDL2 variables
@@ -45,7 +36,8 @@ typedef struct		s_sdl
 	SDL_Event		event;
 	const Uint8		*key_state;
 	SDL_bool		is_mouse_cap;
-	t_vec2			mouse_rel_pos;
+	t_vec2			mouse_rpos;
+	t_vec2			mouse_speed;
 }					t_sdl;
 
 /*
@@ -171,22 +163,22 @@ t_bool				parse_float_number(t_rt *r, float *n, float mi, float ma);
 t_bool				check_line(t_rt *r, const char *s);
 t_bool				valid_material(t_rt *r, Uint16 *material, int mi, int ma);
 /*
-** RTv1
+** RT
 */
-void				ft_noise(t_rt *rt);
+void				ft_noise(t_rt *r);
 t_rt				*rt_init(char **av);
-void				rt_loop(t_rt *rt);
-void				rt_quit(t_rt *rt);
+void				rt_loop(t_rt *r);
+void				rt_quit(t_rt *r);
 /*
 ** Raycast
 */
-void				raytrace(t_rt *rt);
+void				raytrace(t_rt *r);
 t_bool				normal_of_intersect(t_vec3 *normal, t_vec3 *new_start,
 					t_obj3d **objects, int cur_obj);
 t_bool				object_intersect(t_rt *rt, t_ray *r, int *cur_obj,
 					t_vec3 *new_start);
-void				calculate_light(t_rt *rt);
-void				calculate_reflection(t_rt *rt);
+void				calculate_light(t_rt *r);
+void				calculate_reflection(t_rt *r);
 /*
 ** Scene
 */
@@ -199,20 +191,18 @@ t_obj3d				*new_object(t_obj_type object_type);
 /*
 ** Keyboard
 */
-void				keyboard_core(t_rt *rt);
+void				keyboard_core(t_rt *r);
 /*
 ** Mouse
 */
-void				mouse_core(t_rt *rt);
+void				mouse_core(t_rt *r);
 /*
 ** Window
 */
-void				create_window(t_rt *rtv, Uint16 wdth, Uint16 hght,
-					const char *title);
+void				create_window(t_rt *r, Uint16 wdth, Uint16 hght, const char *title);
 void				clear_window(t_rt *r);
 void				render_present(t_rt *r);
-void				ft_draw_pixel(Uint16 x, Uint16 y, t_rgba *color,
-					Uint8 *draw_buffer);
+void				ft_draw_pixel(Uint16 x, Uint16 y, t_rgba *color, Uint8 *draw_buffer);
 void				rerender(t_rt *r);
 
 #endif

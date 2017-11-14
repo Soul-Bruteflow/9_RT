@@ -49,7 +49,7 @@ void	init_camera(t_rt *r)
 
 //	c->horiz_angle = 3.14f;
 //	c->verti_angle = 0;
-	c->mouse_speed = 0.000000000005f / 1000;
+//	c->mouse_speed = 0.000000000005f / 1000;
 
 	fov_radians = PI * (c->p.fov / 2) / 180;
 	height_width_ratio = (float)HEIGHT / (float)WIDTH;
