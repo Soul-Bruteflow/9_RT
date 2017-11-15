@@ -10,7 +10,9 @@ typedef struct	s_transform
 	t_quat		rotation;
 	t_quat		rotx;
 	t_quat		roty;
+	t_quat		rotz;
 	t_vec3		scale;
+	t_vec3		angle;
 
 }				t_transform;
 

@@ -36,6 +36,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/bruteflow/c_projects/9_RT/src/raytrace/objects/sphere/sphere_create.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_create.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/raytrace/objects/sphere/sphere_ray_intersect.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_ray_intersect.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/raytrace/raytrace.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/raytrace/raytrace.c.o"
+  "/Users/bruteflow/c_projects/9_RT/src/raytrace/render.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/raytrace/render.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/raytrace/scene/scene_create.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/raytrace/scene/scene_create.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/rt_init.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/rt_init.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/rt_loop.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/rt_loop.c.o"

@@ -2674,6 +2674,33 @@ src/raytrace/raytrace.c.s:
 	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/raytrace/raytrace.c.s
 .PHONY : src/raytrace/raytrace.c.s
 
+src/raytrace/render.o: src/raytrace/render.c.o
+
+.PHONY : src/raytrace/render.o
+
+# target to build an object file
+src/raytrace/render.c.o:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/raytrace/render.c.o
+.PHONY : src/raytrace/render.c.o
+
+src/raytrace/render.i: src/raytrace/render.c.i
+
+.PHONY : src/raytrace/render.i
+
+# target to preprocess a source file
+src/raytrace/render.c.i:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/raytrace/render.c.i
+.PHONY : src/raytrace/render.c.i
+
+src/raytrace/render.s: src/raytrace/render.c.s
+
+.PHONY : src/raytrace/render.s
+
+# target to generate assembly for a file
+src/raytrace/render.c.s:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/raytrace/render.c.s
+.PHONY : src/raytrace/render.c.s
+
 src/raytrace/scene/scene_create.o: src/raytrace/scene/scene_create.c.o
 
 .PHONY : src/raytrace/scene/scene_create.o
@@ -3533,6 +3560,9 @@ help:
 	@echo "... src/raytrace/raytrace.o"
 	@echo "... src/raytrace/raytrace.i"
 	@echo "... src/raytrace/raytrace.s"
+	@echo "... src/raytrace/render.o"
+	@echo "... src/raytrace/render.i"
+	@echo "... src/raytrace/render.s"
 	@echo "... src/raytrace/scene/scene_create.o"
 	@echo "... src/raytrace/scene/scene_create.i"
 	@echo "... src/raytrace/scene/scene_create.s"

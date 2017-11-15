@@ -198,6 +198,10 @@ rt.h
 rt.h
 /Users/bruteflow/c_projects/9_RT/src/raytrace/rt.h
 
+/Users/bruteflow/c_projects/9_RT/src/raytrace/render.c
+rt.h
+/Users/bruteflow/c_projects/9_RT/src/raytrace/rt.h
+
 /Users/bruteflow/c_projects/9_RT/src/raytrace/scene/scene_create.c
 rt.h
 /Users/bruteflow/c_projects/9_RT/src/raytrace/scene/rt.h

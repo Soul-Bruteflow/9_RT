@@ -458,6 +458,9 @@
 		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/raytrace/raytrace.c">
 			<Option target="RT"/>
 		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/raytrace/render.c">
+			<Option target="RT"/>
+		</Unit>
 		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/raytrace/scene/scene_create.c">
 			<Option target="RT"/>
 		</Unit>

@@ -513,6 +513,22 @@ CMakeFiles/RT.dir/src/raytrace/raytrace.c.o: .././inc/utility/get_next_line.h
 CMakeFiles/RT.dir/src/raytrace/raytrace.c.o: .././libft/libft.h
 CMakeFiles/RT.dir/src/raytrace/raytrace.c.o: ../src/raytrace/raytrace.c
 
+CMakeFiles/RT.dir/src/raytrace/render.c.o: .././inc/math/math.h
+CMakeFiles/RT.dir/src/raytrace/render.c.o: .././inc/math/matrices.h
+CMakeFiles/RT.dir/src/raytrace/render.c.o: .././inc/math/quaternions.h
+CMakeFiles/RT.dir/src/raytrace/render.c.o: .././inc/math/vectors.h
+CMakeFiles/RT.dir/src/raytrace/render.c.o: .././inc/rt.h
+CMakeFiles/RT.dir/src/raytrace/render.c.o: .././inc/rt/camera.h
+CMakeFiles/RT.dir/src/raytrace/render.c.o: .././inc/rt/objects.h
+CMakeFiles/RT.dir/src/raytrace/render.c.o: .././inc/rt/raytrace.h
+CMakeFiles/RT.dir/src/raytrace/render.c.o: .././inc/rt/transform.h
+CMakeFiles/RT.dir/src/raytrace/render.c.o: .././inc/utility/bool.h
+CMakeFiles/RT.dir/src/raytrace/render.c.o: .././inc/utility/defines.h
+CMakeFiles/RT.dir/src/raytrace/render.c.o: .././inc/utility/errors.h
+CMakeFiles/RT.dir/src/raytrace/render.c.o: .././inc/utility/get_next_line.h
+CMakeFiles/RT.dir/src/raytrace/render.c.o: .././libft/libft.h
+CMakeFiles/RT.dir/src/raytrace/render.c.o: ../src/raytrace/render.c
+
 CMakeFiles/RT.dir/src/raytrace/scene/scene_create.c.o: .././inc/math/math.h
 CMakeFiles/RT.dir/src/raytrace/scene/scene_create.c.o: .././inc/math/matrices.h
 CMakeFiles/RT.dir/src/raytrace/scene/scene_create.c.o: .././inc/math/quaternions.h

@@ -25,7 +25,9 @@
 */
 # define ONE_STR 1
 
-# define PI 3.14159265359f
+# define PI			3.14159265359f
+# define TWO_PI		6.28318530718f
+# define HALF_PI	1.57079632679f
 
 /*
 ** Parse defines

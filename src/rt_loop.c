@@ -40,9 +40,6 @@ void	rt_loop(t_rt *r)
 		update_time(r);
 		keyboard_core(r);
 		mouse_core(r);
-
-		clear_window(r);
-		raytrace(r);
-		render_present(r);
+		rt_render(r);
 	}
 }

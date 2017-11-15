@@ -513,6 +513,22 @@ CMakeFiles/RT.dir/src/raytrace/raytrace.c.o
  .././inc/utility/get_next_line.h
  .././libft/libft.h
  /Users/bruteflow/c_projects/9_RT/src/raytrace/raytrace.c
+CMakeFiles/RT.dir/src/raytrace/render.c.o
+ .././inc/math/math.h
+ .././inc/math/matrices.h
+ .././inc/math/quaternions.h
+ .././inc/math/vectors.h
+ .././inc/rt.h
+ .././inc/rt/camera.h
+ .././inc/rt/objects.h
+ .././inc/rt/raytrace.h
+ .././inc/rt/transform.h
+ .././inc/utility/bool.h
+ .././inc/utility/defines.h
+ .././inc/utility/errors.h
+ .././inc/utility/get_next_line.h
+ .././libft/libft.h
+ /Users/bruteflow/c_projects/9_RT/src/raytrace/render.c
 CMakeFiles/RT.dir/src/raytrace/scene/scene_create.c.o
  .././inc/math/math.h
  .././inc/math/matrices.h

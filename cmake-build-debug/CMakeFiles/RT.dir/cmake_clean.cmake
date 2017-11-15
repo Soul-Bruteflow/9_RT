@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/RT.dir/src/raytrace/calculate_light.c.o"
   "CMakeFiles/RT.dir/src/raytrace/intersect.c.o"
   "CMakeFiles/RT.dir/src/raytrace/raytrace.c.o"
+  "CMakeFiles/RT.dir/src/raytrace/render.c.o"
   "CMakeFiles/RT.dir/src/transform/transform.c.o"
   "CMakeFiles/RT.dir/src/utility/ft_atof.c.o"
   "CMakeFiles/RT.dir/src/utility/ft_draw_pixel.c.o"

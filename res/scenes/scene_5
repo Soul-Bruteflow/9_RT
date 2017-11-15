@@ -13,7 +13,7 @@ camera position:
 camera direction:
 					0
 					-100
-					25
+					1
 fov:
 					25
 lights:

@@ -133,11 +133,7 @@ typedef struct		s_rt
 	t_time			delta;
 }					t_rt;
 
-/*
-** Errors
-*/
-void				rtv_error(t_error error_code);
-void				print_error_and_exit(const char *error_text, Uint8 sdl);
+
 /*
 ** Parser
 */
@@ -162,29 +158,28 @@ t_bool				parse_color(t_rt *r, t_rgbap *c, float min, float max);
 t_bool				parse_float_number(t_rt *r, float *n, float mi, float ma);
 t_bool				check_line(t_rt *r, const char *s);
 t_bool				valid_material(t_rt *r, Uint16 *material, int mi, int ma);
+
 /*
 ** RT
 */
-void				ft_noise(t_rt *r);
 t_rt				*rt_init(char **av);
+void				rt_render(t_rt *r);
 void				rt_loop(t_rt *r);
+void				ft_noise(t_rt *r);
 void				rt_quit(t_rt *r);
 /*
 ** Raycast
 */
 void				raytrace(t_rt *r);
-t_bool				normal_of_intersect(t_vec3 *normal, t_vec3 *new_start,
-					t_obj3d **objects, int cur_obj);
-t_bool				object_intersect(t_rt *rt, t_ray *r, int *cur_obj,
-					t_vec3 *new_start);
+t_bool				normal_of_intersect(t_vec3 *normal, t_vec3 *new_start, t_obj3d **objects, int cur_obj);
+t_bool				object_intersect(t_rt *rt, t_ray *r, int *cur_obj, t_vec3 *new_start);
 void				calculate_light(t_rt *r);
 void				calculate_reflection(t_rt *r);
 /*
 ** Scene
 */
 void				init_camera(t_rt *r);
-void				new_scene(t_rt *r, int n_of_lights,
-					int n_of_mats, int n_of_objs);
+void				new_scene(t_rt *r, int n_of_lights, int n_of_mats, int n_of_objs);
 void				create_sceen_one(t_scene *scene);
 t_bool				create_scene(t_rt *r);
 t_obj3d				*new_object(t_obj_type object_type);

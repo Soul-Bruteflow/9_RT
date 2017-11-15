@@ -28,4 +28,10 @@ typedef enum		e_error
 	number_of_errors
 }					t_error;
 
+/*
+** Errors
+*/
+void				rtv_error(t_error error_code);
+void				print_error_and_exit(const char *error_text, Uint8 sdl);
+
 #endif

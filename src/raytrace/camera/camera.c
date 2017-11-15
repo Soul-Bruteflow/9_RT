@@ -40,8 +40,11 @@ void	init_camera(t_rt *r)
 	c->t.rotation = set_quat_f(0, 0, 0, 1);
 	c->t.rotx = set_quat_f(0, 0, 0, 1);
 	c->t.roty = set_quat_f(0, 0, 0, 1);
+	c->t.rotz = set_quat_f(0, 0, 0, 1);
+	c->t.angle = set_vector(0, 0, 0);
 
 	c->t.rotation = quat_mul(c->t.rotx, c->t.roty);
+	c->t.rotation = quat_mul(c->t.rotation, c->t.rotz);
 
 	c->dir = vec3_norm(vec3_sub(&c->dir, &c->pos));
 	c->right = vec3_norm(vec3_cross(&c->dir, &c->world_up));
@@ -65,37 +68,72 @@ void	init_camera(t_rt *r)
 
 void	cam_update(t_cam *c, t_vec3 *ray_start)
 {
-//	c->world_up.x = 0;
-//	c->world_up.y = 1;
-//	c->world_up.z = 0;
-//	c->dir = vec3_norm(vec3_sub(&c->dir, &c->pos));
+	t_quat	inverse;
+	t_quat	new_dir;
+	t_quat	new_right;
+	t_quat	new_up;
+
+//	c->t.rotation = set_quat_f(0, 0, 0, 1);
+//	c->t.rotx = set_quat_f(0, 0, 0, 1);
+//	c->t.roty = set_quat_f(0, 0, 0, 1);
+//	c->t.rotz = set_quat_f(0, 0, 0, 1);
+//
+//	c->dir = set_vector(0, -100, 1);
 //	c->right = vec3_norm(vec3_cross(&c->dir, &c->world_up));
 //	c->up = vec3_norm(vec3_cross(&c->right, &c->dir));
-
-//	c->t.rotation = quat_mul(c->rotx, c->roty);
-//	c->t.rotation = quat_mul(c->t.rotation, c->rotz);
-
-//	cam_rot(c, 0, 0);
-//	c->t.rotation = quat_mul(c->rotx, c->roty);
-
+//
+////	c->up = vec3_norm(c->up);
+//	c->t.rotx = from_axis_angle(&c->up, c->t.angle.y);
+//
+////	c->right = vec3_norm(c->right);
+//	c->t.roty = from_axis_angle(&c->right, c->t.angle.x);
+//
+//	c->dir = vec3_norm(c->dir);
+//	c->t.rotz = from_axis_angle(&c->dir, c->t.angle.z);
+//
 	c->t.rotation = quat_mul(c->t.rotx, c->t.roty);
-
-//	printf("1 | %f, %f, %f, %f\n", c->t.rotation.x, c->t.rotation.y,
-//	c->t.rotation.z, c->t.rotation.w);
-
+	c->t.rotation = quat_mul(c->t.rotation, c->t.rotz);
+	c->t.rotation = quat_normalize(c->t.rotation);
 	update_cam_from_quat(c);
 
-//	printf("2 | %f, %f, %f, %f\n", c->t.rotation.x, c->t.rotation.y,
-//	c->t.rotation.z, c->t.rotation.w);
+	inverse = quat_conjugate(c->t.rotation);
 
-//	update_cam_from_quat(c);
+	new_dir = quat_mul(set_quat_v(c->dir, 0), c->t.rotation);
+	new_dir = quat_mul(new_dir, inverse);
+	c->dir = vec3_norm(set_vec3_q(new_dir));
 
-//	printf("3 | %f, %f, %f, %f\n", c->t.rotation.x, c->t.rotation.y,
-//	c->t.rotation.z, c->t.rotation.w);
+	c->up = vec3_norm(vec3_cross(&c->right, &c->dir));
+
+	new_up = quat_mul(set_quat_v(c->up, 0), c->t.rotation);
+	new_up = quat_mul(new_up, inverse);
+	c->up = vec3_norm(set_vec3_q(new_up));
+
+	c->right = vec3_norm(vec3_cross(&c->dir, &c->up));
+
+	new_right = quat_mul(set_quat_v(c->right, 0), c->t.rotation);
+	new_right = quat_mul(new_right, inverse);
+	c->right = vec3_norm(set_vec3_q(new_right));
+
+//	c->t.rotation = quat_mul(c->t.rotz, c->t.rotation);
+//	inverse = quat_conjugate(c->t.rotation);
+
+	c->right = vec3_norm(vec3_cross(&c->dir, &c->up));
+	c->up = vec3_norm(vec3_cross(&c->right, &c->dir));
+
 
 	c->t.rotation = set_quat_f(0, 0, 0, 1);
 	c->t.rotx = set_quat_f(0, 0, 0, 1);
 	c->t.roty = set_quat_f(0, 0, 0, 1);
+	c->t.rotz = set_quat_f(0, 0, 0, 1);
+
+	//	printf("%f\n", vec3_dot(&c->dir, &c->world_up));
+//	printf("dir ");
+//	printf("x |%f|, y |%f|, z |%f|\n", c->dir.x,c->dir.y,c->dir.z);
+//	printf("up ");
+//	printf("x |%f|, y |%f|, z |%f|\n", c->up.x,c->up.y,c->up.z);
+//	printf("right ");
+//	printf("x |%f|, y |%f|, z |%f|\n", c->right.x,c->right.y,c->right.z);
+	printf("%f\n", c->t.angle.y);
 }
 
 void	cam_move(t_cam *c, t_vec3 *axis, float amt)
@@ -121,24 +159,86 @@ void	cam_move(t_cam *c, t_vec3 *axis, float amt)
 	c->pos.z += mvp.m[2][3];
 }
 
-void	cam_rot(t_cam *c, t_vec3 *axis, float angle)
-{
-//	c->t.rotation = vec3_rotate(axis, angle);
-
-	c->t.rotation = quat_mul(c->t.rotx, c->t.roty);
-	update_cam_from_quat(c);
-}
+//void	cam_rot(t_cam *c)
+//{
+////	c->t.rotation = from_axis_angle(axis, angle);
+//
+////	c->t.rotation = quat_mul(c->t.rotx, c->t.roty);
+////	update_cam_from_quat(c);
+//	t_quat	xy;
+//	t_quat	tmp;
+//	t_quat	inverse;
+//	t_quat	new_dir;
+//	t_quat	new_right;
+//	t_quat	new_up;
+//
+//	new_dir = set_quat_v(c->dir, 0);
+//	new_right = set_quat_v(c->right, 0);
+//	new_up = set_quat_v(c->up, 0);
+//
+//	c->t.rotx = from_axis_angle(&new_right, c->t.angle.x);
+//	c->t.roty = from_axis_angle(&new_up, c->t.angle.y);
+//	xy = quat_mul(c->t.rotx, c->t.roty);
+//
+//	tmp = quat_mul_vec3d(xy, new_dir);
+//	c->dir.x = tmp.x;
+//	c->dir.y = tmp.y;
+//	c->dir.z = tmp.z;
+//
+//	c->t.rotz = from_axis_angle(&c->dir, c->t.angle.z);
+//
+//	c->t.rotation = quat_mul(c->t.rotz, xy);
+//	inverse = quat_conjugate(c->t.rotation);
+//
+//	tmp = quat_mul_vec3d(c->t.rotation, unit_x);
+//	tmp = quat_mul_vec3d(tmp, inverse);
+//	c->right.x = tmp.x;
+//	c->right.y = tmp.y;
+//	c->right.z = tmp.z;
+//
+//	tmp = quat_mul_vec3d(c->t.rotation, unit_y);
+//	c->up.x = tmp.x;
+//	c->up.y = tmp.y;
+//	c->up.z = tmp.z;
+//
+//
+////	qPitch.FromAxisAngle(UNIT_X, pitchYawRoll.x);        // build pitch
+////	qYaw.FromAxisAngle(UNIT_Y, pitchYawRoll.y);          // build yaw
+////
+////	quat qPitchYaw = qYaw * qPitch;
+////	vec3 forward = qPitchYaw * UNIT_Z;    // create forward
+////
+////	quat qRoll;
+////	qRoll.FromAxisAngle(forward, pitchYawRoll.z);    // roll about current forward
+////
+////	quat final = qRoll * qPitchYaw;
+////
+////
+////
+////// then if you want up and right
+////
+////	vec3 right = final * UNIT_X;
+////
+////	vec3 up = final * UNIT_Y;
+//
+//}
 
 void	cam_rot_x(t_cam *c, float angle)
 {
-	c->up = vec3_norm(c->world_up);
-	c->t.rotx = vec3_rotate(&c->world_up, angle);
+	c->up = vec3_norm(c->up);
+	c->t.rotx = from_axis_angle(&c->up, angle);
 }
 
 void	cam_rot_y(t_cam *c, float angle)
 {
 	c->right = vec3_norm(c->right);
-	c->t.roty = vec3_rotate(&c->right, angle);
+	c->t.roty = from_axis_angle(&c->right, angle);
+}
+
+void	cam_rot_z(t_cam *c, float angle)
+{
+	c->dir = vec3_norm(c->dir);
+	c->t.rotz = from_axis_angle(&c->dir, angle);
 }
 
 void	update_cam_from_quat(t_cam *c)
@@ -148,19 +248,28 @@ void	update_cam_from_quat(t_cam *c)
 	t_quat	new_right;
 	t_quat	new_up;
 
-//	c->t.rotation = quat_normalize_s(c->t.rotation);
 	inverse = quat_conjugate(c->t.rotation);
 
 	new_dir = quat_mul(set_quat_v(c->dir, 0), c->t.rotation);
 	new_dir = quat_mul(new_dir, inverse);
 	c->dir = vec3_norm(set_vec3_q(new_dir));
 
-	new_right = quat_mul(set_quat_v(c->right, 0), c->t.rotation);
-	new_right = quat_mul(new_right, inverse);
-	c->right = vec3_norm(set_vec3_q(new_right));
+//	new_right = quat_mul(set_quat_v(c->right, 0), c->t.rotation);
+//	new_right = quat_mul(new_right, inverse);
+//	c->right = vec3_norm(set_vec3_q(new_right));
 
 	new_up = quat_mul(set_quat_v(c->up, 0), c->t.rotation);
 	new_up = quat_mul(new_up, inverse);
 	c->up = vec3_norm(set_vec3_q(new_up));
 
+	c->up = vec3_cross(&c->right, &c->dir);
+	c->right = vec3_cross(&c->dir, &c->up);
+
+//	printf("%f\n", vec3_dot(&c->dir, &c->world_up));
+//	printf("dir ");
+//	printf("x |%f|, y |%f|, z |%f|\n", c->dir.x,c->dir.y,c->dir.z);
+//	printf("up ");
+//	printf("x |%f|, y |%f|, z |%f|\n", c->up.x,c->up.y,c->up.z);
+//	printf("right ");
+//	printf("x |%f|, y |%f|, z |%f|\n", c->right.x,c->right.y,c->right.z);
 }

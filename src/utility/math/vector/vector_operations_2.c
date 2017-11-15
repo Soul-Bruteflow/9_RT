@@ -38,24 +38,6 @@ t_vec3		vec3_add3(t_vec3 a, t_vec3 b, t_vec3 c)
 	return (tmp);
 }
 
-t_quat		vec3_rotate(t_vec3 *axis, float angle)
-{
-	float	sin_half_angle;
-	float	cos_half_angle;
-	t_quat	rotation;
-//	t_quat	conjugate;
-
-	sin_half_angle = sinf(ft_to_radians(angle / 2));
-	cos_half_angle = cosf(ft_to_radians(angle / 2));
-	rotation.x = axis->x * sin_half_angle;
-	rotation.y = axis->y * sin_half_angle;
-	rotation.z = axis->z * sin_half_angle;
-	rotation.w = cos_half_angle;
-//	conjugate = quat_conjugate(rotation);
-	rotation = quat_mul_vec3d(rotation, *axis);
-	return (rotation);
-}
-
 t_vec3		set_vec3_q(t_quat q)
 {
 	t_vec3	new_v;

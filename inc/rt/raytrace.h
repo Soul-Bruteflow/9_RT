@@ -76,5 +76,4 @@ void			set_material(t_material *material, t_rgbap diffuse, float r);
 */
 t_light			*new_light();
 void			set_light(t_light *light, t_vec3 pos, t_rgbap intensity);
-
 #endif
