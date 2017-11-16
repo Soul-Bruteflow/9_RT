@@ -37,7 +37,7 @@ static void		set_raytrace(t_rt *r, Uint16 x, Uint16 y)
 	r->calc->color.blue = 0;
 	xcomp = vec3_scale(((x * c->s.pixel_width) - c->s.half_width), &c->right);
 	ycomp = vec3_scale(((y * c->s.pixel_height) - c->s.half_height), &c->up);
-	r->scene->ray.dir = vec3_norm(vec3_add3(c->dir, xcomp, ycomp));
+	r->scene->ray.dir = vec3_norm(vec3_add3(c->forward, xcomp, ycomp));
 	r->scene->ray.start = r->scene->cam.pos;
 }
 

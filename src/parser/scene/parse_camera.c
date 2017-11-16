@@ -22,7 +22,7 @@ t_bool	parse_camera(t_rt *r)
 		return (false);
 	if (!(check_line(r, "camera direction:")))
 		return (false);
-	if (!(parse_vector(r, &r->scene->cam.dir, V_MIN, V_MAX)))
+	if (!(parse_vector(r, &r->scene->cam.eye, V_MIN, V_MAX)))
 		return (false);
 	if (!(check_line(r, "fov:")))
 		return (false);

@@ -33,6 +33,8 @@ utility/get_next_line.h
 .././inc/utility/get_next_line.h
 utility/errors.h
 .././inc/utility/errors.h
+utility/utility.h
+.././inc/utility/utility.h
 rt/transform.h
 .././inc/rt/transform.h
 rt/raytrace.h
@@ -61,6 +63,8 @@ fcntl.h
 -
 libft.h
 .././inc/utility/libft.h
+
+.././inc/utility/utility.h
 
 .././libft/libft.h
 string.h
@@ -223,6 +227,10 @@ rt.h
 /Users/bruteflow/c_projects/9_RT/src/transform/rt.h
 
 /Users/bruteflow/c_projects/9_RT/src/utility/ft_atof.c
+rt.h
+/Users/bruteflow/c_projects/9_RT/src/utility/rt.h
+
+/Users/bruteflow/c_projects/9_RT/src/utility/ft_clamp_f.c
 rt.h
 /Users/bruteflow/c_projects/9_RT/src/utility/rt.h
 

@@ -28,7 +28,7 @@ static void	update_time(t_rt *r)
 	r->delta.curtime = SDL_GetTicks();
 	r->delta.ftime = (r->delta.curtime - r->delta.oldtime) / 1.0f;
 	r->scene->cam.mov_amt = (float)r->delta.ftime * 1.0f;
-	r->scene->cam.rot_amt = (float)r->delta.ftime * 0.03f;
+	r->scene->cam.rot_amt = (float)r->delta.ftime * 0.025f;
 }
 
 void	rt_loop(t_rt *r)

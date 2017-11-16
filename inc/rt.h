@@ -16,6 +16,7 @@
 # include "utility/defines.h"
 # include "utility/get_next_line.h"
 # include "utility/errors.h"
+# include "utility/utility.h"
 /*
 ** III Order
 */

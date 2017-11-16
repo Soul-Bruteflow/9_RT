@@ -30,7 +30,8 @@ typedef struct	s_persp
 typedef struct	s_cam
 {
 	t_vec3		pos;
-	t_vec3		dir;
+	t_vec3		eye;
+	t_vec3		forward;
 	t_vec3		up;
 	t_vec3		right;
 	t_vec3		world_up;
@@ -51,7 +52,7 @@ void			cam_move(t_cam *c, t_vec3 *axis, float amt);
 void			cam_rot_x(t_cam *c, float angle);
 void			cam_rot_y(t_cam *c, float angle);
 void			cam_rot_z(t_cam *c, float angle);
-void			cam_update(t_cam *c, t_vec3 *ray_start);
+void			cam_update(t_cam *c);
 void			cam_rot(t_cam *c);
 void			update_cam_from_quat(t_cam *c);
 t_mat4			get_mvp(t_cam *c);

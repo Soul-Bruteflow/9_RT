@@ -2863,6 +2863,33 @@ src/utility/ft_atof.c.s:
 	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/ft_atof.c.s
 .PHONY : src/utility/ft_atof.c.s
 
+src/utility/ft_clamp_f.o: src/utility/ft_clamp_f.c.o
+
+.PHONY : src/utility/ft_clamp_f.o
+
+# target to build an object file
+src/utility/ft_clamp_f.c.o:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.o
+.PHONY : src/utility/ft_clamp_f.c.o
+
+src/utility/ft_clamp_f.i: src/utility/ft_clamp_f.c.i
+
+.PHONY : src/utility/ft_clamp_f.i
+
+# target to preprocess a source file
+src/utility/ft_clamp_f.c.i:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.i
+.PHONY : src/utility/ft_clamp_f.c.i
+
+src/utility/ft_clamp_f.s: src/utility/ft_clamp_f.c.s
+
+.PHONY : src/utility/ft_clamp_f.s
+
+# target to generate assembly for a file
+src/utility/ft_clamp_f.c.s:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.s
+.PHONY : src/utility/ft_clamp_f.c.s
+
 src/utility/ft_draw_pixel.o: src/utility/ft_draw_pixel.c.o
 
 .PHONY : src/utility/ft_draw_pixel.o
@@ -3581,6 +3608,9 @@ help:
 	@echo "... src/utility/ft_atof.o"
 	@echo "... src/utility/ft_atof.i"
 	@echo "... src/utility/ft_atof.s"
+	@echo "... src/utility/ft_clamp_f.o"
+	@echo "... src/utility/ft_clamp_f.i"
+	@echo "... src/utility/ft_clamp_f.s"
 	@echo "... src/utility/ft_draw_pixel.o"
 	@echo "... src/utility/ft_draw_pixel.i"
 	@echo "... src/utility/ft_draw_pixel.s"

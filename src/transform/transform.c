@@ -33,7 +33,7 @@ t_mat4		get_mvp(t_cam *c)
 	t_mat4	mvp;
 
 	model = get_model(&c->t);
-	view = init_cam_mat(c->dir, c->up);
+	view = init_cam_mat(c->forward, c->up);
 	projection = init_cam_projection(c->p);
 	mvp = mat_mult(&model, &view);
 	mvp = mat_mult(&mvp, &projection);
