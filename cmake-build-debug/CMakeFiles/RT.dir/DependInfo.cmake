@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/Users/bruteflow/c_projects/9_RT/src/controls/keyboard/keyboard_core.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/controls/keyboard/keyboard_core.c.o"
+  "/Users/bruteflow/c_projects/9_RT/src/controls/mouse/mouse_core.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/errors.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/errors.c.o"
-  "/Users/bruteflow/c_projects/9_RT/src/events/keyboard/keyboard_core.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/events/keyboard/keyboard_core.c.o"
-  "/Users/bruteflow/c_projects/9_RT/src/events/mouse/mouse_core.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/events/mouse/mouse_core.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/get_next_line.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/get_next_line.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/main.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/main.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/parser/objects/parse_cone.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/parser/objects/parse_cone.c.o"

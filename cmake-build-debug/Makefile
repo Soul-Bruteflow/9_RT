@@ -1810,6 +1810,60 @@ libft/ft_tolower.c.s:
 	$(MAKE) -f CMakeFiles/ft.dir/build.make CMakeFiles/ft.dir/libft/ft_tolower.c.s
 .PHONY : libft/ft_tolower.c.s
 
+src/controls/keyboard/keyboard_core.o: src/controls/keyboard/keyboard_core.c.o
+
+.PHONY : src/controls/keyboard/keyboard_core.o
+
+# target to build an object file
+src/controls/keyboard/keyboard_core.c.o:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/controls/keyboard/keyboard_core.c.o
+.PHONY : src/controls/keyboard/keyboard_core.c.o
+
+src/controls/keyboard/keyboard_core.i: src/controls/keyboard/keyboard_core.c.i
+
+.PHONY : src/controls/keyboard/keyboard_core.i
+
+# target to preprocess a source file
+src/controls/keyboard/keyboard_core.c.i:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/controls/keyboard/keyboard_core.c.i
+.PHONY : src/controls/keyboard/keyboard_core.c.i
+
+src/controls/keyboard/keyboard_core.s: src/controls/keyboard/keyboard_core.c.s
+
+.PHONY : src/controls/keyboard/keyboard_core.s
+
+# target to generate assembly for a file
+src/controls/keyboard/keyboard_core.c.s:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/controls/keyboard/keyboard_core.c.s
+.PHONY : src/controls/keyboard/keyboard_core.c.s
+
+src/controls/mouse/mouse_core.o: src/controls/mouse/mouse_core.c.o
+
+.PHONY : src/controls/mouse/mouse_core.o
+
+# target to build an object file
+src/controls/mouse/mouse_core.c.o:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.o
+.PHONY : src/controls/mouse/mouse_core.c.o
+
+src/controls/mouse/mouse_core.i: src/controls/mouse/mouse_core.c.i
+
+.PHONY : src/controls/mouse/mouse_core.i
+
+# target to preprocess a source file
+src/controls/mouse/mouse_core.c.i:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.i
+.PHONY : src/controls/mouse/mouse_core.c.i
+
+src/controls/mouse/mouse_core.s: src/controls/mouse/mouse_core.c.s
+
+.PHONY : src/controls/mouse/mouse_core.s
+
+# target to generate assembly for a file
+src/controls/mouse/mouse_core.c.s:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.s
+.PHONY : src/controls/mouse/mouse_core.c.s
+
 src/errors.o: src/errors.c.o
 
 .PHONY : src/errors.o
@@ -1836,60 +1890,6 @@ src/errors.s: src/errors.c.s
 src/errors.c.s:
 	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/errors.c.s
 .PHONY : src/errors.c.s
-
-src/events/keyboard/keyboard_core.o: src/events/keyboard/keyboard_core.c.o
-
-.PHONY : src/events/keyboard/keyboard_core.o
-
-# target to build an object file
-src/events/keyboard/keyboard_core.c.o:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/events/keyboard/keyboard_core.c.o
-.PHONY : src/events/keyboard/keyboard_core.c.o
-
-src/events/keyboard/keyboard_core.i: src/events/keyboard/keyboard_core.c.i
-
-.PHONY : src/events/keyboard/keyboard_core.i
-
-# target to preprocess a source file
-src/events/keyboard/keyboard_core.c.i:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/events/keyboard/keyboard_core.c.i
-.PHONY : src/events/keyboard/keyboard_core.c.i
-
-src/events/keyboard/keyboard_core.s: src/events/keyboard/keyboard_core.c.s
-
-.PHONY : src/events/keyboard/keyboard_core.s
-
-# target to generate assembly for a file
-src/events/keyboard/keyboard_core.c.s:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/events/keyboard/keyboard_core.c.s
-.PHONY : src/events/keyboard/keyboard_core.c.s
-
-src/events/mouse/mouse_core.o: src/events/mouse/mouse_core.c.o
-
-.PHONY : src/events/mouse/mouse_core.o
-
-# target to build an object file
-src/events/mouse/mouse_core.c.o:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/events/mouse/mouse_core.c.o
-.PHONY : src/events/mouse/mouse_core.c.o
-
-src/events/mouse/mouse_core.i: src/events/mouse/mouse_core.c.i
-
-.PHONY : src/events/mouse/mouse_core.i
-
-# target to preprocess a source file
-src/events/mouse/mouse_core.c.i:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/events/mouse/mouse_core.c.i
-.PHONY : src/events/mouse/mouse_core.c.i
-
-src/events/mouse/mouse_core.s: src/events/mouse/mouse_core.c.s
-
-.PHONY : src/events/mouse/mouse_core.s
-
-# target to generate assembly for a file
-src/events/mouse/mouse_core.c.s:
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/events/mouse/mouse_core.c.s
-.PHONY : src/events/mouse/mouse_core.c.s
 
 src/get_next_line.o: src/get_next_line.c.o
 
@@ -3491,15 +3491,15 @@ help:
 	@echo "... libft/ft_tolower.o"
 	@echo "... libft/ft_tolower.i"
 	@echo "... libft/ft_tolower.s"
+	@echo "... src/controls/keyboard/keyboard_core.o"
+	@echo "... src/controls/keyboard/keyboard_core.i"
+	@echo "... src/controls/keyboard/keyboard_core.s"
+	@echo "... src/controls/mouse/mouse_core.o"
+	@echo "... src/controls/mouse/mouse_core.i"
+	@echo "... src/controls/mouse/mouse_core.s"
 	@echo "... src/errors.o"
 	@echo "... src/errors.i"
 	@echo "... src/errors.s"
-	@echo "... src/events/keyboard/keyboard_core.o"
-	@echo "... src/events/keyboard/keyboard_core.i"
-	@echo "... src/events/keyboard/keyboard_core.s"
-	@echo "... src/events/mouse/mouse_core.o"
-	@echo "... src/events/mouse/mouse_core.i"
-	@echo "... src/events/mouse/mouse_core.s"
 	@echo "... src/get_next_line.o"
 	@echo "... src/get_next_line.i"
 	@echo "... src/get_next_line.s"

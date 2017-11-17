@@ -24,7 +24,10 @@
 # include "rt/raytrace.h"
 # include "rt/objects.h"
 # include "rt/camera.h"
-
+/*
+** IV Order
+*/
+# include "controls/controls.h"
 
 /*
 ** Basic SDL2 variables
@@ -36,9 +39,8 @@ typedef struct		s_sdl
 	SDL_Renderer	*renderer;
 	SDL_Event		event;
 	const Uint8		*key_state;
-	SDL_bool		is_mouse_cap;
 	t_vec2			mouse_rpos;
-	t_vec2			mouse_speed;
+	t_mouse			mouse;
 }					t_sdl;
 
 /*
@@ -70,7 +72,6 @@ typedef struct		s_scene
 	t_light			**lights;
 	t_ray			ray;
 	t_cam			cam;
-	t_vec2			point;
 	int				objs_n;
 	int				mats_n;
 	int				lits_n;

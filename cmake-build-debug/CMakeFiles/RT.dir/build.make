@@ -513,52 +513,52 @@ CMakeFiles/RT.dir/src/window/update_window.c.o.provides: CMakeFiles/RT.dir/src/w
 CMakeFiles/RT.dir/src/window/update_window.c.o.provides.build: CMakeFiles/RT.dir/src/window/update_window.c.o
 
 
-CMakeFiles/RT.dir/src/events/keyboard/keyboard_core.c.o: CMakeFiles/RT.dir/flags.make
-CMakeFiles/RT.dir/src/events/keyboard/keyboard_core.c.o: ../src/events/keyboard/keyboard_core.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/RT.dir/src/events/keyboard/keyboard_core.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/events/keyboard/keyboard_core.c.o   -c /Users/bruteflow/c_projects/9_RT/src/events/keyboard/keyboard_core.c
+CMakeFiles/RT.dir/src/controls/keyboard/keyboard_core.c.o: CMakeFiles/RT.dir/flags.make
+CMakeFiles/RT.dir/src/controls/keyboard/keyboard_core.c.o: ../src/controls/keyboard/keyboard_core.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/RT.dir/src/controls/keyboard/keyboard_core.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/controls/keyboard/keyboard_core.c.o   -c /Users/bruteflow/c_projects/9_RT/src/controls/keyboard/keyboard_core.c
 
-CMakeFiles/RT.dir/src/events/keyboard/keyboard_core.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RT.dir/src/events/keyboard/keyboard_core.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bruteflow/c_projects/9_RT/src/events/keyboard/keyboard_core.c > CMakeFiles/RT.dir/src/events/keyboard/keyboard_core.c.i
+CMakeFiles/RT.dir/src/controls/keyboard/keyboard_core.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RT.dir/src/controls/keyboard/keyboard_core.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bruteflow/c_projects/9_RT/src/controls/keyboard/keyboard_core.c > CMakeFiles/RT.dir/src/controls/keyboard/keyboard_core.c.i
 
-CMakeFiles/RT.dir/src/events/keyboard/keyboard_core.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RT.dir/src/events/keyboard/keyboard_core.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bruteflow/c_projects/9_RT/src/events/keyboard/keyboard_core.c -o CMakeFiles/RT.dir/src/events/keyboard/keyboard_core.c.s
+CMakeFiles/RT.dir/src/controls/keyboard/keyboard_core.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RT.dir/src/controls/keyboard/keyboard_core.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bruteflow/c_projects/9_RT/src/controls/keyboard/keyboard_core.c -o CMakeFiles/RT.dir/src/controls/keyboard/keyboard_core.c.s
 
-CMakeFiles/RT.dir/src/events/keyboard/keyboard_core.c.o.requires:
+CMakeFiles/RT.dir/src/controls/keyboard/keyboard_core.c.o.requires:
 
-.PHONY : CMakeFiles/RT.dir/src/events/keyboard/keyboard_core.c.o.requires
+.PHONY : CMakeFiles/RT.dir/src/controls/keyboard/keyboard_core.c.o.requires
 
-CMakeFiles/RT.dir/src/events/keyboard/keyboard_core.c.o.provides: CMakeFiles/RT.dir/src/events/keyboard/keyboard_core.c.o.requires
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/events/keyboard/keyboard_core.c.o.provides.build
-.PHONY : CMakeFiles/RT.dir/src/events/keyboard/keyboard_core.c.o.provides
+CMakeFiles/RT.dir/src/controls/keyboard/keyboard_core.c.o.provides: CMakeFiles/RT.dir/src/controls/keyboard/keyboard_core.c.o.requires
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/controls/keyboard/keyboard_core.c.o.provides.build
+.PHONY : CMakeFiles/RT.dir/src/controls/keyboard/keyboard_core.c.o.provides
 
-CMakeFiles/RT.dir/src/events/keyboard/keyboard_core.c.o.provides.build: CMakeFiles/RT.dir/src/events/keyboard/keyboard_core.c.o
+CMakeFiles/RT.dir/src/controls/keyboard/keyboard_core.c.o.provides.build: CMakeFiles/RT.dir/src/controls/keyboard/keyboard_core.c.o
 
 
-CMakeFiles/RT.dir/src/events/mouse/mouse_core.c.o: CMakeFiles/RT.dir/flags.make
-CMakeFiles/RT.dir/src/events/mouse/mouse_core.c.o: ../src/events/mouse/mouse_core.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/RT.dir/src/events/mouse/mouse_core.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/events/mouse/mouse_core.c.o   -c /Users/bruteflow/c_projects/9_RT/src/events/mouse/mouse_core.c
+CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.o: CMakeFiles/RT.dir/flags.make
+CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.o: ../src/controls/mouse/mouse_core.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.o   -c /Users/bruteflow/c_projects/9_RT/src/controls/mouse/mouse_core.c
 
-CMakeFiles/RT.dir/src/events/mouse/mouse_core.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RT.dir/src/events/mouse/mouse_core.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bruteflow/c_projects/9_RT/src/events/mouse/mouse_core.c > CMakeFiles/RT.dir/src/events/mouse/mouse_core.c.i
+CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bruteflow/c_projects/9_RT/src/controls/mouse/mouse_core.c > CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.i
 
-CMakeFiles/RT.dir/src/events/mouse/mouse_core.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RT.dir/src/events/mouse/mouse_core.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bruteflow/c_projects/9_RT/src/events/mouse/mouse_core.c -o CMakeFiles/RT.dir/src/events/mouse/mouse_core.c.s
+CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bruteflow/c_projects/9_RT/src/controls/mouse/mouse_core.c -o CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.s
 
-CMakeFiles/RT.dir/src/events/mouse/mouse_core.c.o.requires:
+CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.o.requires:
 
-.PHONY : CMakeFiles/RT.dir/src/events/mouse/mouse_core.c.o.requires
+.PHONY : CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.o.requires
 
-CMakeFiles/RT.dir/src/events/mouse/mouse_core.c.o.provides: CMakeFiles/RT.dir/src/events/mouse/mouse_core.c.o.requires
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/events/mouse/mouse_core.c.o.provides.build
-.PHONY : CMakeFiles/RT.dir/src/events/mouse/mouse_core.c.o.provides
+CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.o.provides: CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.o.requires
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.o.provides.build
+.PHONY : CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.o.provides
 
-CMakeFiles/RT.dir/src/events/mouse/mouse_core.c.o.provides.build: CMakeFiles/RT.dir/src/events/mouse/mouse_core.c.o
+CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.o.provides.build: CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.o
 
 
 CMakeFiles/RT.dir/src/parser/objects/parse_cone.c.o: CMakeFiles/RT.dir/flags.make
@@ -1398,8 +1398,8 @@ RT_OBJECTS = \
 "CMakeFiles/RT.dir/src/utility/utility.c.o" \
 "CMakeFiles/RT.dir/src/window/create_window.c.o" \
 "CMakeFiles/RT.dir/src/window/update_window.c.o" \
-"CMakeFiles/RT.dir/src/events/keyboard/keyboard_core.c.o" \
-"CMakeFiles/RT.dir/src/events/mouse/mouse_core.c.o" \
+"CMakeFiles/RT.dir/src/controls/keyboard/keyboard_core.c.o" \
+"CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.o" \
 "CMakeFiles/RT.dir/src/parser/objects/parse_cone.c.o" \
 "CMakeFiles/RT.dir/src/parser/objects/parse_cylinder.c.o" \
 "CMakeFiles/RT.dir/src/parser/objects/parse_materials.c.o" \
@@ -1457,8 +1457,8 @@ RT: CMakeFiles/RT.dir/src/utility/ft_set_color.c.o
 RT: CMakeFiles/RT.dir/src/utility/utility.c.o
 RT: CMakeFiles/RT.dir/src/window/create_window.c.o
 RT: CMakeFiles/RT.dir/src/window/update_window.c.o
-RT: CMakeFiles/RT.dir/src/events/keyboard/keyboard_core.c.o
-RT: CMakeFiles/RT.dir/src/events/mouse/mouse_core.c.o
+RT: CMakeFiles/RT.dir/src/controls/keyboard/keyboard_core.c.o
+RT: CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.o
 RT: CMakeFiles/RT.dir/src/parser/objects/parse_cone.c.o
 RT: CMakeFiles/RT.dir/src/parser/objects/parse_cylinder.c.o
 RT: CMakeFiles/RT.dir/src/parser/objects/parse_materials.c.o
@@ -1523,8 +1523,8 @@ CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/utility/ft_set_color.c.o.requi
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/utility/utility.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/window/create_window.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/window/update_window.c.o.requires
-CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/events/keyboard/keyboard_core.c.o.requires
-CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/events/mouse/mouse_core.c.o.requires
+CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/controls/keyboard/keyboard_core.c.o.requires
+CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/parser/objects/parse_cone.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/parser/objects/parse_cylinder.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/parser/objects/parse_materials.c.o.requires
