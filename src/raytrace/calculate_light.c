@@ -27,7 +27,7 @@ t_bool	calculate_shadows(t_rt *r, t_obj3d **objs, t_ray *light_ray, float *t2)
 
 float	lambert(t_ray *light_ray, t_vec3 *normal, float *coef)
 {
-	return (vec3_dot(&light_ray->dir, normal) * *coef);
+	return (vec3_dot(light_ray->dir, *normal) * *coef);
 }
 
 /*
@@ -50,7 +50,7 @@ void	calculate_reflection(t_rt *rtv)
 {
 	rtv->calc->coef *= rtv->calc->cur_mat.reflection;
 	rtv->calc->reflect = 2.0f *
-	vec3_dot(&rtv->scene->ray.dir, &rtv->calc->intersect_normal);
+	vec3_dot(rtv->scene->ray.dir, rtv->calc->intersect_normal);
 	rtv->calc->tmp = vec3_scale(rtv->calc->reflect,
 	&rtv->calc->intersect_normal);
 	rtv->scene->ray.dir = vec3_sub(&rtv->scene->ray.dir, &rtv->calc->tmp);
@@ -73,9 +73,9 @@ void	calculate_light(t_rt *rtv)
 	{
 		cur_light = *rtv->scene->lights[rtv->calc->i];
 		dist = vec3_sub(&cur_light.pos, &rtv->calc->new_start);
-		if (vec3_dot(&rtv->calc->intersect_normal, &dist) <= 0.0f)
+		if (vec3_dot(rtv->calc->intersect_normal, dist) <= 0.0f)
 			continue;
-		t2 = sqrtf(vec3_dot(&dist, &dist));
+		t2 = sqrtf(vec3_dot(dist, dist));
 		if (t2 <= 0.0f)
 			continue;
 		light_ray.start = rtv->calc->new_start;

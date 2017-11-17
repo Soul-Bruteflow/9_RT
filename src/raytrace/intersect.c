@@ -46,7 +46,7 @@ t_bool	normal_of_intersect(t_vec3 *n, t_vec3 *s, t_obj3d **objs, int cur_obj)
 	float		temp;
 
 	*n = vec3_sub(s, &objs[cur_obj]->pos);
-	temp = vec3_dot(n, n);
+	temp = vec3_dot(*n, *n);
 	if (temp == 0)
 		return (false);
 	temp = 1.0f / sqrtf(temp);

@@ -34,30 +34,56 @@ void	keyboard_core(t_rt *r)
 	}
 	if (SDL_KEYDOWN && r->sdl->key_state[SDL_SCANCODE_UP])
 	{
-		r->scene->cam.t.angle.y += r->scene->cam.rot_amt;
-		r->scene->cam.t.angle.y = ft_clamp_f(r->scene->cam.t.angle.y, -900, 900);
-		cam_rot_y(&r->scene->cam, r->scene->cam.t.angle.y);
-		cam_update(&r->scene->cam);
+//		float tmp;
+//
+//		tmp = vec3_dot(r->scene->cam.forward, r->scene->cam.world_up);
+//		if (tmp > 0.999 || tmp < -0.999)
+//			return;
+		printf("%f\n", r->scene->cam.t.angle.y);
+		if (r->scene->cam.t.angle.y > 85)
+			return;
+		else
+		{
+			r->scene->cam.t.angle.y += r->scene->cam.rot_amt;
+			r->scene->cam.t.angle.y = ft_clamp_f(r->scene->cam.t.angle.y, -89, 89);
+//		cam_rot(&r->scene->cam, r->scene->cam.t.angle);
+			cam_rot_y(&r->scene->cam, -r->scene->cam.rot_amt);
+			cam_update(&r->scene->cam);
+		}
 	}
 	if (SDL_KEYDOWN && r->sdl->key_state[SDL_SCANCODE_DOWN])
 	{
-		r->scene->cam.t.angle.y -= r->scene->cam.rot_amt;
-		r->scene->cam.t.angle.y = ft_clamp_f(r->scene->cam.t.angle.y, -900, 900);
-		cam_rot_y(&r->scene->cam, r->scene->cam.t.angle.y);
-		cam_update(&r->scene->cam);
+//		float tmp;
+//
+//		tmp = vec3_dot(r->scene->cam.forward, r->scene->cam.world_up);
+//		if (tmp > 0.999 || tmp < -0.999)
+//			return;
+		printf("%f\n", r->scene->cam.t.angle.y);
+		if (r->scene->cam.t.angle.y < -85)
+			return;
+		else
+		{
+			r->scene->cam.t.angle.y -= r->scene->cam.rot_amt;
+			r->scene->cam.t.angle.y = ft_clamp_f(r->scene->cam.t.angle.y, -89, 89);
+//		cam_rot(&r->scene->cam, r->scene->cam.t.angle);
+			cam_rot_y(&r->scene->cam, r->scene->cam.rot_amt);
+			cam_update(&r->scene->cam);
+		}
 	}
 	if (SDL_KEYDOWN && r->sdl->key_state[SDL_SCANCODE_LEFT])
 	{
-		r->scene->cam.t.angle.x += r->scene->cam.rot_amt;
-
-		cam_rot_x(&r->scene->cam, -r->scene->cam.rot_amt);
+		r->scene->cam.t.angle.x -= r->scene->cam.rot_amt;
+		r->scene->cam.t.angle.x = ft_clamp_f(r->scene->cam.t.angle.x, -360, 360);
+//		cam_rot(&r->scene->cam, r->scene->cam.t.angle);
+		cam_rot_x(&r->scene->cam, r->scene->cam.rot_amt);
 		cam_update(&r->scene->cam);
 	}
 	if (SDL_KEYDOWN && r->sdl->key_state[SDL_SCANCODE_RIGHT])
 	{
-		r->scene->cam.t.angle.x -= r->scene->cam.rot_amt;
-
-		cam_rot_x(&r->scene->cam, r->scene->cam.rot_amt);
+		r->scene->cam.t.angle.x += r->scene->cam.rot_amt;
+		r->scene->cam.t.angle.x = ft_clamp_f(r->scene->cam.t.angle.x, -360, 360);
+//		cam_rot(&r->scene->cam, r->scene->cam.t.angle);
+		cam_rot_x(&r->scene->cam, -r->scene->cam.rot_amt);
 		cam_update(&r->scene->cam);
 	}
 	if (SDL_KEYDOWN && r->sdl->key_state[SDL_SCANCODE_Q])
@@ -79,8 +105,8 @@ void	keyboard_core(t_rt *r)
 		int x, y = 0;
 
 		SDL_GetRelativeMouseState(&x, &y);
-		r->sdl->mouse_rpos.x = x;
-		r->sdl->mouse_rpos.y = y * -1.0f;
+		r->sdl->mouse_rpos.x = x * -1.0f;
+		r->sdl->mouse_rpos.y = y;
 //		printf("%f\n", r->sdl->mouse_rpos.x);
 		if (r->sdl->mouse_rpos.x > 0)
 		{

@@ -24,7 +24,7 @@ float		vec3_len(t_vec3 v)
 {
 	float len;
 
-	len = sqrtf(vec3_dot(&v, &v));
+	len = sqrtf(vec3_dot(v, v));
 	return (len);
 }
 

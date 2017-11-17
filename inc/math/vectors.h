@@ -47,7 +47,7 @@ t_vec3			vec3_sub(t_vec3 *v1, t_vec3 *v2);
 /*
 ** MULTIPLY two vectors and return the resulting scalar (DOT PRODUCT)
 */
-float			vec3_dot(t_vec3 *v1, t_vec3 *v2);
+float			vec3_dot(t_vec3 v1, t_vec3 v2);
 /*
 ** Calculate Vector x Scalar
 */

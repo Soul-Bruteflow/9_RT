@@ -24,10 +24,10 @@ static float	calculate_discriminant(t_ray *r, t_obj3d *object, float *b)
 	t_sphere	*s;
 
 	s = object->type;
-	a = vec3_dot(&r->dir, &r->dir);
+	a = vec3_dot(r->dir, r->dir);
 	dist = vec3_sub(&r->start, &object->pos);
-	*b = 2 * vec3_dot(&r->dir, &dist);
-	c = vec3_dot(&dist, &dist) - (s->radius * s->radius);
+	*b = 2 * vec3_dot(r->dir, dist);
+	c = vec3_dot(dist, dist) - (s->radius * s->radius);
 	return (*b * *b - 4 * a * c);
 }
 
