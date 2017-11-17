@@ -230,10 +230,6 @@ rt.h
 rt.h
 /Users/bruteflow/c_projects/9_RT/src/utility/rt.h
 
-/Users/bruteflow/c_projects/9_RT/src/utility/ft_clamp_f.c
-rt.h
-/Users/bruteflow/c_projects/9_RT/src/utility/rt.h
-
 /Users/bruteflow/c_projects/9_RT/src/utility/ft_draw_pixel.c
 rt.h
 /Users/bruteflow/c_projects/9_RT/src/utility/rt.h
@@ -285,6 +281,10 @@ rt.h
 /Users/bruteflow/c_projects/9_RT/src/utility/math/vector/vector_operations_2.c
 rt.h
 /Users/bruteflow/c_projects/9_RT/src/utility/math/vector/rt.h
+
+/Users/bruteflow/c_projects/9_RT/src/utility/utility.c
+rt.h
+/Users/bruteflow/c_projects/9_RT/src/utility/rt.h
 
 /Users/bruteflow/c_projects/9_RT/src/window/create_window.c
 rt.h

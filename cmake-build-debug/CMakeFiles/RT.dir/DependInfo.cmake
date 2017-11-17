@@ -43,7 +43,6 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/bruteflow/c_projects/9_RT/src/rt_quit.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/rt_quit.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/transform/transform.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/transform/transform.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/utility/ft_atof.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/utility/ft_atof.c.o"
-  "/Users/bruteflow/c_projects/9_RT/src/utility/ft_clamp_f.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/utility/ft_draw_pixel.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/utility/ft_draw_pixel.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/utility/ft_noise.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/utility/ft_noise.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/utility/ft_set_color.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/utility/ft_set_color.c.o"
@@ -57,6 +56,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/bruteflow/c_projects/9_RT/src/utility/math/vector/set_vector.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/utility/math/vector/set_vector.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/utility/math/vector/vector_operations_1.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_1.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/utility/math/vector/vector_operations_2.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_2.c.o"
+  "/Users/bruteflow/c_projects/9_RT/src/utility/utility.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/utility/utility.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/window/create_window.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/window/create_window.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/window/update_window.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/window/update_window.c.o"
   )

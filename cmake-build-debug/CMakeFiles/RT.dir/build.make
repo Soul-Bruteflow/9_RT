@@ -369,33 +369,9 @@ CMakeFiles/RT.dir/src/utility/ft_atof.c.o.provides: CMakeFiles/RT.dir/src/utilit
 CMakeFiles/RT.dir/src/utility/ft_atof.c.o.provides.build: CMakeFiles/RT.dir/src/utility/ft_atof.c.o
 
 
-CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.o: CMakeFiles/RT.dir/flags.make
-CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.o: ../src/utility/ft_clamp_f.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.o   -c /Users/bruteflow/c_projects/9_RT/src/utility/ft_clamp_f.c
-
-CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bruteflow/c_projects/9_RT/src/utility/ft_clamp_f.c > CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.i
-
-CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bruteflow/c_projects/9_RT/src/utility/ft_clamp_f.c -o CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.s
-
-CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.o.requires:
-
-.PHONY : CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.o.requires
-
-CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.o.provides: CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.o.requires
-	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.o.provides.build
-.PHONY : CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.o.provides
-
-CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.o.provides.build: CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.o
-
-
 CMakeFiles/RT.dir/src/utility/ft_draw_pixel.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/utility/ft_draw_pixel.c.o: ../src/utility/ft_draw_pixel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/RT.dir/src/utility/ft_draw_pixel.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/RT.dir/src/utility/ft_draw_pixel.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/utility/ft_draw_pixel.c.o   -c /Users/bruteflow/c_projects/9_RT/src/utility/ft_draw_pixel.c
 
 CMakeFiles/RT.dir/src/utility/ft_draw_pixel.c.i: cmake_force
@@ -419,7 +395,7 @@ CMakeFiles/RT.dir/src/utility/ft_draw_pixel.c.o.provides.build: CMakeFiles/RT.di
 
 CMakeFiles/RT.dir/src/utility/ft_noise.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/utility/ft_noise.c.o: ../src/utility/ft_noise.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/RT.dir/src/utility/ft_noise.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/RT.dir/src/utility/ft_noise.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/utility/ft_noise.c.o   -c /Users/bruteflow/c_projects/9_RT/src/utility/ft_noise.c
 
 CMakeFiles/RT.dir/src/utility/ft_noise.c.i: cmake_force
@@ -443,7 +419,7 @@ CMakeFiles/RT.dir/src/utility/ft_noise.c.o.provides.build: CMakeFiles/RT.dir/src
 
 CMakeFiles/RT.dir/src/utility/ft_set_color.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/utility/ft_set_color.c.o: ../src/utility/ft_set_color.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/RT.dir/src/utility/ft_set_color.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/RT.dir/src/utility/ft_set_color.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/utility/ft_set_color.c.o   -c /Users/bruteflow/c_projects/9_RT/src/utility/ft_set_color.c
 
 CMakeFiles/RT.dir/src/utility/ft_set_color.c.i: cmake_force
@@ -463,6 +439,30 @@ CMakeFiles/RT.dir/src/utility/ft_set_color.c.o.provides: CMakeFiles/RT.dir/src/u
 .PHONY : CMakeFiles/RT.dir/src/utility/ft_set_color.c.o.provides
 
 CMakeFiles/RT.dir/src/utility/ft_set_color.c.o.provides.build: CMakeFiles/RT.dir/src/utility/ft_set_color.c.o
+
+
+CMakeFiles/RT.dir/src/utility/utility.c.o: CMakeFiles/RT.dir/flags.make
+CMakeFiles/RT.dir/src/utility/utility.c.o: ../src/utility/utility.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/RT.dir/src/utility/utility.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/utility/utility.c.o   -c /Users/bruteflow/c_projects/9_RT/src/utility/utility.c
+
+CMakeFiles/RT.dir/src/utility/utility.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RT.dir/src/utility/utility.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bruteflow/c_projects/9_RT/src/utility/utility.c > CMakeFiles/RT.dir/src/utility/utility.c.i
+
+CMakeFiles/RT.dir/src/utility/utility.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RT.dir/src/utility/utility.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bruteflow/c_projects/9_RT/src/utility/utility.c -o CMakeFiles/RT.dir/src/utility/utility.c.s
+
+CMakeFiles/RT.dir/src/utility/utility.c.o.requires:
+
+.PHONY : CMakeFiles/RT.dir/src/utility/utility.c.o.requires
+
+CMakeFiles/RT.dir/src/utility/utility.c.o.provides: CMakeFiles/RT.dir/src/utility/utility.c.o.requires
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/utility/utility.c.o.provides.build
+.PHONY : CMakeFiles/RT.dir/src/utility/utility.c.o.provides
+
+CMakeFiles/RT.dir/src/utility/utility.c.o.provides.build: CMakeFiles/RT.dir/src/utility/utility.c.o
 
 
 CMakeFiles/RT.dir/src/window/create_window.c.o: CMakeFiles/RT.dir/flags.make
@@ -1392,10 +1392,10 @@ RT_OBJECTS = \
 "CMakeFiles/RT.dir/src/raytrace/render.c.o" \
 "CMakeFiles/RT.dir/src/transform/transform.c.o" \
 "CMakeFiles/RT.dir/src/utility/ft_atof.c.o" \
-"CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.o" \
 "CMakeFiles/RT.dir/src/utility/ft_draw_pixel.c.o" \
 "CMakeFiles/RT.dir/src/utility/ft_noise.c.o" \
 "CMakeFiles/RT.dir/src/utility/ft_set_color.c.o" \
+"CMakeFiles/RT.dir/src/utility/utility.c.o" \
 "CMakeFiles/RT.dir/src/window/create_window.c.o" \
 "CMakeFiles/RT.dir/src/window/update_window.c.o" \
 "CMakeFiles/RT.dir/src/events/keyboard/keyboard_core.c.o" \
@@ -1451,10 +1451,10 @@ RT: CMakeFiles/RT.dir/src/raytrace/raytrace.c.o
 RT: CMakeFiles/RT.dir/src/raytrace/render.c.o
 RT: CMakeFiles/RT.dir/src/transform/transform.c.o
 RT: CMakeFiles/RT.dir/src/utility/ft_atof.c.o
-RT: CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.o
 RT: CMakeFiles/RT.dir/src/utility/ft_draw_pixel.c.o
 RT: CMakeFiles/RT.dir/src/utility/ft_noise.c.o
 RT: CMakeFiles/RT.dir/src/utility/ft_set_color.c.o
+RT: CMakeFiles/RT.dir/src/utility/utility.c.o
 RT: CMakeFiles/RT.dir/src/window/create_window.c.o
 RT: CMakeFiles/RT.dir/src/window/update_window.c.o
 RT: CMakeFiles/RT.dir/src/events/keyboard/keyboard_core.c.o
@@ -1517,10 +1517,10 @@ CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/raytrace/raytrace.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/raytrace/render.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/transform/transform.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/utility/ft_atof.c.o.requires
-CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/utility/ft_draw_pixel.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/utility/ft_noise.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/utility/ft_set_color.c.o.requires
+CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/utility/utility.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/window/create_window.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/window/update_window.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/events/keyboard/keyboard_core.c.o.requires

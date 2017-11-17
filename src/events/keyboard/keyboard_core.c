@@ -40,12 +40,12 @@ void	keyboard_core(t_rt *r)
 //		if (tmp > 0.999 || tmp < -0.999)
 //			return;
 		printf("%f\n", r->scene->cam.t.angle.y);
-		if (r->scene->cam.t.angle.y > 85)
+		if (r->scene->cam.t.angle.y > 87.0f)
 			return;
 		else
 		{
 			r->scene->cam.t.angle.y += r->scene->cam.rot_amt;
-			r->scene->cam.t.angle.y = ft_clamp_f(r->scene->cam.t.angle.y, -89, 89);
+			r->scene->cam.t.angle.y = ft_clamp_f(r->scene->cam.t.angle.y, -89.0f, 89.0f);
 //		cam_rot(&r->scene->cam, r->scene->cam.t.angle);
 			cam_rot_y(&r->scene->cam, -r->scene->cam.rot_amt);
 			cam_update(&r->scene->cam);
@@ -59,12 +59,12 @@ void	keyboard_core(t_rt *r)
 //		if (tmp > 0.999 || tmp < -0.999)
 //			return;
 		printf("%f\n", r->scene->cam.t.angle.y);
-		if (r->scene->cam.t.angle.y < -85)
+		if (r->scene->cam.t.angle.y < -87.0f)
 			return;
 		else
 		{
 			r->scene->cam.t.angle.y -= r->scene->cam.rot_amt;
-			r->scene->cam.t.angle.y = ft_clamp_f(r->scene->cam.t.angle.y, -89, 89);
+			r->scene->cam.t.angle.y = ft_clamp_f(r->scene->cam.t.angle.y, -89.0f, 89.0f);
 //		cam_rot(&r->scene->cam, r->scene->cam.t.angle);
 			cam_rot_y(&r->scene->cam, r->scene->cam.rot_amt);
 			cam_update(&r->scene->cam);
@@ -73,7 +73,7 @@ void	keyboard_core(t_rt *r)
 	if (SDL_KEYDOWN && r->sdl->key_state[SDL_SCANCODE_LEFT])
 	{
 		r->scene->cam.t.angle.x -= r->scene->cam.rot_amt;
-		r->scene->cam.t.angle.x = ft_clamp_f(r->scene->cam.t.angle.x, -360, 360);
+		r->scene->cam.t.angle.x = ft_clamp_wf(r->scene->cam.t.angle.x, -360, 360);
 //		cam_rot(&r->scene->cam, r->scene->cam.t.angle);
 		cam_rot_x(&r->scene->cam, r->scene->cam.rot_amt);
 		cam_update(&r->scene->cam);
@@ -81,7 +81,7 @@ void	keyboard_core(t_rt *r)
 	if (SDL_KEYDOWN && r->sdl->key_state[SDL_SCANCODE_RIGHT])
 	{
 		r->scene->cam.t.angle.x += r->scene->cam.rot_amt;
-		r->scene->cam.t.angle.x = ft_clamp_f(r->scene->cam.t.angle.x, -360, 360);
+		r->scene->cam.t.angle.x = ft_clamp_wf(r->scene->cam.t.angle.x, -360, 360);
 //		cam_rot(&r->scene->cam, r->scene->cam.t.angle);
 		cam_rot_x(&r->scene->cam, -r->scene->cam.rot_amt);
 		cam_update(&r->scene->cam);

@@ -664,23 +664,6 @@ CMakeFiles/RT.dir/src/utility/ft_atof.c.o
  .././inc/utility/utility.h
  .././libft/libft.h
  /Users/bruteflow/c_projects/9_RT/src/utility/ft_atof.c
-CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.o
- .././inc/math/math.h
- .././inc/math/matrices.h
- .././inc/math/quaternions.h
- .././inc/math/vectors.h
- .././inc/rt.h
- .././inc/rt/camera.h
- .././inc/rt/objects.h
- .././inc/rt/raytrace.h
- .././inc/rt/transform.h
- .././inc/utility/bool.h
- .././inc/utility/defines.h
- .././inc/utility/errors.h
- .././inc/utility/get_next_line.h
- .././inc/utility/utility.h
- .././libft/libft.h
- /Users/bruteflow/c_projects/9_RT/src/utility/ft_clamp_f.c
 CMakeFiles/RT.dir/src/utility/ft_draw_pixel.c.o
  .././inc/math/math.h
  .././inc/math/matrices.h
@@ -902,6 +885,23 @@ CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_2.c.o
  .././inc/utility/utility.h
  .././libft/libft.h
  /Users/bruteflow/c_projects/9_RT/src/utility/math/vector/vector_operations_2.c
+CMakeFiles/RT.dir/src/utility/utility.c.o
+ .././inc/math/math.h
+ .././inc/math/matrices.h
+ .././inc/math/quaternions.h
+ .././inc/math/vectors.h
+ .././inc/rt.h
+ .././inc/rt/camera.h
+ .././inc/rt/objects.h
+ .././inc/rt/raytrace.h
+ .././inc/rt/transform.h
+ .././inc/utility/bool.h
+ .././inc/utility/defines.h
+ .././inc/utility/errors.h
+ .././inc/utility/get_next_line.h
+ .././inc/utility/utility.h
+ .././libft/libft.h
+ /Users/bruteflow/c_projects/9_RT/src/utility/utility.c
 CMakeFiles/RT.dir/src/window/create_window.c.o
  .././inc/math/math.h
  .././inc/math/matrices.h

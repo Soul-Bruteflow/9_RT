@@ -664,23 +664,6 @@ CMakeFiles/RT.dir/src/utility/ft_atof.c.o: .././inc/utility/utility.h
 CMakeFiles/RT.dir/src/utility/ft_atof.c.o: .././libft/libft.h
 CMakeFiles/RT.dir/src/utility/ft_atof.c.o: ../src/utility/ft_atof.c
 
-CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.o: .././inc/math/math.h
-CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.o: .././inc/math/matrices.h
-CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.o: .././inc/math/quaternions.h
-CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.o: .././inc/math/vectors.h
-CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.o: .././inc/rt.h
-CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.o: .././inc/rt/camera.h
-CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.o: .././inc/rt/objects.h
-CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.o: .././inc/rt/raytrace.h
-CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.o: .././inc/rt/transform.h
-CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.o: .././inc/utility/bool.h
-CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.o: .././inc/utility/defines.h
-CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.o: .././inc/utility/errors.h
-CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.o: .././inc/utility/get_next_line.h
-CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.o: .././inc/utility/utility.h
-CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.o: .././libft/libft.h
-CMakeFiles/RT.dir/src/utility/ft_clamp_f.c.o: ../src/utility/ft_clamp_f.c
-
 CMakeFiles/RT.dir/src/utility/ft_draw_pixel.c.o: .././inc/math/math.h
 CMakeFiles/RT.dir/src/utility/ft_draw_pixel.c.o: .././inc/math/matrices.h
 CMakeFiles/RT.dir/src/utility/ft_draw_pixel.c.o: .././inc/math/quaternions.h
@@ -901,6 +884,23 @@ CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_2.c.o: .././inc/util
 CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_2.c.o: .././inc/utility/utility.h
 CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_2.c.o: .././libft/libft.h
 CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_2.c.o: ../src/utility/math/vector/vector_operations_2.c
+
+CMakeFiles/RT.dir/src/utility/utility.c.o: .././inc/math/math.h
+CMakeFiles/RT.dir/src/utility/utility.c.o: .././inc/math/matrices.h
+CMakeFiles/RT.dir/src/utility/utility.c.o: .././inc/math/quaternions.h
+CMakeFiles/RT.dir/src/utility/utility.c.o: .././inc/math/vectors.h
+CMakeFiles/RT.dir/src/utility/utility.c.o: .././inc/rt.h
+CMakeFiles/RT.dir/src/utility/utility.c.o: .././inc/rt/camera.h
+CMakeFiles/RT.dir/src/utility/utility.c.o: .././inc/rt/objects.h
+CMakeFiles/RT.dir/src/utility/utility.c.o: .././inc/rt/raytrace.h
+CMakeFiles/RT.dir/src/utility/utility.c.o: .././inc/rt/transform.h
+CMakeFiles/RT.dir/src/utility/utility.c.o: .././inc/utility/bool.h
+CMakeFiles/RT.dir/src/utility/utility.c.o: .././inc/utility/defines.h
+CMakeFiles/RT.dir/src/utility/utility.c.o: .././inc/utility/errors.h
+CMakeFiles/RT.dir/src/utility/utility.c.o: .././inc/utility/get_next_line.h
+CMakeFiles/RT.dir/src/utility/utility.c.o: .././inc/utility/utility.h
+CMakeFiles/RT.dir/src/utility/utility.c.o: .././libft/libft.h
+CMakeFiles/RT.dir/src/utility/utility.c.o: ../src/utility/utility.c
 
 CMakeFiles/RT.dir/src/window/create_window.c.o: .././inc/math/math.h
 CMakeFiles/RT.dir/src/window/create_window.c.o: .././inc/math/matrices.h
