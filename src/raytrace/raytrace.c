@@ -53,8 +53,8 @@ static void		calculate_ray(t_rtv *rtv)
 		c->cur_obj = -1;
 		if (object_intersect(rtv, &s->ray, &c->cur_obj, &c->new_start) == false)
 			break ;
-		if (normal_of_intersect(&c->intersect_normal,
-			&c->new_start, s->objects, c->cur_obj) == false)
+		if (normal_of_intersect(&c->intersect_normal, &c->new_start, c->cur_obj,
+			s) == false)
 			break ;
 		c->material_n = s->objects[c->cur_obj]->material;
 		c->cur_mat = *s->materials[s->objects[c->cur_obj]->material];

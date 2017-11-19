@@ -4,12 +4,12 @@ lights:
 materials:
 			1
 objects:
-			1
+			2
 camera:
 camera position:
 					0
 					0
-					-1900
+					-1500
 camera direction:
 					0
 					0
@@ -18,9 +18,9 @@ fov:
 					25
 lights:
 position:
-					0
-					20
-					-2000
+					100
+					100
+					-70
 color:
 					1.0
 					0.0
@@ -37,6 +37,19 @@ reflection:
 objects:
 cylinder:
 point a:
+					1
+					0
+					0
+point b:
+					0
+					0
+					0
+radius:
+					50
+material:
+					0
+cylinder:
+point a:
 					0
 					1
 					0
@@ -45,7 +58,7 @@ point b:
 					0
 					0
 radius:
-					150
+					50
 material:
 					0
 end

@@ -22,7 +22,7 @@ t_bool	calculate_shadows(t_rtv *r, t_obj3d **objs, t_ray *light_ray, float *t2)
 		if (objs[k]->intersect(light_ray, objs[k], t2))
 			return (true);
 	}
-	return (false);
+	return (false); 
 }
 
 float	lambert(t_ray *light_ray, t_vec3d *normal, float *coef)
@@ -67,6 +67,8 @@ void	calculate_light(t_rtv *rtv)
 	float		t2;
 	t_ray		light_ray;
 	float		lamb;
+
+	lamb = 0.0f;
 
 	rtv->calc->i = -1;
 	while (rtv->calc->i++ < rtv->scene->lits_n - 1)

@@ -152,7 +152,7 @@ void				rtv_quit(t_rtv *rtv);
 */
 void				raytrace(t_rtv *rtv);
 t_bool				normal_of_intersect(t_vec3d *normal, t_vec3d *new_start,
-					t_obj3d **objects, int cur_obj);
+					int cur_obj, t_scene *scene);
 t_bool				object_intersect(t_rtv *rtv, t_ray *r, int *cur_obj,
 					t_vec3d *new_start);
 void				calculate_light(t_rtv *rtv);

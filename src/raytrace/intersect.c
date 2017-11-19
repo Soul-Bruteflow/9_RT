@@ -22,7 +22,7 @@ t_bool	object_intersect(t_rtv *rtv, t_ray *r, int *cur_obj, t_vec3d *new_start)
 	int			i;
 	t_vec3d		scaled;
 
-	t = 2000;
+	t = 100000;
 	i = -1;
 	while (i++ < rtv->scene->objs_n - 1)
 	{
@@ -41,15 +41,47 @@ t_bool	object_intersect(t_rtv *rtv, t_ray *r, int *cur_obj, t_vec3d *new_start)
 ** n - normal; s - new_start;
 */
 
-t_bool	normal_of_intersect(t_vec3d *n, t_vec3d *s, t_obj3d **objs, int cur_obj)
+t_bool	normal_of_intersect(t_vec3d *n, t_vec3d *s, int cur_obj, t_scene *scene)
 {
-	float		temp;
+//	float		temp;
 
-	*n = vec3_sub(s, &objs[cur_obj]->pos);
-	temp = vec3_dot(n, n);
-	if (temp == 0)
-		return (false);
-	temp = 1.0f / sqrtf(temp);
-	*n = vec3_scale(temp, n);
+	if (scene->objects[cur_obj]->obj_type == plane)
+	{
+		t_plane		*plane;
+		plane = scene->objects[cur_obj]->type;
+		t_vec3d tmp1 = vec3_add(s, &plane->normal);
+		t_vec3d tmp2 = vec3_sub(s, &scene->objects[cur_obj]->pos);
+		*n = vec3_sub(&tmp2, &tmp1);
+	}
+	else if (scene->objects[cur_obj]->obj_type == sphere)
+	{
+		*n = vec3_sub(s, &scene->objects[cur_obj]->pos);
+	}
+	else if (scene->objects[cur_obj]->obj_type == cylinder)
+	{
+		t_cylinder	*cylinder;
+		cylinder = scene->objects[cur_obj]->type;
+		t_vec3d rot	= vec3_sub(&cylinder->a, &cylinder->b);
+		t_vec3d tmp1 = vec3_scale(vec3_dot(&scene->ray.dir, &rot)
+			+ vec3_dot(s, &rot), &rot);
+		t_vec3d	tmp2 = vec3_sub(s, &scene->objects[cur_obj]->pos);
+		*n = vec3_sub(&tmp2, &tmp1);
+	}
+	else if (scene->objects[cur_obj]->obj_type == cone)
+	{
+		t_cone		*cone;
+		cone = scene->objects[cur_obj]->type;
+		t_vec3d tmp1 = vec3_scale(vec3_dot(&scene->ray.dir, &cone->axis)
+			+ vec3_dot(s, &cone->axis), &cone->axis);
+		tmp1 = vec3_scale((1 + pow(tan(cone->angle), 2)), &tmp1);
+		t_vec3d	tmp2 = vec3_sub(s, &scene->objects[cur_obj]->pos);
+		*n = vec3_sub(&tmp2, &tmp1);
+	}
+//	temp = vec3_dot(n, n);
+//	if (temp == 0)
+//		return (false);
+//	temp = 1.0f / sqrtf(temp);
+//	*n = vec3_scale(temp, n);
+	*n = vec3_norm(*n);
 	return (true);
 }

@@ -1,35 +1,26 @@
 scene:
 lights:
-			2
+			1
 materials:
 			1
 objects:
-			1
+			2
 camera:
 camera position:
 					0
 					0
-					-1900
+					-100
 camera direction:
 					0
 					0
 					1
 fov:
-					25
+					60
 lights:
 position:
 					0
-					-900
-					500
-position:
 					0
 					0
-					-500
-color:
-					1.0
-					1.0
-					1.0
-					1.0
 color:
 					1.0
 					1.0
@@ -47,12 +38,23 @@ objects:
 plane:
 normal:
 					0
-					90
-					20
+					1
+					0
+point:
+					0
+					15
+					0
+material:
+					0
+plane:
+normal:
+					0
+					0
+					1
 point:
 					0
 					0
-					0
+					15
 material:
 					0
 end

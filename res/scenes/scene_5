@@ -1,0 +1,83 @@
+scene:
+lights:
+			3
+materials:
+			2
+objects:
+			2
+camera:
+camera position:
+					0
+					0
+					0
+camera direction:
+					0
+					0
+					1
+fov:
+					60
+lights:
+position:
+					-18
+					-29
+					-20
+position:
+					-30
+					-30
+					-20
+position:
+					-42
+					-32
+					-30
+color:
+					0.5
+					0.5
+					0.5
+					1.0
+color:
+					0.5
+					0.5
+					0.5
+					1.0
+color:
+					0.5
+					0.5
+					0.5
+					1.0
+materials:
+color:
+					1.0
+					1.0
+					1.0
+					1.0
+color:
+					1.0
+					0.0
+					1.0
+					1.0
+reflection:
+					0.01
+reflection:
+					0.01
+objects:
+plane:
+normal:
+					1
+					1000
+					500
+point:
+					0
+					90
+					0
+material:
+					0
+sphere:
+position:
+					-15
+					-7
+					50
+radius:
+					10
+material:
+					1
+end

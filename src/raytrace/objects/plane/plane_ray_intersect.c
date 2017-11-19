@@ -25,7 +25,7 @@ t_bool	intersect_plane_ray(t_ray *r, t_obj3d *obj, float *t)
 	{
 		tmp = vec3_sub(&p->point, &r->start);
 		t0 = vec3_dot(&tmp, &p->normal) / denom;
-		if (t0 >= 1e-1f)
+		if (t0 >= 1e-1f && t0 < *t)
 		{
 			*t = t0;
 			return (true);
