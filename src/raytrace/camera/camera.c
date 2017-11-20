@@ -145,8 +145,12 @@ void	cam_rot_x(t_cam *c, float angle)
 	c->t.rotx = from_axis_angle(c->up, angle);
 }
 
-void	cam_rot_y(t_cam *c, float angle)
+void	cam_rot_y(t_cam *c, float angle, int sign)
 {
 	c->right = vec3_norm(c->right);
-	c->t.roty = from_axis_angle(c->right, angle);
+	if (sign < 0)
+		c->t.roty = from_axis_angle(c->right, -angle);
+	if (sign >= 0)
+		c->t.roty = from_axis_angle(c->right, angle);
+
 }
