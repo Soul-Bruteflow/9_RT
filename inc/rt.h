@@ -186,6 +186,10 @@ void				create_sceen_one(t_scene *scene);
 t_bool				create_scene(t_rt *r);
 t_obj3d				*new_object(t_obj_type object_type);
 /*
+** General controls
+*/
+void				init_controls(t_rt *r);
+/*
 ** Keyboard
 */
 void				keyboard_core(t_rt *r);

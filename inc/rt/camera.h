@@ -37,9 +37,7 @@ typedef struct	s_cam
 	t_vec3		world_up;
 	float 		mov_amt;
 	float 		rot_amt;
-	float		horiz_angle;
-	float		verti_angle;
-	float		mouse_speed;
+	float 		m_rot_amt;
 	t_persp		p;
 	t_transform	t;
 	t_sup		s;
@@ -58,4 +56,6 @@ void			cam_rot(t_cam *c, t_vec3 angle);
 void			update_cam_from_quat(t_cam *c);
 t_mat4			get_mvp(t_cam *c);
 t_mat4			init_cam_projection(t_persp p);
+t_bool          handle_cam_y_pos_deg(t_vec2 *angle, float rot_amt);
+t_bool          handle_cam_y_neg_deg(t_vec2 *angle, float rot_amt);
 #endif

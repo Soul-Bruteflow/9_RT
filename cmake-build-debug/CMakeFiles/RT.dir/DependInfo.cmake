@@ -4,7 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/Users/bruteflow/c_projects/9_RT/src/controls/controls.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/controls/controls.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/controls/keyboard/keyboard_core.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/controls/keyboard/keyboard_core.c.o"
+  "/Users/bruteflow/c_projects/9_RT/src/controls/mouse/mouse_1.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/controls/mouse/mouse_1.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/controls/mouse/mouse_core.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/errors.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/errors.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/get_next_line.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/get_next_line.c.o"
@@ -23,6 +25,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/bruteflow/c_projects/9_RT/src/parser/support/parser_support_two.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/parser/support/parser_support_two.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/raytrace/calculate_light.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/raytrace/calculate_light.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/raytrace/camera/camera.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/raytrace/camera/camera.c.o"
+  "/Users/bruteflow/c_projects/9_RT/src/raytrace/camera/camera_1.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/raytrace/camera/camera_1.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/raytrace/intersect.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/raytrace/intersect.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/raytrace/lights/light.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/raytrace/lights/light.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/raytrace/materials/material.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/raytrace/materials/material.c.o"

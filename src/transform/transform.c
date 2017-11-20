@@ -4,9 +4,9 @@ t_transform	init_transform(void)
 {
 	t_transform new_t;
 
-	new_t.translation = set_vector(0, 0, 0);
+	new_t.translation = set_vector3(0, 0, 0);
 	new_t.rotation = set_quat_f(0, 0, 0, 1);
-	new_t.scale = set_vector(1, 1, 1);
+	new_t.scale = set_vector3(1, 1, 1);
 	return (new_t);
 }
 

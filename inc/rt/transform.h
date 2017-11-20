@@ -12,7 +12,7 @@ typedef struct	s_transform
 	t_quat		roty;
 	t_quat		rotz;
 	t_vec3		scale;
-	t_vec3		angle;
+	t_vec2		angle;
 
 }				t_transform;
 

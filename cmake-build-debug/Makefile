@@ -1810,6 +1810,33 @@ libft/ft_tolower.c.s:
 	$(MAKE) -f CMakeFiles/ft.dir/build.make CMakeFiles/ft.dir/libft/ft_tolower.c.s
 .PHONY : libft/ft_tolower.c.s
 
+src/controls/controls.o: src/controls/controls.c.o
+
+.PHONY : src/controls/controls.o
+
+# target to build an object file
+src/controls/controls.c.o:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/controls/controls.c.o
+.PHONY : src/controls/controls.c.o
+
+src/controls/controls.i: src/controls/controls.c.i
+
+.PHONY : src/controls/controls.i
+
+# target to preprocess a source file
+src/controls/controls.c.i:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/controls/controls.c.i
+.PHONY : src/controls/controls.c.i
+
+src/controls/controls.s: src/controls/controls.c.s
+
+.PHONY : src/controls/controls.s
+
+# target to generate assembly for a file
+src/controls/controls.c.s:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/controls/controls.c.s
+.PHONY : src/controls/controls.c.s
+
 src/controls/keyboard/keyboard_core.o: src/controls/keyboard/keyboard_core.c.o
 
 .PHONY : src/controls/keyboard/keyboard_core.o
@@ -1836,6 +1863,33 @@ src/controls/keyboard/keyboard_core.s: src/controls/keyboard/keyboard_core.c.s
 src/controls/keyboard/keyboard_core.c.s:
 	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/controls/keyboard/keyboard_core.c.s
 .PHONY : src/controls/keyboard/keyboard_core.c.s
+
+src/controls/mouse/mouse_1.o: src/controls/mouse/mouse_1.c.o
+
+.PHONY : src/controls/mouse/mouse_1.o
+
+# target to build an object file
+src/controls/mouse/mouse_1.c.o:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/controls/mouse/mouse_1.c.o
+.PHONY : src/controls/mouse/mouse_1.c.o
+
+src/controls/mouse/mouse_1.i: src/controls/mouse/mouse_1.c.i
+
+.PHONY : src/controls/mouse/mouse_1.i
+
+# target to preprocess a source file
+src/controls/mouse/mouse_1.c.i:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/controls/mouse/mouse_1.c.i
+.PHONY : src/controls/mouse/mouse_1.c.i
+
+src/controls/mouse/mouse_1.s: src/controls/mouse/mouse_1.c.s
+
+.PHONY : src/controls/mouse/mouse_1.s
+
+# target to generate assembly for a file
+src/controls/mouse/mouse_1.c.s:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/controls/mouse/mouse_1.c.s
+.PHONY : src/controls/mouse/mouse_1.c.s
 
 src/controls/mouse/mouse_core.o: src/controls/mouse/mouse_core.c.o
 
@@ -2322,6 +2376,33 @@ src/raytrace/camera/camera.s: src/raytrace/camera/camera.c.s
 src/raytrace/camera/camera.c.s:
 	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/raytrace/camera/camera.c.s
 .PHONY : src/raytrace/camera/camera.c.s
+
+src/raytrace/camera/camera_1.o: src/raytrace/camera/camera_1.c.o
+
+.PHONY : src/raytrace/camera/camera_1.o
+
+# target to build an object file
+src/raytrace/camera/camera_1.c.o:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/raytrace/camera/camera_1.c.o
+.PHONY : src/raytrace/camera/camera_1.c.o
+
+src/raytrace/camera/camera_1.i: src/raytrace/camera/camera_1.c.i
+
+.PHONY : src/raytrace/camera/camera_1.i
+
+# target to preprocess a source file
+src/raytrace/camera/camera_1.c.i:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/raytrace/camera/camera_1.c.i
+.PHONY : src/raytrace/camera/camera_1.c.i
+
+src/raytrace/camera/camera_1.s: src/raytrace/camera/camera_1.c.s
+
+.PHONY : src/raytrace/camera/camera_1.s
+
+# target to generate assembly for a file
+src/raytrace/camera/camera_1.c.s:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/raytrace/camera/camera_1.c.s
+.PHONY : src/raytrace/camera/camera_1.c.s
 
 src/raytrace/intersect.o: src/raytrace/intersect.c.o
 
@@ -3491,9 +3572,15 @@ help:
 	@echo "... libft/ft_tolower.o"
 	@echo "... libft/ft_tolower.i"
 	@echo "... libft/ft_tolower.s"
+	@echo "... src/controls/controls.o"
+	@echo "... src/controls/controls.i"
+	@echo "... src/controls/controls.s"
 	@echo "... src/controls/keyboard/keyboard_core.o"
 	@echo "... src/controls/keyboard/keyboard_core.i"
 	@echo "... src/controls/keyboard/keyboard_core.s"
+	@echo "... src/controls/mouse/mouse_1.o"
+	@echo "... src/controls/mouse/mouse_1.i"
+	@echo "... src/controls/mouse/mouse_1.s"
 	@echo "... src/controls/mouse/mouse_core.o"
 	@echo "... src/controls/mouse/mouse_core.i"
 	@echo "... src/controls/mouse/mouse_core.s"
@@ -3548,6 +3635,9 @@ help:
 	@echo "... src/raytrace/camera/camera.o"
 	@echo "... src/raytrace/camera/camera.i"
 	@echo "... src/raytrace/camera/camera.s"
+	@echo "... src/raytrace/camera/camera_1.o"
+	@echo "... src/raytrace/camera/camera_1.i"
+	@echo "... src/raytrace/camera/camera_1.s"
 	@echo "... src/raytrace/intersect.o"
 	@echo "... src/raytrace/intersect.i"
 	@echo "... src/raytrace/intersect.s"

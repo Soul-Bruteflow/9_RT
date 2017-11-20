@@ -22,6 +22,7 @@ int		main(int ac, char **av)
 		if (!(parser_core(r)))
 			rtv_error(parse_error);
 		init_camera(r);
+		init_controls(r);
 		create_window(r, WIDTH, HEIGHT, "RT\0");
 		rt_loop(r);
 	}

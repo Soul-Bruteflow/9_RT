@@ -67,6 +67,8 @@ t_vec3			vec3_norm(t_vec3 v);
 /*
 ** Set vector
 */
-t_vec3			set_vector(float x, float y, float z);
+t_vec3			set_vector3(float x, float y, float z);
+
+t_vec2          set_vector2(float x, float y);
 
 #endif

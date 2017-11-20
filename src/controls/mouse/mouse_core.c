@@ -1,27 +1,5 @@
 #include "rt.h"
 
-void	get_mouse_relative_position(t_vec2 *rpos)
-{
-	int x;
-	int y;
-
-	x = 0;
-	y = 0;
-	SDL_GetRelativeMouseState(&x, &y);
-	rpos->x = x;
-	rpos->y = y;
-}
-
-void	mouse_invert_x(t_vec2 *rpos)
-{
-	rpos->x *= -1.0f;
-}
-
-void	mouse_invert_y(t_vec2 *rpos)
-{
-	rpos->y *= -1.0f;
-}
-
 void	mouse_core(t_rt *rt)
 {
 	int x;

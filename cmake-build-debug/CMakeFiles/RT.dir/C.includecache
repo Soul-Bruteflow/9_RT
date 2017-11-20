@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+.././inc/controls/controls.h
+
 .././inc/math/math.h
 
 .././inc/math/matrices.h
@@ -43,6 +45,8 @@ rt/objects.h
 .././inc/rt/objects.h
 rt/camera.h
 .././inc/rt/camera.h
+controls/controls.h
+.././inc/controls/controls.h
 
 .././inc/rt/camera.h
 
@@ -74,17 +78,25 @@ unistd.h
 stdlib.h
 -
 
+/Users/bruteflow/c_projects/9_RT/src/controls/controls.c
+rt.h
+/Users/bruteflow/c_projects/9_RT/src/controls/rt.h
+
+/Users/bruteflow/c_projects/9_RT/src/controls/keyboard/keyboard_core.c
+rt.h
+/Users/bruteflow/c_projects/9_RT/src/controls/keyboard/rt.h
+
+/Users/bruteflow/c_projects/9_RT/src/controls/mouse/mouse_1.c
+rt.h
+/Users/bruteflow/c_projects/9_RT/src/controls/mouse/rt.h
+
+/Users/bruteflow/c_projects/9_RT/src/controls/mouse/mouse_core.c
+rt.h
+/Users/bruteflow/c_projects/9_RT/src/controls/mouse/rt.h
+
 /Users/bruteflow/c_projects/9_RT/src/errors.c
 rt.h
 /Users/bruteflow/c_projects/9_RT/src/rt.h
-
-/Users/bruteflow/c_projects/9_RT/src/events/keyboard/keyboard_core.c
-rt.h
-/Users/bruteflow/c_projects/9_RT/src/events/keyboard/rt.h
-
-/Users/bruteflow/c_projects/9_RT/src/events/mouse/mouse_core.c
-rt.h
-/Users/bruteflow/c_projects/9_RT/src/events/mouse/rt.h
 
 /Users/bruteflow/c_projects/9_RT/src/get_next_line.c
 rt.h
@@ -147,6 +159,10 @@ rt.h
 /Users/bruteflow/c_projects/9_RT/src/raytrace/rt.h
 
 /Users/bruteflow/c_projects/9_RT/src/raytrace/camera/camera.c
+rt.h
+/Users/bruteflow/c_projects/9_RT/src/raytrace/camera/rt.h
+
+/Users/bruteflow/c_projects/9_RT/src/raytrace/camera/camera_1.c
 rt.h
 /Users/bruteflow/c_projects/9_RT/src/raytrace/camera/rt.h
 

@@ -12,12 +12,10 @@
 
 #include "rt.h"
 
-void	keyboard_core(t_rt *r)
-  {
-  	if (SDL_KEYDOWN && r->sdl->key_state[SDL_SCANCODE_ESCAPE])
-  		exit(0);
- 	if (SDL_KEYDOWN && r->sdl->key_state[SDL_SCANCODE_W])
- 	{
+void	camera_movement(t_rt *r)
+{
+	if (SDL_KEYDOWN && r->sdl->key_state[SDL_SCANCODE_W])
+	{
 		cam_move(&r->scene->cam, &r->scene->cam.forward, r->scene->cam.mov_amt);
 	}
 	if (SDL_KEYDOWN && r->sdl->key_state[SDL_SCANCODE_S])
@@ -32,49 +30,36 @@ void	keyboard_core(t_rt *r)
 	{
 		cam_move(&r->scene->cam, &r->scene->cam.right, -r->scene->cam.mov_amt);
 	}
+}
+
+void    camera_rotation(t_rt *r)
+{
+
+}
+
+void	keyboard_core(t_rt *r)
+{
+	if (SDL_KEYDOWN && r->sdl->key_state[SDL_SCANCODE_ESCAPE])
+		exit(0);
+	camera_movement(r);
 	if (SDL_KEYDOWN && r->sdl->key_state[SDL_SCANCODE_UP])
 	{
-//		float tmp;
-//
-//		tmp = vec3_dot(r->scene->cam.forward, r->scene->cam.world_up);
-//		if (tmp > 0.999 || tmp < -0.999)
-//			return;
 		printf("%f\n", r->scene->cam.t.angle.y);
-		if (r->scene->cam.t.angle.y > 87.0f)
-			return;
-		else
-		{
-			r->scene->cam.t.angle.y += r->scene->cam.rot_amt;
-			r->scene->cam.t.angle.y = ft_clamp_f(r->scene->cam.t.angle.y, -89.0f, 89.0f);
-//		cam_rot(&r->scene->cam, r->scene->cam.t.angle);
-			cam_rot_y(&r->scene->cam, -r->scene->cam.rot_amt);
-			cam_update(&r->scene->cam);
-		}
+		handle_cam_y_pos_deg(&r->scene->cam.t.angle, r->scene->cam.rot_amt);
+		cam_rot_y(&r->scene->cam, -r->scene->cam.rot_amt);
+		cam_update(&r->scene->cam);
 	}
 	if (SDL_KEYDOWN && r->sdl->key_state[SDL_SCANCODE_DOWN])
 	{
-//		float tmp;
-//
-//		tmp = vec3_dot(r->scene->cam.forward, r->scene->cam.world_up);
-//		if (tmp > 0.999 || tmp < -0.999)
-//			return;
 		printf("%f\n", r->scene->cam.t.angle.y);
-		if (r->scene->cam.t.angle.y < -87.0f)
-			return;
-		else
-		{
-			r->scene->cam.t.angle.y -= r->scene->cam.rot_amt;
-			r->scene->cam.t.angle.y = ft_clamp_f(r->scene->cam.t.angle.y, -89.0f, 89.0f);
-//		cam_rot(&r->scene->cam, r->scene->cam.t.angle);
-			cam_rot_y(&r->scene->cam, r->scene->cam.rot_amt);
-			cam_update(&r->scene->cam);
-		}
+		handle_cam_y_neg_deg(&r->scene->cam.t.angle, r->scene->cam.rot_amt);
+		cam_rot_y(&r->scene->cam, r->scene->cam.rot_amt);
+		cam_update(&r->scene->cam);
 	}
 	if (SDL_KEYDOWN && r->sdl->key_state[SDL_SCANCODE_LEFT])
 	{
 		r->scene->cam.t.angle.x -= r->scene->cam.rot_amt;
 		r->scene->cam.t.angle.x = ft_clamp_wf(r->scene->cam.t.angle.x, -360, 360);
-//		cam_rot(&r->scene->cam, r->scene->cam.t.angle);
 		cam_rot_x(&r->scene->cam, r->scene->cam.rot_amt);
 		cam_update(&r->scene->cam);
 	}
@@ -84,20 +69,6 @@ void	keyboard_core(t_rt *r)
 		r->scene->cam.t.angle.x = ft_clamp_wf(r->scene->cam.t.angle.x, -360, 360);
 //		cam_rot(&r->scene->cam, r->scene->cam.t.angle);
 		cam_rot_x(&r->scene->cam, -r->scene->cam.rot_amt);
-		cam_update(&r->scene->cam);
-	}
-	if (SDL_KEYDOWN && r->sdl->key_state[SDL_SCANCODE_Q])
-	{
-//	r->scene->cam.t.angle.x -= r->scene->cam.rot_amt;
-//	cam_rot(&r->scene->cam);
-		cam_rot_z(&r->scene->cam, -r->scene->cam.rot_amt);
-		cam_update(&r->scene->cam);
-	}
-	if (SDL_KEYDOWN && r->sdl->key_state[SDL_SCANCODE_E])
-	{
-//	r->scene->cam.t.angle.x -= r->scene->cam.rot_amt;
-//	cam_rot(&r->scene->cam);
-		cam_rot_z(&r->scene->cam, r->scene->cam.rot_amt);
 		cam_update(&r->scene->cam);
 	}
 	if (SDL_KEYDOWN && r->sdl->key_state[SDL_SCANCODE_SPACE])

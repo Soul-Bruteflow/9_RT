@@ -368,7 +368,13 @@
 		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_tolower.c">
 			<Option target="ft"/>
 		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/controls/controls.c">
+			<Option target="RT"/>
+		</Unit>
 		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/controls/keyboard/keyboard_core.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/controls/mouse/mouse_1.c">
 			<Option target="RT"/>
 		</Unit>
 		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/controls/mouse/mouse_core.c">
@@ -423,6 +429,9 @@
 			<Option target="RT"/>
 		</Unit>
 		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/raytrace/camera/camera.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/raytrace/camera/camera_1.c">
 			<Option target="RT"/>
 		</Unit>
 		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/raytrace/intersect.c">
