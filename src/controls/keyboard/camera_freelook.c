@@ -15,36 +15,42 @@ void    camera_freelook(t_rt *r)
 
 void    camera_vertical_freelook(t_rt *r)
 {
+	t_cam *cam;
+
+	cam = &r->scene->cam;
 	if (r->sdl->mouse.rpos.y > 0)
 	{
-		if (r->scene->cam.t.angle.y > 87.00f)
+		if (cam->t.angle.y > 87.00f)
 			return;
-		r->scene->cam.t.angle.y += r->scene->cam.m_rot_amt.y;
-		cam_rot_y(&r->scene->cam, r->scene->cam.m_rot_amt.y);
-		cam_update(&r->scene->cam);
+		cam->t.angle.y += cam->m_rot_amt.y;
+		cam_rot_y(cam, cam->m_rot_amt.y);
+		cam_update(cam);
 	}
 	if (r->sdl->mouse.rpos.y < 0)
 	{
-		if (r->scene->cam.t.angle.y < -87.00f)
+		if (cam->t.angle.y < -87.00f)
 			return;
-		r->scene->cam.t.angle.y += r->scene->cam.m_rot_amt.y;
-		cam_rot_y(&r->scene->cam, r->scene->cam.m_rot_amt.y);
-		cam_update(&r->scene->cam);
+		cam->t.angle.y += cam->m_rot_amt.y;
+		cam_rot_y(cam, cam->m_rot_amt.y);
+		cam_update(cam);
 	}
 }
 
 void    camera_horizontal_freelook(t_rt *r)
 {
+	t_cam *cam;
+
+	cam = &r->scene->cam;
 	if (r->sdl->mouse.rpos.x > 0)
 	{
-		handle_cam_x_pos_deg(&r->scene->cam.t.angle, r->scene->cam.m_rot_amt.x * -1);
-		cam_rot_x(&r->scene->cam, r->scene->cam.m_rot_amt.x);
-		cam_update(&r->scene->cam);
+		handle_cam_x_pos_deg(&cam->t.angle, cam->m_rot_amt.x * -1);
+		cam_rot_x(cam, cam->m_rot_amt.x);
+		cam_update(cam);
 	}
 	if (r->sdl->mouse.rpos.x < 0)
 	{
-		handle_cam_x_neg_deg(&r->scene->cam.t.angle, r->scene->cam.m_rot_amt.x);
-		cam_rot_x(&r->scene->cam, r->scene->cam.m_rot_amt.x);
-		cam_update(&r->scene->cam);
+		handle_cam_x_neg_deg(&cam->t.angle, cam->m_rot_amt.x);
+		cam_rot_x(cam, cam->m_rot_amt.x);
+		cam_update(cam);
 	}
 }
