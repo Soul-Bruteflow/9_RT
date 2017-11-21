@@ -17,3 +17,9 @@ void    clamp_mouse_rel_pos(t_mouse *m, float lower, float upper)
 	m->rpos.y = ft_clamp_f(m->rpos.y, lower, upper);
 	m->rpos.x = ft_clamp_f(m->rpos.x, lower, upper);
 }
+
+void    calc_mouse_rot_amt(t_mouse *m, t_cam *c)
+{
+	c->m_rot_amt.y = m->rpos.y * c->rot_amt * m->cam_sens.y;
+	c->m_rot_amt.x = m->rpos.x * c->rot_amt * m->cam_sens.x;
+}

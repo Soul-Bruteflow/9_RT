@@ -82,6 +82,18 @@ stdlib.h
 rt.h
 /Users/bruteflow/c_projects/9_RT/src/controls/rt.h
 
+/Users/bruteflow/c_projects/9_RT/src/controls/keyboard/camera_freelook.c
+rt.h
+/Users/bruteflow/c_projects/9_RT/src/controls/keyboard/rt.h
+
+/Users/bruteflow/c_projects/9_RT/src/controls/keyboard/camera_movement.c
+rt.h
+/Users/bruteflow/c_projects/9_RT/src/controls/keyboard/rt.h
+
+/Users/bruteflow/c_projects/9_RT/src/controls/keyboard/camera_rotation.c
+rt.h
+/Users/bruteflow/c_projects/9_RT/src/controls/keyboard/rt.h
+
 /Users/bruteflow/c_projects/9_RT/src/controls/keyboard/keyboard_core.c
 rt.h
 /Users/bruteflow/c_projects/9_RT/src/controls/keyboard/rt.h

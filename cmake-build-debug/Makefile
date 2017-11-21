@@ -1837,6 +1837,87 @@ src/controls/controls.c.s:
 	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/controls/controls.c.s
 .PHONY : src/controls/controls.c.s
 
+src/controls/keyboard/camera_freelook.o: src/controls/keyboard/camera_freelook.c.o
+
+.PHONY : src/controls/keyboard/camera_freelook.o
+
+# target to build an object file
+src/controls/keyboard/camera_freelook.c.o:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/controls/keyboard/camera_freelook.c.o
+.PHONY : src/controls/keyboard/camera_freelook.c.o
+
+src/controls/keyboard/camera_freelook.i: src/controls/keyboard/camera_freelook.c.i
+
+.PHONY : src/controls/keyboard/camera_freelook.i
+
+# target to preprocess a source file
+src/controls/keyboard/camera_freelook.c.i:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/controls/keyboard/camera_freelook.c.i
+.PHONY : src/controls/keyboard/camera_freelook.c.i
+
+src/controls/keyboard/camera_freelook.s: src/controls/keyboard/camera_freelook.c.s
+
+.PHONY : src/controls/keyboard/camera_freelook.s
+
+# target to generate assembly for a file
+src/controls/keyboard/camera_freelook.c.s:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/controls/keyboard/camera_freelook.c.s
+.PHONY : src/controls/keyboard/camera_freelook.c.s
+
+src/controls/keyboard/camera_movement.o: src/controls/keyboard/camera_movement.c.o
+
+.PHONY : src/controls/keyboard/camera_movement.o
+
+# target to build an object file
+src/controls/keyboard/camera_movement.c.o:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/controls/keyboard/camera_movement.c.o
+.PHONY : src/controls/keyboard/camera_movement.c.o
+
+src/controls/keyboard/camera_movement.i: src/controls/keyboard/camera_movement.c.i
+
+.PHONY : src/controls/keyboard/camera_movement.i
+
+# target to preprocess a source file
+src/controls/keyboard/camera_movement.c.i:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/controls/keyboard/camera_movement.c.i
+.PHONY : src/controls/keyboard/camera_movement.c.i
+
+src/controls/keyboard/camera_movement.s: src/controls/keyboard/camera_movement.c.s
+
+.PHONY : src/controls/keyboard/camera_movement.s
+
+# target to generate assembly for a file
+src/controls/keyboard/camera_movement.c.s:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/controls/keyboard/camera_movement.c.s
+.PHONY : src/controls/keyboard/camera_movement.c.s
+
+src/controls/keyboard/camera_rotation.o: src/controls/keyboard/camera_rotation.c.o
+
+.PHONY : src/controls/keyboard/camera_rotation.o
+
+# target to build an object file
+src/controls/keyboard/camera_rotation.c.o:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/controls/keyboard/camera_rotation.c.o
+.PHONY : src/controls/keyboard/camera_rotation.c.o
+
+src/controls/keyboard/camera_rotation.i: src/controls/keyboard/camera_rotation.c.i
+
+.PHONY : src/controls/keyboard/camera_rotation.i
+
+# target to preprocess a source file
+src/controls/keyboard/camera_rotation.c.i:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/controls/keyboard/camera_rotation.c.i
+.PHONY : src/controls/keyboard/camera_rotation.c.i
+
+src/controls/keyboard/camera_rotation.s: src/controls/keyboard/camera_rotation.c.s
+
+.PHONY : src/controls/keyboard/camera_rotation.s
+
+# target to generate assembly for a file
+src/controls/keyboard/camera_rotation.c.s:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/controls/keyboard/camera_rotation.c.s
+.PHONY : src/controls/keyboard/camera_rotation.c.s
+
 src/controls/keyboard/keyboard_core.o: src/controls/keyboard/keyboard_core.c.o
 
 .PHONY : src/controls/keyboard/keyboard_core.o
@@ -3602,6 +3683,15 @@ help:
 	@echo "... src/controls/controls.o"
 	@echo "... src/controls/controls.i"
 	@echo "... src/controls/controls.s"
+	@echo "... src/controls/keyboard/camera_freelook.o"
+	@echo "... src/controls/keyboard/camera_freelook.i"
+	@echo "... src/controls/keyboard/camera_freelook.s"
+	@echo "... src/controls/keyboard/camera_movement.o"
+	@echo "... src/controls/keyboard/camera_movement.i"
+	@echo "... src/controls/keyboard/camera_movement.s"
+	@echo "... src/controls/keyboard/camera_rotation.o"
+	@echo "... src/controls/keyboard/camera_rotation.i"
+	@echo "... src/controls/keyboard/camera_rotation.s"
 	@echo "... src/controls/keyboard/keyboard_core.o"
 	@echo "... src/controls/keyboard/keyboard_core.i"
 	@echo "... src/controls/keyboard/keyboard_core.s"

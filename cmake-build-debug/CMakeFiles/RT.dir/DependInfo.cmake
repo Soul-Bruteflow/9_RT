@@ -5,6 +5,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/bruteflow/c_projects/9_RT/src/controls/controls.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/controls/controls.c.o"
+  "/Users/bruteflow/c_projects/9_RT/src/controls/keyboard/camera_freelook.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/controls/keyboard/camera_freelook.c.o"
+  "/Users/bruteflow/c_projects/9_RT/src/controls/keyboard/camera_movement.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/controls/keyboard/camera_movement.c.o"
+  "/Users/bruteflow/c_projects/9_RT/src/controls/keyboard/camera_rotation.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/controls/keyboard/camera_rotation.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/controls/keyboard/keyboard_core.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/controls/keyboard/keyboard_core.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/controls/mouse/mouse_1.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/controls/mouse/mouse_1.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/controls/mouse/mouse_2.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/controls/mouse/mouse_2.c.o"

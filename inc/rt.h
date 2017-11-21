@@ -193,6 +193,13 @@ void				init_controls(t_rt *r);
 ** Keyboard
 */
 void				keyboard_core(t_rt *r);
+void                camera_movement(t_rt *r);
+void                camera_rotation(t_rt *r);
+void                camera_vertical_rotation(t_rt *r);
+void                camera_horizontal_rotation(t_rt *r);
+void                camera_freelook(t_rt *r);
+void                camera_vertical_freelook(t_rt *r);
+void                camera_horizontal_freelook(t_rt *r);
 /*
 ** Mouse
 */

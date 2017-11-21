@@ -371,6 +371,15 @@
 		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/controls/controls.c">
 			<Option target="RT"/>
 		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/controls/keyboard/camera_freelook.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/controls/keyboard/camera_movement.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/controls/keyboard/camera_rotation.c">
+			<Option target="RT"/>
+		</Unit>
 		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/controls/keyboard/keyboard_core.c">
 			<Option target="RT"/>
 		</Unit>
