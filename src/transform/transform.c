@@ -2,26 +2,24 @@
 
 t_transform	init_transform(void)
 {
-	t_transform new_t;
+	t_transform t;
 
-	new_t.translation = set_vector3(0, 0, 0);
-	new_t.rotation = set_quat_f(0, 0, 0, 1);
-	new_t.scale = set_vector3(1, 1, 1);
-	return (new_t);
+	t.rotation = set_quat_f(0, 0, 0, 1);
+	t.rotx = set_quat_f(0, 0, 0, 1);
+	t.roty = set_quat_f(0, 0, 0, 1);
+	t.angle = set_vector2(0, 0);
+	return (t);
 }
 
 t_mat4		get_model(t_transform *t)
 {
 	t_mat4	translation;
 	t_mat4	rotation;
-//	t_mat4	scale;
 	t_mat4	model;
 
 	translation = init_translation(t->translation);
 	rotation = quat_to_mat(quat_conjugate(quat_mul(t->rotx, t->roty)));
-//	scale = init_scale(t->scale);
 	model = mat_mult(&translation, &rotation);
-//	model = mat_mult(&model, &translation);
 	return (model);
 }
 
