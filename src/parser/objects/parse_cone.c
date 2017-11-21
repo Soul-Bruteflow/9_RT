@@ -10,19 +10,18 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rtv.h"
-#include "rtv_defines.h"
+#include "rt.h"
 
-void	alloc_new_cone(t_rtv *r, int i)
+void	alloc_new_cone(t_rt *r, int i)
 {
 	r->scene->objects[i] = new_object(cone);
 	r->scene->objects[i]->type = new_cone();
 	r->scene->objects[i]->intersect = intersect_cone_ray;
 }
 
-t_bool	parse_cone(t_rtv *r, int i)
+t_bool	parse_cone(t_rt *r, int i)
 {
-	t_vec3d		data[2];
+	t_vec3		data[2];
 	float		angle;
 	Uint16		material;
 

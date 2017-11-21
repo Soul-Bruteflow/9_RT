@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rtv.h"
+#include "rt.h"
 
-t_bool	calculate_shadows(t_rtv *r, t_obj3d **objs, t_ray *light_ray, float *t2)
+t_bool	calculate_shadows(t_rt *r, t_obj3d **objs, t_ray *light_ray, float *t2)
 {
 	int k;
 
@@ -25,9 +25,9 @@ t_bool	calculate_shadows(t_rtv *r, t_obj3d **objs, t_ray *light_ray, float *t2)
 	return (false); 
 }
 
-float	lambert(t_ray *light_ray, t_vec3d *normal, float *coef)
+float	lambert(t_ray *light_ray, t_vec3 *normal, float *coef)
 {
-	return (vec3_dot(&light_ray->dir, normal) * *coef);
+	return (vec3_dot(light_ray->dir, *normal) * *coef);
 }
 
 /*
@@ -46,11 +46,11 @@ void	lamb_dif(float lamb, t_rgbap *c, t_light cur_light, t_material cur_mat)
 ** The reflected ray start and direction
 */
 
-void	calculate_reflection(t_rtv *rtv)
+void	calculate_reflection(t_rt *rtv)
 {
 	rtv->calc->coef *= rtv->calc->cur_mat.reflection;
 	rtv->calc->reflect = 2.0f *
-	vec3_dot(&rtv->scene->ray.dir, &rtv->calc->intersect_normal);
+	vec3_dot(rtv->scene->ray.dir, rtv->calc->intersect_normal);
 	rtv->calc->tmp = vec3_scale(rtv->calc->reflect,
 	&rtv->calc->intersect_normal);
 	rtv->scene->ray.dir = vec3_sub(&rtv->scene->ray.dir, &rtv->calc->tmp);
@@ -60,10 +60,10 @@ void	calculate_reflection(t_rtv *rtv)
 ** Find the value of the light at this point
 */
 
-void	calculate_light(t_rtv *rtv)
+void	calculate_light(t_rt *rtv)
 {
 	t_light		cur_light;
-	t_vec3d		dist;
+	t_vec3		dist;
 	float		t2;
 	t_ray		light_ray;
 	float		lamb;
@@ -75,18 +75,20 @@ void	calculate_light(t_rtv *rtv)
 	{
 		cur_light = *rtv->scene->lights[rtv->calc->i];
 		dist = vec3_sub(&cur_light.pos, &rtv->calc->new_start);
-		if (vec3_dot(&rtv->calc->intersect_normal, &dist) <= 0.0f)
+		if (vec3_dot(rtv->calc->intersect_normal, dist) <= 0.0f)
 			continue;
-		t2 = sqrtf(vec3_dot(&dist, &dist));
+		t2 = sqrtf(vec3_dot(dist, dist));
 		if (t2 <= 0.0f)
 			continue;
 		light_ray.start = rtv->calc->new_start;
-		light_ray.dir = vec3_scale(1 / t2, &dist);
-		if (!(calculate_shadows(rtv, rtv->scene->objects, &light_ray, &t2)))
-		{
+		light_ray.dir = vec3_scale(1.0f / t2, &dist);
+//		if ((calculate_shadows(rtv, rtv->scene->objects, &light_ray, &t2)))
+//			continue;
+//		else
+//		{
 			lamb = lambert(&light_ray,
-					&rtv->calc->intersect_normal, &rtv->calc->coef);
+			&rtv->calc->intersect_normal, &rtv->calc->coef);
 			lamb_dif(lamb, &rtv->calc->color, cur_light, rtv->calc->cur_mat);
-		}
+//		}
 	}
 }

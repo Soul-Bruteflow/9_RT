@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rtv.h"
+#include "rt.h"
 
 /*
 ** Solving the discriminant
@@ -22,15 +22,15 @@ static float	calculate_discriminant(t_ray *r, t_obj3d *o, float *b, float *a)
 	float	c_cov[2];
 	float	cov;
 	float	tmp[3];
-	t_vec3d	co;
+	t_vec3	co;
 
 	s = o->type;
-	c_cov[1] = vec3_dot(&r->dir, &s->axis);
+	c_cov[1] = vec3_dot(r->dir, s->axis);
 	co = vec3_sub(&r->start, &o->pos);
-	cov = vec3_dot(&co, &s->axis);
-	tmp[0] = vec3_dot(&r->dir, &co);
+	cov = vec3_dot(co, s->axis);
+	tmp[0] = vec3_dot(r->dir, co);
 	tmp[1] = powf(cosf(s->angle), 2);
-	tmp[2] = vec3_dot(&co, &co);
+	tmp[2] = vec3_dot(co, co);
 	*a = powf(c_cov[1], 2) - tmp[1];
 	*b = 2.0f * (c_cov[1] * cov - tmp[0] * tmp[1]);
 	c_cov[0] = powf(cov, 2) - tmp[2] * tmp[1];

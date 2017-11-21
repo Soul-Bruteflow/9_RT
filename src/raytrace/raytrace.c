@@ -10,10 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rtv.h"
-#include "rtv_defines.h"
+#include "rt.h"
 
-static t_rgba	set_pixel_color(t_rtv *rtv)
+static t_rgba	set_pixel_color(t_rt *rtv)
 {
 	t_rgba color;
 
@@ -24,10 +23,10 @@ static t_rgba	set_pixel_color(t_rtv *rtv)
 	return (color);
 }
 
-static void		set_raytrace(t_rtv *r, Uint16 x, Uint16 y)
+static void		set_raytrace(t_rt *r, Uint16 x, Uint16 y)
 {
-	t_vec3d xcomp;
-	t_vec3d ycomp;
+	t_vec3 xcomp;
+	t_vec3 ycomp;
 	t_cam	*c;
 
 	c = &r->scene->cam;
@@ -36,12 +35,13 @@ static void		set_raytrace(t_rtv *r, Uint16 x, Uint16 y)
 	r->calc->color.red = 0;
 	r->calc->color.green = 0;
 	r->calc->color.blue = 0;
-	xcomp = vec3_scale(((x * c->pixel_width) - c->half_width), &c->vp_right);
-	ycomp = vec3_scale(((y * c->pixel_height) - c->half_height), &c->vp_up);
-	r->scene->ray.dir = vec3_norm(vec3_add3(c->eye, xcomp, ycomp));
+	xcomp = vec3_scale(((x * c->s.pixel_width) - c->s.half_width), &c->right);
+	ycomp = vec3_scale(((y * c->s.pixel_height) - c->s.half_height), &c->up);
+	r->scene->ray.dir = vec3_norm(vec3_add3(c->forward, xcomp, ycomp));
+	r->scene->ray.start = r->scene->cam.pos;
 }
 
-static void		calculate_ray(t_rtv *rtv)
+static void		calculate_ray(t_rt *rtv)
 {
 	t_calc		*c;
 	t_scene		*s;
@@ -63,7 +63,7 @@ static void		calculate_ray(t_rtv *rtv)
 	}
 }
 
-void			raytrace(t_rtv *rtv)
+void			raytrace(t_rt *rtv)
 {
 	Uint16 x;
 	Uint16 y;

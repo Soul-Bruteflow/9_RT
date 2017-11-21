@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="RT"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/bruteflow/c_projects/9_RT/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/bruteflow/c_projects/9_RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/bruteflow/c_projects/9_RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/bruteflow/c_projects/9_RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/bruteflow/c_projects/9_RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/bruteflow/c_projects/9_RT/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/bruteflow/c_projects/9_RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/bruteflow/c_projects/9_RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/bruteflow/c_projects/9_RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/bruteflow/c_projects/9_RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/bruteflow/c_projects/9_RT/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/bruteflow/c_projects/9_RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/bruteflow/c_projects/9_RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/bruteflow/c_projects/9_RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/bruteflow/c_projects/9_RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ft">
+				<Option output="/Users/bruteflow/c_projects/9_RT/cmake-build-debug/libft.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/bruteflow/c_projects/9_RT/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/bruteflow/c_projects/9_RT/./inc"/>
+					<Add directory="/Users/bruteflow/c_projects/9_RT/./libft"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/bruteflow/c_projects/9_RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 ft"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/bruteflow/c_projects/9_RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/bruteflow/c_projects/9_RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/bruteflow/c_projects/9_RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ft/fast">
+				<Option output="/Users/bruteflow/c_projects/9_RT/cmake-build-debug/libft.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/bruteflow/c_projects/9_RT/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/bruteflow/c_projects/9_RT/./inc"/>
+					<Add directory="/Users/bruteflow/c_projects/9_RT/./libft"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/bruteflow/c_projects/9_RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 ft/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/bruteflow/c_projects/9_RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/bruteflow/c_projects/9_RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/bruteflow/c_projects/9_RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="RT">
+				<Option output="/Users/bruteflow/c_projects/9_RT/cmake-build-debug/RT" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/bruteflow/c_projects/9_RT/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/bruteflow/c_projects/9_RT/./inc"/>
+					<Add directory="/Users/bruteflow/c_projects/9_RT/./libft"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/bruteflow/c_projects/9_RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 RT"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/bruteflow/c_projects/9_RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/bruteflow/c_projects/9_RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/bruteflow/c_projects/9_RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="RT/fast">
+				<Option output="/Users/bruteflow/c_projects/9_RT/cmake-build-debug/RT" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/bruteflow/c_projects/9_RT/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/bruteflow/c_projects/9_RT/./inc"/>
+					<Add directory="/Users/bruteflow/c_projects/9_RT/./libft"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/bruteflow/c_projects/9_RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 RT/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/bruteflow/c_projects/9_RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/bruteflow/c_projects/9_RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/bruteflow/c_projects/9_RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/inc/controls/controls.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/inc/math/math.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/inc/math/matrices.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/inc/math/quaternions.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/inc/math/vectors.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/inc/rt.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/inc/rt/camera.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/inc/rt/objects.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/inc/rt/raytrace.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/inc/rt/transform.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/inc/utility/bool.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/inc/utility/defines.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/inc/utility/errors.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/inc/utility/get_next_line.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/inc/utility/utility.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_atoi.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_bzero.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_count_words.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_count_words_size.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_isalnum.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_isalpha.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_isascii.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_isblank.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_isdigit.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_isprint.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_isspace.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_itoa.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_lstadd.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_lstdel.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_lstdelone.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_lstiter.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_lstmap.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_lstnew.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_memalloc.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_memccpy.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_memchr.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_memcmp.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_memcpy.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_memdel.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_memmove.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_memset.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_overlapn.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_putchar.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_putchar_fd.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_putendl.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_putendl_fd.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_putnbr.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_putnbr_fd.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_putstr.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_putstr_fd.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_strcat.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_strchr.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_strclr.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_strcmp.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_strcpy.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_strdel.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_strdup.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_strequ.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_striter.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_striteri.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_strjoin.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_strlcat.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_strlen.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_strmap.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_strmapi.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_strncat.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_strncmp.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_strncpy.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_strnequ.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_strnew.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_strnstr.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_strrchr.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_strsplit.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_strstr.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_strsub.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_strtrim.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/libft/ft_tolower.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/controls/controls.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/controls/keyboard/camera_freelook.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/controls/keyboard/camera_movement.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/controls/keyboard/camera_rotation.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/controls/keyboard/keyboard_core.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/controls/mouse/mouse_1.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/controls/mouse/mouse_2.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/controls/mouse/mouse_core.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/errors.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/get_next_line.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/main.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/parser/objects/parse_cone.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/parser/objects/parse_cylinder.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/parser/objects/parse_materials.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/parser/objects/parse_objects.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/parser/objects/parse_plane.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/parser/objects/parse_sphere.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/parser/parser_core.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/parser/scene/parse_camera.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/parser/scene/parse_lights.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/parser/scene/parse_scene.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/parser/support/parser_support_one.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/parser/support/parser_support_two.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/raytrace/calculate_light.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/raytrace/camera/camera.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/raytrace/camera/camera_1.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/raytrace/intersect.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/raytrace/lights/light.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/raytrace/materials/material.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/raytrace/objects/cone/cone_create.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/raytrace/objects/cone/cone_ray_intersect.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/raytrace/objects/cylinder/cylinder_create.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/raytrace/objects/cylinder/cylinder_ray_intersect.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/raytrace/objects/object.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/raytrace/objects/plane/plane_create.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/raytrace/objects/plane/plane_ray_intersect.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/raytrace/objects/sphere/sphere_create.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/raytrace/objects/sphere/sphere_ray_intersect.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/raytrace/raytrace.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/raytrace/render.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/raytrace/scene/scene_create.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/rt_init.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/rt_loop.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/rt_quit.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/transform/transform.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/utility/ft_atof.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/utility/ft_draw_pixel.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/utility/ft_noise.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/utility/ft_set_color.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/utility/math/ft_to_radians.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/utility/math/matrices/inits_1.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/utility/math/matrices/inits_2.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/utility/math/matrices/inits_3.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/utility/math/matrices/mat_operations_1.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/utility/math/quaternions/quat_operations_1.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/utility/math/quaternions/quat_operations_2.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/utility/math/vector/set_vector.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/utility/math/vector/vector_operations_1.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/utility/math/vector/vector_operations_2.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/utility/utility.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/window/create_window.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/window/update_window.c">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -10,19 +10,19 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rtv.h"
+#include "rt.h"
 
 /*
 ** Find closest intersection
 */
 
-t_bool	object_intersect(t_rtv *rtv, t_ray *r, int *cur_obj, t_vec3d *new_start)
+t_bool	object_intersect(t_rt *rtv, t_ray *r, int *cur_obj, t_vec3 *new_start)
 {
-	float		t;
-	int			i;
-	t_vec3d		scaled;
+	float			t;
+	int				i;
+	t_vec3			scaled;
 
-	t = 100000;
+	t = rtv->scene->cam.p.far;
 	i = -1;
 	while (i++ < rtv->scene->objs_n - 1)
 	{
@@ -44,7 +44,6 @@ t_bool	object_intersect(t_rtv *rtv, t_ray *r, int *cur_obj, t_vec3d *new_start)
 t_bool	normal_of_intersect(t_vec3d *n, t_vec3d *s, int cur_obj, t_scene *scene)
 {
 //	float		temp;
-
 	if (scene->objects[cur_obj]->obj_type == plane)
 	{
 		t_plane		*plane;

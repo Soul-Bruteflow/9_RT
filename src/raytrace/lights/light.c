@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rtv.h"
+#include "rt.h"
 
 t_light	*new_light(void)
 {
@@ -22,7 +22,7 @@ t_light	*new_light(void)
 	return (new_light);
 }
 
-void	set_light(t_light *light, t_vec3d pos, t_rgbap intensity)
+void	set_light(t_light *light, t_vec3 pos, t_rgbap intensity)
 {
 	light->pos.x = pos.x;
 	light->pos.y = pos.y;
