@@ -8,8 +8,8 @@ void	mouse_core(t_rt *rt)
 	if (rt->sdl->event.type == SDL_MOUSEMOTION)
 	{
 		SDL_GetRelativeMouseState(&x,&y);
-		rt->sdl->mouse_rpos.x = x;
-		rt->sdl->mouse_rpos.y = y;
+//		rt->sdl->mouse_rpos.x = x;
+//		rt->sdl->mouse_rpos.y = y;
 //		printf("%f, %f\n", rt->sdl->mouse_rpos.x, rt->sdl->mouse_rpos.y);
 
 

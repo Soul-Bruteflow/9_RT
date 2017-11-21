@@ -39,7 +39,7 @@ typedef struct		s_sdl
 	SDL_Renderer	*renderer;
 	SDL_Event		event;
 	const Uint8		*key_state;
-	t_vec2			mouse_rpos;
+//	t_vec2			mouse_rpos;
 	t_mouse			mouse;
 }					t_sdl;
 

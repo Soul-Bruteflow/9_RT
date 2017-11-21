@@ -22,6 +22,7 @@ void	get_mouse_relative_position(t_mouse *m)
 	SDL_GetRelativeMouseState(&x, &y);
 	m->rpos.x = x;
 	m->rpos.y = y;
+//	printf("%f, %f\n", m->rpos.x, m->rpos.y);
 }
 
 void	invert_mouse_x(t_mouse *m)
