@@ -37,7 +37,7 @@ typedef struct	s_cam
 	t_vec3		world_up;
 	float 		mov_amt;
 	float 		rot_amt;
-	float 		m_rot_amt;
+	t_vec2 		m_rot_amt;
 	t_persp		p;
 	t_transform	t;
 	t_sup		s;
