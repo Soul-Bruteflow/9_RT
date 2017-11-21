@@ -173,7 +173,7 @@ void				rt_quit(t_rt *r);
 ** Raycast
 */
 void				raytrace(t_rt *r);
-t_bool				normal_of_intersect(t_vec3 *normal, t_vec3 *new_start, t_obj3d **objects, int cur_obj);
+t_bool              normal_of_intersect(t_vec3 *n, t_vec3 *s, int cur_obj, t_scene *scene);
 t_bool				object_intersect(t_rt *rt, t_ray *r, int *cur_obj, t_vec3 *new_start);
 void				calculate_light(t_rt *r);
 void				calculate_reflection(t_rt *r);

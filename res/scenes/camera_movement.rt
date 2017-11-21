@@ -99,16 +99,6 @@ reflection:
 reflection:
 					0.01
 objects:
-plane:
-normal:
-					1
-					1000
-					500
-point:
-					0
-					90
-					0
-objects:
 sphere:
 position:
 					1000
