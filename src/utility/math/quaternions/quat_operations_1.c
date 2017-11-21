@@ -11,9 +11,7 @@ t_quat	quat_normalize(t_quat q)
 	float length;
 	float scale;
 
-	length = q.x * q.x + q.y * q.y + q.z * q.z + q.w * q.w;
-//	if (length == 0.0 )
-//		return (void);
+	length = quat_len(q);
 	if (length != 1.0)
 	{
 		scale = ( 1.0f / sqrtf(length));
@@ -23,12 +21,6 @@ t_quat	quat_normalize(t_quat q)
 		q.w *= scale;
 		return (q);
 	}
-//	float	len;
-//	len = quat_len(q);
-//	q.x /= len;
-//	q.y /= len;
-//	q.z /= len;
-//	q.w /= len;
 	return (q);
 }
 

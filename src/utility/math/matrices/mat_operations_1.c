@@ -2,20 +2,21 @@
 
 t_mat4	mat_mult(t_mat4 *m1, t_mat4 *m2)
 {
-	int		i;
-	int		j;
+	int		x;
+	int		y;
+	int		z;
 	t_mat4	res;
 
-
-	for (int x = 0; x < 4; x++)
-	{ // row number of output
-		for (int y = 0; y < 4; y++)
-		{ // column number of output
+	x = -1;
+	while (x++ < 4)
+	{
+		y = -1;
+		while(y++ < 4)
+		{
+			z = -1;
 			res.m[x][y] = 0;
-			for (int z = 0; z < 4; z++)
-			{ // four elements are added for this output
+			while (z++ < 4)
 				res.m[x][y] += m1->m[x][z] * m2->m[z][y];
-			}
 		}
 	}
 	return (res);
