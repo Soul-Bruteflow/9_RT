@@ -585,9 +585,33 @@ CMakeFiles/RT.dir/src/controls/mouse/mouse_1.c.o.provides: CMakeFiles/RT.dir/src
 CMakeFiles/RT.dir/src/controls/mouse/mouse_1.c.o.provides.build: CMakeFiles/RT.dir/src/controls/mouse/mouse_1.c.o
 
 
+CMakeFiles/RT.dir/src/controls/mouse/mouse_2.c.o: CMakeFiles/RT.dir/flags.make
+CMakeFiles/RT.dir/src/controls/mouse/mouse_2.c.o: ../src/controls/mouse/mouse_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/RT.dir/src/controls/mouse/mouse_2.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/controls/mouse/mouse_2.c.o   -c /Users/bruteflow/c_projects/9_RT/src/controls/mouse/mouse_2.c
+
+CMakeFiles/RT.dir/src/controls/mouse/mouse_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RT.dir/src/controls/mouse/mouse_2.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bruteflow/c_projects/9_RT/src/controls/mouse/mouse_2.c > CMakeFiles/RT.dir/src/controls/mouse/mouse_2.c.i
+
+CMakeFiles/RT.dir/src/controls/mouse/mouse_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RT.dir/src/controls/mouse/mouse_2.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bruteflow/c_projects/9_RT/src/controls/mouse/mouse_2.c -o CMakeFiles/RT.dir/src/controls/mouse/mouse_2.c.s
+
+CMakeFiles/RT.dir/src/controls/mouse/mouse_2.c.o.requires:
+
+.PHONY : CMakeFiles/RT.dir/src/controls/mouse/mouse_2.c.o.requires
+
+CMakeFiles/RT.dir/src/controls/mouse/mouse_2.c.o.provides: CMakeFiles/RT.dir/src/controls/mouse/mouse_2.c.o.requires
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/controls/mouse/mouse_2.c.o.provides.build
+.PHONY : CMakeFiles/RT.dir/src/controls/mouse/mouse_2.c.o.provides
+
+CMakeFiles/RT.dir/src/controls/mouse/mouse_2.c.o.provides.build: CMakeFiles/RT.dir/src/controls/mouse/mouse_2.c.o
+
+
 CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.o: ../src/controls/mouse/mouse_core.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.o   -c /Users/bruteflow/c_projects/9_RT/src/controls/mouse/mouse_core.c
 
 CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.i: cmake_force
@@ -611,7 +635,7 @@ CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.o.provides.build: CMakeFiles/R
 
 CMakeFiles/RT.dir/src/parser/objects/parse_cone.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/parser/objects/parse_cone.c.o: ../src/parser/objects/parse_cone.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/RT.dir/src/parser/objects/parse_cone.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/RT.dir/src/parser/objects/parse_cone.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/parser/objects/parse_cone.c.o   -c /Users/bruteflow/c_projects/9_RT/src/parser/objects/parse_cone.c
 
 CMakeFiles/RT.dir/src/parser/objects/parse_cone.c.i: cmake_force
@@ -635,7 +659,7 @@ CMakeFiles/RT.dir/src/parser/objects/parse_cone.c.o.provides.build: CMakeFiles/R
 
 CMakeFiles/RT.dir/src/parser/objects/parse_cylinder.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/parser/objects/parse_cylinder.c.o: ../src/parser/objects/parse_cylinder.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/RT.dir/src/parser/objects/parse_cylinder.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/RT.dir/src/parser/objects/parse_cylinder.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/parser/objects/parse_cylinder.c.o   -c /Users/bruteflow/c_projects/9_RT/src/parser/objects/parse_cylinder.c
 
 CMakeFiles/RT.dir/src/parser/objects/parse_cylinder.c.i: cmake_force
@@ -659,7 +683,7 @@ CMakeFiles/RT.dir/src/parser/objects/parse_cylinder.c.o.provides.build: CMakeFil
 
 CMakeFiles/RT.dir/src/parser/objects/parse_materials.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/parser/objects/parse_materials.c.o: ../src/parser/objects/parse_materials.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/RT.dir/src/parser/objects/parse_materials.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/RT.dir/src/parser/objects/parse_materials.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/parser/objects/parse_materials.c.o   -c /Users/bruteflow/c_projects/9_RT/src/parser/objects/parse_materials.c
 
 CMakeFiles/RT.dir/src/parser/objects/parse_materials.c.i: cmake_force
@@ -683,7 +707,7 @@ CMakeFiles/RT.dir/src/parser/objects/parse_materials.c.o.provides.build: CMakeFi
 
 CMakeFiles/RT.dir/src/parser/objects/parse_objects.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/parser/objects/parse_objects.c.o: ../src/parser/objects/parse_objects.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/RT.dir/src/parser/objects/parse_objects.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/RT.dir/src/parser/objects/parse_objects.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/parser/objects/parse_objects.c.o   -c /Users/bruteflow/c_projects/9_RT/src/parser/objects/parse_objects.c
 
 CMakeFiles/RT.dir/src/parser/objects/parse_objects.c.i: cmake_force
@@ -707,7 +731,7 @@ CMakeFiles/RT.dir/src/parser/objects/parse_objects.c.o.provides.build: CMakeFile
 
 CMakeFiles/RT.dir/src/parser/objects/parse_plane.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/parser/objects/parse_plane.c.o: ../src/parser/objects/parse_plane.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/RT.dir/src/parser/objects/parse_plane.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/RT.dir/src/parser/objects/parse_plane.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/parser/objects/parse_plane.c.o   -c /Users/bruteflow/c_projects/9_RT/src/parser/objects/parse_plane.c
 
 CMakeFiles/RT.dir/src/parser/objects/parse_plane.c.i: cmake_force
@@ -731,7 +755,7 @@ CMakeFiles/RT.dir/src/parser/objects/parse_plane.c.o.provides.build: CMakeFiles/
 
 CMakeFiles/RT.dir/src/parser/objects/parse_sphere.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/parser/objects/parse_sphere.c.o: ../src/parser/objects/parse_sphere.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/RT.dir/src/parser/objects/parse_sphere.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/RT.dir/src/parser/objects/parse_sphere.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/parser/objects/parse_sphere.c.o   -c /Users/bruteflow/c_projects/9_RT/src/parser/objects/parse_sphere.c
 
 CMakeFiles/RT.dir/src/parser/objects/parse_sphere.c.i: cmake_force
@@ -755,7 +779,7 @@ CMakeFiles/RT.dir/src/parser/objects/parse_sphere.c.o.provides.build: CMakeFiles
 
 CMakeFiles/RT.dir/src/parser/scene/parse_camera.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/parser/scene/parse_camera.c.o: ../src/parser/scene/parse_camera.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/RT.dir/src/parser/scene/parse_camera.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/RT.dir/src/parser/scene/parse_camera.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/parser/scene/parse_camera.c.o   -c /Users/bruteflow/c_projects/9_RT/src/parser/scene/parse_camera.c
 
 CMakeFiles/RT.dir/src/parser/scene/parse_camera.c.i: cmake_force
@@ -779,7 +803,7 @@ CMakeFiles/RT.dir/src/parser/scene/parse_camera.c.o.provides.build: CMakeFiles/R
 
 CMakeFiles/RT.dir/src/parser/scene/parse_lights.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/parser/scene/parse_lights.c.o: ../src/parser/scene/parse_lights.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/RT.dir/src/parser/scene/parse_lights.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/RT.dir/src/parser/scene/parse_lights.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/parser/scene/parse_lights.c.o   -c /Users/bruteflow/c_projects/9_RT/src/parser/scene/parse_lights.c
 
 CMakeFiles/RT.dir/src/parser/scene/parse_lights.c.i: cmake_force
@@ -803,7 +827,7 @@ CMakeFiles/RT.dir/src/parser/scene/parse_lights.c.o.provides.build: CMakeFiles/R
 
 CMakeFiles/RT.dir/src/parser/scene/parse_scene.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/parser/scene/parse_scene.c.o: ../src/parser/scene/parse_scene.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/RT.dir/src/parser/scene/parse_scene.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/RT.dir/src/parser/scene/parse_scene.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/parser/scene/parse_scene.c.o   -c /Users/bruteflow/c_projects/9_RT/src/parser/scene/parse_scene.c
 
 CMakeFiles/RT.dir/src/parser/scene/parse_scene.c.i: cmake_force
@@ -827,7 +851,7 @@ CMakeFiles/RT.dir/src/parser/scene/parse_scene.c.o.provides.build: CMakeFiles/RT
 
 CMakeFiles/RT.dir/src/parser/support/parser_support_one.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/parser/support/parser_support_one.c.o: ../src/parser/support/parser_support_one.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/RT.dir/src/parser/support/parser_support_one.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/RT.dir/src/parser/support/parser_support_one.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/parser/support/parser_support_one.c.o   -c /Users/bruteflow/c_projects/9_RT/src/parser/support/parser_support_one.c
 
 CMakeFiles/RT.dir/src/parser/support/parser_support_one.c.i: cmake_force
@@ -851,7 +875,7 @@ CMakeFiles/RT.dir/src/parser/support/parser_support_one.c.o.provides.build: CMak
 
 CMakeFiles/RT.dir/src/parser/support/parser_support_two.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/parser/support/parser_support_two.c.o: ../src/parser/support/parser_support_two.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/RT.dir/src/parser/support/parser_support_two.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/RT.dir/src/parser/support/parser_support_two.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/parser/support/parser_support_two.c.o   -c /Users/bruteflow/c_projects/9_RT/src/parser/support/parser_support_two.c
 
 CMakeFiles/RT.dir/src/parser/support/parser_support_two.c.i: cmake_force
@@ -875,7 +899,7 @@ CMakeFiles/RT.dir/src/parser/support/parser_support_two.c.o.provides.build: CMak
 
 CMakeFiles/RT.dir/src/raytrace/camera/camera.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/raytrace/camera/camera.c.o: ../src/raytrace/camera/camera.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/RT.dir/src/raytrace/camera/camera.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/RT.dir/src/raytrace/camera/camera.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/raytrace/camera/camera.c.o   -c /Users/bruteflow/c_projects/9_RT/src/raytrace/camera/camera.c
 
 CMakeFiles/RT.dir/src/raytrace/camera/camera.c.i: cmake_force
@@ -899,7 +923,7 @@ CMakeFiles/RT.dir/src/raytrace/camera/camera.c.o.provides.build: CMakeFiles/RT.d
 
 CMakeFiles/RT.dir/src/raytrace/camera/camera_1.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/raytrace/camera/camera_1.c.o: ../src/raytrace/camera/camera_1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/RT.dir/src/raytrace/camera/camera_1.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/RT.dir/src/raytrace/camera/camera_1.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/raytrace/camera/camera_1.c.o   -c /Users/bruteflow/c_projects/9_RT/src/raytrace/camera/camera_1.c
 
 CMakeFiles/RT.dir/src/raytrace/camera/camera_1.c.i: cmake_force
@@ -923,7 +947,7 @@ CMakeFiles/RT.dir/src/raytrace/camera/camera_1.c.o.provides.build: CMakeFiles/RT
 
 CMakeFiles/RT.dir/src/raytrace/lights/light.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/raytrace/lights/light.c.o: ../src/raytrace/lights/light.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/RT.dir/src/raytrace/lights/light.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/RT.dir/src/raytrace/lights/light.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/raytrace/lights/light.c.o   -c /Users/bruteflow/c_projects/9_RT/src/raytrace/lights/light.c
 
 CMakeFiles/RT.dir/src/raytrace/lights/light.c.i: cmake_force
@@ -947,7 +971,7 @@ CMakeFiles/RT.dir/src/raytrace/lights/light.c.o.provides.build: CMakeFiles/RT.di
 
 CMakeFiles/RT.dir/src/raytrace/materials/material.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/raytrace/materials/material.c.o: ../src/raytrace/materials/material.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/RT.dir/src/raytrace/materials/material.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/RT.dir/src/raytrace/materials/material.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/raytrace/materials/material.c.o   -c /Users/bruteflow/c_projects/9_RT/src/raytrace/materials/material.c
 
 CMakeFiles/RT.dir/src/raytrace/materials/material.c.i: cmake_force
@@ -971,7 +995,7 @@ CMakeFiles/RT.dir/src/raytrace/materials/material.c.o.provides.build: CMakeFiles
 
 CMakeFiles/RT.dir/src/raytrace/objects/object.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/raytrace/objects/object.c.o: ../src/raytrace/objects/object.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/RT.dir/src/raytrace/objects/object.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/RT.dir/src/raytrace/objects/object.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/raytrace/objects/object.c.o   -c /Users/bruteflow/c_projects/9_RT/src/raytrace/objects/object.c
 
 CMakeFiles/RT.dir/src/raytrace/objects/object.c.i: cmake_force
@@ -995,7 +1019,7 @@ CMakeFiles/RT.dir/src/raytrace/objects/object.c.o.provides.build: CMakeFiles/RT.
 
 CMakeFiles/RT.dir/src/raytrace/scene/scene_create.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/raytrace/scene/scene_create.c.o: ../src/raytrace/scene/scene_create.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/RT.dir/src/raytrace/scene/scene_create.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/RT.dir/src/raytrace/scene/scene_create.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/raytrace/scene/scene_create.c.o   -c /Users/bruteflow/c_projects/9_RT/src/raytrace/scene/scene_create.c
 
 CMakeFiles/RT.dir/src/raytrace/scene/scene_create.c.i: cmake_force
@@ -1019,7 +1043,7 @@ CMakeFiles/RT.dir/src/raytrace/scene/scene_create.c.o.provides.build: CMakeFiles
 
 CMakeFiles/RT.dir/src/utility/math/ft_to_radians.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/utility/math/ft_to_radians.c.o: ../src/utility/math/ft_to_radians.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/RT.dir/src/utility/math/ft_to_radians.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/RT.dir/src/utility/math/ft_to_radians.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/utility/math/ft_to_radians.c.o   -c /Users/bruteflow/c_projects/9_RT/src/utility/math/ft_to_radians.c
 
 CMakeFiles/RT.dir/src/utility/math/ft_to_radians.c.i: cmake_force
@@ -1043,7 +1067,7 @@ CMakeFiles/RT.dir/src/utility/math/ft_to_radians.c.o.provides.build: CMakeFiles/
 
 CMakeFiles/RT.dir/src/raytrace/objects/cone/cone_create.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/raytrace/objects/cone/cone_create.c.o: ../src/raytrace/objects/cone/cone_create.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/RT.dir/src/raytrace/objects/cone/cone_create.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/RT.dir/src/raytrace/objects/cone/cone_create.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/raytrace/objects/cone/cone_create.c.o   -c /Users/bruteflow/c_projects/9_RT/src/raytrace/objects/cone/cone_create.c
 
 CMakeFiles/RT.dir/src/raytrace/objects/cone/cone_create.c.i: cmake_force
@@ -1067,7 +1091,7 @@ CMakeFiles/RT.dir/src/raytrace/objects/cone/cone_create.c.o.provides.build: CMak
 
 CMakeFiles/RT.dir/src/raytrace/objects/cone/cone_ray_intersect.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/raytrace/objects/cone/cone_ray_intersect.c.o: ../src/raytrace/objects/cone/cone_ray_intersect.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/RT.dir/src/raytrace/objects/cone/cone_ray_intersect.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/RT.dir/src/raytrace/objects/cone/cone_ray_intersect.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/raytrace/objects/cone/cone_ray_intersect.c.o   -c /Users/bruteflow/c_projects/9_RT/src/raytrace/objects/cone/cone_ray_intersect.c
 
 CMakeFiles/RT.dir/src/raytrace/objects/cone/cone_ray_intersect.c.i: cmake_force
@@ -1091,7 +1115,7 @@ CMakeFiles/RT.dir/src/raytrace/objects/cone/cone_ray_intersect.c.o.provides.buil
 
 CMakeFiles/RT.dir/src/raytrace/objects/cylinder/cylinder_create.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/raytrace/objects/cylinder/cylinder_create.c.o: ../src/raytrace/objects/cylinder/cylinder_create.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/RT.dir/src/raytrace/objects/cylinder/cylinder_create.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/RT.dir/src/raytrace/objects/cylinder/cylinder_create.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/raytrace/objects/cylinder/cylinder_create.c.o   -c /Users/bruteflow/c_projects/9_RT/src/raytrace/objects/cylinder/cylinder_create.c
 
 CMakeFiles/RT.dir/src/raytrace/objects/cylinder/cylinder_create.c.i: cmake_force
@@ -1115,7 +1139,7 @@ CMakeFiles/RT.dir/src/raytrace/objects/cylinder/cylinder_create.c.o.provides.bui
 
 CMakeFiles/RT.dir/src/raytrace/objects/cylinder/cylinder_ray_intersect.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/raytrace/objects/cylinder/cylinder_ray_intersect.c.o: ../src/raytrace/objects/cylinder/cylinder_ray_intersect.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/RT.dir/src/raytrace/objects/cylinder/cylinder_ray_intersect.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/RT.dir/src/raytrace/objects/cylinder/cylinder_ray_intersect.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/raytrace/objects/cylinder/cylinder_ray_intersect.c.o   -c /Users/bruteflow/c_projects/9_RT/src/raytrace/objects/cylinder/cylinder_ray_intersect.c
 
 CMakeFiles/RT.dir/src/raytrace/objects/cylinder/cylinder_ray_intersect.c.i: cmake_force
@@ -1139,7 +1163,7 @@ CMakeFiles/RT.dir/src/raytrace/objects/cylinder/cylinder_ray_intersect.c.o.provi
 
 CMakeFiles/RT.dir/src/raytrace/objects/plane/plane_create.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/raytrace/objects/plane/plane_create.c.o: ../src/raytrace/objects/plane/plane_create.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/RT.dir/src/raytrace/objects/plane/plane_create.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/RT.dir/src/raytrace/objects/plane/plane_create.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/raytrace/objects/plane/plane_create.c.o   -c /Users/bruteflow/c_projects/9_RT/src/raytrace/objects/plane/plane_create.c
 
 CMakeFiles/RT.dir/src/raytrace/objects/plane/plane_create.c.i: cmake_force
@@ -1163,7 +1187,7 @@ CMakeFiles/RT.dir/src/raytrace/objects/plane/plane_create.c.o.provides.build: CM
 
 CMakeFiles/RT.dir/src/raytrace/objects/plane/plane_ray_intersect.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/raytrace/objects/plane/plane_ray_intersect.c.o: ../src/raytrace/objects/plane/plane_ray_intersect.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/RT.dir/src/raytrace/objects/plane/plane_ray_intersect.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/RT.dir/src/raytrace/objects/plane/plane_ray_intersect.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/raytrace/objects/plane/plane_ray_intersect.c.o   -c /Users/bruteflow/c_projects/9_RT/src/raytrace/objects/plane/plane_ray_intersect.c
 
 CMakeFiles/RT.dir/src/raytrace/objects/plane/plane_ray_intersect.c.i: cmake_force
@@ -1187,7 +1211,7 @@ CMakeFiles/RT.dir/src/raytrace/objects/plane/plane_ray_intersect.c.o.provides.bu
 
 CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_create.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_create.c.o: ../src/raytrace/objects/sphere/sphere_create.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_create.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_create.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_create.c.o   -c /Users/bruteflow/c_projects/9_RT/src/raytrace/objects/sphere/sphere_create.c
 
 CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_create.c.i: cmake_force
@@ -1211,7 +1235,7 @@ CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_create.c.o.provides.build: 
 
 CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_ray_intersect.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_ray_intersect.c.o: ../src/raytrace/objects/sphere/sphere_ray_intersect.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_ray_intersect.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_ray_intersect.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_ray_intersect.c.o   -c /Users/bruteflow/c_projects/9_RT/src/raytrace/objects/sphere/sphere_ray_intersect.c
 
 CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_ray_intersect.c.i: cmake_force
@@ -1235,7 +1259,7 @@ CMakeFiles/RT.dir/src/raytrace/objects/sphere/sphere_ray_intersect.c.o.provides.
 
 CMakeFiles/RT.dir/src/utility/math/matrices/inits_1.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/utility/math/matrices/inits_1.c.o: ../src/utility/math/matrices/inits_1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/RT.dir/src/utility/math/matrices/inits_1.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/RT.dir/src/utility/math/matrices/inits_1.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/utility/math/matrices/inits_1.c.o   -c /Users/bruteflow/c_projects/9_RT/src/utility/math/matrices/inits_1.c
 
 CMakeFiles/RT.dir/src/utility/math/matrices/inits_1.c.i: cmake_force
@@ -1259,7 +1283,7 @@ CMakeFiles/RT.dir/src/utility/math/matrices/inits_1.c.o.provides.build: CMakeFil
 
 CMakeFiles/RT.dir/src/utility/math/matrices/inits_2.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/utility/math/matrices/inits_2.c.o: ../src/utility/math/matrices/inits_2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/RT.dir/src/utility/math/matrices/inits_2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/RT.dir/src/utility/math/matrices/inits_2.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/utility/math/matrices/inits_2.c.o   -c /Users/bruteflow/c_projects/9_RT/src/utility/math/matrices/inits_2.c
 
 CMakeFiles/RT.dir/src/utility/math/matrices/inits_2.c.i: cmake_force
@@ -1283,7 +1307,7 @@ CMakeFiles/RT.dir/src/utility/math/matrices/inits_2.c.o.provides.build: CMakeFil
 
 CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o: ../src/utility/math/matrices/inits_3.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o   -c /Users/bruteflow/c_projects/9_RT/src/utility/math/matrices/inits_3.c
 
 CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.i: cmake_force
@@ -1307,7 +1331,7 @@ CMakeFiles/RT.dir/src/utility/math/matrices/inits_3.c.o.provides.build: CMakeFil
 
 CMakeFiles/RT.dir/src/utility/math/matrices/mat_operations_1.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/utility/math/matrices/mat_operations_1.c.o: ../src/utility/math/matrices/mat_operations_1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/RT.dir/src/utility/math/matrices/mat_operations_1.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/RT.dir/src/utility/math/matrices/mat_operations_1.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/utility/math/matrices/mat_operations_1.c.o   -c /Users/bruteflow/c_projects/9_RT/src/utility/math/matrices/mat_operations_1.c
 
 CMakeFiles/RT.dir/src/utility/math/matrices/mat_operations_1.c.i: cmake_force
@@ -1331,7 +1355,7 @@ CMakeFiles/RT.dir/src/utility/math/matrices/mat_operations_1.c.o.provides.build:
 
 CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_1.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_1.c.o: ../src/utility/math/quaternions/quat_operations_1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_1.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_1.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_1.c.o   -c /Users/bruteflow/c_projects/9_RT/src/utility/math/quaternions/quat_operations_1.c
 
 CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_1.c.i: cmake_force
@@ -1355,7 +1379,7 @@ CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_1.c.o.provides.bu
 
 CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_2.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_2.c.o: ../src/utility/math/quaternions/quat_operations_2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_2.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_2.c.o   -c /Users/bruteflow/c_projects/9_RT/src/utility/math/quaternions/quat_operations_2.c
 
 CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_2.c.i: cmake_force
@@ -1379,7 +1403,7 @@ CMakeFiles/RT.dir/src/utility/math/quaternions/quat_operations_2.c.o.provides.bu
 
 CMakeFiles/RT.dir/src/utility/math/vector/set_vector.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/utility/math/vector/set_vector.c.o: ../src/utility/math/vector/set_vector.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/RT.dir/src/utility/math/vector/set_vector.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/RT.dir/src/utility/math/vector/set_vector.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/utility/math/vector/set_vector.c.o   -c /Users/bruteflow/c_projects/9_RT/src/utility/math/vector/set_vector.c
 
 CMakeFiles/RT.dir/src/utility/math/vector/set_vector.c.i: cmake_force
@@ -1403,7 +1427,7 @@ CMakeFiles/RT.dir/src/utility/math/vector/set_vector.c.o.provides.build: CMakeFi
 
 CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_1.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_1.c.o: ../src/utility/math/vector/vector_operations_1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_1.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_1.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_1.c.o   -c /Users/bruteflow/c_projects/9_RT/src/utility/math/vector/vector_operations_1.c
 
 CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_1.c.i: cmake_force
@@ -1427,7 +1451,7 @@ CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_1.c.o.provides.build
 
 CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_2.c.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_2.c.o: ../src/utility/math/vector/vector_operations_2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_2.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_2.c.o   -c /Users/bruteflow/c_projects/9_RT/src/utility/math/vector/vector_operations_2.c
 
 CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_2.c.i: cmake_force
@@ -1473,6 +1497,7 @@ RT_OBJECTS = \
 "CMakeFiles/RT.dir/src/window/update_window.c.o" \
 "CMakeFiles/RT.dir/src/controls/keyboard/keyboard_core.c.o" \
 "CMakeFiles/RT.dir/src/controls/mouse/mouse_1.c.o" \
+"CMakeFiles/RT.dir/src/controls/mouse/mouse_2.c.o" \
 "CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.o" \
 "CMakeFiles/RT.dir/src/parser/objects/parse_cone.c.o" \
 "CMakeFiles/RT.dir/src/parser/objects/parse_cylinder.c.o" \
@@ -1535,6 +1560,7 @@ RT: CMakeFiles/RT.dir/src/window/create_window.c.o
 RT: CMakeFiles/RT.dir/src/window/update_window.c.o
 RT: CMakeFiles/RT.dir/src/controls/keyboard/keyboard_core.c.o
 RT: CMakeFiles/RT.dir/src/controls/mouse/mouse_1.c.o
+RT: CMakeFiles/RT.dir/src/controls/mouse/mouse_2.c.o
 RT: CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.o
 RT: CMakeFiles/RT.dir/src/parser/objects/parse_cone.c.o
 RT: CMakeFiles/RT.dir/src/parser/objects/parse_cylinder.c.o
@@ -1574,7 +1600,7 @@ RT: CMakeFiles/RT.dir/src/utility/math/vector/vector_operations_2.c.o
 RT: CMakeFiles/RT.dir/build.make
 RT: libft.a
 RT: CMakeFiles/RT.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Linking C executable RT"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Linking C executable RT"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RT.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1604,6 +1630,7 @@ CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/window/create_window.c.o.requi
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/window/update_window.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/controls/keyboard/keyboard_core.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/controls/mouse/mouse_1.c.o.requires
+CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/controls/mouse/mouse_2.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/parser/objects/parse_cone.c.o.requires
 CMakeFiles/RT.dir/requires: CMakeFiles/RT.dir/src/parser/objects/parse_cylinder.c.o.requires

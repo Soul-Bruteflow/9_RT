@@ -21,6 +21,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/RT.dir/src/window/update_window.c.o"
   "CMakeFiles/RT.dir/src/controls/keyboard/keyboard_core.c.o"
   "CMakeFiles/RT.dir/src/controls/mouse/mouse_1.c.o"
+  "CMakeFiles/RT.dir/src/controls/mouse/mouse_2.c.o"
   "CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.o"
   "CMakeFiles/RT.dir/src/parser/objects/parse_cone.c.o"
   "CMakeFiles/RT.dir/src/parser/objects/parse_cylinder.c.o"

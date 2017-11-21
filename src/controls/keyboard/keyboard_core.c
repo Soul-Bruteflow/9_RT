@@ -114,14 +114,10 @@ void	keyboard_core(t_rt *r)
 
 	if (SDL_KEYDOWN && r->sdl->key_state[SDL_SCANCODE_SPACE])
 	{
-		int x;
-		int y;
+		get_mouse_relative_position(&r->sdl->mouse);
+		clamp_mouse_rel_pos(&r->sdl->mouse, CL_REL_N, CL_REL_P);
+		invert_mouse_x(&r->sdl->mouse);
 
-		y = 0;
-		x = 0;
-		SDL_GetRelativeMouseState(&x, &y);
-		r->sdl->mouse.rpos.y = ft_clamp_f(y, -250, 250);
-		r->sdl->mouse.rpos.x = ft_clamp_f(x, -250, 250) * -1.0f;
 		r->scene->cam.m_rot_amt.y = r->sdl->mouse.rpos.y * r->scene->cam.rot_amt * r->sdl->mouse.cam_sens.y;
 		r->scene->cam.m_rot_amt.x = r->sdl->mouse.rpos.x * r->scene->cam.rot_amt * r->sdl->mouse.cam_sens.x;
 		camera_horizontal_freelook(r);

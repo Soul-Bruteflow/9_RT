@@ -1891,6 +1891,33 @@ src/controls/mouse/mouse_1.c.s:
 	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/controls/mouse/mouse_1.c.s
 .PHONY : src/controls/mouse/mouse_1.c.s
 
+src/controls/mouse/mouse_2.o: src/controls/mouse/mouse_2.c.o
+
+.PHONY : src/controls/mouse/mouse_2.o
+
+# target to build an object file
+src/controls/mouse/mouse_2.c.o:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/controls/mouse/mouse_2.c.o
+.PHONY : src/controls/mouse/mouse_2.c.o
+
+src/controls/mouse/mouse_2.i: src/controls/mouse/mouse_2.c.i
+
+.PHONY : src/controls/mouse/mouse_2.i
+
+# target to preprocess a source file
+src/controls/mouse/mouse_2.c.i:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/controls/mouse/mouse_2.c.i
+.PHONY : src/controls/mouse/mouse_2.c.i
+
+src/controls/mouse/mouse_2.s: src/controls/mouse/mouse_2.c.s
+
+.PHONY : src/controls/mouse/mouse_2.s
+
+# target to generate assembly for a file
+src/controls/mouse/mouse_2.c.s:
+	$(MAKE) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/src/controls/mouse/mouse_2.c.s
+.PHONY : src/controls/mouse/mouse_2.c.s
+
 src/controls/mouse/mouse_core.o: src/controls/mouse/mouse_core.c.o
 
 .PHONY : src/controls/mouse/mouse_core.o
@@ -3581,6 +3608,9 @@ help:
 	@echo "... src/controls/mouse/mouse_1.o"
 	@echo "... src/controls/mouse/mouse_1.i"
 	@echo "... src/controls/mouse/mouse_1.s"
+	@echo "... src/controls/mouse/mouse_2.o"
+	@echo "... src/controls/mouse/mouse_2.i"
+	@echo "... src/controls/mouse/mouse_2.s"
 	@echo "... src/controls/mouse/mouse_core.o"
 	@echo "... src/controls/mouse/mouse_core.i"
 	@echo "... src/controls/mouse/mouse_core.s"

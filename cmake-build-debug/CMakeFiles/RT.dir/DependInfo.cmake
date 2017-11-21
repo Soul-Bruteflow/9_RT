@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/bruteflow/c_projects/9_RT/src/controls/controls.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/controls/controls.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/controls/keyboard/keyboard_core.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/controls/keyboard/keyboard_core.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/controls/mouse/mouse_1.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/controls/mouse/mouse_1.c.o"
+  "/Users/bruteflow/c_projects/9_RT/src/controls/mouse/mouse_2.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/controls/mouse/mouse_2.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/controls/mouse/mouse_core.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/errors.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/errors.c.o"
   "/Users/bruteflow/c_projects/9_RT/src/get_next_line.c" "/Users/bruteflow/c_projects/9_RT/cmake-build-debug/CMakeFiles/RT.dir/src/get_next_line.c.o"

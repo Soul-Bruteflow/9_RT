@@ -29,13 +29,16 @@
 
 /*
 ** Mouse
-** V_C_SENS/H_C_SENS Default mouse sensitivity
-** V_SENS/H_SENS Default mouse sensitivity of the camera
+** V_C_SENS/H_C_SENS    Default mouse sensitivity
+** V_SENS/H_SENS        Default mouse sensitivity of the camera
+** CL_REL_N/CL_REL_P    Mouse relative position clamp values (N - negative)
 */
 # define V_C_SENS	0.006f
 # define H_C_SENS	0.008f
 # define V_SENS		0.010f
 # define H_SENS		0.012f
+# define CL_REL_N   -350
+# define CL_REL_P   350
 
 
 /*

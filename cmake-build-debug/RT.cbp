@@ -377,6 +377,9 @@
 		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/controls/mouse/mouse_1.c">
 			<Option target="RT"/>
 		</Unit>
+		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/controls/mouse/mouse_2.c">
+			<Option target="RT"/>
+		</Unit>
 		<Unit filename="/Users/bruteflow/c_projects/9_RT/src/controls/mouse/mouse_core.c">
 			<Option target="RT"/>
 		</Unit>

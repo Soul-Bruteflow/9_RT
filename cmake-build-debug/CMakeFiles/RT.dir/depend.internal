@@ -55,6 +55,24 @@ CMakeFiles/RT.dir/src/controls/mouse/mouse_1.c.o
  .././inc/utility/utility.h
  .././libft/libft.h
  /Users/bruteflow/c_projects/9_RT/src/controls/mouse/mouse_1.c
+CMakeFiles/RT.dir/src/controls/mouse/mouse_2.c.o
+ .././inc/controls/controls.h
+ .././inc/math/math.h
+ .././inc/math/matrices.h
+ .././inc/math/quaternions.h
+ .././inc/math/vectors.h
+ .././inc/rt.h
+ .././inc/rt/camera.h
+ .././inc/rt/objects.h
+ .././inc/rt/raytrace.h
+ .././inc/rt/transform.h
+ .././inc/utility/bool.h
+ .././inc/utility/defines.h
+ .././inc/utility/errors.h
+ .././inc/utility/get_next_line.h
+ .././inc/utility/utility.h
+ .././libft/libft.h
+ /Users/bruteflow/c_projects/9_RT/src/controls/mouse/mouse_2.c
 CMakeFiles/RT.dir/src/controls/mouse/mouse_core.c.o
  .././inc/controls/controls.h
  .././inc/math/math.h
