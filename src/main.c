@@ -14,18 +14,17 @@
 
 int		main(int ac, char **av)
 {
-	t_rt	*r;
-
+	t_rt	*rt;
 
 	if (ac == 2)
 	{
-		r = rt_init(av);
-		if (!(parser_core(r)))
+		rt = rt_init(av);
+		if (!(parser_core(rt)))
 			rtv_error(parse_error);
-		init_camera(r);
-		init_controls(r);
-		create_window(r, WIDTH, HEIGHT, "RT\0");
-		rt_loop(r);
+		init_camera(rt);
+		init_controls(rt);
+		create_window(rt, WIDTH, HEIGHT, "RT\0");
+		rt_loop(rt);
 	}
 	else
 		rtv_error(usage_error);
