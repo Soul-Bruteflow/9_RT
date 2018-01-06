@@ -10,23 +10,22 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rtv.h"
+#include "rt.h"
 
 int		main(int ac, char **av)
 {
-	t_rtv	*rtv;
+	t_rt	*r;
+
 
 	if (ac == 2)
 	{
-		rtv = rtv_init(av);
-		if (!(parser_core(rtv)))
+		r = rt_init(av);
+		if (!(parser_core(r)))
 			rtv_error(parse_error);
-		init_camera(rtv);
-		create_window(rtv, 800, 600, "RTv1, 800x600\0");
-		clear_window(rtv);
-		raytrace(rtv);
-		render_present(rtv);
-		rtv_loop(rtv);
+		init_camera(r);
+		init_controls(r);
+		create_window(r, WIDTH, HEIGHT, "RT\0");
+		rt_loop(r);
 	}
 	else
 		rtv_error(usage_error);

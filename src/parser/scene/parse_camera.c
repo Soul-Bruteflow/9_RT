@@ -10,25 +10,24 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rtv.h"
-#include "rtv_defines.h"
+#include "rt.h"
 
-t_bool	parse_camera(t_rtv *r)
+t_bool	parse_camera(t_rt *r)
 {
 	float n;
 
 	if (!(check_line(r, "camera position:")))
 		return (false);
-	if (!(parse_vector(r, &r->scene->cam.o, V_MIN, V_MAX)))
+	if (!(parse_vector(r, &r->scene->cam.pos, V_MIN, V_MAX)))
 		return (false);
 	if (!(check_line(r, "camera direction:")))
 		return (false);
-	if (!(parse_vector(r, &r->scene->cam.d, V_MIN, V_MAX)))
+	if (!(parse_vector(r, &r->scene->cam.eye, V_MIN, V_MAX)))
 		return (false);
 	if (!(check_line(r, "fov:")))
 		return (false);
 	if (!(parse_number(r, &n, F_MIN, F_MAX)))
 		return (false);
-	r->scene->cam.fov = n;
+	r->scene->cam.p.fov = n;
 	return (true);
 }

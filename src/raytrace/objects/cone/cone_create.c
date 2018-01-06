@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rtv.h"
+#include "rt.h"
 
 t_cone	*new_cone(void)
 {
@@ -22,7 +22,7 @@ t_cone	*new_cone(void)
 	return (cone);
 }
 
-void	set_cone_axis(t_obj3d *obj, t_vec3d new_axis)
+void	set_cone_axis(t_obj3d *obj, t_vec3 new_axis)
 {
 	t_cone *tmp_cone;
 
@@ -41,7 +41,7 @@ void	set_cone_angle(t_obj3d *obj, float new_angle)
 	tmp_cone->angle = new_angle;
 }
 
-void	set_cone(t_obj3d *obj, t_vec3d *data, float angle, Uint16 new_material)
+void	set_cone(t_obj3d *obj, t_vec3 *data, float angle, Uint16 new_material)
 {
 	set_object_position(obj, data[0]);
 	set_object_material(obj, new_material);

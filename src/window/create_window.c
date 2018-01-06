@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rtv.h"
+#include "rt.h"
 
 static void	create_buffer(Uint8 **draw_buffer, Uint16 width, Uint16 height)
 {
@@ -22,14 +22,14 @@ static void	create_buffer(Uint8 **draw_buffer, Uint16 width, Uint16 height)
 	}
 }
 
-static void	set_window_size(t_rtv *rtv, Uint16 width, Uint16 height)
+static void	set_window_size(t_rt *rtv, Uint16 width, Uint16 height)
 {
 	rtv->win->width = width;
 	rtv->win->height = height;
 	create_buffer(&rtv->win->draw_buf, width, height);
 }
 
-void		create_window(t_rtv *r, Uint16 wdth, Uint16 hght, const char *title)
+void		create_window(t_rt *r, Uint16 wdth, Uint16 hght, const char *title)
 {
 	set_window_size(r, wdth, hght);
 	if (SDL_Init(SDL_INIT_EVERYTHING) < 0)
@@ -46,4 +46,5 @@ void		create_window(t_rtv *r, Uint16 wdth, Uint16 hght, const char *title)
 	r->win->screen = SDL_CreateTexture(r->sdl->renderer,
 			SDL_PIXELFORMAT_ARGB8888, SDL_TEXTUREACCESS_STREAMING,
 			r->win->width, r->win->height);
+	SDL_SetRelativeMouseMode(SDL_TRUE);
 }
