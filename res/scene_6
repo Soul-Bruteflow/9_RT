@@ -1,0 +1,238 @@
+scene:
+lights:
+			2
+materials:
+			3
+objects:
+			17
+camera:
+camera position:
+					0
+					0
+					-300
+camera direction:
+					0
+					0
+					1
+fov:
+					90
+lights:
+position:
+					200
+					-10
+					-200
+position:
+					-200
+					-10
+					-200
+color:
+					0.8
+					0.8
+					0.8
+					1.0
+color:
+					0.8
+					0.8
+					0.8
+					1.0
+materials:
+color:
+					0.5
+					0.5
+					0.5
+					1.0
+color:
+					1.0
+					0.2
+					0.2
+					1.0
+color:
+					0.1
+					0.1
+					1.0
+					1.0
+reflection:
+					0.01
+reflection:
+					0.99
+reflection:
+					0.99
+objects:
+plane:
+normal:
+					0
+					1
+					0
+point:
+					0
+					-150
+					0
+material:
+					2
+plane:
+normal:
+					0
+					-1
+					0
+point:
+					0
+					150
+					0
+material:
+					2
+plane:
+normal:
+					0
+					0
+					-1
+point:
+					0
+					0
+					500
+material:
+					2
+plane:
+normal:
+					0
+					0
+					1
+point:
+					0
+					0
+					-500
+material:
+					2
+sphere:
+position:
+					0
+					100
+					5
+radius:
+					20
+material:
+					1
+cylinder:
+point a:
+					-175
+					1
+					250
+point b:
+					-175	
+					0
+					250
+radius:
+					25
+material:
+					0
+cylinder:
+point a:
+					175
+					1
+					250
+point b:
+					175
+					0
+					250
+radius:
+					25
+material:
+					0
+cone:
+tip/position:
+					-175
+					0
+					10
+axis:
+					0
+					1
+					0
+angle:
+					25
+material:
+					0
+cone:
+tip/position:
+					175
+					0
+					10
+axis:
+					0
+					1
+					0
+angle:
+					25
+material:
+					0
+sphere:
+position:
+					-175
+					150
+					10
+radius:
+					40
+material:
+					0
+sphere:
+position:
+					-175
+					150
+					250
+radius:
+					40
+material:
+					0
+sphere:
+position:
+					175
+					150
+					10
+radius:
+					40
+material:
+					0
+sphere:
+position:
+					175
+					150
+					250
+radius:
+					40
+material:
+					0
+sphere:
+position:
+					-175
+					-150
+					10
+radius:
+					40
+material:
+					0
+sphere:
+position:
+					-175
+					-150
+					250
+radius:
+					40
+material:
+					0
+sphere:
+position:
+					175
+					-150
+					10
+radius:
+					40
+material:
+					0
+sphere:
+position:
+					175
+					-150
+					250
+radius:
+					40
+material:
+					0
+end
