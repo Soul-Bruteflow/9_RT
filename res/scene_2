@@ -1,0 +1,81 @@
+scene:
+lights:
+			2
+materials:
+			1
+objects:
+			2
+camera:
+camera position:
+					0
+					0
+					0
+camera direction:
+					0
+					0
+					1
+fov:
+					90
+lights:
+position:
+					-75
+					-75
+					300
+position:
+					50
+					50
+					50
+power:
+					1.0
+power:
+					1.0
+color:
+					1.0
+					1.0
+					1.0
+					1.0
+color:
+					1.0
+					1.0
+					1.0
+					1.0
+materials:
+color:
+					1.0
+					1.0
+					0.3
+					1.0
+reflection:
+					0.99
+transparent:
+					0.01
+refraction:
+					1.5
+objects:
+cylinder:
+point a:
+					1
+					0
+					300
+point b:
+					0
+					0
+					300
+radius:
+					25
+material:
+					0
+cylinder:
+point a:
+					0
+					1
+					300
+point b:
+					0
+					0
+					300
+radius:
+					25
+material:
+					0
+end

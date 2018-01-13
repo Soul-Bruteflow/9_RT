@@ -1,0 +1,149 @@
+scene:
+lights:
+			1
+materials:
+			5
+objects:
+			5
+camera:
+camera position:
+					0
+					0
+					0
+camera direction:
+					0
+					0
+					1
+fov:
+					90
+lights:
+position:
+					0
+					0
+					50
+power:
+					1.0
+color:
+					1.0
+					1.0
+					1.0
+					1.0
+materials:
+color:
+					0.5
+					1.0
+					1.0
+					1.0
+color:
+					1.0
+					0.8
+					0.3
+					1.0
+color:
+					0.5
+					0.0
+					0.0
+					1.0
+color:
+					0.0
+					0.5
+					0.0
+					1.0
+color:
+					0.0
+					0.0
+					0.5
+					1.0
+reflection:
+					0.8
+reflection:
+					0.2
+reflection:
+					0.99
+reflection:
+					0.99
+reflection:
+					0.99
+transparent:
+					0.99
+transparent:
+					0.99
+transparent:
+					0.99
+transparent:
+					0.99
+transparent:
+					0.99
+refraction:
+					1.5
+refraction:
+					1.5
+refraction:
+					1.5
+refraction:
+					1.5
+refraction:
+					1.5
+objects:
+plane:
+normal:
+					0
+					-1
+					0
+point:
+					0
+					10
+					0
+material:
+					0
+plane:
+normal:
+					0
+					1
+					0
+point:
+					0
+					-10
+					0
+material:
+					1
+cylinder:
+point a:
+					0
+					1
+					30
+point b:
+					0
+					0
+					30
+radius:
+					5
+material:
+					4
+cylinder:
+point a:
+					-12
+					1
+					30
+point b:
+					-12
+					0
+					30
+radius:
+					5
+material:
+					3
+cylinder:
+point a:
+					12
+					1
+					30
+point b:
+					12
+					0
+					30
+radius:
+					5
+material:
+					2
+end

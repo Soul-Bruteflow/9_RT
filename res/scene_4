@@ -1,0 +1,77 @@
+scene:
+lights:
+			1
+materials:
+			2
+objects:
+			2
+camera:
+camera position:
+					0
+					0
+					0
+camera direction:
+					0
+					0
+					1
+fov:
+					90
+lights:
+position:
+					0
+					0
+					100
+power:
+					1.0
+color:
+					1.0
+					1.0
+					1.0
+					1.0
+materials:
+color:
+					0.5
+					1.0
+					1.0
+					1.0
+color:
+					1.0
+					0.8
+					0.3
+					1.0
+reflection:
+					0.75
+reflection:
+					0.25
+transparent:
+					0.01
+transparent:
+					0.01
+refraction:
+					1.5
+refraction:
+					1.5
+objects:
+plane:
+normal:
+					0
+					-1
+					0
+point:
+					0
+					15
+					0
+material:
+					0
+plane:
+normal:
+					0
+					1
+					0
+point:
+					0
+					-15
+					0
+material:
+					1
+end

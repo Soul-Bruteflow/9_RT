@@ -1,0 +1,203 @@
+scene:
+lights:
+			2
+materials:
+			7
+objects:
+			8
+camera:
+camera position:
+					0
+					0
+					-150
+camera direction:
+					0
+					0
+					1
+fov:
+					90
+lights:
+position:
+					0
+					-50
+					0
+position:
+					100
+					0
+					30
+power:
+					1.0
+power:
+					1.0
+color:
+					0.5
+					0.5
+					0.5
+					1.0
+color:
+					0.5
+					0.5
+					0.5
+					1.0
+materials:
+color:
+					1.0
+					1.0
+					1.0
+					1.0
+color:
+					1.0
+					1.0
+					1.0
+					1.0
+color:
+					1.0
+					1.0
+					1.0
+					1.0
+color:
+					1.0
+					1.0
+					0.0
+					1.0
+color:
+					1.0
+					0.0
+					0.0
+					1.0
+color:
+					0.0
+					1.0
+					0.0
+					1.0
+color:
+					0.0
+					0.0
+					1.0
+					1.0
+reflection:
+					0.50
+reflection:
+					0.75
+reflection:
+					0.75
+reflection:
+					0.75
+reflection:
+					0.75
+reflection:
+					0.75
+reflection:
+					0.75
+transparent:
+					0.01
+transparent:
+					0.99
+transparent:
+					0.99
+transparent:
+					0.99
+transparent:
+					0.75
+transparent:
+					0.75
+transparent:
+					0.75
+refraction:
+					1.0
+refraction:
+					1.5
+refraction:
+					1.1
+refraction:
+					1.1
+refraction:
+					1.8
+refraction:
+					1.8
+refraction:
+					1.8
+objects:
+plane:
+normal:
+					0
+					-1
+					0
+point:
+					0
+					26
+					0
+material:
+					0
+sphere:
+position:
+					-45
+					-35
+					0
+radius:
+					15
+material:
+					4
+sphere:
+position:
+					-45
+					-10
+					0
+radius:
+					25
+material:
+					5
+sphere:
+position:
+					-45
+					23
+					0
+radius:
+					35
+material:
+					6
+cylinder:
+point a:
+					65
+					1
+					30
+point b:
+					65
+					0
+					30
+radius:
+					10
+material:
+					3
+cone:
+tip/position:
+					65
+					0
+					0
+axis:
+					0
+					1
+					0
+angle:
+					10
+material:
+					1
+sphere:
+position:
+					0
+					0
+					-100
+radius:
+					20
+material:
+					2
+sphere:
+position:
+					0
+					0
+					-100
+radius:
+					10
+material:
+					3
+end
