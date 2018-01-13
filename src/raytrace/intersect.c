@@ -16,23 +16,25 @@
 ** Find closest intersection
 */
 
-t_bool	object_intersect(t_rt *rtv, t_ray *r, int *cur_obj, t_vec3 *new_start)
+t_bool	object_intersect(t_rt *rt)
 {
-	float			t;
-	int				i;
-	t_vec3			scaled;
-	
-	t = rtv->scene->cam.p.far;
+	float		t;
+	int			i;
+	t_vec3		scaled;
+
+	t = MAX_LEN;
 	i = -1;
-	while (i++ < rtv->scene->objs_n - 1)
+	while (i++ < rt->scene->objs_n - 1)
 	{
-		if (rtv->scene->objects[i]->intersect(r, rtv->scene->objects[i], &t))
-			*cur_obj = i;
+			if (rt->scene->objects[i]->intersect(&rt->scene->ray, rt->scene->objects[i], &t))
+			rt->calc->cur_obj = i;
 	}
-	if (*cur_obj == -1)
+	if (rt->calc->cur_obj == -1)
 		return (false);
-	scaled = vec3_scale(t, &r->dir);
-	*new_start = vec3_add(&r->start, &scaled);
+	rt->calc->old_start = rt->scene->ray.pos;
+	scaled = vec3_scale(t, &rt->scene->ray.dir);
+	rt->calc->new_start = vec3_add(&rt->scene->ray.pos, &scaled);
+	rt->scene->ray.pos = rt->calc->new_start;
 	return (true);
 }
 
@@ -41,40 +43,40 @@ t_bool	object_intersect(t_rt *rtv, t_ray *r, int *cur_obj, t_vec3 *new_start)
 ** n - normal; s - new_start;
 */
 
-t_bool	normal_of_intersect(t_vec3 *n, t_vec3 *s, int cur_obj, t_scene *scene)
+t_bool	normal_of_intersect(t_rt *rt, t_vec3 *n)
 {
-	if (scene->objects[cur_obj]->obj_type == plane)
+	if (rt->scene->objects[rt->calc->cur_obj]->obj_type == plane)
 	{
 		t_plane		*plane;
-		plane = scene->objects[cur_obj]->type;
-		t_vec3 tmp1 = vec3_add(s, &plane->normal);
-		t_vec3 tmp2 = vec3_sub(s, &scene->objects[cur_obj]->pos);
-		*n = vec3_sub(&tmp2, &tmp1);
+		plane = rt->scene->objects[rt->calc->cur_obj]->type;
+		*n = plane->normal;
 	}
-	else if (scene->objects[cur_obj]->obj_type == sphere)
+	else if (rt->scene->objects[rt->calc->cur_obj]->obj_type == sphere)
 	{
-		*n = vec3_sub(s, &scene->objects[cur_obj]->pos);
+		*n = vec3_sub(&rt->calc->new_start, &rt->scene->objects[rt->calc->cur_obj]->pos);
 	}
-	else if (scene->objects[cur_obj]->obj_type == cylinder)
+	else if (rt->scene->objects[rt->calc->cur_obj]->obj_type == cylinder)
 	{
 		t_cylinder	*cylinder;
-		cylinder = scene->objects[cur_obj]->type;
+		cylinder = rt->scene->objects[rt->calc->cur_obj]->type;
 		t_vec3 rot	= vec3_sub(&cylinder->a, &cylinder->b);
-		t_vec3 tmp1 = vec3_scale(vec3_dot(scene->ray.dir, rot)
-			+ vec3_dot(*s, rot), &rot);
-		t_vec3	tmp2 = vec3_sub(s, &scene->objects[cur_obj]->pos);
-		*n = vec3_sub(&tmp2, &tmp1);
+		rot = vec3_norm(rot);
+		t_vec3 tmp0 = vec3_sub(&rt->calc->new_start, &rt->scene->objects[rt->calc->cur_obj]->pos);
+		t_vec3 tmp1 = vec3_scale(vec3_dot(rt->scene->ray.dir, rot)
+			+ vec3_dot(tmp0, rot), &rot);
+		*n = vec3_sub(&tmp0, &tmp1);
 	}
-	else if (scene->objects[cur_obj]->obj_type == cone)
+	else if (rt->scene->objects[rt->calc->cur_obj]->obj_type == cone)
 	{
 		t_cone		*cone;
-		cone = scene->objects[cur_obj]->type;
-		t_vec3 tmp1 = vec3_scale(vec3_dot(scene->ray.dir, cone->axis)
-			+ vec3_dot(*s, cone->axis), &cone->axis);
+		cone = rt->scene->objects[rt->calc->cur_obj]->type;
+		cone->axis = vec3_norm(cone->axis);
+		t_vec3 tmp0 = vec3_sub(&rt->calc->new_start, &rt->scene->objects[rt->calc->cur_obj]->pos);
+		t_vec3 tmp1 = vec3_scale((vec3_dot(rt->scene->ray.dir, cone->axis) + vec3_dot(tmp0, cone->axis)),
+			 &cone->axis);
 		tmp1 = vec3_scale((1.0f + powf(tanf(cone->angle), 2.0f)), &tmp1);
-		t_vec3	tmp2 = vec3_sub(s, &scene->objects[cur_obj]->pos);
-		*n = vec3_sub(&tmp2, &tmp1);
-	}
+		*n = vec3_sub(&tmp0, &tmp1);
+}
 	*n = vec3_norm(*n);
 	return (true);
 }

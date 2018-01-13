@@ -84,17 +84,21 @@ typedef struct		s_calc
 {
 	t_rgbap			color;
 	t_rgba			pixel_color;
-	int				level;
-	float			coef;
 	int				cur_obj;
 	t_vec3			intersect_normal;
+	t_vec3			old_start;
 	t_vec3			new_start;
 	t_material		cur_mat;
 	int				material_n;
-	float			reflect;
-	t_vec3			tmp;
+	float 			cur_power_ray;
+	int				level_reflection;
+	int 			max_level_reflection;
+	int				level_transparent;
+	int 			max_level_transparent;
+	float 			shadow;
 	int				i;
 	int				n;
+	t_bool			last_status_refract;
 }					t_calc;
 
 /*
@@ -173,10 +177,11 @@ void				rt_quit(t_rt *r);
 ** Raycast
 */
 void				raytrace(t_rt *r);
-t_bool              normal_of_intersect(t_vec3 *n, t_vec3 *s, int cur_obj, t_scene *scene);
-t_bool				object_intersect(t_rt *rt, t_ray *r, int *cur_obj, t_vec3 *new_start);
-void				calculate_light(t_rt *r);
-void				calculate_reflection(t_rt *r);
+void				calculate_ray(t_rt *rt);
+t_bool              normal_of_intersect(t_rt *rt, t_vec3 *n);
+t_bool				object_intersect(t_rt *rt);
+void				calculate_light(t_rt *rt);
+void				calculate_reflect_refract(t_rt *rt);
 /*
 ** Scene
 */

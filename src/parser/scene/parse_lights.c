@@ -32,6 +32,26 @@ static t_bool	parse_lights_position(t_rt *r)
 	return (true);
 }
 
+static t_bool	parse_lights_power(t_rt *r)
+{
+	int i;
+
+	i = -1;
+	while (i++ < r->scene->lits_n - 1)
+	{
+		if (check_line(r, "power:"))
+		{
+			if (!(parse_float_number(r, &r->scene->lights[i]->power, P_MIN, P_MAX)))
+				return (false);
+		}
+		else
+			return (false);
+	}
+	if (i != r->scene->lits_n)
+		return (false);
+	return (true);
+}
+
 static t_bool	parse_lights_color(t_rt *r)
 {
 	int i;
@@ -55,6 +75,8 @@ static t_bool	parse_lights_color(t_rt *r)
 t_bool			parse_lights(t_rt *r)
 {
 	if (!(parse_lights_position(r)))
+		return (false);
+	if (!(parse_lights_power(r)))
 		return (false);
 	if (!(parse_lights_color(r)))
 		return (false);

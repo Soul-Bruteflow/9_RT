@@ -16,19 +16,18 @@
 ** Solving the discriminant
 */
 
-static float	calculate_discriminant(t_ray *r, t_obj3d *object, float *b)
+static float	calculate_discriminant(t_ray *r, t_obj3d *object, float *a, float *b)
 {
-	float		a;
 	float		c;
 	t_vec3		dist;
 	t_sphere	*s;
 
 	s = object->type;
-	a = vec3_dot(r->dir, r->dir);
-	dist = vec3_sub(&r->start, &object->pos);
+	*a = vec3_dot(r->dir, r->dir);
+	dist = vec3_sub(&r->pos, &object->pos);
 	*b = 2 * vec3_dot(r->dir, dist);
 	c = vec3_dot(dist, dist) - (s->radius * s->radius);
-	return (*b * *b - 4 * a * c);
+	return (*b * *b - 4 * *a * c);
 }
 
 /*
@@ -37,24 +36,22 @@ static float	calculate_discriminant(t_ray *r, t_obj3d *object, float *b)
 
 t_bool			intersect_sphere_ray(t_ray *r, t_obj3d *object, float *t)
 {
+	float		a;
 	float		b;
-	float		discr;
-	float		sqrtdiscr;
 	float		t0;
 	float		t1;
-
-	b = 0;
-	discr = calculate_discriminant(r, object, &b);
+	float		discr;
+	
+	discr = calculate_discriminant(r, object, &a, &b);
 	if (discr < 0)
 		return (false);
 	else
 	{
-		sqrtdiscr = sqrtf(discr);
-		t0 = (-b + sqrtdiscr) / (2);
-		t1 = (-b - sqrtdiscr) / (2);
-		if (t0 > t1)
+		t0 = (-b + sqrtf(discr)) / (2 * a);
+		t1 = (-b - sqrtf(discr)) / (2 * a);
+		if (fabsf(t0) > fabsf(t1))
 			t0 = t1;
-		if ((t0 > 0.001f) && (t0 < *t))
+		if ((t0 > 0.5f) && (t0 < *t))
 		{
 			*t = t0;
 			return (true);

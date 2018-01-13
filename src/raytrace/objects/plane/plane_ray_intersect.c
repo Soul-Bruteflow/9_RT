@@ -15,21 +15,15 @@
 t_bool	intersect_plane_ray(t_ray *r, t_obj3d *obj, float *t)
 {
 	t_plane		*p;
-	float		denom;
 	float		t0;
-	t_vec3		tmp;
 
 	p = obj->type;
-	denom = vec3_dot(r->dir, p->normal);
-	if (fabsf(denom) >= 1e-1f)
+	t0 = ((vec3_dot(p->normal, p->point) - vec3_dot(p->normal, r->pos))
+		/ vec3_dot(p->normal, r->dir));
+	if ((t0 > 0.5f) && (t0 < *t))
 	{
-		tmp = vec3_sub(&p->point, &r->start);
-		t0 = vec3_dot(tmp, p->normal) / denom;
-		if (t0 >= 1e-1f && t0 < *t)
-		{
-			*t = t0;
-			return (true);
-		}
+		*t = t0;
+		return (true);
 	}
 	return (false);
 }

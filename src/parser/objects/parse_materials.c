@@ -54,11 +54,57 @@ static t_bool	parse_mats_reflection(t_rt *r)
 	return (true);
 }
 
+static t_bool	parse_mats_transparent(t_rt *r)
+{
+	int i;
+
+	i = -1;
+	while (i++ < r->scene->mats_n - 1)
+	{
+		if (check_line(r, "transparent:"))
+		{
+			if (!(parse_float_number(r,
+				&r->scene->materials[i]->transparent, R_MIN, R_MAX)))
+				return (false);
+		}
+		else
+			return (false);
+	}
+	if (i != r->scene->mats_n)
+		return (false);
+	return (true);
+}
+
+static t_bool	parse_mats_refraction(t_rt *r)
+{
+	int i;
+
+	i = -1;
+	while (i++ < r->scene->mats_n - 1)
+	{
+		if (check_line(r, "refraction:"))
+		{
+			if (!(parse_float_number(r,
+				&r->scene->materials[i]->refraction, N_MIN, N_MAX)))
+				return (false);
+		}
+		else
+			return (false);
+	}
+	if (i != r->scene->mats_n)
+		return (false);
+	return (true);
+}
+
 t_bool			parse_materials(t_rt *r)
 {
 	if (!(parse_mats_color(r)))
 		return (false);
 	if (!(parse_mats_reflection(r)))
+		return (false);
+	if (!(parse_mats_transparent(r)))
+		return (false);
+	if (!(parse_mats_refraction(r)))
 		return (false);
 	return (true);
 }

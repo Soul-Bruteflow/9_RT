@@ -38,7 +38,7 @@ void	init_camera(t_rt *r)
 	cameraheight = c->s.half_height * 2;
 	c->s.pixel_width = camerawidth / ((float)WIDTH - 1);
 	c->s.pixel_height = cameraheight / ((float)HEIGHT - 1);
-	r->scene->ray.start = c->pos;
+	r->scene->ray.pos = c->pos;
 }
 
 void	cam_update(t_cam *c)

@@ -24,15 +24,15 @@ LIB_INC = $(LIB_DIR)
 LIB_LIB = $(LIB_DIR)libft.a
 
 OD :=	./obj \
-		./obj/events \
-		./obj/functions \
+		./obj/controls \
+		./obj/controls/keyboard \
+		./obj/controls/mouse \
 		./obj/parser \
-		./obj/raytrace \
-		./obj/window \
-		./obj/functions/vector \
 		./obj/parser/objects \
 		./obj/parser/scene \
 		./obj/parser/support \
+		./obj/raytrace \
+		./obj/raytrace/camera \
 		./obj/raytrace/lights \
 		./obj/raytrace/materials \
 		./obj/raytrace/objects \
@@ -41,17 +41,22 @@ OD :=	./obj \
 		./obj/raytrace/objects/plane \
 		./obj/raytrace/objects/sphere \
 		./obj/raytrace/scene \
-		./obj/raytrace/scene/camera \
+		./obj/transform \
+		./obj/utility \
+		./obj/utility/math \
+		./obj/utility/math/matrices \
+		./obj/utility/math/quaternions \
+		./obj/utility/math/vector \
 		./obj/window
 
-OBJ	=	events/keyboard_core.o \
-		functions/vector/vector_operations_1.o \
-		functions/vector/vector_operations_2.o \
-		functions/ft_atof.o \
-		functions/ft_draw_pixel.o \
-		functions/ft_noise.o \
-		functions/ft_set_color.o \
-		functions/ft_set_vector.o \
+OBJ	=	controls/keyboard/camera_freelook.o \
+		controls/keyboard/camera_movement.o \
+		controls/keyboard/camera_rotation.o \
+		controls/keyboard/keyboard_core.o \
+		controls/mouse/mouse_1.o \
+		controls/mouse/mouse_2.o \
+		controls/mouse/mouse_core.o \
+		controls/controls.o \
 		parser/objects/parse_cone.o \
 		parser/objects/parse_cylinder.o \
 		parser/objects/parse_materials.o \
@@ -64,6 +69,8 @@ OBJ	=	events/keyboard_core.o \
 		parser/support/parser_support_one.o \
 		parser/support/parser_support_two.o \
 		parser/parser_core.o \
+		raytrace/camera/camera.o \
+		raytrace/camera/camera_1.o \
 		raytrace/lights/light.o \
 		raytrace/materials/material.o \
 		raytrace/objects/cone/cone_create.o \
@@ -75,16 +82,33 @@ OBJ	=	events/keyboard_core.o \
 		raytrace/objects/sphere/sphere_create.o \
 		raytrace/objects/sphere/sphere_ray_intersect.o \
 		raytrace/objects/object.o \
+		raytrace/scene/scene_create.o \
 		raytrace/calculate_light.o \
+		raytrace/calculate_refl_refr.o \
 		raytrace/intersect.o \
 		raytrace/raytrace.o \
-		raytrace/scene/camera/camera.o \
-		raytrace/scene/scene_create.o \
+		raytrace/render.o \
+		transform/transform.o \
+		utility/math/matrices/inits_1.o \
+		utility/math/matrices/inits_2.o \
+		utility/math/matrices/inits_3.o \
+		utility/math/matrices/mat_operations_1.o \
+		utility/math/quaternions/quat_operations_1.o \
+		utility/math/quaternions/quat_operations_2.o \
+		utility/math/vector/set_vector.o \
+		utility/math/vector/vector_operations_1.o \
+		utility/math/vector/vector_operations_2.o \
+		utility/math/ft_to_radians.o \
+		utility/ft_atof.o \
+		utility/ft_draw_pixel.o \
+		utility/ft_noise.o \
+		utility/ft_set_color.o \
+		utility/utility.o \
 		window/create_window.o \
 		window/update_window.o \
+		errors.o \
 		get_next_line.o \
 		main.o \
-		rtv_error.o \
 		rt_init.o \
 		rt_loop.o \
 		rt_quit.o
@@ -102,6 +126,7 @@ OBJ_OPT = $< -o $@
 LIB_OPT	= -c
 
 RMF 	= rm -f
+RMD		= rm -rf
 
 $(OBJ_DIR)%.o : $(SRC_DIR)%.c
 	@mkdir -p $(OD)
@@ -119,6 +144,7 @@ $(NAME): $(addprefix $(OBJ_DIR), $(OBJ))
 
 clean:
 	$(RMF) $(addprefix $(OBJ_DIR), $(OBJ))
+	$(RMD) $(OBJ_DIR)
 	cd $(LIB_DIR) && $(MAKE) clean
 
 fclean: clean

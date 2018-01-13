@@ -26,7 +26,7 @@
 # define PI			3.14159265359f
 # define TWO_PI		6.28318530718f
 # define HALF_PI	1.57079632679f
-
+# define MAX_LEN	10000
 /*
 ** Mouse
 ** V_C_SENS/H_C_SENS    Default mouse sensitivity
@@ -46,14 +46,18 @@
 */
 # define V_MIN		-10000
 # define V_MAX		10000
-# define S_MIN		1
-# define S_MAX		10
+# define S_MIN		0
+# define S_MAX		20
 # define F_MIN		1
 # define F_MAX		90
 # define C_MIN		0
 # define C_MAX		1
+# define P_MIN		0.01
+# define P_MAX		9.99
 # define R_MIN		0.01
 # define R_MAX		0.99
+# define N_MIN		0.01
+# define N_MAX		2.99
 # define M_MIN		0
 # define M_MAX		10
 # define A_MIN		1

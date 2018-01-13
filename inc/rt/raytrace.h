@@ -40,7 +40,7 @@ typedef struct	s_rgbap
 */
 typedef struct	s_ray
 {
-	t_vec3		start;
+	t_vec3		pos;
 	t_vec3		dir;
 }				t_ray;
 
@@ -51,6 +51,8 @@ typedef struct	s_material
 {
 	t_rgbap		diffuse;
 	float		reflection;
+	float		refraction;
+	float		transparent;
 }				t_material;
 
 /*
@@ -60,6 +62,7 @@ typedef struct	s_light
 {
 	t_vec3		pos;
 	t_rgbap		color;
+	float		power;
 }				t_light;
 
 /*
