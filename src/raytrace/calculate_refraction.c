@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   calculate_refraction.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mvlad <mvlad@student.42.fr>                +#+  +:+       +#+        */
+/*   By: vholovin <vholovin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/04 11:39:16 by vholovin          #+#    #+#             */
 /*   Updated: 2017/10/09 15:25:33 by vholovin         ###   ########.fr       */
@@ -63,8 +63,7 @@ void			calculate_refraction(t_rt *rt, t_rgbap *c_refr)
 	float	kr;
 	t_rt	*rt_refraction;
 
-	rt_refraction = rt_init(rt->av);
-	ft_copy(rt, rt_refraction);
+	rt_refraction = ft_copy(rt);
 	calculate_frenel(rt, rt_refraction, &kr);
 	if (kr < 1.0f)
 	{
@@ -78,5 +77,5 @@ void			calculate_refraction(t_rt *rt, t_rgbap *c_refr)
 			* rt->calc->cur_mat.transparent;
 		*c_refr = rt_refraction->calc->color;
 	}
-	free(rt_refraction);
+	ft_free(rt_refraction);
 }

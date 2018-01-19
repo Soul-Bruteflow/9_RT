@@ -112,6 +112,7 @@ OBJ	=	controls/keyboard/camera_freelook.o \
 		window/create_window.o \
 		window/update_window.o \
 		errors.o \
+		copy_free.o \
 		get_next_line.o \
 		main.o \
 		rt_init.o \

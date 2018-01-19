@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   calculate_frenel.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mvlad <mvlad@student.42.fr>                +#+  +:+       +#+        */
+/*   By: vholovin <vholovin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/04 11:39:16 by vholovin          #+#    #+#             */
 /*   Updated: 2017/10/09 15:25:33 by vholovin         ###   ########.fr       */

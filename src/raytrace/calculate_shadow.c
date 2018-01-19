@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   calculate_shadow.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vholovin <mvlad@student.42.fr>             +#+  +:+       +#+        */
+/*   By: vholovin <vholovin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/04 11:39:16 by vholovin          #+#    #+#             */
 /*   Updated: 2018/01/09 15:25:33 by vholovin         ###   ########.fr       */
@@ -111,10 +111,11 @@ static void		shadow(t_rt *rt_last, t_rt *rt_cur, t_light cur_light,
 void			calculate_shadow(t_rt *rt, t_light cur_light, t_vec3 v_dist,
 					float dist)
 {
+	(void)cur_light;
+
 	t_rt 	*rt_shadow;
 
-	rt_shadow = rt_init(rt->av);
-	ft_copy(rt, rt_shadow);
+	rt_shadow = ft_copy(rt);
 	rt_shadow->calc->shadow.red = 1.0f;
 	rt_shadow->calc->shadow.green = 1.0f;
 	rt_shadow->calc->shadow.blue = 1.0f;
@@ -130,5 +131,5 @@ void			calculate_shadow(t_rt *rt, t_light cur_light, t_vec3 v_dist,
 		}
 	}
 	rt->calc->shadow = rt_shadow->calc->shadow;
-	free(rt_shadow);
+	ft_free(rt_shadow);
 }

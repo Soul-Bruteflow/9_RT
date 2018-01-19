@@ -192,7 +192,8 @@ void				calculate_reflection(t_rt *rt, t_rgbap *c_refl);
 void				calculate_refraction(t_rt *rt, t_rgbap *c_refr);
 void				calculate_frenel(t_rt *rt_last, t_rt *rt_cur, float *kr);
 
-void				ft_copy(t_rt *rt_orig, t_rt *rt_copy);
+t_rt				*ft_copy(t_rt *rt_orig);
+void				ft_free(t_rt *rt_free);
 /*
 ** Scene
 */
