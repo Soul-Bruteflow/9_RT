@@ -34,10 +34,11 @@ void	render_present(t_rt *r)
 	SDL_RenderPresent(r->sdl->renderer);
 	bzero(r->win->draw_buf, WIDTH * HEIGHT * 4);
 }
-
+/*
 void 	rerender(t_rt *r)
 {
 	clear_window(r);
 	raytrace(r);
 	render_present(r);
 }
+*/

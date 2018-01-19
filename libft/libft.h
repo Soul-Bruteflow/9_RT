@@ -115,4 +115,8 @@ void				ft_putnbr_fd(int n, int fd);
 */
 char				*ft_itoa(int n);
 int					ft_atoi(const char *str);
+/*
+** swap digit
+*/
+void				ft_swap(double *a, double *b);
 #endif

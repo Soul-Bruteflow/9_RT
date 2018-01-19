@@ -73,6 +73,7 @@ SRC	= 	$(PATH_SRC)ft_atoi.c \
 		$(PATH_SRC)ft_strstr.c \
 		$(PATH_SRC)ft_strsub.c \
 		$(PATH_SRC)ft_strtrim.c \
+		$(PATH_SRC)ft_swap.c \
 		$(PATH_SRC)ft_tolower.c \
 		$(PATH_SRC)ft_toupper.c \
 		$(PATH_SRC)ft_overlapn.c \

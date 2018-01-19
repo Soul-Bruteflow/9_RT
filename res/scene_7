@@ -2,7 +2,7 @@ scene:
 lights:
 			3
 materials:
-			1
+			2
 objects:
 			2
 camera:
@@ -30,25 +30,25 @@ position:
 					-75
 					0
 power:
-					1.0
+					0.5
 power:
-					1.0
+					0.5
 power:
+					0.5
+color:
+					1.0
+					0.0
+					0.0
 					1.0
 color:
-					0.3
-					0.3
-					0.3
+					0.0
+					0.0
+					1.0
 					1.0
 color:
-					0.3
-					0.3
-					0.3
+					0.0
 					1.0
-color:
-					0.3
-					0.3
-					0.3
+					0.0
 					1.0
 materials:
 color:
@@ -56,12 +56,23 @@ color:
 					1.0
 					1.0
 					1.0
+color:
+					1.0
+					1.0
+					1.0
+					1.0
 reflection:
-					0.95
+					0.01
+reflection:
+					0.99
 transparent:
-					0.95
+					0.01
+transparent:
+					0.8
 refraction:
-					1.8
+					1.0
+refraction:
+					1.5
 objects:
 plane:
 normal:
@@ -77,10 +88,10 @@ material:
 sphere:
 position:
 					0
-					-30
+					-20
 					0
 radius:
 					25
 material:
-					0
+					1
 end

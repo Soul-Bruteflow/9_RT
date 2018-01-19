@@ -59,7 +59,7 @@ color:
 reflection:
 					0.01
 transparent:
-					0.01
+					0.99
 refraction:
 					1.5
 objects:

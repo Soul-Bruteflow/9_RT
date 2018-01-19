@@ -75,6 +75,11 @@ typedef struct		s_scene
 	int				objs_n;
 	int				mats_n;
 	int				lits_n;
+	int 			aa;
+	int 			max_level_reflection;
+	int 			max_level_transparent;
+	t_bool 			status_shadow;
+	t_bool 			status_glossy;
 }					t_scene;
 
 /*
@@ -83,6 +88,7 @@ typedef struct		s_scene
 typedef struct		s_calc
 {
 	t_rgbap			color;
+	t_rgbap			sum_color;
 	t_rgba			pixel_color;
 	int				cur_obj;
 	t_vec3			intersect_normal;
@@ -92,10 +98,8 @@ typedef struct		s_calc
 	int				material_n;
 	float 			cur_power_ray;
 	int				level_reflection;
-	int 			max_level_reflection;
 	int				level_transparent;
-	int 			max_level_transparent;
-	float 			shadow;
+	t_rgbap 		shadow;
 	int				i;
 	int				n;
 	t_bool			last_status_refract;
@@ -180,8 +184,15 @@ void				raytrace(t_rt *r);
 void				calculate_ray(t_rt *rt);
 t_bool              normal_of_intersect(t_rt *rt, t_vec3 *n);
 t_bool				object_intersect(t_rt *rt);
+void				calculate_ambient_light(t_rt *rt);
 void				calculate_light(t_rt *rt);
+void 				calculate_shadow(t_rt *rt, t_light cur_light, t_vec3 v_dist, float dist);
 void				calculate_reflect_refract(t_rt *rt);
+void				calculate_reflection(t_rt *rt, t_rgbap *c_refl);
+void				calculate_refraction(t_rt *rt, t_rgbap *c_refr);
+void				calculate_frenel(t_rt *rt_last, t_rt *rt_cur, float *kr);
+
+void				ft_copy(t_rt *rt_orig, t_rt *rt_copy);
 /*
 ** Scene
 */

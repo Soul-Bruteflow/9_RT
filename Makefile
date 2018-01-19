@@ -83,8 +83,13 @@ OBJ	=	controls/keyboard/camera_freelook.o \
 		raytrace/objects/sphere/sphere_ray_intersect.o \
 		raytrace/objects/object.o \
 		raytrace/scene/scene_create.o \
+		raytrace/calculate_ambient_light.o \
+		raytrace/calculate_frenel.o \
 		raytrace/calculate_light.o \
 		raytrace/calculate_refl_refr.o \
+		raytrace/calculate_reflection.o \
+		raytrace/calculate_refraction.o \
+		raytrace/calculate_shadow.o \
 		raytrace/intersect.o \
 		raytrace/raytrace.o \
 		raytrace/render.o \
