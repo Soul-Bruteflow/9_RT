@@ -17,6 +17,12 @@ camera direction:
 fov:
 					90
 lights:
+type:
+					0
+type:
+					0
+type:
+					0
 position:
 					-100
 					75
@@ -29,6 +35,24 @@ position:
 					0
 					-110
 					50
+direction:
+					0.0
+					1.0
+					0.0
+direction:
+					0.0
+					1.0
+					0.0
+direction:
+					0.0
+					1.0
+					0.0
+angle:
+					90
+angle:
+					90
+angle:
+					90
 power:
 					1.0
 power:

@@ -12,14 +12,14 @@
 
 #include "rt.h"
 
-static void		set_color(t_rt *rt_cur, t_light cur_light)
+static void		set_color(t_rt *rt_cur)
 {
-	rt_cur->calc->shadow.red *= rt_cur->calc->cur_power_ray
-		* cur_light.color.red * rt_cur->calc->cur_mat.diffuse.red;
-	rt_cur->calc->shadow.green *= rt_cur->calc->cur_power_ray
-		* cur_light.color.green * rt_cur->calc->cur_mat.diffuse.green;
-	rt_cur->calc->shadow.blue *= rt_cur->calc->cur_power_ray
-	* cur_light.color.blue * rt_cur->calc->cur_mat.diffuse.blue;
+	rt_cur->calc->shadow.red *= rt_cur->calc->light.red
+		* rt_cur->calc->cur_mat.diffuse.red;
+	rt_cur->calc->shadow.green *= rt_cur->calc->light.green
+		* rt_cur->calc->cur_mat.diffuse.green;
+	rt_cur->calc->shadow.blue *= rt_cur->calc->light.blue
+		* rt_cur->calc->cur_mat.diffuse.blue;
 }
 
 static void 	calculate(t_rt *rt_cur, double n1, double n2, float cos_angle,
@@ -104,15 +104,13 @@ static void		shadow(t_rt *rt_last, t_rt *rt_cur, t_light cur_light,
 		scale = vec3_scale(dist, &rt_cur->scene->ray.dir);
 		rt_cur->scene->ray.pos = vec3_add(&rt_cur->scene->ray.pos, &scale);
 		rotate_dir_shadow(rt_last, rt_cur);
-		set_color(rt_cur, cur_light);
+		set_color(rt_cur);
 	}
 }
 
 void			calculate_shadow(t_rt *rt, t_light cur_light, t_vec3 v_dist,
 					float dist)
 {
-	(void)cur_light;
-
 	t_rt 	*rt_shadow;
 
 	rt_shadow = ft_copy(rt);

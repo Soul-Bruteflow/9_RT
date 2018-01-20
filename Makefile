@@ -85,6 +85,7 @@ OBJ	=	controls/keyboard/camera_freelook.o \
 		raytrace/scene/scene_create.o \
 		raytrace/calculate_ambient_light.o \
 		raytrace/calculate_frenel.o \
+		raytrace/calculate_illumination.o \
 		raytrace/calculate_light.o \
 		raytrace/calculate_refl_refr.o \
 		raytrace/calculate_reflection.o \

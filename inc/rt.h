@@ -100,6 +100,7 @@ typedef struct		s_calc
 	int				level_reflection;
 	int				level_transparent;
 	t_rgbap 		shadow;
+	t_rgbap			light;
 	int				i;
 	int				n;
 	t_bool			last_status_refract;
@@ -186,6 +187,7 @@ t_bool              normal_of_intersect(t_rt *rt, t_vec3 *n);
 t_bool				object_intersect(t_rt *rt);
 void				calculate_ambient_light(t_rt *rt);
 void				calculate_light(t_rt *rt);
+void				calculate_illumination(t_rt *rt, t_light cur_light, t_vec3 v_dist, float dist);
 void 				calculate_shadow(t_rt *rt, t_light cur_light, t_vec3 v_dist, float dist);
 void				calculate_reflect_refract(t_rt *rt);
 void				calculate_reflection(t_rt *rt, t_rgbap *c_refl);

@@ -60,7 +60,10 @@ typedef struct	s_material
 */
 typedef struct	s_light
 {
+	float 		type;
 	t_vec3		pos;
+	t_vec3		dir;
+	float 		angle;
 	t_rgbap		color;
 	float		power;
 }				t_light;
