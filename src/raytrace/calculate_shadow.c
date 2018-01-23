@@ -14,12 +14,12 @@
 
 static void		set_color(t_rt *rt_cur, t_light cur_light)
 {
-	rt_cur->calc->shadow.red *= cur_light.color.red *
-		cur_light.power	* rt_cur->calc->cur_mat.diffuse.red;
-	rt_cur->calc->shadow.green *= cur_light.color.green *
-		cur_light.power	* rt_cur->calc->cur_mat.diffuse.green;
-	rt_cur->calc->shadow.blue *= cur_light.color.blue *
-		cur_light.power	* rt_cur->calc->cur_mat.diffuse.blue;
+	rt_cur->calc->shadow.red *= cur_light.color.red 
+		* rt_cur->calc->cur_mat.transparent * rt_cur->calc->cur_mat.diffuse.red;
+	rt_cur->calc->shadow.green *= cur_light.color.green
+		* rt_cur->calc->cur_mat.transparent * rt_cur->calc->cur_mat.diffuse.green;
+	rt_cur->calc->shadow.blue *= cur_light.color.blue
+		* rt_cur->calc->cur_mat.transparent * rt_cur->calc->cur_mat.diffuse.blue;
 }
 
 static void 	calculate(t_rt *rt_cur, double n1, double n2, float cos_angle,
@@ -56,8 +56,8 @@ static void		rotate_dir_shadow(t_rt *rt_last, t_rt *rt_cur)
 	t_vec3	intersect_normal;
 	float	cos_angle;
 
-	if (rt_cur->calc->cur_power_ray > 0.01f)
-	{
+//	if (rt_cur->calc->cur_power_ray > 0.01f)
+//	{
 		set_coef_refraction(rt_last, rt_cur, &n1, &n2);
 		intersect_normal = rt_cur->calc->intersect_normal;
 		cos_angle = vec3_dot(rt_cur->scene->ray.dir, intersect_normal);
@@ -75,7 +75,7 @@ static void		rotate_dir_shadow(t_rt *rt_last, t_rt *rt_cur)
 			rt_cur->calc->last_status_refract = false;
 		}
 		calculate(rt_cur, n1, n2, cos_angle, intersect_normal);
-	}
+//	}
 }
 
 static void		shadow(t_rt *rt_last, t_rt *rt_cur, t_light cur_light,

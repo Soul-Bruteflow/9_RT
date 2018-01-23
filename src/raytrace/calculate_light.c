@@ -65,16 +65,13 @@ static void	ft_lambert(t_rt *rt, t_light cur_light)
 		ft_fong(rt, v_light);
 }
 
-void	calculate_light(t_rt *rt)
+static void	calc(t_rt *rt, t_light cur_light, int i)
 {
-	t_light		cur_light;
-	t_vec3		v_dist;
-	float		dist;
+	t_vec3	v_dist;
+	float	dist;
 
-	rt->calc->i = -1;
-	while (rt->calc->i++ < rt->scene->lits_n - 1)
+	while (i++ < cur_light.len + 1)
 	{
-		cur_light = *rt->scene->lights[rt->calc->i];
 		v_dist = vec3_sub(&cur_light.pos, &rt->calc->new_start);
 		dist = sqrtf(vec3_dot(v_dist, v_dist));
 		if (dist <= 0.0f && vec3_dot(v_dist, rt->calc->intersect_normal) <= 0.0f)
@@ -82,5 +79,28 @@ void	calculate_light(t_rt *rt)
 		calculate_illumination(rt, cur_light, v_dist, dist);
 		calculate_shadow(rt, cur_light, v_dist, dist);
 		ft_lambert(rt, cur_light);
+		cur_light.pos = vec3_add(&cur_light.pos, &cur_light.dir);
+	}
+}
+
+void	calculate_light(t_rt *rt)
+{
+	t_light	cur_light;
+	t_vec3	mid_pos;
+	int 	i;
+
+	rt->calc->i = -1;
+	while (rt->calc->i++ < rt->scene->lits_n - 1)
+	{
+		cur_light = *rt->scene->lights[rt->calc->i];
+		i = cur_light.len;
+		if (cur_light.type == 2)
+		{
+			mid_pos = vec3_scale(cur_light.len / 2, &cur_light.dir);
+			cur_light.pos = vec3_sub(&cur_light.pos, &mid_pos);
+			cur_light.power /= (float)cur_light.len;
+			i = 0;
+		}
+		calc(rt, cur_light, i);
 	}
 }

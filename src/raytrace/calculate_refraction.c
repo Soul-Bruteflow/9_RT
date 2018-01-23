@@ -12,17 +12,17 @@
 
 #include "rt.h"
 
-static void		calculate(t_rt *rt_last, t_rt *rt_cur, double n1, double n2,
+static void		calculate(t_rt *rt_last, t_rt *rt_cur, double n,
 					float cos_angle, t_vec3 intersect_normal)
 {
 	float	k;
 	t_vec3	tmp1;
 
-	k = 1.0f - (n1 / n2) * (n1 / n2) * (1.0f - cos_angle * cos_angle);
+	k = 1.0f - n * n * (1.0f - cos_angle * cos_angle);
 	if (k > 0.0f)
 	{
-   		rt_cur->scene->ray.dir = vec3_scale(n1 / n2, &rt_cur->scene->ray.dir);
-		tmp1 = vec3_scale( n1 / n2 * cos_angle - sqrtf(k) , &intersect_normal);
+   		rt_cur->scene->ray.dir = vec3_scale(n, &rt_cur->scene->ray.dir);
+		tmp1 = vec3_scale( n * cos_angle - sqrtf(k) , &intersect_normal);
 		rt_cur->scene->ray.dir = vec3_add(&rt_cur->scene->ray.dir, &tmp1);
 		rt_last->calc->last_status_refract = true;
 		rt_cur->calc->cur_power_ray *= rt_cur->calc->cur_mat.transparent * k;
@@ -54,7 +54,7 @@ static void		rotate_dir_refraction(t_rt *rt_last, t_rt *rt_cur)
  			intersect_normal = vec3_scale( -1.0f, &intersect_normal);
  			ft_swap(&n1, &n2);
 		}
-		calculate(rt_last, rt_cur, n1, n2, cos_angle, intersect_normal);
+		calculate(rt_last, rt_cur, n1 / n2, cos_angle, intersect_normal);
 	}
 }
 

@@ -18,9 +18,9 @@ fov:
 					90
 lights:
 type:
-					0
+					1
 type:
-					0
+					2
 position:
 					0
 					-50
@@ -41,6 +41,10 @@ angle:
 					90
 angle:
 					90
+len:
+					1
+len:
+					5
 power:
 					1.0
 power:

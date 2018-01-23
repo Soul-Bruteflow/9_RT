@@ -64,6 +64,7 @@ typedef struct	s_light
 	t_vec3		pos;
 	t_vec3		dir;
 	float 		angle;
+	float		len;
 	t_rgbap		color;
 	float		power;
 }				t_light;

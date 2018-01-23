@@ -29,6 +29,8 @@ direction:
 					0.0
 angle:
 					90
+len:
+					1
 power:
 					1.0
 color:

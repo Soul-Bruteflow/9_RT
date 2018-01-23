@@ -96,6 +96,26 @@ static t_bool	parse_lights_angle(t_rt *r)
 	return (true);
 }
 
+static t_bool	parse_lights_len(t_rt *r)
+{
+	int i;
+
+	i = -1;
+	while (i++ < r->scene->lits_n - 1)
+	{
+		if (check_line(r, "len:"))
+		{
+			if (!(parse_number(r, &r->scene->lights[i]->len, 1, 10000)))
+				return (false);
+		}
+		else
+			return (false);
+	}
+	if (i != r->scene->lits_n)
+		return (false);
+	return (true);
+}
+
 static t_bool	parse_lights_power(t_rt *r)
 {
 	int i;
@@ -145,6 +165,8 @@ t_bool			parse_lights(t_rt *r)
 	if (!(parse_lights_direction(r)))
 		return (false);
 	if (!(parse_lights_angle(r)))
+		return (false);
+	if (!(parse_lights_len(r)))
 		return (false);
 	if (!(parse_lights_power(r)))
 		return (false);

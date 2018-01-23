@@ -18,7 +18,7 @@ fov:
 					90
 lights:
 type:
-					0
+					2
 type:
 					0
 position:
@@ -41,6 +41,10 @@ angle:
 					90
 angle:
 					90
+len:
+					5
+len:
+					10
 power:
 					0.7
 power:
@@ -108,7 +112,7 @@ reflection:
 transparent:
 					0.01
 transparent:
-					0.99
+					0.90
 transparent:
 					0.90
 transparent:
