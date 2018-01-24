@@ -6,6 +6,6 @@
 void	rt_render(t_rt *r)
 {
 	clear_window(r);
-	raytrace(r);
+	pthreads(r);
 	render_present(r);
 }

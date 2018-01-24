@@ -94,25 +94,20 @@ static void		anti_aliasing(t_rt *rt, Uint16 x, Uint16 y)
 	rt->calc->pixel_color = set_pixel_color(rt, steep);
 }
 
-void			raytrace(t_rt *rt)
+void			*raytrace(void *arg)
 {
-	Uint16	x;
-	Uint16	y;
+	t_rt_pth	*rt_pth;
+	t_rt 		*rt;
+	Uint16		x;
+	Uint16		y;
 
-/*add to flag - 1 - no aa, 2 - x4, 3 - x8, 4 - x16, 5 - x32, 6 - x64*/
-	rt->scene->aa = 1;
-/*add to flag - from 0 to 10*/
-	rt->scene->max_level_reflection = 0;
-	rt->scene->max_level_transparent = 0;
-/*to add to keyboard for flag*/
-	rt->scene->status_shadow = false;
-	rt->scene->status_glossy = false;
-
+	rt_pth = (t_rt_pth *)arg;
+	rt = rt_pth->rt;
 	y = 0;
 	while (y++ < HEIGHT)
 	{
-		x = 0;
-		while (x++ < WIDTH)
+		x = WIDTH * rt_pth->i / NB_THREAD;
+		while (x++ < (WIDTH * (rt_pth->i + 1) / NB_THREAD))
 		{
 			rt->calc->sum_color.red = 0.0f;
 			rt->calc->sum_color.green = 0.0f;
@@ -121,4 +116,5 @@ void			raytrace(t_rt *rt)
 			ft_draw_pixel(x, y, &rt->calc->pixel_color, rt->win->draw_buf);
 		}
 	}
+	pthread_exit(0);
 }

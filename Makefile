@@ -53,6 +53,7 @@ OBJ	=	controls/keyboard/camera_freelook.o \
 		controls/keyboard/camera_movement.o \
 		controls/keyboard/camera_rotation.o \
 		controls/keyboard/keyboard_core.o \
+		controls/keyboard/render_flags.o \
 		controls/mouse/mouse_1.o \
 		controls/mouse/mouse_2.o \
 		controls/mouse/mouse_core.o \
@@ -116,6 +117,7 @@ OBJ	=	controls/keyboard/camera_freelook.o \
 		copy_free.o \
 		get_next_line.o \
 		main.o \
+		pthreads.o \
 		rt_init.o \
 		rt_loop.o \
 		rt_quit.o
@@ -131,6 +133,7 @@ INC_OPT = -I $(LIB_INC) -I $(INC_DIR) -I $(SDL_INC)
 OUT_OPT = -o
 OBJ_OPT = $< -o $@
 LIB_OPT	= -c
+PTHREAD = -lpthread
 
 RMF 	= rm -f
 RMD		= rm -rf
@@ -147,7 +150,7 @@ $(NAME): $(addprefix $(OBJ_DIR), $(OBJ))
 	@mkdir -p ~/Library/Frameworks
 	@rm -rf ~/Library/Frameworks/SDL2.framework ~/Library/Frameworks/SDL2_image.framework ~/Library/Frameworks/SDL2_mixer.framework ~/Library/Frameworks/SDL2_ttf.framework
 	@cp -R -i ./frameworks/SDL2.framework ./frameworks/SDL2_image.framework ./frameworks/SDL2_mixer.framework ./frameworks/SDL2_ttf.framework ~/Library/Frameworks
-	$(CC) $(CFLAGS) $(SDL) $(LIB_LIB) $^ $(OUT_OPT) $(NAME)
+	$(CC) $(CFLAGS) $(SDL) $(LIB_LIB) $^ $(OUT_OPT) $(NAME) $(PTHREAD)
 
 clean:
 	$(RMF) $(addprefix $(OBJ_DIR), $(OBJ))

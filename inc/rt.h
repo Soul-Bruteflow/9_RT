@@ -28,7 +28,10 @@
 ** IV Order
 */
 # include "controls/controls.h"
-
+/*
+** Phtreads
+*/
+# include <pthread.h>
 /*
 ** Basic SDL2 variables
 ** key_state - current key code
@@ -145,6 +148,11 @@ typedef struct		s_rt
 }					t_rt;
 
 
+typedef struct 		s_rt_pth
+{
+	t_rt 			*rt;
+	int 			i;
+}					t_rt_pth;
 /*
 ** Parser
 */
@@ -169,7 +177,6 @@ t_bool				parse_color(t_rt *r, t_rgbap *c, float min, float max);
 t_bool				parse_float_number(t_rt *r, float *n, float mi, float ma);
 t_bool				check_line(t_rt *r, const char *s);
 t_bool				valid_material(t_rt *r, Uint16 *material, int mi, int ma);
-
 /*
 ** RT
 */
@@ -181,7 +188,8 @@ void				rt_quit(t_rt *r);
 /*
 ** Raycast
 */
-void				raytrace(t_rt *r);
+void				pthreads(t_rt *rt);
+void 				*raytrace(void *arg);
 void				calculate_ray(t_rt *rt);
 t_bool              normal_of_intersect(t_rt *rt, t_vec3 *n);
 t_bool				object_intersect(t_rt *rt);
@@ -219,6 +227,7 @@ void                camera_horizontal_rotation(t_rt *r);
 void                camera_freelook(t_rt *r);
 void                camera_vertical_freelook(t_rt *r);
 void                camera_horizontal_freelook(t_rt *r);
+void				render_flags(t_rt *rt);
 /*
 ** Mouse
 */

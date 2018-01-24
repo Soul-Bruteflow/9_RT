@@ -14,7 +14,6 @@
 
 int		main(int ac, char **av)
 {
-
 	t_rt	*rt;
 
 	if (ac == 2)

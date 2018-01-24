@@ -12,6 +12,15 @@
 
 #include "rt.h"
 
+static void		set_flag(t_rt *rt)
+{
+	rt->scene->aa = 1;
+	rt->scene->max_level_reflection = 0;
+	rt->scene->max_level_transparent = 0;
+	rt->scene->status_shadow = false;
+	rt->scene->status_glossy = false;	
+}
+
 t_bool	running(SDL_Event *event, const Uint8 **key_state, t_sdl *s)
 {
 
@@ -38,6 +47,7 @@ void	rt_loop(t_rt *r)
 {
 	r->delta.curtime = SDL_GetTicks();
 	r->delta.fps_counter = 0;
+	set_flag(r);
 	while ((running(&r->sdl->event, &r->sdl->key_state, r->sdl)))
 	{
 		update_time(r);

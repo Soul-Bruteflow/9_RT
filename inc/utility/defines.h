@@ -14,12 +14,15 @@
 # define _RTV_DEFINES_H
 
 /*
+** Number of pthreads
+*/
+# define NB_THREAD	4
+/*
 ** Window size, and bits per pixel
 */
 # define WIDTH		800
 # define HEIGHT		600
 # define BITS		4
-
 /*
 ** Allocation
 */
