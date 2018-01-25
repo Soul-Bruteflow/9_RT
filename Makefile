@@ -92,6 +92,7 @@ OBJ	=	controls/keyboard/camera_freelook.o \
 		raytrace/calculate_reflection.o \
 		raytrace/calculate_refraction.o \
 		raytrace/calculate_shadow.o \
+		raytrace/color_filters.o \
 		raytrace/intersect.o \
 		raytrace/raytrace.o \
 		raytrace/render.o \

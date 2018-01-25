@@ -16,6 +16,7 @@ static t_rgba	set_pixel_color(t_rt *rt, int steep)
 {
 	t_rgba color;
 
+	color_filters(&rt->calc->sum_color, rt->scene->status_color);
 	color.red = (unsigned char)MIN(rt->calc->sum_color.red
 		/ (float)steep * 255.0f, 255.0f);
 	color.green = (unsigned char)MIN(rt->calc->sum_color.green

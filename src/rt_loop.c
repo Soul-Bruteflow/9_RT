@@ -18,7 +18,8 @@ static void		set_flag(t_rt *rt)
 	rt->scene->max_level_reflection = 0;
 	rt->scene->max_level_transparent = 0;
 	rt->scene->status_shadow = false;
-	rt->scene->status_glossy = false;	
+	rt->scene->status_glossy = false;
+	rt->scene->status_color = 0;
 }
 
 t_bool	running(SDL_Event *event, const Uint8 **key_state, t_sdl *s)

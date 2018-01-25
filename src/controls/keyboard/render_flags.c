@@ -38,8 +38,19 @@ static void		ft_aa(t_rt *rt)
 	}
 }
 
+static void		ft_color(t_rt *rt)
+{
+	if (SDL_KEYDOWN && rt->sdl->key_state[SDL_SCANCODE_C])
+	{
+		rt->scene->status_color++;
+		rt->scene->status_color =
+			(rt->scene->status_color == 4) ? 0 : rt->scene->status_color;
+	}
+}
+
 void			render_flags(t_rt *rt)
 {
+	ft_color(rt);
 	ft_aa(rt);
 	ft_refl_refr(rt);
 	if (SDL_KEYDOWN && rt->sdl->key_state[SDL_SCANCODE_SEMICOLON])

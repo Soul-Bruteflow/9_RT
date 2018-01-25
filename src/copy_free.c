@@ -47,6 +47,7 @@ static void		ft_copy_scene(t_rt *rt_orig, t_rt *rt_copy)
 	rt_copy->scene->max_level_transparent = rt_orig->scene->max_level_transparent;
 	rt_copy->scene->status_shadow = rt_orig->scene->status_shadow;
 	rt_copy->scene->status_glossy = rt_orig->scene->status_glossy;
+	rt_copy->scene->status_color = rt_orig->scene->status_color;
 }
 
 t_rt			*ft_copy(t_rt *rt_orig)

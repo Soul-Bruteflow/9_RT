@@ -83,6 +83,7 @@ typedef struct		s_scene
 	int 			max_level_transparent;
 	t_bool 			status_shadow;
 	t_bool 			status_glossy;
+	int 			status_color;
 }					t_scene;
 
 /*
@@ -201,6 +202,7 @@ void				calculate_reflect_refract(t_rt *rt);
 void				calculate_reflection(t_rt *rt, t_rgbap *c_refl);
 void				calculate_refraction(t_rt *rt, t_rgbap *c_refr);
 void				calculate_frenel(t_rt *rt_last, t_rt *rt_cur, float *kr);
+void				color_filters(t_rgbap *color, int status_color);
 
 t_rt				*ft_copy(t_rt *rt_orig);
 void				ft_free(t_rt *rt_free);
