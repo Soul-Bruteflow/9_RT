@@ -35,7 +35,7 @@ void	screen_capture(SDL_Renderer *ren, const char *name, int wh[])
 	st = IMG_SavePNG(surf, name);
 	if (st != 0)
 		rtv_error(print_screen_error);
-	SDL_Log("Screen captured as PNG to \"%s\"\n", name);
+	SDL_Log("Screen captured as \"%s\"\n", name);
 }
 
 void	print_screen(t_rt *r)
@@ -46,6 +46,6 @@ void	print_screen(t_rt *r)
 	{
 		wh[0] = r->win->width;
 		wh[1] = r->win->height;
-		screen_capture(r->sdl->renderer, "image.png", wh);
+		screen_capture(r->sdl->renderer, "screen.png", wh);
 	}
 }
