@@ -49,6 +49,8 @@ void	rtv_error(t_error error_code)
 		print_error_and_exit("GNL error: file. ", 0);
 	else if (error_code == parse_error)
 		print_error_and_exit("Parsing error: file. ", 0);
+	else if (error_code == print_screen_error)
+		print_error_and_exit("Print-Screen error.", 0);
 	else
 		print_error_and_exit("No such error code.", 0);
 }

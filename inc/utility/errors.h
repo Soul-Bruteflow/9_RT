@@ -25,6 +25,7 @@ typedef enum		e_error
 	file_open_error,
 	gnl_error_code,
 	parse_error,
+	print_screen_error,
 	number_of_errors
 }					t_error;
 

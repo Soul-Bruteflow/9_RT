@@ -5,6 +5,7 @@
 ** I Order
 */
 # include <SDL.h>
+# include <SDL_image.h>
 # include "math/math.h"
 # include "math/vectors.h"
 # include "math/quaternions.h"
@@ -230,6 +231,7 @@ void                camera_freelook(t_rt *r);
 void                camera_vertical_freelook(t_rt *r);
 void                camera_horizontal_freelook(t_rt *r);
 void				render_flags(t_rt *rt);
+void				print_screen(t_rt *r);
 /*
 ** Mouse
 */

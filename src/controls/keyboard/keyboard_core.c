@@ -25,4 +25,5 @@ void	keyboard_core(t_rt *r)
 	camera_rotation(r);
 	camera_freelook(r);
 	render_flags(r);
+	print_screen(r);
 }
