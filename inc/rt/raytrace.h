@@ -55,6 +55,14 @@ typedef struct	s_material
 	float		transparent;
 }				t_material;
 
+typedef struct 	s_texture
+{
+	SDL_Surface	*texture;
+	float 		scale;
+	int 		offset;
+	char 		texture_path;
+}				t_texture;
+
 /*
 ** Light source definition
 */

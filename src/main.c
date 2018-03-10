@@ -24,6 +24,7 @@ int		main(int ac, char **av)
 		init_camera(rt);		
 		init_controls(rt);
 		create_window(rt, WIDTH, HEIGHT, "RT\0");
+		rt->tmp_surface = IMG_Load("./res/tex2.bmp");
 		rt_loop(rt);
 	}
 	else
