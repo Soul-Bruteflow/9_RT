@@ -10,6 +10,7 @@ t_bool valid_texture(t_rt *r, SDL_Surface *t, int min, int max)
 		//printf("Bad. IMG_Load: %s\n", IMG_GetError());
 		return (false);
 	}
+	int h = t->format->BitsPerPixel;
 	//printf("Good.\n");
 	return (true);
 }

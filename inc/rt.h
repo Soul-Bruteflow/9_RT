@@ -85,6 +85,8 @@ typedef struct		s_scene
 	t_bool 			status_shadow;
 	t_bool 			status_glossy;
 	int 			status_color;
+	//TMP
+	t_vec3          *normal;
 }					t_scene;
 
 /*
@@ -148,6 +150,7 @@ typedef struct		s_rt
 	t_calc			*calc;
 	t_pars			*pars;
 	t_time			delta;
+	SDL_Surface		*tmp_surface;
 }					t_rt;
 
 

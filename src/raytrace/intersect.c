@@ -54,6 +54,7 @@ t_bool	normal_of_intersect(t_rt *rt, t_vec3 *n)
 	else if (rt->scene->objects[rt->calc->cur_obj]->obj_type == sphere)
 	{
 		*n = vec3_sub(&rt->calc->new_start, &rt->scene->objects[rt->calc->cur_obj]->pos);
+		rt->scene->normal = n;
 	}
 	else if (rt->scene->objects[rt->calc->cur_obj]->obj_type == cylinder)
 	{

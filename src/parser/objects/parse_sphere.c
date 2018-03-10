@@ -42,8 +42,10 @@ t_bool	parse_sphere(t_rt *r, int i)
 	set_sphere(r->scene->objects[i], position, radius, material);
 	if (!(check_line(r, "texture:")))
 		return (false);
-	if (!(valid_texture(r, &r->calc->tmp_surface, T_MIN, T_MAX)))
+	if (!(valid_texture(r, r->tmp_surface, T_MIN, T_MAX)))
 		return (false);
-	r->scene->objects[i]->texture = &r->calc->tmp_surface;
+	//r->scene->objects[i]->texture = &r->calc->tmp_surface;
+	//int h = r->tmp_surface->format->BitsPerPixel;
+	//int hh = &r->scene->objects[i]->texture->format->BitsPerPixel;
 	return (true);
 }
