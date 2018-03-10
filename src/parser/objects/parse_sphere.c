@@ -40,5 +40,10 @@ t_bool	parse_sphere(t_rt *r, int i)
 	if (!(valid_material(r, &material, M_MIN, M_MAX)))
 		return (false);
 	set_sphere(r->scene->objects[i], position, radius, material);
+	if (!(check_line(r, "texture:")))
+		return (false);
+	if (!(valid_texture(r, &r->calc->tmp_surface, T_MIN, T_MAX)))
+		return (false);
+	r->scene->objects[i]->texture = &r->calc->tmp_surface;
 	return (true);
 }

@@ -68,5 +68,7 @@
 # define            SPR_MIN 1
 # define            SPR_MAX 1000
 # define MIN(a,b) (((a) < (b)) ? (a) : (b))
+# define T_MIN		64
+# define T_MAX		1200
 
 #endif

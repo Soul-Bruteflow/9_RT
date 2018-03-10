@@ -55,12 +55,7 @@ static void	ft_lambert(t_rt *rt, t_light cur_light)
 		* rt->calc->cur_power_ray;
 	lambert = (lambert > 1.0f) ? 1.0f : lambert;
 	lambert = (lambert < 0.0f) ? 0.0f : lambert;
-	rt->calc->color.red += (rt->calc->cur_mat.diffuse.red
-	* rt->calc->light.red * lambert * rt->calc->shadow.red);
-	rt->calc->color.green += (rt->calc->cur_mat.diffuse.green
-	* rt->calc->light.green * lambert * rt->calc->shadow.green);
-	rt->calc->color.blue += (rt->calc->cur_mat.diffuse.blue
-	* rt->calc->light.blue * lambert * rt->calc->shadow.blue);
+	choose_color(rt, lambert);
 	if (rt->scene->status_glossy == true)
 		ft_fong(rt, v_light);
 }

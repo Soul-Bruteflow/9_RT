@@ -70,6 +70,7 @@ typedef struct	s_obj3d
 	t_vec3		pos;
 	Uint16		material;
 	t_bool		(*intersect)(t_ray *, struct s_obj3d *, float *);
+	SDL_Surface	*texture;
 }				t_obj3d;
 
 /*
