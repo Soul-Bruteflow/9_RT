@@ -24,6 +24,7 @@ t_bool	parse_sphere(t_rt *r, int i)
 	t_vec3		position;
 	float		radius;
 	Uint16		material;
+	SDL_Surface	t;
 
 	free(r->pars->line);
 	alloc_new_sphere(r, i);
@@ -40,5 +41,12 @@ t_bool	parse_sphere(t_rt *r, int i)
 	if (!(valid_material(r, &material, M_MIN, M_MAX)))
 		return (false);
 	set_sphere(r->scene->objects[i], position, radius, material);
+	if (!(check_line(r, "texture:")))
+		return (false);
+	if (!(valid_texture(r, &t, T_MIN, T_MAX)))
+		return (false);
+	//r->scene->objects[i]->texture = &r->calc->tmp_surface;
+	//int h = r->tmp_surface->format->BitsPerPixel;
+	//int hh = &r->scene->objects[i]->texture->format->BitsPerPixel;
 	return (true);
 }

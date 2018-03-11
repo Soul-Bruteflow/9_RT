@@ -30,6 +30,7 @@ static void		ft_copy_calc(t_rt *rt_orig, t_rt *rt_copy)
 	rt_copy->calc->last_status_refract = rt_orig->calc->last_status_refract;
 	rt_copy->calc->i = rt_orig->calc->i;
 	rt_copy->calc->n = rt_orig->calc->n;
+	rt_copy->tmp_surface = rt_orig->tmp_surface;
 }
 
 static void		ft_copy_scene(t_rt *rt_orig, t_rt *rt_copy)

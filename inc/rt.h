@@ -85,6 +85,8 @@ typedef struct		s_scene
 	t_bool 			status_shadow;
 	t_bool 			status_glossy;
 	int 			status_color;
+	//TMP
+	t_vec3          *normal;
 }					t_scene;
 
 /*
@@ -109,6 +111,7 @@ typedef struct		s_calc
 	int				i;
 	int				n;
 	t_bool			last_status_refract;
+	SDL_Surface		tmp_surface;
 }					t_calc;
 
 /*
@@ -147,6 +150,7 @@ typedef struct		s_rt
 	t_calc			*calc;
 	t_pars			*pars;
 	t_time			delta;
+	SDL_Surface		*tmp_surface;
 }					t_rt;
 
 
@@ -179,6 +183,7 @@ t_bool				parse_color(t_rt *r, t_rgbap *c, float min, float max);
 t_bool				parse_float_number(t_rt *r, float *n, float mi, float ma);
 t_bool				check_line(t_rt *r, const char *s);
 t_bool				valid_material(t_rt *r, Uint16 *material, int mi, int ma);
+t_bool				valid_texture(t_rt *r, SDL_Surface *t, int min, int max);
 /*
 ** RT
 */
@@ -204,6 +209,7 @@ void				calculate_reflection(t_rt *rt, t_rgbap *c_refl);
 void				calculate_refraction(t_rt *rt, t_rgbap *c_refr);
 void				calculate_frenel(t_rt *rt_last, t_rt *rt_cur, float *kr);
 void				color_filters(t_rgbap *color, int status_color);
+void				choose_color(t_rt *r, float lambert);
 
 t_rt				*ft_copy(t_rt *rt_orig);
 void				ft_free(t_rt *rt_free);
