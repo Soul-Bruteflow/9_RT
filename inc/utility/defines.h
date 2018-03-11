@@ -27,8 +27,8 @@
 ** Allocation
 */
 # define PI			3.14159265359f
-# define TWO_PI		6.28318530718f
-# define HALF_PI	1.57079632679f
+# define PI1		.159154943092f
+# define PI2		.318309886184f
 # define MAX_LEN	10000
 /*
 ** Mouse

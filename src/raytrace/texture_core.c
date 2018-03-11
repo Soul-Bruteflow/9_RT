@@ -9,16 +9,12 @@ void	sphere_maping(t_rt *r, float lambert)
 	float		x;
 	float		y;
 	int			offset = 1;
+	float 		scale = 1.0;
 	int			bpp;
 	Uint8		*tex_buf;
 
-
-
-	u = 0.5f + atan2f(r->scene->normal->z, r->scene->normal->x) / PI * 0.5f;
-	v = 0.5f - asinf(r->scene->normal->y) / PI;
-
-//	u = 1.0f + atan2f(r->scene->normal->z, r->scene->normal->x / PI) * 0.5f * 1.0f;
-//	v = acosf(r->scene->normal->y) / PI * 1.0f;
+	u = 0.5f - atan2f(r->scene->normal->z, r->scene->normal->x) * PI1 * scale;
+	v = 0.5f + asinf(r->scene->normal->y) * PI2 * scale;
 
 	bpp = r->tmp_surface->format->BytesPerPixel;
 	tex_buf = r->tmp_surface->pixels + 0 * r->tmp_surface->pitch + 0 * bpp;
