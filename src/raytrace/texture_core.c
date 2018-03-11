@@ -2,15 +2,15 @@
 
 void	sphere_maping(t_rt *r, float lambert)
 {
-	float u;
-	float v;
-	Uint32  px_i;
-	t_rgbap tex_color;
-	float x;
-	float y;
-	int offset = 1;
-	int   bpp;
-	Uint8			*tex_buf;
+	float		u;
+	float		v;
+	Uint32		px_i;
+	t_rgbap		tex_color;
+	float		x;
+	float		y;
+	int			offset = 1;
+	int			bpp;
+	Uint8		*tex_buf;
 
 
 
