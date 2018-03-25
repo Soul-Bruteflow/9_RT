@@ -14,7 +14,7 @@
 
 void    sdl_exit(t_rt *r)
 {
-	if (SDL_KEYDOWN && r->sdl->key_state[SDL_SCANCODE_ESCAPE])
+	if (r->sdl->key_state[SDL_SCANCODE_ESCAPE])
 		exit(0);
 }
 
@@ -26,4 +26,5 @@ void	keyboard_core(t_rt *r)
 	camera_freelook(r);
 	render_flags(r);
 	print_screen(r);
+	info_togle(r);
 }

@@ -6,6 +6,7 @@
 */
 # include <SDL.h>
 # include <SDL_image.h>
+# include <SDL_ttf.h>
 # include "math/math.h"
 # include "math/vectors.h"
 # include "math/quaternions.h"
@@ -45,6 +46,7 @@ typedef struct		s_sdl
 	const Uint8		*key_state;
 //	t_vec2			mouse_rpos;
 	t_mouse			mouse;
+	SDL_KeyboardEvent key;
 }					t_sdl;
 
 /*
@@ -151,6 +153,24 @@ typedef struct		s_rt
 	t_pars			*pars;
 	t_time			delta;
 	SDL_Surface		*tmp_surface;
+
+
+	SDL_Texture		*img;
+	SDL_Rect		texr;
+	int 			w;
+	int 			h;
+
+	TTF_Font		*font;
+	SDL_Color		fcolor;
+	SDL_Surface		*sur_message;
+	SDL_Texture		*tex_message;
+	SDL_Rect		message_rect;
+	int 			t_w;
+	int 			t_h;
+
+	t_bool			togle_info;
+	t_bool			on;
+	t_bool			show;
 }					t_rt;
 
 
@@ -238,6 +258,8 @@ void                camera_vertical_freelook(t_rt *r);
 void                camera_horizontal_freelook(t_rt *r);
 void				render_flags(t_rt *rt);
 void				print_screen(t_rt *r);
+void				info_togle(t_rt *r);
+
 /*
 ** Mouse
 */
@@ -250,5 +272,10 @@ void				clear_window(t_rt *r);
 void				render_present(t_rt *r);
 void				ft_draw_pixel(Uint16 x, Uint16 y, t_rgba *color, Uint8 *draw_buffer);
 void				rerender(t_rt *r);
+
+/*
+** GUI
+*/
+void				init_gui(t_rt *r);
 
 #endif
