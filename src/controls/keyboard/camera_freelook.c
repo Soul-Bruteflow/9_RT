@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   camera_freelook.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vvlasenk <vvlasenk@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/03/31 14:52:48 by vvlasenk          #+#    #+#             */
+/*   Updated: 2018/03/31 15:17:41 by vvlasenk         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "rt.h"
 
-void    camera_freelook(t_rt *r)
+void	camera_freelook(t_rt *r)
 {
 	if (SDL_KEYDOWN && r->sdl->key_state[SDL_SCANCODE_SPACE])
 	{
@@ -10,10 +22,11 @@ void    camera_freelook(t_rt *r)
 		calc_mouse_rot_amt(&r->sdl->mouse, &r->scene->cam);
 		camera_horizontal_freelook(r);
 		camera_vertical_freelook(r);
+		rt_render(r);
 	}
 }
 
-void    camera_vertical_freelook(t_rt *r)
+void	camera_vertical_freelook(t_rt *r)
 {
 	t_cam *cam;
 
@@ -21,7 +34,7 @@ void    camera_vertical_freelook(t_rt *r)
 	if (r->sdl->mouse.rpos.y > 0)
 	{
 		if (cam->t.angle.y > 87.00f)
-			return;
+			return ;
 		cam->t.angle.y += cam->m_rot_amt.y;
 		cam_rot_y(cam, cam->m_rot_amt.y);
 		cam_update(cam);
@@ -29,14 +42,14 @@ void    camera_vertical_freelook(t_rt *r)
 	if (r->sdl->mouse.rpos.y < 0)
 	{
 		if (cam->t.angle.y < -87.00f)
-			return;
+			return ;
 		cam->t.angle.y += cam->m_rot_amt.y;
 		cam_rot_y(cam, cam->m_rot_amt.y);
 		cam_update(cam);
 	}
 }
 
-void    camera_horizontal_freelook(t_rt *r)
+void	camera_horizontal_freelook(t_rt *r)
 {
 	t_cam *cam;
 

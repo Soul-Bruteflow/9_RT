@@ -12,17 +12,17 @@
 
 #include "rt.h"
 
-t_bool	intersect_plane_ray(t_ray *r, t_obj3d *obj, float *t)
+t_bool	intersect_plane(t_ray *r, t_obj3d *obj, float *d)
 {
 	t_plane		*p;
-	float		t0;
+	float		x;
 
 	p = obj->type;
-	t0 = ((vec3_dot(p->normal, p->point) - vec3_dot(p->normal, r->pos))
-		/ vec3_dot(p->normal, r->dir));
-	if ((t0 > 0.5f) && (t0 < *t))
+	x = ((vec3_dot(obj->rot, obj->pos) - vec3_dot(obj->rot, r->pos))
+		/ vec3_dot(obj->rot, r->dir));
+	if ((x > 0.5f) && (x < *d))
 	{
-		*t = t0;
+		*d = x;
 		return (true);
 	}
 	return (false);

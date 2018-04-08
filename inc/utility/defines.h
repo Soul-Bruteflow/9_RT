@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rtv_defines.h                                      :+:      :+:    :+:   */
+/*   defines.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mvlad <mvlad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef _RTV_DEFINES_H
-# define _RTV_DEFINES_H
+#ifndef DEFINES_H
+# define DEFINES_H
 
 /*
 ** Number of pthreads
@@ -27,8 +27,8 @@
 ** Allocation
 */
 # define PI			3.14159265359f
-# define PI1		.159154943092f
-# define PI2		.318309886184f
+# define TWO_PI		6.28318530718f
+# define HALF_PI	1.57079632679f
 # define MAX_LEN	10000
 /*
 ** Mouse
@@ -40,34 +40,59 @@
 # define H_C_SENS	0.008f
 # define V_SENS		0.010f
 # define H_SENS		0.012f
+
 # define CL_REL_N   -350
 # define CL_REL_P   350
-
-
 /*
 ** Parse defines
 */
+# define AA_MIN		1
+# define AA_MAX		4
+
+# define COLOR_MIN	0
+# define COLOR_MAX  3
+
+# define RE_MIN		0
+# define RE_MAX		20
+
+# define OFFSET_MIN	-1000
+# define OFFSET_MAX	1000
+
+# define SCALE_MIN	0
+# define SCALE_MAX	10000
+
 # define V_MIN		-10000
 # define V_MAX		10000
+
 # define S_MIN		0
 # define S_MAX		20
+
 # define F_MIN		1
 # define F_MAX		90
+
 # define C_MIN		0
 # define C_MAX		1
+
 # define P_MIN		0.01
 # define P_MAX		9.99
+
 # define R_MIN		0.01
 # define R_MAX		0.99
+
 # define N_MIN		0.01
 # define N_MAX		2.99
+
 # define M_MIN		0
 # define M_MAX		10
+
 # define A_MIN		1
 # define A_MAX		90
-# define            SPR_MIN 1
-# define            SPR_MAX 1000
+
+# define SPR_MIN	1
+# define SPR_MAX	1000
+
 # define MIN(a,b) (((a) < (b)) ? (a) : (b))
+
 # define T_MIN		64
 # define T_MAX		1200
 

@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rt_init.c                                         :+:      :+:    :+:   */
+/*   rt_init.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mvlad <mvlad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -42,6 +42,5 @@ t_rt	*rt_init(char **av)
 	rtv_tmp->win->draw_buf = NULL;
 	rtv_tmp->win->pitch = WIDTH * BITS;
 	rtv_tmp->win->offset = 0;
-	rtv_tmp->tmp_surface = malloc(sizeof(*(rtv_tmp->tmp_surface)) * 10000);
 	return (rtv_tmp);
 }

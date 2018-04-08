@@ -69,8 +69,8 @@ void	cam_update(t_cam *c)
 
 void	cam_move(t_cam *c, t_vec3 *axis, float amt)
 {
-	t_mat4  identity;
-	t_vec3  move_to;
+	t_mat4	identity;
+	t_vec3	move_to;
 
 	identity = init_identiny();
 	move_to = vec3_scale(amt, axis);

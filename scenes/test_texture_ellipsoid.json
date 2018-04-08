@@ -1,0 +1,61 @@
+{
+	"lights": 1,
+	"materials": 1,
+	"objects": 1,
+	"render":
+	{
+		"aa": 1,
+		"type_color": 0,
+		"level_reflection": 0,
+		"level_refraction": 0,
+		"show_texture": "true",
+		"show_shadow": "false",
+		"show_glossy": "false"
+	},
+	"camera":
+	{
+		"camera_position": {"x" : 0, "y" : 0, "z" : -500},
+		"camera_direction": {"x" : 0, "y" : 0, "z" : 1},
+		"fov": 90
+	},
+	"lights_obj":
+	{
+		"type": 0,
+		"position":{"x": 0, "y": 0, "z": -500},
+		"direction":{"x": 0.0, "y": 1.0, "z": 0.0},
+		"angle": 90,
+		"len": 25,
+		"power": 1.0,
+		"color":
+		{
+			"Red"   : 1.0,
+			"Green" : 1.0,
+			"Blue"  : 1.0,
+			"Alpha" : 1.0
+		}
+	},
+	"materials_obj":
+	{
+		"color":
+		{
+			"Red"   : 1.0,
+			"Green" : 1.0,
+			"Blue"  : 1.0,
+			"Alpha" : 1.0
+	    },
+		"reflection": 0.01,
+		"transparent": 0.01,
+		"refraction": 1.0,
+		"texture": "./textures/wall0.bmp",
+		"offset_texture": {"x": 0.0, "y": 0.0},
+		"scale_texture": {"x": 50.0, "y": 100.0}
+	},
+	"ellipsoid":
+	{
+		"position": {"x": 0, "y": -30, "z": 0},
+		"rotate": {"x": 1, "y": 0, "z": 0},
+		"k": 0,
+		"radius": 100,
+		"material": 0
+	}
+}

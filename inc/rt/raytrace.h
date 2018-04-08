@@ -10,8 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef _RAYTRACE_H
-# define _RAYTRACE_H
+#ifndef RAYTRACE_H
+# define RAYTRACE_H
+
+# include "textures.h"
 
 /*
 ** RGBA color 0-255 definition
@@ -53,6 +55,7 @@ typedef struct	s_material
 	float		reflection;
 	float		refraction;
 	float		transparent;
+	t_texture	texture;
 }				t_material;
 
 /*
@@ -60,10 +63,10 @@ typedef struct	s_material
 */
 typedef struct	s_light
 {
-	float 		type;
+	float		type;
 	t_vec3		pos;
 	t_vec3		dir;
-	float 		angle;
+	float		angle;
 	float		len;
 	t_rgbap		color;
 	float		power;
@@ -83,4 +86,5 @@ void			set_material(t_material *material, t_rgbap diffuse, float r);
 */
 t_light			*new_light();
 void			set_light(t_light *light, t_vec3 pos, t_rgbap intensity);
+
 #endif

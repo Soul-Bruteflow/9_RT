@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   keyboard_core.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mvlad <mvlad@student.42.fr>                +#+  +:+       +#+        */
+/*   By: vvlasenk <vvlasenk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/04 11:39:16 by mvlad             #+#    #+#             */
-/*   Updated: 2017/10/18 17:13:12 by mvlad            ###   ########.fr       */
+/*   Updated: 2018/03/31 15:19:09 by vvlasenk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "rt.h"
 
-void    sdl_exit(t_rt *r)
+void	sdl_exit(t_rt *r)
 {
 	if (r->sdl->key_state[SDL_SCANCODE_ESCAPE])
 		exit(0);

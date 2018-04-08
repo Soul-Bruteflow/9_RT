@@ -1,0 +1,185 @@
+{
+	"lights": 2,
+	"materials": 6,
+	"objects": 6,
+	"render":
+	{
+		"aa": 1,
+		"type_color": 0,
+		"level_reflection": 3,
+		"level_refraction": 3,
+		"show_texture": "true",
+		"show_shadow": "true",
+		"show_glossy": "true"
+	},
+	"camera":
+	{
+		"camera_position": {"x" : 0, "y" : 0, "z" : -150},
+		"camera_direction": {"x" : 0, "y" : 0, "z" : 1},
+		"fov": 90
+	},
+	"lights_obj":
+	[
+		{
+			"type": 1,
+			"position":{"x": 0, "y": -50, "z": 0},
+			"direction":{"x": 0.0, "y": 1.0, "z": 0.0},
+			"angle": 90,
+			"len": 1,
+			"power": 0.5,
+			"color":
+			{
+				"Red"   : 1.0,
+				"Green" : 1.0,
+				"Blue"  : 1.0,
+				"Alpha" : 1.0
+			}
+		},
+		{
+			"type": 2,
+			"position":{"x": 100, "y": 0, "z": 30},
+			"direction":{"x": 0.0, "y": 1.0, "z": 0.0},
+			"angle": 90,
+			"len": 5,
+			"power": 0.5,
+			"color":
+			{
+				"Red"   : 1.0,
+				"Green" : 1.0,
+				"Blue"  : 1.0,
+				"Alpha" : 1.0
+			}
+		}
+	],
+	"materials_obj":
+	[
+		{
+			"color":
+			{
+				"Red"   : 1.0,
+				"Green" : 1.0,
+				"Blue"  : 1.0,
+				"Alpha" : 1.0
+			},
+			"reflection": 0.75,
+			"transparent": 0.99,
+			"refraction": 1.5,
+			"texture": "null",
+			"offset_texture": {"x": 0.0, "y": 0.0},
+			"scale_texture": {"x": 0.0, "y": 0.0}
+		},
+		{
+			"color":
+			{
+				"Red"   : 0.5,
+				"Green" : 0.5,
+				"Blue"  : 0.0,
+				"Alpha" : 1.0
+			},
+			"reflection": 0.75,
+			"transparent": 0.99,
+			"refraction": 1.5,
+			"texture": "null",
+			"offset_texture": {"x": 0.0, "y": 0.0},
+			"scale_texture": {"x": 0.0, "y": 0.0}
+		},
+		{
+			"color":
+			{
+				"Red"   : 0.5,
+				"Green" : 0.0,
+				"Blue"  : 0.5,
+				"Alpha" : 1.0
+			},
+			"reflection": 0.75,
+			"transparent": 0.99,
+			"refraction": 1.5,
+			"texture": "null",
+			"offset_texture": {"x": 0.0, "y": 0.0},
+			"scale_texture": {"x": 0.0, "y": 0.0}
+		},
+		{
+			"color":
+			{
+				"Red"   : 0.0,
+				"Green" : 0.5,
+				"Blue"  : 0.5,
+				"Alpha" : 1.0
+			},
+			"reflection": 0.75,
+			"transparent": 0.99,
+			"refraction": 1.5,
+			"texture": "null",
+			"offset_texture": {"x": 0.0, "y": 0.0},
+			"scale_texture": {"x": 0.0, "y": 0.0}
+		},
+		{
+			"color":
+			{
+				"Red"   : 0.5,
+				"Green" : 0.5,
+				"Blue"  : 0.2,
+				"Alpha" : 1.0
+			},
+			"reflection": 0.75,
+			"transparent": 0.99,
+			"refraction": 1.5,
+			"texture": "null",
+			"offset_texture": {"x": 0.0, "y": 0.0},
+			"scale_texture": {"x": 0.0, "y": 0.0}
+		},
+		{
+			"color":
+			{
+				"Red"   : 1.0,
+				"Green" : 1.0,
+				"Blue"  : 1.0,
+				"Alpha" : 1.0
+			},
+			"reflection": 0.6,
+			"transparent": 0.01,
+			"refraction": 1.5,
+			"texture": "null",
+			"offset_texture": {"x": 0.0, "y": 0.0},
+			"scale_texture": {"x": 0.0, "y": 0.0}
+		}
+	],
+	"plane":
+	{
+		"position": {"x": 0, "y": 26, "z": 0},
+		"rotate": {"x": 0, "y": -1, "z": 0},
+		"material": 5
+	},
+	"cone":
+	{
+		"position": {"x": 65, "y": 0, "z": 0},
+		"rotate": {"x": 0, "y": 1, "z": 0},
+		"angle": 10,
+		"material": 0
+	},
+	"cylinder":
+	{
+		"position": {"x": 65, "y": 0, "z": 30},
+		"rotate": {"x": 0, "y": 1, "z": 0},
+		"radius": 10,
+		"material": 4
+	},
+	"sphere":
+	[
+		{
+			"position": {"x": -45, "y": -35, "z": 0},
+			"radius": 15,
+			"material": 1
+		},
+		{
+			"position": {"x": -45, "y": -10, "z": 0},
+			"radius": 25,
+			"material": 2
+		},
+		{
+			"position": {"x": -45, "y": 23, "z": 0},
+			"radius": 35,
+			"material": 3
+		}
+	]
+}

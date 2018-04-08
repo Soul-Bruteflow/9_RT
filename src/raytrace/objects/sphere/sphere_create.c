@@ -12,7 +12,7 @@
 
 #include "rt.h"
 
-t_sphere	*new_sphere(void)
+t_sphere		*new_sphere(void)
 {
 	t_sphere *sphere;
 
@@ -22,17 +22,17 @@ t_sphere	*new_sphere(void)
 	return (sphere);
 }
 
-void		set_sphere_radius(t_obj3d *obj, float new_radius)
+static void		set_sphere_radius(t_obj3d *obj, float rad)
 {
-	t_sphere *tmp_sphere;
+	t_sphere *sphere;
 
-	tmp_sphere = obj->type;
-	tmp_sphere->radius = new_radius;
+	sphere = obj->type;
+	sphere->radius = rad;
 }
 
-void		set_sphere(t_obj3d *obj, t_vec3 new_pos, float rad, Uint16 mat)
+void			set_sphere(t_obj3d *obj, t_vec3 pos, float rad, Uint16 mat)
 {
-	set_object_position(obj, new_pos);
+	set_object_position(obj, pos);
 	set_object_material(obj, mat);
 	set_sphere_radius(obj, rad);
 }

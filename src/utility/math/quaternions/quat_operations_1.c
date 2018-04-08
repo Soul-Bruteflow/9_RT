@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   quat_operations_1.c                                :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vholovin <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/03/30 21:10:39 by vholovin          #+#    #+#             */
+/*   Updated: 2018/03/30 21:10:40 by vholovin         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "rt.h"
 
 float	quat_len(t_quat q)
@@ -7,14 +19,13 @@ float	quat_len(t_quat q)
 
 t_quat	quat_normalize(t_quat q)
 {
-
 	float length;
 	float scale;
 
 	length = quat_len(q);
 	if (length != 1.0)
 	{
-		scale = ( 1.0f / sqrtf(length));
+		scale = (1.0f / sqrtf(length));
 		q.x *= scale;
 		q.y *= scale;
 		q.z *= scale;

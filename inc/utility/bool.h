@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef _BOOL_H
-# define _BOOL_H
+#ifndef BOOL_H
+# define BOOL_H
 
 /*
 ** Boolean replacement

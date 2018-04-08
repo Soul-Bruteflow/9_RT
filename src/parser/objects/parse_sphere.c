@@ -6,47 +6,109 @@
 /*   By: mvlad <mvlad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/04 11:39:16 by mvlad             #+#    #+#             */
-/*   Updated: 2017/10/09 15:16:49 by mvlad            ###   ########.fr       */
+/*   Updated: 2018/03/31 19:18:47 by mvlad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "rt.h"
 
-void	alloc_new_sphere(t_rt *r, int i)
+t_bool		parse_sphere_fin_valid(t_rt *rt, t_vec3 pos, float rad, float mat)
 {
-	r->scene->objects[i] = new_object(sphere);
-	r->scene->objects[i]->type = new_sphere();
-	r->scene->objects[i]->intersect = intersect_sphere_ray;
+	if (!(parse_vector_json_vers(&pos, V_MIN, V_MAX)))
+		return (false);
+	if (!(parse_number_json_vers(&rad, V_MIN, V_MAX)))
+		return (false);
+	if (!(valid_material(rt, mat, M_MIN, M_MAX)))
+		return (false);
+	return (true);
 }
 
-t_bool	parse_sphere(t_rt *r, int i)
+t_bool		parse_sphere_single(t_rt *rt, int i, cJSON *temp)
 {
-	t_vec3		position;
-	float		radius;
-	Uint16		material;
-	SDL_Surface	t;
+	cJSON		*temp2;
+	t_vec3		pos;
+	float		rad;
+	Uint16		mat;
+	float		material;
 
-	free(r->pars->line);
-	alloc_new_sphere(r, i);
-	if (!(check_line(r, "position:")))
+	alloc_new_sphere(rt, i);
+	if (!(parse_sphere_validation_single(temp, "position")))
 		return (false);
-	if (!(parse_vector(r, &position, V_MIN, V_MAX)))
+	pos = parse_sphere_single_pos(temp);
+	if (!(parse_sphere_validation_value(temp, "radius")))
 		return (false);
-	if (!(check_line(r, "radius:")))
+	temp2 = cJSON_GetObjectItem(temp, "radius");
+	rad = temp2->valuedouble;
+	if (!(parse_sphere_validation_value(temp, "material")))
 		return (false);
-	if (!(parse_number(r, &radius, V_MIN, V_MAX)))
+	temp2 = cJSON_GetObjectItem(temp, "material");
+	mat = (Uint16)temp2->valuedouble;
+	material = temp2->valuedouble;
+	if (!(parse_sphere_fin_valid(rt, pos, rad, material)))
 		return (false);
-	if (!(check_line(r, "material:")))
+	set_sphere(rt->scene->objects[i], pos, rad, mat);
+	return (true);
+}
+
+t_bool		parse_sphere_array_cont(t_rt *rt, int i, cJSON *elem)
+{
+	t_vec3		pos;
+	float		rad;
+	Uint16		mat;
+	float		material;
+	cJSON		*temp2;
+
+	if (!(parse_sphere_validation_single(elem, "position")))
 		return (false);
-	if (!(valid_material(r, &material, M_MIN, M_MAX)))
+	pos = parse_sphere_single_pos(elem);
+	if (!(parse_sphere_validation_value(elem, "radius")))
 		return (false);
-	set_sphere(r->scene->objects[i], position, radius, material);
-	if (!(check_line(r, "texture:")))
+	temp2 = cJSON_GetObjectItem(elem, "radius");
+	rad = temp2->valuedouble;
+	if (!(parse_sphere_validation_value(elem, "material")))
 		return (false);
-	if (!(valid_texture(r, &t, T_MIN, T_MAX)))
+	temp2 = cJSON_GetObjectItem(elem, "material");
+	mat = (Uint16)temp2->valuedouble;
+	material = temp2->valuedouble;
+	if (!(parse_sphere_fin_valid(rt, pos, rad, material)))
 		return (false);
-	//r->scene->objects[i]->texture = &r->calc->tmp_surface;
-	//int h = r->tmp_surface->format->BitsPerPixel;
-	//int hh = &r->scene->objects[i]->texture->format->BitsPerPixel;
+	set_sphere(rt->scene->objects[i], pos, rad, mat);
+	return (true);
+}
+
+t_bool		parse_sphere_array(t_rt *rt, int i, cJSON *temp, int k)
+{
+	cJSON		*elem;
+
+	while (++k < cJSON_GetArraySize(temp))
+	{
+		alloc_new_sphere(rt, i);
+		elem = cJSON_GetArrayItem(temp, k);
+		if (!elem)
+			return (false);
+		if (!(parse_sphere_array_cont(rt, i, elem)))
+			return (false);
+		i++;
+	}
+	return (true);
+}
+
+t_bool		parse_sphere(t_rt *rt, int i, cJSON *temp)
+{
+	int k;
+
+	k = -1;
+	if (temp->type == cJSON_Object)
+	{
+		if (!(parse_sphere_single(rt, i, temp)))
+			return (false);
+	}
+	else if (temp->type == cJSON_Array)
+	{
+		if (!(parse_sphere_array(rt, i, temp, k)))
+			return (false);
+	}
+	else
+		return (false);
 	return (true);
 }

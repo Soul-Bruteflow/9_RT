@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   pthreads.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vholovin <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/03/30 21:01:24 by vholovin          #+#    #+#             */
+/*   Updated: 2018/03/30 21:01:37 by vholovin         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "rt.h"
 
 void			pthreads(t_rt *rt)
@@ -5,7 +17,7 @@ void			pthreads(t_rt *rt)
 	pthread_t	th[NB_THREAD];
 	t_rt_pth	rt_pth[NB_THREAD];
 	void		*ret;
-	int 		i;
+	int			i;
 
 	i = -1;
 	while (++i < NB_THREAD)

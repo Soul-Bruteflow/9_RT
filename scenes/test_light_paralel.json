@@ -1,0 +1,114 @@
+{
+	"lights": 3,
+	"materials": 2,
+	"objects": 2,
+	"render":
+	{
+		"aa": 1,
+		"type_color": 0,
+		"level_reflection": 3,
+		"level_refraction": 3,
+		"show_texture": "true",
+		"show_shadow": "true",
+		"show_glossy": "true"
+	},
+	"camera":
+	{
+		"camera_position": {"x" : 0, "y" : 0, "z" : -100},
+		"camera_direction": {"x" : 0, "y" : 0, "z" : 1},
+		"fov": 90
+	},
+	"lights_obj":
+	[
+		{
+			"type": 2,
+			"position":{"x": 10, "y": -50, "z": 25},
+			"direction":{"x": 0.0, "y": 1.0, "z": 0.0},
+			"angle": 90,
+			"len": 50,
+			"power": 1.5,
+			"color":
+			{
+				"Red"   : 1.0,
+				"Green" : 0.0,
+				"Blue"  : 0.0,
+				"Alpha" : 1.0
+			}
+		},
+		{
+			"type": 2,
+			"position":{"x": 0, "y": -50, "z": 25},
+			"direction":{"x": 0.0, "y": 1.0, "z": 0.0},
+			"angle": 90,
+			"len": 50,
+			"power": 1.5,
+			"color":
+			{
+				"Red"   : 0.0,
+				"Green" : 1.0,
+				"Blue"  : 0.0,
+				"Alpha" : 1.0
+			}
+		},
+		{
+			"type": 2,
+			"position":{"x": -10, "y": -50, "z": 25},
+			"direction":{"x": 0.0, "y": 1.0, "z": 0.0},
+			"angle": 90,
+			"len": 50,
+			"power": 1.5,
+			"color":
+			{
+				"Red"   : 0.0,
+				"Green" : 0.0,
+				"Blue"  : 1.0,
+				"Alpha" : 1.0
+			}
+		}
+	],
+	"materials_obj":
+	[
+		{
+			"color":
+			{
+				"Red"   : 1.0,
+				"Green" : 1.0,
+				"Blue"  : 1.0,
+				"Alpha" : 1.0
+			},
+			"reflection": 0.01,
+			"transparent": 0.01,
+			"refraction": 1.0,
+			"texture": "null",
+			"offset_texture": {"x": 0.0, "y": 0.0},
+			"scale_texture": {"x": 0.0, "y": 0.0}
+		},
+		{
+			"color":
+			{
+				"Red"   : 1.0,
+				"Green" : 1.0,
+				"Blue"  : 1.0,
+				"Alpha" : 1.0
+			},
+			"reflection": 0.99,
+			"transparent": 0.05,
+			"refraction": 1.5,
+			"texture": "null",
+			"offset_texture": {"x": 0.0, "y": 0.0},
+			"scale_texture": {"x": 0.0, "y": 0.0}
+		}
+	],
+	"plane":
+	{
+		"position": {"x": 0, "y": 30, "z": 0},
+		"rotate": {"x": 0, "y": -1, "z": 0},
+		"material": 0
+	},
+	"sphere":
+	{
+		"position": {"x": 0, "y": -20, "z": 25},
+		"radius": 25,
+		"material": 1
+	}
+}

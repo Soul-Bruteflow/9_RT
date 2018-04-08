@@ -12,7 +12,7 @@
 
 #include "rt.h"
 
-t_cone	*new_cone(void)
+t_cone		*new_cone(void)
 {
 	t_cone *cone;
 
@@ -22,29 +22,19 @@ t_cone	*new_cone(void)
 	return (cone);
 }
 
-void	set_cone_axis(t_obj3d *obj, t_vec3 new_axis)
+static void	set_cone_angle(t_obj3d *obj, float angle)
 {
-	t_cone *tmp_cone;
+	t_cone *cone;
 
-	tmp_cone = obj->type;
-	new_axis = vec3_norm(new_axis);
-	tmp_cone->axis.x = new_axis.x;
-	tmp_cone->axis.y = new_axis.y;
-	tmp_cone->axis.z = new_axis.z;
+	cone = obj->type;
+	cone->angle = angle;
 }
 
-void	set_cone_angle(t_obj3d *obj, float new_angle)
+void		set_cone(t_obj3d *obj, t_vec3 *pr, float angle,
+				Uint16 mat)
 {
-	t_cone *tmp_cone;
-
-	tmp_cone = obj->type;
-	tmp_cone->angle = new_angle;
-}
-
-void	set_cone(t_obj3d *obj, t_vec3 *data, float angle, Uint16 new_material)
-{
-	set_object_position(obj, data[0]);
-	set_object_material(obj, new_material);
+	set_object_position(obj, pr[0]);
+	set_object_rotation(obj, pr[1]);
+	set_object_material(obj, mat);
 	set_cone_angle(obj, angle);
-	set_cone_axis(obj, data[1]);
 }

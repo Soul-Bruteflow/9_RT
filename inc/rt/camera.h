@@ -1,5 +1,17 @@
-#ifndef _CAMERA_H
-# define _CAMERA_H
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   camera.h                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vholovin <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/04/03 15:25:34 by vholovin          #+#    #+#             */
+/*   Updated: 2018/04/03 15:25:35 by vholovin         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#ifndef CAMERA_H
+# define CAMERA_H
 
 /*
 ** Support struct for calculations
@@ -18,10 +30,10 @@ typedef struct	s_sup
 typedef struct	s_persp
 {
 	float		fov;
-	float 		near;
-	float 		far;
-	float 		width;
-	float 		height;
+	float		near;
+	float		far;
+	float		width;
+	float		height;
 }				t_persp;
 
 /*
@@ -35,9 +47,9 @@ typedef struct	s_cam
 	t_vec3		up;
 	t_vec3		right;
 	t_vec3		world_up;
-	float 		mov_amt;
-	float 		rot_amt;
-	t_vec2 		m_rot_amt;
+	float		mov_amt;
+	float		rot_amt;
+	t_vec2		m_rot_amt;
 	t_persp		p;
 	t_transform	t;
 	t_sup		s;
@@ -53,8 +65,9 @@ void			cam_rot_z(t_cam *c, float angle);
 void			cam_update(t_cam *c);
 t_mat4			get_mvp(t_cam *c);
 t_mat4			init_cam_projection(t_persp p);
-t_bool          handle_cam_y_pos_deg(t_vec2 *angle, float rot_amt);
-t_bool          handle_cam_y_neg_deg(t_vec2 *angle, float rot_amt);
-void            handle_cam_x_pos_deg(t_vec2 *angle, float rot_amt);
-void            handle_cam_x_neg_deg(t_vec2 *angle, float rot_amt);
+t_bool			handle_cam_y_pos_deg(t_vec2 *angle, float rot_amt);
+t_bool			handle_cam_y_neg_deg(t_vec2 *angle, float rot_amt);
+void			handle_cam_x_pos_deg(t_vec2 *angle, float rot_amt);
+void			handle_cam_x_neg_deg(t_vec2 *angle, float rot_amt);
+
 #endif

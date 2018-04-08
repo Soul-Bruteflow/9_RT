@@ -1,6 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   quat_operations_2.c                                :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vholovin <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/03/30 21:10:48 by vholovin          #+#    #+#             */
+/*   Updated: 2018/03/30 21:10:50 by vholovin         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "rt.h"
 
-//Unit-Norm Quaternion (Special Form)
+/*
+** Unit-Norm Quaternion (Special Form)
+*/
+
 t_quat	quat_normalize_s(t_quat q)
 {
 	float	angle;
@@ -41,7 +56,7 @@ t_quat	set_quat_v(t_vec3 v, float w)
 	return (q);
 }
 
-t_quat		from_axis_angle(t_vec3 axis, float angle)
+t_quat	from_axis_angle(t_vec3 axis, float angle)
 {
 	float	sin_half_angle;
 	float	cos_half_angle;

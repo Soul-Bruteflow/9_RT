@@ -1,0 +1,91 @@
+{
+	"lights": 1,
+	"materials": 1,
+	"objects": 5,
+	"render":
+	{
+		"aa": 1,
+		"type_color": 0,
+		"level_reflection": 0,
+		"level_refraction": 0,
+		"show_texture": "false",
+		"show_shadow": "false",
+		"show_glossy": "false"
+	},
+	"camera":
+	{
+		"camera_position": {"x" : 0, "y" : 0, "z" : -500},
+		"camera_direction": {"x" : 0, "y" : 0, "z" : 1},
+		"fov": 90
+	},
+	"lights_obj":
+	{
+		"type": 0,
+		"position":{"x": 0, "y": 0, "z": -500},
+		"direction":{"x": 0.0, "y": 1.0, "z": 0.0},
+		"angle": 90,
+		"len": 25,
+		"power": 1.0,
+		"color":
+		{
+			"Red"   : 1.0,
+			"Green" : 1.0,
+			"Blue"  : 1.0,
+			"Alpha" : 1.0
+		}
+	},
+	"materials_obj":
+	{
+		"color":
+		{
+			"Red"   : 1.0,
+			"Green" : 1.0,
+			"Blue"  : 1.0,
+			"Alpha" : 1.0
+	    },
+		"reflection": 0.01,
+		"transparent": 0.01,
+		"refraction": 1.0,
+		"texture": "null",
+		"offset_texture": {"x": 0.0, "y": 0.0},
+		"scale_texture": {"x": 0.0, "y": 0.0}
+	},
+	"plane":
+	{
+		"position": {"x": 0, "y": 100, "z": 0},
+		"rotate": {"x": 0, "y": -1, "z": 0},
+		"material": 0
+	},
+	"torus":
+	[
+		{
+		"position": {"x": 0, "y": 0, "z": 0},
+		"rotate": {"x": 0, "y": 0, "z": -1},
+		"large_radius": 90,
+		"small_radius": 10,
+		"material": 0
+		},
+		{
+		"position": {"x": 150, "y": 0, "z": 0},
+		"rotate": {"x": 0, "y": -1, "z": 0},
+		"large_radius": 90,
+		"small_radius": 10,
+		"material": 0
+		},
+		{
+		"position": {"x": 0, "y": -150, "z": 0},
+		"rotate": {"x": 1, "y": 0, "z": 0},
+		"large_radius": 90,
+		"small_radius": 10,
+		"material": 0
+		},
+		{
+		"position": {"x": -100, "y": 0, "z": 0},
+		"rotate": {"x": -1, "y": 1, "z": 1},
+		"large_radius": 90,
+		"small_radius": 10,
+		"material": 0
+		}
+	]
+	
+}

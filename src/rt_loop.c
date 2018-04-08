@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rt_loop.c                                         :+:      :+:    :+:   */
+/*   rt_loop.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mvlad <mvlad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,22 +12,10 @@
 
 #include "rt.h"
 
-static void		set_flag(t_rt *rt)
+t_bool		running(SDL_Event *event, const Uint8 **key_state, t_sdl *s)
 {
-	rt->scene->aa = 1;
-	rt->scene->max_level_reflection = 0;
-	rt->scene->max_level_transparent = 0;
-	rt->scene->status_shadow = false;
-	rt->scene->status_glossy = false;
-	rt->scene->status_color = 0;
-}
-
-t_bool	running(SDL_Event *event, const Uint8 **key_state, t_sdl *s)
-{
-
 	(void)s;
-
-//	SDL_Delay(1);
+	SDL_Delay(1);
 	SDL_PollEvent(event);
 	if (event->type == SDL_QUIT)
 		return (false);
@@ -39,21 +27,24 @@ static void	update_time(t_rt *r)
 {
 	r->delta.oldtime = r->delta.curtime;
 	r->delta.curtime = SDL_GetTicks();
-	r->delta.ftime = (r->delta.curtime - r->delta.oldtime) / 1.0f;
+	r->delta.ftime = (r->delta.curtime - r->delta.oldtime) / 2.0f;
 	r->scene->cam.mov_amt = (float)r->delta.ftime * 1.0f;
 	r->scene->cam.rot_amt = (float)r->delta.ftime * 0.025f;
 }
 
-void	rt_loop(t_rt *r)
+void		rt_loop(t_rt *r)
 {
+	unsigned i;
+
+	i = 0;
 	r->delta.curtime = SDL_GetTicks();
 	r->delta.fps_counter = 0;
-	set_flag(r);
 	while ((running(&r->sdl->event, &r->sdl->key_state, r->sdl)))
 	{
 		update_time(r);
 		keyboard_core(r);
 		mouse_core(r);
-		rt_render(r);
+		if (i++ <= 0)
+			rt_render(r);
 	}
 }

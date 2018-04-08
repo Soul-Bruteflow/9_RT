@@ -1,0 +1,81 @@
+{
+	"lights": 1,
+	"materials": 1,
+	"objects": 4,
+	"render":
+	{
+		"aa": 1,
+		"type_color": 0,
+		"level_reflection": 0,
+		"level_refraction": 0,
+		"show_texture": "false",
+		"show_shadow": "false",
+		"show_glossy": "false"
+	},
+	"camera":
+	{
+		"camera_position": {"x" : 0, "y" : 0, "z" : -500},
+		"camera_direction": {"x" : 0, "y" : 0, "z" : 1},
+		"fov": 90
+	},
+	"lights_obj":
+	{
+		"type": 0,
+		"position":{"x": 0, "y": 0, "z": -500},
+		"direction":{"x": 0.0, "y": 1.0, "z": 0.0},
+		"angle": 90,
+		"len": 25,
+		"power": 1.0,
+		"color":
+		{
+			"Red"   : 1.0,
+			"Green" : 1.0,
+			"Blue"  : 1.0,
+			"Alpha" : 1.0
+		}
+	},
+	"materials_obj":
+	{
+		"color":
+		{
+			"Red"   : 1.0,
+			"Green" : 1.0,
+			"Blue"  : 1.0,
+			"Alpha" : 1.0
+	    },
+		"reflection": 0.01,
+		"transparent": 0.01,
+		"refraction": 1.0,
+		"texture": "null",
+		"offset_texture": {"x": 0.0, "y": 0.0},
+		"scale_texture": {"x": 100.0, "y": 100.0}
+	},
+	"plane":
+	{
+		"position": {"x": 0, "y": 100, "z": 0},
+		"rotate": {"x": 0, "y": -1, "z": 0},
+		"material": 0
+	},
+	"triangle":
+	[
+		{
+		"position A": {"x": 225, "y": -50, "z": 0},
+		"position B": {"x": 275, "y": 50, "z": 0},
+		"position C": {"x": 175, "y": 50, "z": 0},
+		"material": 0
+		},
+		{
+		"position A": {"x": 0, "y": 50, "z": 50},
+		"position B": {"x": -50, "y": 50, "z": -50},
+		"position C": {"x": 50, "y": 50, "z": -50},
+		"material": 0
+		},
+		{
+		"position A": {"x": -250, "y": -50, "z": 0},
+		"position B": {"x": -300, "y": 50, "z": 25},
+		"position C": {"x": -200, "y": 50, "z": -50},
+		"material": 0
+		}
+	]
+	
+}

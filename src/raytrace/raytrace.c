@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   raytrace.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mvlad <mvlad@student.42.fr>                +#+  +:+       +#+        */
+/*   By: vholovin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/10/04 11:39:16 by mvlad             #+#    #+#             */
-/*   Updated: 2017/10/09 15:27:59 by mvlad            ###   ########.fr       */
+/*   Created: 2018/03/30 21:19:07 by vholovin          #+#    #+#             */
+/*   Updated: 2018/03/30 21:20:13 by vholovin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,11 +54,9 @@ void			calculate_ray(t_rt *rt)
 		(rt->calc->level_reflection == rt->scene->max_level_reflection &&
 		rt->calc->level_transparent == rt->scene->max_level_transparent))
 	{
-		if (object_intersect(rt) == true &&
-			normal_of_intersect(rt, &rt->calc->intersect_normal) == true)
+		if (object_intersect(rt) == true)
 		{
-			rt->calc->cur_mat = *rt->scene->materials[rt->scene->objects[
-				rt->calc->cur_obj]->material];
+			calculate_texture(rt);
 			calculate_ambient_light(rt);
 			if (rt->scene->lits_n != 0)
 			{
@@ -73,7 +71,7 @@ static void		anti_aliasing(t_rt *rt, Uint16 x, Uint16 y)
 {
 	float	t_x;
 	float	t_y;
-	int 	steep;
+	int		steep;
 
 	steep = 0;
 	t_y = y;
@@ -90,7 +88,7 @@ static void		anti_aliasing(t_rt *rt, Uint16 x, Uint16 y)
 			t_x += 1.0f / rt->scene->aa;
 			steep++;
 		}
-	t_y += 1.0f / rt->scene->aa;
+		t_y += 1.0f / rt->scene->aa;
 	}
 	rt->calc->pixel_color = set_pixel_color(rt, steep);
 }
@@ -98,7 +96,7 @@ static void		anti_aliasing(t_rt *rt, Uint16 x, Uint16 y)
 void			*raytrace(void *arg)
 {
 	t_rt_pth	*rt_pth;
-	t_rt 		*rt;
+	t_rt		*rt;
 	Uint16		x;
 	Uint16		y;
 

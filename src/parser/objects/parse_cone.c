@@ -6,43 +6,105 @@
 /*   By: mvlad <mvlad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/04 11:39:16 by mvlad             #+#    #+#             */
-/*   Updated: 2017/10/09 15:14:29 by mvlad            ###   ########.fr       */
+/*   Updated: 2018/03/31 19:07:07 by mvlad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "rt.h"
 
-void	alloc_new_cone(t_rt *r, int i)
+t_bool		parse_cone_fin_valid(t_vec3 pos, t_vec3 rot, float angle)
 {
-	r->scene->objects[i] = new_object(cone);
-	r->scene->objects[i]->type = new_cone();
-	r->scene->objects[i]->intersect = intersect_cone_ray;
+	if (!(parse_vector_json_vers(&pos, V_MIN, V_MAX)))
+		return (false);
+	if (!(parse_vector_float_json_vers(&rot, V_MIN, V_MAX)))
+		return (false);
+	if (!(parse_float_number_json_vers(&angle, A_MIN, A_MAX)))
+		return (false);
+	return (true);
 }
 
-t_bool	parse_cone(t_rt *r, int i)
+t_bool		parse_cone_single(t_rt *rt, int i, cJSON *temp)
 {
-	t_vec3		data[2];
-	float		angle;
-	Uint16		material;
+	t_vec3		pr[2];
+	Uint16		mat;
+	float		am[2];
+	cJSON		*temp2;
 
-	free(r->pars->line);
-	alloc_new_cone(r, i);
-	if (!(check_line(r, "tip/position:")))
+	alloc_new_cone(rt, i);
+	if (!(parse_cone_valid_all(temp)))
 		return (false);
-	if (!(parse_vector(r, &data[0], V_MIN, V_MAX)))
+	pr[0] = parse_cone_single_pos(temp);
+	pr[1] = parse_cone_single_rot(temp);
+	temp2 = cJSON_GetObjectItem(temp, "angle");
+	am[0] = temp2->valuedouble;
+	temp2 = cJSON_GetObjectItem(temp, "material");
+	mat = (Uint16)temp2->valuedouble;
+	am[1] = temp2->valuedouble;
+	if (!(parse_cone_fin_valid(pr[0], pr[1], am[0])))
 		return (false);
-	if (!(check_line(r, "axis:")))
+	if (!(valid_material(rt, am[1], M_MIN, M_MAX)))
 		return (false);
-	if (!(parse_vector(r, &data[1], V_MIN, V_MAX)))
+	set_cone(rt->scene->objects[i], pr, am[0], mat);
+	return (true);
+}
+
+t_bool		parse_cone_array_cont(t_rt *rt, int i, cJSON *elem)
+{
+	t_vec3		pr[2];
+	Uint16		mat;
+	float		am[2];
+	cJSON		*temp2;
+
+	if (!(parse_cone_valid_all(elem)))
 		return (false);
-	if (!(check_line(r, "angle:")))
+	pr[0] = parse_cone_single_pos(elem);
+	pr[1] = parse_cone_single_rot(elem);
+	temp2 = cJSON_GetObjectItem(elem, "angle");
+	am[0] = temp2->valuedouble;
+	temp2 = cJSON_GetObjectItem(elem, "material");
+	mat = (Uint16)temp2->valuedouble;
+	am[1] = temp2->valuedouble;
+	if (!(parse_cone_fin_valid(pr[0], pr[1], am[0])))
 		return (false);
-	if (!(parse_number(r, &angle, A_MIN, A_MAX)))
+	if (!(valid_material(rt, am[1], M_MIN, M_MAX)))
 		return (false);
-	if (!(check_line(r, "material:")))
+	set_cone(rt->scene->objects[i], pr, am[0], mat);
+	return (true);
+}
+
+t_bool		parse_cone_array(t_rt *rt, int i, cJSON *temp, int k)
+{
+	cJSON *elem;
+
+	while (++k < cJSON_GetArraySize(temp))
+	{
+		alloc_new_cone(rt, i);
+		elem = cJSON_GetArrayItem(temp, k);
+		if (!elem)
+			return (false);
+		if (!(parse_cone_array_cont(rt, i, elem)))
+			return (false);
+		i++;
+	}
+	return (true);
+}
+
+t_bool		parse_cone(t_rt *rt, int i, cJSON *temp)
+{
+	int k;
+
+	k = -1;
+	if (temp->type == cJSON_Object)
+	{
+		if (!(parse_cone_single(rt, i, temp)))
+			return (false);
+	}
+	else if (temp->type == cJSON_Array)
+	{
+		if (!(parse_cone_array(rt, i, temp, k)))
+			return (false);
+	}
+	else
 		return (false);
-	if (!(valid_material(r, &material, M_MIN, M_MAX)))
-		return (false);
-	set_cone(r->scene->objects[i], data, angle, material);
 	return (true);
 }

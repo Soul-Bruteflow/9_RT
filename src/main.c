@@ -20,14 +20,11 @@ int		main(int ac, char **av)
 	{
 		rt = rt_init(av);
 		if (!(parser_core(rt)))
-		{
 			rtv_error(parse_error);
-		}
 		init_camera(rt);
 		init_controls(rt);
 		create_window(rt, WIDTH, HEIGHT, "RT\0");
 		init_gui(rt);
-		rt->tmp_surface = IMG_Load("./res/tex3.png");
 		rt_loop(rt);
 	}
 	else

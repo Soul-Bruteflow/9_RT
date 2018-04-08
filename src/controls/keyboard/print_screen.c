@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   print_screen.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bruteflow <bruteflow@student.42.fr>        +#+  +:+       +#+        */
+/*   By: vvlasenk <vvlasenk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/04 19:56:30 by bruteflow         #+#    #+#             */
-/*   Updated: 2018/03/04 19:59:43 by bruteflow        ###   ########.fr       */
+/*   Updated: 2018/03/31 15:23:31 by vvlasenk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	screen_capture(SDL_Renderer *ren, const char *name, int wh[])
 	Uint32			format;
 	void			*pixels;
 
-	format  = SDL_PIXELFORMAT_RGBA32;
+	format = SDL_PIXELFORMAT_RGBA32;
 	pixels = malloc(wh[0] * wh[1] * SDL_BYTESPERPIXEL(format));
 	if (!pixels)
 		rtv_error(print_screen_error);
@@ -36,13 +36,15 @@ void	screen_capture(SDL_Renderer *ren, const char *name, int wh[])
 	if (st != 0)
 		rtv_error(print_screen_error);
 	SDL_Log("Screen captured as \"%s\"\n", name);
+	free(pixels);
+	SDL_FreeSurface(surf);
 }
 
 void	print_screen(t_rt *r)
 {
 	int wh[2];
 
-	if (SDL_KEYDOWN && r->sdl->key_state[SDL_SCANCODE_P])
+	if (r->sdl->key_state[SDL_SCANCODE_P])
 	{
 		wh[0] = r->win->width;
 		wh[1] = r->win->height;

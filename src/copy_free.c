@@ -30,7 +30,6 @@ static void		ft_copy_calc(t_rt *rt_orig, t_rt *rt_copy)
 	rt_copy->calc->last_status_refract = rt_orig->calc->last_status_refract;
 	rt_copy->calc->i = rt_orig->calc->i;
 	rt_copy->calc->n = rt_orig->calc->n;
-	rt_copy->tmp_surface = rt_orig->tmp_surface;
 }
 
 static void		ft_copy_scene(t_rt *rt_orig, t_rt *rt_copy)
@@ -45,7 +44,9 @@ static void		ft_copy_scene(t_rt *rt_orig, t_rt *rt_copy)
 	rt_copy->scene->lits_n = rt_orig->scene->lits_n;
 	rt_copy->scene->aa = rt_orig->scene->aa;
 	rt_copy->scene->max_level_reflection = rt_orig->scene->max_level_reflection;
-	rt_copy->scene->max_level_transparent = rt_orig->scene->max_level_transparent;
+	rt_copy->scene->max_level_transparent =
+			rt_orig->scene->max_level_transparent;
+	rt_copy->scene->status_texture = rt_orig->scene->status_texture;
 	rt_copy->scene->status_shadow = rt_orig->scene->status_shadow;
 	rt_copy->scene->status_glossy = rt_orig->scene->status_glossy;
 	rt_copy->scene->status_color = rt_orig->scene->status_color;
@@ -66,7 +67,7 @@ t_rt			*ft_copy(t_rt *rt_orig)
 		rtv_error(malloc_error);
 	ft_copy_scene(rt_orig, rt_copy);
 	ft_copy_calc(rt_orig, rt_copy);
-	return(rt_copy);
+	return (rt_copy);
 }
 
 void			ft_free(t_rt *rt_free)
